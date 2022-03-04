@@ -1,0 +1,6 @@
+(manifest jazz.io.Category-Moniker
+
+  (version 208070)
+  (digest "39545ca28af87f32d8ef33cf09d20b3676828950")
+  (references (jazz.io Moniker)
+              (jazz.language.runtime.functional Object-Class)))

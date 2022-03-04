@@ -1,0 +1,12 @@
+(manifest jazz.logger
+
+  (version 208070)
+  (digest "7196507fe1f355cbd271565a19effdfb36d6dd48")
+  (references (gambit.language.runtime close-port display-continuation-backtrace display-exception force-output)
+              (jazz.io Directory create-directories path-settings timestamped-file)
+              (jazz.io.literals construct-directory)
+              (jazz.language.runtime.format format)
+              (jazz.language.syntax.macros when)
+              (jazz.time system-date)
+              (scheme.language.runtime apply not open-output-file)
+              (time date->string)))

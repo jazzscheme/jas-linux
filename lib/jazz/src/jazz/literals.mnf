@@ -1,0 +1,10 @@
+(manifest jazz.literals
+
+  (version 208070)
+  (digest "8393a121f4a0e2ccdada5a94677ce45aac4f1d6e")
+  (references (jazz.dialect.classes.foundation Literal Walk-Location)
+              (jazz.language.runtime.exception Exception-Detail)
+              (jazz.language.runtime.functional Box)
+              (jazz.language.runtime.geometry Cell Dimension Dimension$fl$ Distance Point Point$fl$ Range Rect Rect$fl$)
+              (jazz.language.runtime.kernel new)
+              (scheme.language.runtime car null?)))

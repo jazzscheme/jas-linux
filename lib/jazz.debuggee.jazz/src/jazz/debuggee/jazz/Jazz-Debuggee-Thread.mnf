@@ -1,0 +1,13 @@
+(manifest jazz.debuggee.jazz.Jazz-Debuggee-Thread
+
+  (version 208070)
+  (digest "89c2a42adbb4027e009fdbb9308df4761aec27f5")
+  (references (gambit.language.runtime box? set-box! thread-base-priority thread-name thread-state thread-thread-group)
+              (jazz.debuggee current-repl-frame debugged-continuations-thread-group thread-active-stops)
+              (jazz.debuggee.base Debuggee-Thread (Debuggee-Thread get-debugged-continuation?) (Debuggee-Thread get-id) (Debuggee-Thread get-name) (Debuggee-Thread get-priority) (Debuggee-Thread get-state) (Debuggee-Thread get-stops) (Debuggee-Thread set-repl-frame))
+              (jazz.language.runtime.functional Object-Class present-thread-state thread-post)
+              (jazz.language.runtime.hubs get-object)
+              (jazz.language.runtime.kernel object->serial)
+              (jazz.language.runtime.object (Object initialize))
+              (jazz.language.syntax.macros when)
+              (scheme.language.runtime eq?)))

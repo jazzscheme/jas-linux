@@ -1,0 +1,9 @@
+(manifest jazz.presence.remotable.Local-Proxy
+
+  (version 208070)
+  (digest "88a9da3d712210a4079fda750cacf14de5d4b55f")
+  (references (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional (Class marshall-object) (Class unmarshall-object) Object-Class)
+              (jazz.language.runtime.object (Object print) print-unreadable)
+              (jazz.presence get-purpose marshall-local-proxy unmarshall-proxy)
+              (jazz.presence.remotable.Proxy Proxy (Proxy initialize) (Proxy live?) (Proxy presence))))

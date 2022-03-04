@@ -1,0 +1,4 @@
+(repository Build
+
+  (binary? #t)
+  (library "lib"))

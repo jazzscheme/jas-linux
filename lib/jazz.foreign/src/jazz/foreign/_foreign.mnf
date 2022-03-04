@@ -1,0 +1,13 @@
+(manifest jazz.foreign
+
+  (version 208070)
+  (digest "01ce3830520756deffb25c53164ec83891e4b998")
+  (references (gambit.language.runtime continuation-capture display-continuation-backtrace make-parameter make-table table-ref table-set!)
+              (jazz.dialect.classes.foundation get-code)
+              (jazz.event get-kind)
+              (jazz.foreign.syntax C-Code C-Code~Class C-Declare C-Declare~Class C-Definition-Declaration C-Definition-Declaration~Class C-Function C-Function~Class C-Include C-Include~Class C-Initialize C-Initialize~Class C-Named-Declare-Declaration C-Named-Declare-Declaration~Class C-Type-Declaration C-Type-Declaration~Class c-callable c-callback c-code c-code c-constant c-declare c-enumerant c-enumeration c-external c-feature c-feature c-function c-include c-initialize c-lambda c-structure c-union get-arguments$<C-Code> get-base-type get-base-type$<C-Type-Declaration> get-body$<C-Definition-Declaration> get-c-name get-c-name$<C-Definition-Declaration> get-c-to-scheme get-c-to-scheme$<C-Type-Declaration> get-c-type$<C-Type-Declaration> get-cleanup get-cleanup$<C-Type-Declaration> get-code$<C-Code> get-code$<C-Declare> get-code$<C-Initialize> get-code$<C-Named-Declare-Declaration> get-declare-name get-declare-name$<C-Type-Declaration> get-expansion$<C-Function> get-expansion$<C-Type-Declaration> get-form$<C-Type-Declaration> get-inclusions$<C-Type-Declaration> get-kind$<C-Type-Declaration> get-name$<C-Declare> get-name$<C-Include> get-name$<C-Initialize> get-parameter-types get-parameter-types$<C-Definition-Declaration> get-pointer-types$<C-Type-Declaration> get-result-type get-result-type$<C-Definition-Declaration> get-scheme-to-c get-scheme-to-c$<C-Type-Declaration> get-scope get-scope$<C-Definition-Declaration> get-signature$<C-Definition-Declaration> resolve-c-type-reference set-body$<C-Definition-Declaration> set-pointer-types$<C-Type-Declaration> set-signature$<C-Definition-Declaration>)
+              (jazz.language.runtime.exception capture-exception-context throw)
+              (jazz.language.runtime.hubs get-arguments get-body get-expansion get-form get-inclusions get-name get-signature set-body)
+              (jazz.language.runtime.kernel catch-exception-filter quit set-exit-callable)
+              (jazz.language.syntax.macros when)
+              (scheme.language.runtime call-with-output-file eq?)))

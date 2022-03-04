@@ -1,0 +1,17 @@
+(manifest jazz.platform.x11
+
+  (version 208070)
+  (digest "3015507bf9dcce580715297f1526f823abfa50df")
+  (references (gambit.language.runtime bitwise-ior console-port make-table u32vector-length u32vector? u8vector-length u8vector?)
+              (jazz.foreign.syntax c-constant c-external c-function c-include c-structure)
+              (jazz.language.runtime.debug set-platform-log)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.functional ->string)
+              (jazz.language.runtime.kernel new terminal-line unimplemented unspecified)
+              (jazz.language.runtime.object allocated freed)
+              (jazz.language.syntax.macros constant prog1 unless when)
+              (jazz.platform.types bool byte char char* char*->UTF-8-string char*-alloc char*-free char*-set! char-string int int* int*-alloc int*-free int*-ref long long* long*->uint8* short short* u32vector->long* u8vector->uint8* uint uint8* uint8** uint8**-alloc uint8**-free uint8**-ref uint8*->char-string uint8*-free ulong ulong* ulong*-alloc ulong*-free ulong*-ref ushort void void*)
+              (jazz.platform.x11.x11-types Atom Atom* Colormap Cursor Display* Drawable GC KeyCode KeySym Pixmap Screen* Status Time Visual* Window XIC XID XIM XrmDatabase fd_set*)
+              (jazz.settings find-setting)
+              (jazz.version Version)
+              (scheme.language.runtime + = > char->integer display for-each integer? list newline values)))

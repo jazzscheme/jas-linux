@@ -1,0 +1,10 @@
+(manifest jazz.version
+
+  (version 208070)
+  (digest "6cabae09bca6c3f6b7e562835453764458999004")
+  (references (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional /= (Class marshall-object) (Class unmarshall-object) Object-Class category-name deserialize is-not? serialize serialize-object)
+              (jazz.language.runtime.kernel class-of kernel-version new split-version)
+              (jazz.language.runtime.object Object (Object compare-object) (Object initialize) (Object print))
+              (jazz.language.syntax.bind bind-vector)
+              (scheme.language.runtime < = > not vector vector-ref)))

@@ -1,0 +1,7 @@
+(manifest jazz.core
+
+  (version 208070)
+  (digest "2eebb506aa1cc5aa302fb9969528920956af528f")
+  (references (dialect.core define-walker-declaration)
+              (scheme.core.kernel add-core-method-node annotate-let compose-helper current-declaration current-declaration-name current-resume current-walker emit emit-expressions emit-one-expression emit-statements-code find-annotated find-annotated-type find-nextmethod get-and-expressions get-class-level get-declaration-path get-declaration-toplevel get-dialect get-expression-source get-object-slot iterate-module-declaration method-implementation-name method-implementation-name new-code new-core-class new-declaration-form new-object new-special-expression new-special-form object-size parse-keywords parse-modifiers reference-name register-binding register-declaration require-dialect set-core-class set-object-class set-object-slot setup-declaration tree-fold tree-fold-list walk walk-list)
+              (scheme.language.runtime caar cadr car cdr)))

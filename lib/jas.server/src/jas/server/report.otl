@@ -1,0 +1,6 @@
+(module jas.server.report jazz
+  (import (jazz.io))
+  (definition curl-path)
+  (definition monitor-directory)
+  (definition monitor-remote)
+  (definition public (send-crash-reports)))

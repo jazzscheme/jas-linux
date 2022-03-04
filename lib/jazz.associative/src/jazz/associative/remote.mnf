@@ -1,0 +1,13 @@
+(manifest jazz.associative.remote
+
+  (version 208070)
+  (digest "087a777f48a2635987e05c8c8ba56f3634c1cbdf")
+  (references (gambit.language.runtime force-output make-u8vector os-exception? read-subu8vector u8vector u8vector-length write-subu8vector)
+              (jazz.associative find-entry get-digest get-flags retrieve-object)
+              (jazz.language.runtime.exception Exception call-with-catch throw)
+              (jazz.language.runtime.functional 32-bit-integer->bytes Object-Class code-string->32-bit-integer read-binary-content read-binary-object write-binary-content write-binary-object)
+              (jazz.language.runtime.kernel new)
+              (jazz.language.syntax.macros catch)
+              (jazz.version Version construct-version version->bytes)
+              (jazz.zlib read-deflated-object write-deflated-object)
+              (scheme.language.runtime = eof-object? list)))

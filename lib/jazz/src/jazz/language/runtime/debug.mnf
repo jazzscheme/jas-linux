@@ -1,0 +1,11 @@
+(manifest jazz.language.runtime.debug
+
+  (version 208070)
+  (digest "6c36b8dabc90e7aa831f4848b74408f16d6553d7")
+  (references (gambit.language.runtime continuation-capture force-output get-output-string make-mutex make-table mutex-lock! mutex-unlock! open-output-string table-ref table-set!)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional primordial-thread primordial-thread? register-printer starts-with? starts-with?stringstring thread-post)
+              (jazz.language.runtime.kernel clear-terminal continuation-backtrace continuation-creator get-continuation-dynamic-environment get-continuation-lexical-environment get-continuation-location get-continuation-stack module-ref procedure-name reference-name terminal-available? terminal-port unspecified)
+              (jazz.language.syntax.bind bind)
+              (jazz.language.syntax.macros prog1 when)
+              (scheme.language.runtime append apply car cdr cons eq? list map not string->symbol string-length substring symbol->string symbol? write)))

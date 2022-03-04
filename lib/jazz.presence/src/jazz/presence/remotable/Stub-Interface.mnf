@@ -1,0 +1,5 @@
+(manifest jazz.presence.remotable.Stub-Interface
+
+  (version 208070)
+  (digest "dd52aca62141b4232dc156ba6488bd654a98e556")
+  (references (jazz.language.runtime.functional Interface Object-Class)))

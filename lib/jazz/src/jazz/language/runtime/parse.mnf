@@ -1,0 +1,10 @@
+(manifest jazz.language.runtime.parse
+
+  (version 208070)
+  (digest "d43a462bf39b5f900602b372ab3d0d4c9caa2d01")
+  (references (jazz.language.runtime.exception Conversion-Error signal)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional ci=? empty-string? numeric? read-string-element split trim-spaces)
+              (jazz.language.runtime.kernel new)
+              (jazz.language.runtime.object (Object object-numeric?))
+              (scheme.language.runtime map not string=?)))

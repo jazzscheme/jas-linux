@@ -1,0 +1,5 @@
+(manifest jazz.platform.install
+
+  (version 208070)
+  (digest "87ec9cd9a35f57b9df3734cdb99fbd13d9c05a70")
+  (references))

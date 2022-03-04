@@ -1,0 +1,8 @@
+(manifest jazz.language.runtime.homogeneous
+
+  (version 208070)
+  (digest "6a059f868b3e4ab42a080ac8c4ef2f72a71a5505")
+  (references (gambit.language.runtime f32vector->list f32vector-length f32vector-ref f32vector-set! f64vector->list f64vector-length f64vector-ref f64vector-set! list->f32vector list->f64vector list->s16vector list->s32vector list->s64vector list->s8vector list->u16vector list->u32vector list->u64vector list->u8vector make-f32vector make-f64vector make-s16vector make-s32vector make-s64vector make-s8vector make-u16vector make-u32vector make-u64vector make-u8vector s16vector->list s16vector-length s16vector-ref s16vector-set! s32vector->list s32vector-length s32vector-ref s32vector-set! s64vector->list s64vector-length s64vector-ref s64vector-set! s8vector->list s8vector-length s8vector-ref s8vector-set! u16vector->list u16vector-length u16vector-ref u16vector-set! u32vector->list u32vector-length u32vector-ref u32vector-set! u64vector->list u64vector-length u64vector-ref u64vector-set! u8vector->list u8vector-length u8vector-ref u8vector-set!)
+              (jazz.language.runtime.functional Sequence (Sequence sequence-butlast) (Sequence sequence-cardinality) (Sequence sequence-element) (Sequence sequence-last) (Sequence sequence-set-element!) (Sequence sequence-tail) Sequence-Class (Sequence-Class make-sequence) Vector Vector-Class butlast cardinality element set-element! tail)
+              (jazz.language.runtime.object (Object initialize) native-class)
+              (scheme.language.runtime -)))

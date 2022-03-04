@@ -1,0 +1,8 @@
+(manifest jazz.language.syntax.bind-keywords
+
+  (version 208070)
+  (digest "21c814cd72389ec9771233d8d297e79c4cce9c25")
+  (references (foundation.language.runtime generate-symbol source-code sourcify-deep-if)
+              (gambit.language.runtime string->keyword)
+              (jazz.language.runtime.kernel binding-specifier proper-list)
+              (scheme.language.runtime boolean? caddr cadr car cddr cdr map symbol->string symbol?)))

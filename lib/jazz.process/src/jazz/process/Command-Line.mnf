@@ -1,0 +1,6 @@
+(manifest jazz.process.Command-Line
+
+  (version 208070)
+  (digest "be8904ef01df7feb42bcd66a3b550c34d3a8bb7e")
+  (references (jazz.language.runtime.functional Object-Class)
+              (jazz.language.runtime.object Object)))

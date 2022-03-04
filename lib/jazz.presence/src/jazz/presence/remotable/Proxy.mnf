@@ -1,0 +1,6 @@
+(manifest jazz.presence.remotable.Proxy
+
+  (version 208070)
+  (digest "4cd1360a3f3a7a4c967d61ac446eb2930d761bce")
+  (references (jazz.language.runtime.functional Object-Class)
+              (jazz.language.runtime.object Object (Object initialize))))

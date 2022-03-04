@@ -1,0 +1,12 @@
+(manifest jazz.io.Path
+
+  (version 208070)
+  (digest "701afc8bf44d97992f2020ec555b912fa692ebc3")
+  (references (jazz.component.hubs child find-child)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional Object-Class (Sequence sequence-butlast) (Sequence sequence-element) butlast category-name element is-not?)
+              (jazz.language.runtime.hubs get-children)
+              (jazz.language.runtime.kernel class-of new not-null?)
+              (jazz.language.runtime.object Object (Object compare-object) (Object initialize) (Object print))
+              (jazz.language.syntax.macros when)
+              (scheme.language.runtime < = car cdr for-each integer? length null? pair?)))

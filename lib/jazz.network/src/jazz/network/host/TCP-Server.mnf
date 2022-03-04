@@ -1,0 +1,17 @@
+(manifest jazz.network.host.TCP-Server
+
+  (version 208070)
+  (digest "7e83a442e8c5d842986e656c7b0df00d970bb5c2")
+  (references (gambit.language.runtime close-port err-code->string make-mutex mutex-lock! mutex-unlock! open-tcp-server os-exception-code os-exception? socket-info-address socket-info-port-number tcp-server-socket-info thread-start!)
+              (jazz.language.runtime.exception error throw)
+              (jazz.language.runtime.functional ->string Object-Class box-list exit-thread find-keyword new-thread unbox-list)
+              (jazz.language.runtime.kernel catch-exception-filter not-null? scheme-readtable)
+              (jazz.language.runtime.object Object (Object destroy) (Object initialize))
+              (jazz.language.syntax.assertion assert)
+              (jazz.language.syntax.bind-keywords bind-keywords)
+              (jazz.language.syntax.increase increase!)
+              (jazz.language.syntax.macros unwind-protect when)
+              (jazz.network resolve-host resolve-service)
+              (jazz.network.server.Server-Interface Server-Interface (Server-Interface server-alternate-service) (Server-Interface server-host) (Server-Interface server-name) (Server-Interface server-service) (Server-Interface start) (Server-Interface stop) (Server-Interface wait-started) (Server-Interface wait-stopped))
+              (jazz.version Version construct-version)
+              (scheme.language.runtime apply equal? list not read values)))

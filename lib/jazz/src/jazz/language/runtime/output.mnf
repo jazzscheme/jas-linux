@@ -1,0 +1,9 @@
+(manifest jazz.language.runtime.output
+
+  (version 208070)
+  (digest "81f06685c0bddb379e8b8d4fd8ccb283d1fe3616")
+  (references (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional Object-Class with-printer)
+              (jazz.language.runtime.object Object)
+              (jazz.language.syntax.macros when)
+              (scheme.language.runtime * + for-each make-string string-length)))

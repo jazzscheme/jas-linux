@@ -1,0 +1,11 @@
+(manifest jazz.debuggee.jazz.Jazz-Debuggee-Frame
+
+  (version 208070)
+  (digest "7e7545048c0449067d7e0aaff4b0f13d916d08fe")
+  (references (jazz.debuggee.base Debuggee-Frame (Debuggee-Frame get-continuation) (Debuggee-Frame get-hidden?) (Debuggee-Frame get-id) (Debuggee-Frame get-interpreted?) (Debuggee-Frame get-location) (Debuggee-Frame get-name) (Debuggee-Frame get-variables))
+              (jazz.inspector package-info)
+              (jazz.language.runtime.functional Object-Class naturals)
+              (jazz.language.runtime.kernel boolean get-continuation-dynamic-environment get-continuation-lexical-environment get-continuation-location interpreted-continuation? serial->object)
+              (jazz.language.runtime.object (Object initialize))
+              (jazz.language.syntax.bind bind)
+              (scheme.language.runtime append car cdr cons length list map)))

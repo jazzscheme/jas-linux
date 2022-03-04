@@ -1,0 +1,2081 @@
+#ifdef ___LINKER_INFO
+; File: "literals.c", produced by Gambit v4.8.9
+(
+408009
+(C)
+"bin:jazz.io.literals"
+(("bin:jazz.io.literals"))
+(
+"bin:jazz.io.literals"
+"construct-directory"
+"construct-directory-group"
+"construct-file"
+"construct-manifest"
+"construct-path"
+"foundation.dialect"
+"jazz"
+"jazz.io"
+"jazz.io.Directory-Group"
+"jazz.io.Manifest"
+"jazz.io.Path"
+"jazz.io.literals"
+"jazz.io.literals:construct-directory"
+"jazz.io.literals:construct-directory-group"
+"jazz.io.literals:construct-file"
+"jazz.io.literals:construct-manifest"
+"jazz.io.literals:construct-path"
+"loaded?"
+"obj^0"
+"obj^14"
+"obj^19"
+"obj^4"
+"obj^9"
+"path"
+"public"
+"rest"
+"val^13"
+"val^18"
+"val^8"
+)
+(
+)
+(
+"bin:jazz.io.literals#"
+"jazz.io.Directory-Group:Directory-Group:autoload"
+"jazz.io.Manifest:Manifest:autoload"
+"jazz.io.Path:Path:autoload"
+)
+(
+"jazz.io.literals:construct-directory"
+"jazz.io.literals:construct-directory-group"
+"jazz.io.literals:construct-file"
+"jazz.io.literals:construct-manifest"
+"jazz.io.literals:construct-path"
+)
+(
+"error"
+"jazz.io.Directory-Group:Directory-Group"
+"jazz.io.Manifest:Manifest"
+"jazz.io.Path:Path"
+"jazz.io:Directory"
+"jazz.io:File"
+"jazz:Class"
+"jazz:Unspecified-Value"
+"jazz:class-of"
+"jazz:initialize-slots"
+"jazz:load-unit"
+"jazz:register-module"
+"make-vector"
+)
+ ()
+)
+#else
+#define ___VERSION 408009
+#define ___MODULE_NAME "bin:jazz.io.literals"
+#define ___LINKER_ID ___LNK_bin_3a_jazz_2e_io_2e_literals
+#define ___MH_PROC ___H_bin_3a_jazz_2e_io_2e_literals
+#define ___SCRIPT_LINE 0
+#define ___SYMCOUNT 30
+#define ___GLOCOUNT 22
+#define ___SUPCOUNT 9
+#define ___CNSCOUNT 11
+#define ___SUBCOUNT 160
+#define ___LBLCOUNT 74
+#define ___MODDESCR ___REF_SUB(159)
+#include "gambit.h"
+
+___NEED_SYM(___S_bin_3a_jazz_2e_io_2e_literals)
+___NEED_SYM(___S_construct_2d_directory)
+___NEED_SYM(___S_construct_2d_directory_2d_group)
+___NEED_SYM(___S_construct_2d_file)
+___NEED_SYM(___S_construct_2d_manifest)
+___NEED_SYM(___S_construct_2d_path)
+___NEED_SYM(___S_foundation_2e_dialect)
+___NEED_SYM(___S_jazz)
+___NEED_SYM(___S_jazz_2e_io)
+___NEED_SYM(___S_jazz_2e_io_2e_Directory_2d_Group)
+___NEED_SYM(___S_jazz_2e_io_2e_Manifest)
+___NEED_SYM(___S_jazz_2e_io_2e_Path)
+___NEED_SYM(___S_jazz_2e_io_2e_literals)
+___NEED_SYM(___S_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___NEED_SYM(___S_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___NEED_SYM(___S_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___NEED_SYM(___S_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___NEED_SYM(___S_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___NEED_SYM(___S_loaded_3f_)
+___NEED_SYM(___S_obj_5e_0)
+___NEED_SYM(___S_obj_5e_14)
+___NEED_SYM(___S_obj_5e_19)
+___NEED_SYM(___S_obj_5e_4)
+___NEED_SYM(___S_obj_5e_9)
+___NEED_SYM(___S_path)
+___NEED_SYM(___S_public)
+___NEED_SYM(___S_rest)
+___NEED_SYM(___S_val_5e_13)
+___NEED_SYM(___S_val_5e_18)
+___NEED_SYM(___S_val_5e_8)
+
+___NEED_GLO(___G_bin_3a_jazz_2e_io_2e_literals_23_)
+___NEED_GLO(___G_error)
+___NEED_GLO(___G_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group)
+___NEED_GLO(___G_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group_3a_autoload)
+___NEED_GLO(___G_jazz_2e_io_2e_Manifest_3a_Manifest)
+___NEED_GLO(___G_jazz_2e_io_2e_Manifest_3a_Manifest_3a_autoload)
+___NEED_GLO(___G_jazz_2e_io_2e_Path_3a_Path)
+___NEED_GLO(___G_jazz_2e_io_2e_Path_3a_Path_3a_autoload)
+___NEED_GLO(___G_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___NEED_GLO(___G_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___NEED_GLO(___G_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___NEED_GLO(___G_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___NEED_GLO(___G_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___NEED_GLO(___G_jazz_2e_io_3a_Directory)
+___NEED_GLO(___G_jazz_2e_io_3a_File)
+___NEED_GLO(___G_jazz_3a_Class)
+___NEED_GLO(___G_jazz_3a_Unspecified_2d_Value)
+___NEED_GLO(___G_jazz_3a_class_2d_of)
+___NEED_GLO(___G_jazz_3a_initialize_2d_slots)
+___NEED_GLO(___G_jazz_3a_load_2d_unit)
+___NEED_GLO(___G_jazz_3a_register_2d_module)
+___NEED_GLO(___G_make_2d_vector)
+
+___BEGIN_SYM
+___DEF_SYM(0,___S_bin_3a_jazz_2e_io_2e_literals,"bin:jazz.io.literals")
+___DEF_SYM(1,___S_construct_2d_directory,"construct-directory")
+___DEF_SYM(2,___S_construct_2d_directory_2d_group,"construct-directory-group")
+___DEF_SYM(3,___S_construct_2d_file,"construct-file")
+___DEF_SYM(4,___S_construct_2d_manifest,"construct-manifest")
+___DEF_SYM(5,___S_construct_2d_path,"construct-path")
+___DEF_SYM(6,___S_foundation_2e_dialect,"foundation.dialect")
+___DEF_SYM(7,___S_jazz,"jazz")
+___DEF_SYM(8,___S_jazz_2e_io,"jazz.io")
+___DEF_SYM(9,___S_jazz_2e_io_2e_Directory_2d_Group,"jazz.io.Directory-Group")
+___DEF_SYM(10,___S_jazz_2e_io_2e_Manifest,"jazz.io.Manifest")
+___DEF_SYM(11,___S_jazz_2e_io_2e_Path,"jazz.io.Path")
+___DEF_SYM(12,___S_jazz_2e_io_2e_literals,"jazz.io.literals")
+___DEF_SYM(13,___S_jazz_2e_io_2e_literals_3a_construct_2d_directory,"jazz.io.literals:construct-directory")
+
+___DEF_SYM(14,___S_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,"jazz.io.literals:construct-directory-group")
+
+___DEF_SYM(15,___S_jazz_2e_io_2e_literals_3a_construct_2d_file,"jazz.io.literals:construct-file")
+
+___DEF_SYM(16,___S_jazz_2e_io_2e_literals_3a_construct_2d_manifest,"jazz.io.literals:construct-manifest")
+
+___DEF_SYM(17,___S_jazz_2e_io_2e_literals_3a_construct_2d_path,"jazz.io.literals:construct-path")
+
+___DEF_SYM(18,___S_loaded_3f_,"loaded?")
+___DEF_SYM(19,___S_obj_5e_0,"obj^0")
+___DEF_SYM(20,___S_obj_5e_14,"obj^14")
+___DEF_SYM(21,___S_obj_5e_19,"obj^19")
+___DEF_SYM(22,___S_obj_5e_4,"obj^4")
+___DEF_SYM(23,___S_obj_5e_9,"obj^9")
+___DEF_SYM(24,___S_path,"path")
+___DEF_SYM(25,___S_public,"public")
+___DEF_SYM(26,___S_rest,"rest")
+___DEF_SYM(27,___S_val_5e_13,"val^13")
+___DEF_SYM(28,___S_val_5e_18,"val^18")
+___DEF_SYM(29,___S_val_5e_8,"val^8")
+___END_SYM
+
+#define ___SYM_bin_3a_jazz_2e_io_2e_literals ___SYM(0,___S_bin_3a_jazz_2e_io_2e_literals)
+#define ___SYM_construct_2d_directory ___SYM(1,___S_construct_2d_directory)
+#define ___SYM_construct_2d_directory_2d_group ___SYM(2,___S_construct_2d_directory_2d_group)
+#define ___SYM_construct_2d_file ___SYM(3,___S_construct_2d_file)
+#define ___SYM_construct_2d_manifest ___SYM(4,___S_construct_2d_manifest)
+#define ___SYM_construct_2d_path ___SYM(5,___S_construct_2d_path)
+#define ___SYM_foundation_2e_dialect ___SYM(6,___S_foundation_2e_dialect)
+#define ___SYM_jazz ___SYM(7,___S_jazz)
+#define ___SYM_jazz_2e_io ___SYM(8,___S_jazz_2e_io)
+#define ___SYM_jazz_2e_io_2e_Directory_2d_Group ___SYM(9,___S_jazz_2e_io_2e_Directory_2d_Group)
+#define ___SYM_jazz_2e_io_2e_Manifest ___SYM(10,___S_jazz_2e_io_2e_Manifest)
+#define ___SYM_jazz_2e_io_2e_Path ___SYM(11,___S_jazz_2e_io_2e_Path)
+#define ___SYM_jazz_2e_io_2e_literals ___SYM(12,___S_jazz_2e_io_2e_literals)
+#define ___SYM_jazz_2e_io_2e_literals_3a_construct_2d_directory ___SYM(13,___S_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+#define ___SYM_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group ___SYM(14,___S_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+#define ___SYM_jazz_2e_io_2e_literals_3a_construct_2d_file ___SYM(15,___S_jazz_2e_io_2e_literals_3a_construct_2d_file)
+#define ___SYM_jazz_2e_io_2e_literals_3a_construct_2d_manifest ___SYM(16,___S_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+#define ___SYM_jazz_2e_io_2e_literals_3a_construct_2d_path ___SYM(17,___S_jazz_2e_io_2e_literals_3a_construct_2d_path)
+#define ___SYM_loaded_3f_ ___SYM(18,___S_loaded_3f_)
+#define ___SYM_obj_5e_0 ___SYM(19,___S_obj_5e_0)
+#define ___SYM_obj_5e_14 ___SYM(20,___S_obj_5e_14)
+#define ___SYM_obj_5e_19 ___SYM(21,___S_obj_5e_19)
+#define ___SYM_obj_5e_4 ___SYM(22,___S_obj_5e_4)
+#define ___SYM_obj_5e_9 ___SYM(23,___S_obj_5e_9)
+#define ___SYM_path ___SYM(24,___S_path)
+#define ___SYM_public ___SYM(25,___S_public)
+#define ___SYM_rest ___SYM(26,___S_rest)
+#define ___SYM_val_5e_13 ___SYM(27,___S_val_5e_13)
+#define ___SYM_val_5e_18 ___SYM(28,___S_val_5e_18)
+#define ___SYM_val_5e_8 ___SYM(29,___S_val_5e_8)
+
+___BEGIN_GLO
+___DEF_GLO(0,"bin:jazz.io.literals#")
+___DEF_GLO(1,"jazz.io.Directory-Group:Directory-Group:autoload")
+
+___DEF_GLO(2,"jazz.io.Manifest:Manifest:autoload")
+
+___DEF_GLO(3,"jazz.io.Path:Path:autoload")
+___DEF_GLO(4,"jazz.io.literals:construct-directory")
+
+___DEF_GLO(5,"jazz.io.literals:construct-directory-group")
+
+___DEF_GLO(6,"jazz.io.literals:construct-file")
+___DEF_GLO(7,"jazz.io.literals:construct-manifest")
+
+___DEF_GLO(8,"jazz.io.literals:construct-path")
+___DEF_GLO(9,"error")
+___DEF_GLO(10,"jazz.io.Directory-Group:Directory-Group")
+
+___DEF_GLO(11,"jazz.io.Manifest:Manifest")
+___DEF_GLO(12,"jazz.io.Path:Path")
+___DEF_GLO(13,"jazz.io:Directory")
+___DEF_GLO(14,"jazz.io:File")
+___DEF_GLO(15,"jazz:Class")
+___DEF_GLO(16,"jazz:Unspecified-Value")
+___DEF_GLO(17,"jazz:class-of")
+___DEF_GLO(18,"jazz:initialize-slots")
+___DEF_GLO(19,"jazz:load-unit")
+___DEF_GLO(20,"jazz:register-module")
+___DEF_GLO(21,"make-vector")
+___END_GLO
+
+#define ___GLO_bin_3a_jazz_2e_io_2e_literals_23_ ___GLO(0,___G_bin_3a_jazz_2e_io_2e_literals_23_)
+#define ___PRM_bin_3a_jazz_2e_io_2e_literals_23_ ___PRM(0,___G_bin_3a_jazz_2e_io_2e_literals_23_)
+#define ___GLO_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group_3a_autoload ___GLO(1,___G_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group_3a_autoload)
+#define ___PRM_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group_3a_autoload ___PRM(1,___G_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group_3a_autoload)
+#define ___GLO_jazz_2e_io_2e_Manifest_3a_Manifest_3a_autoload ___GLO(2,___G_jazz_2e_io_2e_Manifest_3a_Manifest_3a_autoload)
+#define ___PRM_jazz_2e_io_2e_Manifest_3a_Manifest_3a_autoload ___PRM(2,___G_jazz_2e_io_2e_Manifest_3a_Manifest_3a_autoload)
+#define ___GLO_jazz_2e_io_2e_Path_3a_Path_3a_autoload ___GLO(3,___G_jazz_2e_io_2e_Path_3a_Path_3a_autoload)
+#define ___PRM_jazz_2e_io_2e_Path_3a_Path_3a_autoload ___PRM(3,___G_jazz_2e_io_2e_Path_3a_Path_3a_autoload)
+#define ___GLO_jazz_2e_io_2e_literals_3a_construct_2d_directory ___GLO(4,___G_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+#define ___PRM_jazz_2e_io_2e_literals_3a_construct_2d_directory ___PRM(4,___G_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+#define ___GLO_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group ___GLO(5,___G_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+#define ___PRM_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group ___PRM(5,___G_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+#define ___GLO_jazz_2e_io_2e_literals_3a_construct_2d_file ___GLO(6,___G_jazz_2e_io_2e_literals_3a_construct_2d_file)
+#define ___PRM_jazz_2e_io_2e_literals_3a_construct_2d_file ___PRM(6,___G_jazz_2e_io_2e_literals_3a_construct_2d_file)
+#define ___GLO_jazz_2e_io_2e_literals_3a_construct_2d_manifest ___GLO(7,___G_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+#define ___PRM_jazz_2e_io_2e_literals_3a_construct_2d_manifest ___PRM(7,___G_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+#define ___GLO_jazz_2e_io_2e_literals_3a_construct_2d_path ___GLO(8,___G_jazz_2e_io_2e_literals_3a_construct_2d_path)
+#define ___PRM_jazz_2e_io_2e_literals_3a_construct_2d_path ___PRM(8,___G_jazz_2e_io_2e_literals_3a_construct_2d_path)
+#define ___GLO_error ___GLO(9,___G_error)
+#define ___PRM_error ___PRM(9,___G_error)
+#define ___GLO_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group ___GLO(10,___G_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group)
+#define ___PRM_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group ___PRM(10,___G_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group)
+#define ___GLO_jazz_2e_io_2e_Manifest_3a_Manifest ___GLO(11,___G_jazz_2e_io_2e_Manifest_3a_Manifest)
+#define ___PRM_jazz_2e_io_2e_Manifest_3a_Manifest ___PRM(11,___G_jazz_2e_io_2e_Manifest_3a_Manifest)
+#define ___GLO_jazz_2e_io_2e_Path_3a_Path ___GLO(12,___G_jazz_2e_io_2e_Path_3a_Path)
+#define ___PRM_jazz_2e_io_2e_Path_3a_Path ___PRM(12,___G_jazz_2e_io_2e_Path_3a_Path)
+#define ___GLO_jazz_2e_io_3a_Directory ___GLO(13,___G_jazz_2e_io_3a_Directory)
+#define ___PRM_jazz_2e_io_3a_Directory ___PRM(13,___G_jazz_2e_io_3a_Directory)
+#define ___GLO_jazz_2e_io_3a_File ___GLO(14,___G_jazz_2e_io_3a_File)
+#define ___PRM_jazz_2e_io_3a_File ___PRM(14,___G_jazz_2e_io_3a_File)
+#define ___GLO_jazz_3a_Class ___GLO(15,___G_jazz_3a_Class)
+#define ___PRM_jazz_3a_Class ___PRM(15,___G_jazz_3a_Class)
+#define ___GLO_jazz_3a_Unspecified_2d_Value ___GLO(16,___G_jazz_3a_Unspecified_2d_Value)
+#define ___PRM_jazz_3a_Unspecified_2d_Value ___PRM(16,___G_jazz_3a_Unspecified_2d_Value)
+#define ___GLO_jazz_3a_class_2d_of ___GLO(17,___G_jazz_3a_class_2d_of)
+#define ___PRM_jazz_3a_class_2d_of ___PRM(17,___G_jazz_3a_class_2d_of)
+#define ___GLO_jazz_3a_initialize_2d_slots ___GLO(18,___G_jazz_3a_initialize_2d_slots)
+#define ___PRM_jazz_3a_initialize_2d_slots ___PRM(18,___G_jazz_3a_initialize_2d_slots)
+#define ___GLO_jazz_3a_load_2d_unit ___GLO(19,___G_jazz_3a_load_2d_unit)
+#define ___PRM_jazz_3a_load_2d_unit ___PRM(19,___G_jazz_3a_load_2d_unit)
+#define ___GLO_jazz_3a_register_2d_module ___GLO(20,___G_jazz_3a_register_2d_module)
+#define ___PRM_jazz_3a_register_2d_module ___PRM(20,___G_jazz_3a_register_2d_module)
+#define ___GLO_make_2d_vector ___GLO(21,___G_make_2d_vector)
+#define ___PRM_make_2d_vector ___PRM(21,___G_make_2d_vector)
+
+___BEGIN_CNS
+ ___DEF_CNS(___REF_CNS(1),___REF_CNS(2))
+,___DEF_CNS(___REF_SYM(1,___S_construct_2d_directory),___REF_SYM(13,___S_jazz_2e_io_2e_literals_3a_construct_2d_directory))
+,___DEF_CNS(___REF_CNS(3),___REF_CNS(4))
+,___DEF_CNS(___REF_SYM(2,___S_construct_2d_directory_2d_group),___REF_SYM(14,___S_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group))
+,___DEF_CNS(___REF_CNS(5),___REF_CNS(6))
+,___DEF_CNS(___REF_SYM(3,___S_construct_2d_file),___REF_SYM(15,___S_jazz_2e_io_2e_literals_3a_construct_2d_file))
+,___DEF_CNS(___REF_CNS(7),___REF_CNS(8))
+,___DEF_CNS(___REF_SYM(4,___S_construct_2d_manifest),___REF_SYM(16,___S_jazz_2e_io_2e_literals_3a_construct_2d_manifest))
+,___DEF_CNS(___REF_CNS(9),___REF_NUL)
+,___DEF_CNS(___REF_SYM(5,___S_construct_2d_path),___REF_SYM(17,___S_jazz_2e_io_2e_literals_3a_construct_2d_path))
+,___DEF_CNS(___REF_FIX(32769),___REF_NUL)
+___END_CNS
+
+___DEF_SUB_VEC(___X0,2UL)
+               ___VEC1(___REF_SUB(1))
+               ___VEC1(___REF_SUB(42))
+               ___VEC0
+___DEF_SUB_VEC(___X1,20UL)
+               ___VEC1(___REF_SUB(2))
+               ___VEC1(___REF_SUB(4))
+               ___VEC1(___REF_SUB(6))
+               ___VEC1(___REF_SUB(8))
+               ___VEC1(___REF_SUB(10))
+               ___VEC1(___REF_SUB(12))
+               ___VEC1(___REF_SUB(14))
+               ___VEC1(___REF_SUB(16))
+               ___VEC1(___REF_SUB(18))
+               ___VEC1(___REF_SUB(20))
+               ___VEC1(___REF_SUB(22))
+               ___VEC1(___REF_SUB(24))
+               ___VEC1(___REF_SUB(26))
+               ___VEC1(___REF_SUB(28))
+               ___VEC1(___REF_SUB(30))
+               ___VEC1(___REF_SUB(32))
+               ___VEC1(___REF_SUB(34))
+               ___VEC1(___REF_SUB(36))
+               ___VEC1(___REF_SUB(38))
+               ___VEC1(___REF_SUB(40))
+               ___VEC0
+___DEF_SUB_VEC(___X2,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(3))
+               ___VEC0
+___DEF_SUB_VEC(___X3,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X4,2UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(5))
+               ___VEC0
+___DEF_SUB_VEC(___X5,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X6,2UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(7))
+               ___VEC0
+___DEF_SUB_VEC(___X7,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X8,2UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(9))
+               ___VEC0
+___DEF_SUB_VEC(___X9,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X10,2UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(11))
+               ___VEC0
+___DEF_SUB_VEC(___X11,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X12,2UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(13))
+               ___VEC0
+___DEF_SUB_VEC(___X13,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X14,2UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(15))
+               ___VEC0
+___DEF_SUB_VEC(___X15,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(84))
+               ___VEC0
+___DEF_SUB_VEC(___X16,2UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(17))
+               ___VEC0
+___DEF_SUB_VEC(___X17,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(84))
+               ___VEC0
+___DEF_SUB_VEC(___X18,2UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(19))
+               ___VEC0
+___DEF_SUB_VEC(___X19,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X20,3UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(21))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X21,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X22,2UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(23))
+               ___VEC0
+___DEF_SUB_VEC(___X23,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X24,3UL)
+               ___VEC1(___REF_FIX(11))
+               ___VEC1(___REF_SUB(25))
+               ___VEC1(___REF_FIX(425986))
+               ___VEC0
+___DEF_SUB_VEC(___X25,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X26,2UL)
+               ___VEC1(___REF_FIX(12))
+               ___VEC1(___REF_SUB(27))
+               ___VEC0
+___DEF_SUB_VEC(___X27,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X28,3UL)
+               ___VEC1(___REF_FIX(13))
+               ___VEC1(___REF_SUB(29))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X29,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X30,2UL)
+               ___VEC1(___REF_FIX(14))
+               ___VEC1(___REF_SUB(31))
+               ___VEC0
+___DEF_SUB_VEC(___X31,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X32,3UL)
+               ___VEC1(___REF_FIX(15))
+               ___VEC1(___REF_SUB(33))
+               ___VEC1(___REF_FIX(425986))
+               ___VEC0
+___DEF_SUB_VEC(___X33,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X34,2UL)
+               ___VEC1(___REF_FIX(16))
+               ___VEC1(___REF_SUB(35))
+               ___VEC0
+___DEF_SUB_VEC(___X35,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X36,3UL)
+               ___VEC1(___REF_FIX(17))
+               ___VEC1(___REF_SUB(37))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X37,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X38,2UL)
+               ___VEC1(___REF_FIX(18))
+               ___VEC1(___REF_SUB(39))
+               ___VEC0
+___DEF_SUB_VEC(___X39,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X40,3UL)
+               ___VEC1(___REF_FIX(19))
+               ___VEC1(___REF_SUB(41))
+               ___VEC1(___REF_FIX(425986))
+               ___VEC0
+___DEF_SUB_VEC(___X41,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X42,2UL)
+               ___VEC1(___REF_SYM(18,___S_loaded_3f_))
+               ___VEC1(___REF_CNS(10))
+               ___VEC0
+___DEF_SUB_STR(___X43,40UL)
+               ___STR8(65,115,115,101,114,116,105,111)
+               ___STR8(110,32,40,37,37,99,108,97)
+               ___STR8(115,115,63,32,106,97,122,122)
+               ___STR8(46,105,111,58,70,105,108,101)
+               ___STR8(41,32,102,97,105,108,101,100)
+               ___STR0
+___DEF_SUB_VEC(___X44,2UL)
+               ___VEC1(___REF_SUB(45))
+               ___VEC1(___REF_SUB(64))
+               ___VEC0
+___DEF_SUB_VEC(___X45,9UL)
+               ___VEC1(___REF_SUB(46))
+               ___VEC1(___REF_SUB(48))
+               ___VEC1(___REF_SUB(50))
+               ___VEC1(___REF_SUB(52))
+               ___VEC1(___REF_SUB(54))
+               ___VEC1(___REF_SUB(56))
+               ___VEC1(___REF_SUB(58))
+               ___VEC1(___REF_SUB(60))
+               ___VEC1(___REF_SUB(62))
+               ___VEC0
+___DEF_SUB_VEC(___X46,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(47))
+               ___VEC0
+___DEF_SUB_VEC(___X47,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(48))
+               ___VEC0
+___DEF_SUB_VEC(___X48,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(49))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X49,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131121))
+               ___VEC0
+___DEF_SUB_VEC(___X50,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(51))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X51,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131121))
+               ___VEC0
+___DEF_SUB_VEC(___X52,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(53))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X53,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131121))
+               ___VEC0
+___DEF_SUB_VEC(___X54,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(55))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X55,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131121))
+               ___VEC0
+___DEF_SUB_VEC(___X56,4UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(57))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X57,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131121))
+               ___VEC0
+___DEF_SUB_VEC(___X58,2UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(59))
+               ___VEC0
+___DEF_SUB_VEC(___X59,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131121))
+               ___VEC0
+___DEF_SUB_VEC(___X60,3UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(61))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X61,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131121))
+               ___VEC0
+___DEF_SUB_VEC(___X62,3UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(63))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X63,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131121))
+               ___VEC0
+___DEF_SUB_VEC(___X64,2UL)
+               ___VEC1(___REF_SYM(26,___S_rest))
+               ___VEC1(___REF_SYM(19,___S_obj_5e_0))
+               ___VEC0
+___DEF_SUB_STR(___X65,45UL)
+               ___STR8(65,115,115,101,114,116,105,111)
+               ___STR8(110,32,40,37,37,99,108,97)
+               ___STR8(115,115,63,32,106,97,122,122)
+               ___STR8(46,105,111,58,68,105,114,101)
+               ___STR8(99,116,111,114,121,41,32,102)
+               ___STR5(97,105,108,101,100)
+___DEF_SUB_VEC(___X66,2UL)
+               ___VEC1(___REF_SUB(67))
+               ___VEC1(___REF_SUB(86))
+               ___VEC0
+___DEF_SUB_VEC(___X67,9UL)
+               ___VEC1(___REF_SUB(68))
+               ___VEC1(___REF_SUB(70))
+               ___VEC1(___REF_SUB(72))
+               ___VEC1(___REF_SUB(74))
+               ___VEC1(___REF_SUB(76))
+               ___VEC1(___REF_SUB(78))
+               ___VEC1(___REF_SUB(80))
+               ___VEC1(___REF_SUB(82))
+               ___VEC1(___REF_SUB(84))
+               ___VEC0
+___DEF_SUB_VEC(___X68,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(69))
+               ___VEC0
+___DEF_SUB_VEC(___X69,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(57))
+               ___VEC0
+___DEF_SUB_VEC(___X70,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(71))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X71,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X72,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(73))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X73,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X74,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(75))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X75,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X76,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(77))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X77,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X78,4UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(79))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X79,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X80,2UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(81))
+               ___VEC0
+___DEF_SUB_VEC(___X81,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X82,3UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(83))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X83,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X84,3UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(85))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X85,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X86,2UL)
+               ___VEC1(___REF_SYM(26,___S_rest))
+               ___VEC1(___REF_SYM(22,___S_obj_5e_4))
+               ___VEC0
+___DEF_SUB_STR(___X87,35UL)
+               ___STR8(65,115,115,101,114,116,105,111)
+               ___STR8(110,32,40,37,37,99,108,97)
+               ___STR8(115,115,63,32,35,58,118,97)
+               ___STR8(108,94,56,41,32,102,97,105)
+               ___STR3(108,101,100)
+___DEF_SUB_VEC(___X88,2UL)
+               ___VEC1(___REF_SUB(89))
+               ___VEC1(___REF_SUB(110))
+               ___VEC0
+___DEF_SUB_VEC(___X89,10UL)
+               ___VEC1(___REF_SUB(90))
+               ___VEC1(___REF_SUB(92))
+               ___VEC1(___REF_SUB(94))
+               ___VEC1(___REF_SUB(96))
+               ___VEC1(___REF_SUB(98))
+               ___VEC1(___REF_SUB(100))
+               ___VEC1(___REF_SUB(102))
+               ___VEC1(___REF_SUB(104))
+               ___VEC1(___REF_SUB(106))
+               ___VEC1(___REF_SUB(108))
+               ___VEC0
+___DEF_SUB_VEC(___X90,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(91))
+               ___VEC0
+___DEF_SUB_VEC(___X91,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(66))
+               ___VEC0
+___DEF_SUB_VEC(___X92,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(93))
+               ___VEC1(___REF_FIX(327680))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X93,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X94,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(95))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X95,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X96,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(97))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X97,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X98,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(99))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X99,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X100,5UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(101))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X101,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X102,5UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(103))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X103,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X104,2UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(105))
+               ___VEC0
+___DEF_SUB_VEC(___X105,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X106,4UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(107))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X107,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X108,4UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(109))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X109,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131139))
+               ___VEC0
+___DEF_SUB_VEC(___X110,3UL)
+               ___VEC1(___REF_SYM(24,___S_path))
+               ___VEC1(___REF_SYM(29,___S_val_5e_8))
+               ___VEC1(___REF_SYM(23,___S_obj_5e_9))
+               ___VEC0
+___DEF_SUB_STR(___X111,36UL)
+               ___STR8(65,115,115,101,114,116,105,111)
+               ___STR8(110,32,40,37,37,99,108,97)
+               ___STR8(115,115,63,32,35,58,118,97)
+               ___STR8(108,94,49,51,41,32,102,97)
+               ___STR4(105,108,101,100)
+___DEF_SUB_VEC(___X112,2UL)
+               ___VEC1(___REF_SUB(113))
+               ___VEC1(___REF_SUB(134))
+               ___VEC0
+___DEF_SUB_VEC(___X113,10UL)
+               ___VEC1(___REF_SUB(114))
+               ___VEC1(___REF_SUB(116))
+               ___VEC1(___REF_SUB(118))
+               ___VEC1(___REF_SUB(120))
+               ___VEC1(___REF_SUB(122))
+               ___VEC1(___REF_SUB(124))
+               ___VEC1(___REF_SUB(126))
+               ___VEC1(___REF_SUB(128))
+               ___VEC1(___REF_SUB(130))
+               ___VEC1(___REF_SUB(132))
+               ___VEC0
+___DEF_SUB_VEC(___X114,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(115))
+               ___VEC0
+___DEF_SUB_VEC(___X115,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(75))
+               ___VEC0
+___DEF_SUB_VEC(___X116,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(117))
+               ___VEC1(___REF_FIX(327680))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X117,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X118,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(119))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X119,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X120,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(121))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X121,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X122,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(123))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X123,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X124,5UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(125))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X125,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X126,5UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(127))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X127,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X128,2UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(129))
+               ___VEC0
+___DEF_SUB_VEC(___X129,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X130,4UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(131))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X131,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X132,4UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(133))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X133,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131148))
+               ___VEC0
+___DEF_SUB_VEC(___X134,3UL)
+               ___VEC1(___REF_SYM(26,___S_rest))
+               ___VEC1(___REF_SYM(27,___S_val_5e_13))
+               ___VEC1(___REF_SYM(20,___S_obj_5e_14))
+               ___VEC0
+___DEF_SUB_STR(___X135,36UL)
+               ___STR8(65,115,115,101,114,116,105,111)
+               ___STR8(110,32,40,37,37,99,108,97)
+               ___STR8(115,115,63,32,35,58,118,97)
+               ___STR8(108,94,49,56,41,32,102,97)
+               ___STR4(105,108,101,100)
+___DEF_SUB_VEC(___X136,2UL)
+               ___VEC1(___REF_SUB(137))
+               ___VEC1(___REF_SUB(158))
+               ___VEC0
+___DEF_SUB_VEC(___X137,10UL)
+               ___VEC1(___REF_SUB(138))
+               ___VEC1(___REF_SUB(140))
+               ___VEC1(___REF_SUB(142))
+               ___VEC1(___REF_SUB(144))
+               ___VEC1(___REF_SUB(146))
+               ___VEC1(___REF_SUB(148))
+               ___VEC1(___REF_SUB(150))
+               ___VEC1(___REF_SUB(152))
+               ___VEC1(___REF_SUB(154))
+               ___VEC1(___REF_SUB(156))
+               ___VEC0
+___DEF_SUB_VEC(___X138,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(139))
+               ___VEC0
+___DEF_SUB_VEC(___X139,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(84))
+               ___VEC0
+___DEF_SUB_VEC(___X140,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(141))
+               ___VEC1(___REF_FIX(327680))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X141,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X142,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(143))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X143,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X144,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(145))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X145,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X146,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(147))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X147,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X148,5UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(149))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X149,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X150,5UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(151))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X151,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X152,2UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(153))
+               ___VEC0
+___DEF_SUB_VEC(___X153,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X154,4UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(155))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X155,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X156,4UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(157))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X157,2UL)
+               ___VEC1(___REF_SYM(12,___S_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_FIX(131157))
+               ___VEC0
+___DEF_SUB_VEC(___X158,3UL)
+               ___VEC1(___REF_SYM(26,___S_rest))
+               ___VEC1(___REF_SYM(28,___S_val_5e_18))
+               ___VEC1(___REF_SYM(21,___S_obj_5e_19))
+               ___VEC0
+___DEF_SUB_VEC(___X159,5UL)
+               ___VEC1(___REF_SYM(0,___S_bin_3a_jazz_2e_io_2e_literals))
+               ___VEC1(___REF_PRC(1))
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_NUL)
+               ___VEC1(___REF_FAL)
+               ___VEC0
+
+___BEGIN_SUB
+ ___DEF_SUB(___X0)
+,___DEF_SUB(___X1)
+,___DEF_SUB(___X2)
+,___DEF_SUB(___X3)
+,___DEF_SUB(___X4)
+,___DEF_SUB(___X5)
+,___DEF_SUB(___X6)
+,___DEF_SUB(___X7)
+,___DEF_SUB(___X8)
+,___DEF_SUB(___X9)
+,___DEF_SUB(___X10)
+,___DEF_SUB(___X11)
+,___DEF_SUB(___X12)
+,___DEF_SUB(___X13)
+,___DEF_SUB(___X14)
+,___DEF_SUB(___X15)
+,___DEF_SUB(___X16)
+,___DEF_SUB(___X17)
+,___DEF_SUB(___X18)
+,___DEF_SUB(___X19)
+,___DEF_SUB(___X20)
+,___DEF_SUB(___X21)
+,___DEF_SUB(___X22)
+,___DEF_SUB(___X23)
+,___DEF_SUB(___X24)
+,___DEF_SUB(___X25)
+,___DEF_SUB(___X26)
+,___DEF_SUB(___X27)
+,___DEF_SUB(___X28)
+,___DEF_SUB(___X29)
+,___DEF_SUB(___X30)
+,___DEF_SUB(___X31)
+,___DEF_SUB(___X32)
+,___DEF_SUB(___X33)
+,___DEF_SUB(___X34)
+,___DEF_SUB(___X35)
+,___DEF_SUB(___X36)
+,___DEF_SUB(___X37)
+,___DEF_SUB(___X38)
+,___DEF_SUB(___X39)
+,___DEF_SUB(___X40)
+,___DEF_SUB(___X41)
+,___DEF_SUB(___X42)
+,___DEF_SUB(___X43)
+,___DEF_SUB(___X44)
+,___DEF_SUB(___X45)
+,___DEF_SUB(___X46)
+,___DEF_SUB(___X47)
+,___DEF_SUB(___X48)
+,___DEF_SUB(___X49)
+,___DEF_SUB(___X50)
+,___DEF_SUB(___X51)
+,___DEF_SUB(___X52)
+,___DEF_SUB(___X53)
+,___DEF_SUB(___X54)
+,___DEF_SUB(___X55)
+,___DEF_SUB(___X56)
+,___DEF_SUB(___X57)
+,___DEF_SUB(___X58)
+,___DEF_SUB(___X59)
+,___DEF_SUB(___X60)
+,___DEF_SUB(___X61)
+,___DEF_SUB(___X62)
+,___DEF_SUB(___X63)
+,___DEF_SUB(___X64)
+,___DEF_SUB(___X65)
+,___DEF_SUB(___X66)
+,___DEF_SUB(___X67)
+,___DEF_SUB(___X68)
+,___DEF_SUB(___X69)
+,___DEF_SUB(___X70)
+,___DEF_SUB(___X71)
+,___DEF_SUB(___X72)
+,___DEF_SUB(___X73)
+,___DEF_SUB(___X74)
+,___DEF_SUB(___X75)
+,___DEF_SUB(___X76)
+,___DEF_SUB(___X77)
+,___DEF_SUB(___X78)
+,___DEF_SUB(___X79)
+,___DEF_SUB(___X80)
+,___DEF_SUB(___X81)
+,___DEF_SUB(___X82)
+,___DEF_SUB(___X83)
+,___DEF_SUB(___X84)
+,___DEF_SUB(___X85)
+,___DEF_SUB(___X86)
+,___DEF_SUB(___X87)
+,___DEF_SUB(___X88)
+,___DEF_SUB(___X89)
+,___DEF_SUB(___X90)
+,___DEF_SUB(___X91)
+,___DEF_SUB(___X92)
+,___DEF_SUB(___X93)
+,___DEF_SUB(___X94)
+,___DEF_SUB(___X95)
+,___DEF_SUB(___X96)
+,___DEF_SUB(___X97)
+,___DEF_SUB(___X98)
+,___DEF_SUB(___X99)
+,___DEF_SUB(___X100)
+,___DEF_SUB(___X101)
+,___DEF_SUB(___X102)
+,___DEF_SUB(___X103)
+,___DEF_SUB(___X104)
+,___DEF_SUB(___X105)
+,___DEF_SUB(___X106)
+,___DEF_SUB(___X107)
+,___DEF_SUB(___X108)
+,___DEF_SUB(___X109)
+,___DEF_SUB(___X110)
+,___DEF_SUB(___X111)
+,___DEF_SUB(___X112)
+,___DEF_SUB(___X113)
+,___DEF_SUB(___X114)
+,___DEF_SUB(___X115)
+,___DEF_SUB(___X116)
+,___DEF_SUB(___X117)
+,___DEF_SUB(___X118)
+,___DEF_SUB(___X119)
+,___DEF_SUB(___X120)
+,___DEF_SUB(___X121)
+,___DEF_SUB(___X122)
+,___DEF_SUB(___X123)
+,___DEF_SUB(___X124)
+,___DEF_SUB(___X125)
+,___DEF_SUB(___X126)
+,___DEF_SUB(___X127)
+,___DEF_SUB(___X128)
+,___DEF_SUB(___X129)
+,___DEF_SUB(___X130)
+,___DEF_SUB(___X131)
+,___DEF_SUB(___X132)
+,___DEF_SUB(___X133)
+,___DEF_SUB(___X134)
+,___DEF_SUB(___X135)
+,___DEF_SUB(___X136)
+,___DEF_SUB(___X137)
+,___DEF_SUB(___X138)
+,___DEF_SUB(___X139)
+,___DEF_SUB(___X140)
+,___DEF_SUB(___X141)
+,___DEF_SUB(___X142)
+,___DEF_SUB(___X143)
+,___DEF_SUB(___X144)
+,___DEF_SUB(___X145)
+,___DEF_SUB(___X146)
+,___DEF_SUB(___X147)
+,___DEF_SUB(___X148)
+,___DEF_SUB(___X149)
+,___DEF_SUB(___X150)
+,___DEF_SUB(___X151)
+,___DEF_SUB(___X152)
+,___DEF_SUB(___X153)
+,___DEF_SUB(___X154)
+,___DEF_SUB(___X155)
+,___DEF_SUB(___X156)
+,___DEF_SUB(___X157)
+,___DEF_SUB(___X158)
+,___DEF_SUB(___X159)
+___END_SUB
+
+
+
+#undef ___MD_ALL
+#define ___MD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___MR_ALL
+#define ___MR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___MW_ALL
+#define ___MW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_M_COD
+___BEGIN_M_HLBL
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L1_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L2_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L3_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L4_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L5_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L6_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L7_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L8_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L9_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L10_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L11_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L12_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L13_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L14_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L15_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L16_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L17_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L18_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL(___L19_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL(___L9_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL(___L9_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_M_HLBL(___L9_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___END_M_HLBL
+
+___BEGIN_M_SW
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_bin_3a_jazz_2e_io_2e_literals_23_
+#undef ___PH_LBL0
+#define ___PH_LBL0 1
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L1_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L2_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L3_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L4_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L5_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L6_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L7_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L8_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L9_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L10_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L11_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L12_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L13_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L14_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L15_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L16_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L17_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L18_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_P_HLBL(___L19_bin_3a_jazz_2e_io_2e_literals_23_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(0,0,0,0)
+___DEF_GLBL(___L_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_STK(1,___R0)
+   ___SET_R1(___SYM_foundation_2e_dialect)
+   ___ADJFP(4)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),19,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(2,___L2_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R1(___SYM_jazz)
+   ___SET_R0(___LBL(3))
+   ___JUMPGLOSAFE(___SET_NARGS(1),19,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(3,___L3_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R1(___SYM_jazz_2e_io)
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),19,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(4,___L4_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_STK(1,___SYM_jazz_2e_io_2e_literals)
+   ___SET_R3(___CNS(0))
+   ___SET_R2(___NUL)
+   ___SET_R1(___SYM_public)
+   ___SET_R0(___LBL(5))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),20,___G_jazz_3a_register_2d_module)
+___DEF_SLBL(5,___L5_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R1(___BOX(___FAL))
+   ___SET_STK(-2,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(-2),16)
+   ___ADD_CLO_ELEM(0,___R1)
+   ___END_SETUP_CLO(1)
+   ___SET_GLO(1,___G_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group_3a_autoload,___STK(-2))
+   ___SET_R1(___BOX(___FAL))
+   ___SET_STK(-2,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(-2),12)
+   ___ADD_CLO_ELEM(0,___R1)
+   ___END_SETUP_CLO(1)
+   ___SET_GLO(2,___G_jazz_2e_io_2e_Manifest_3a_Manifest_3a_autoload,___STK(-2))
+   ___SET_R1(___BOX(___FAL))
+   ___SET_STK(-2,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(-2),8)
+   ___ADD_CLO_ELEM(0,___R1)
+   ___END_SETUP_CLO(1)
+   ___SET_GLO(3,___G_jazz_2e_io_2e_Path_3a_Path_3a_autoload,___STK(-2))
+   ___SET_GLO(6,___G_jazz_2e_io_2e_literals_3a_construct_2d_file,___PRC(22))
+   ___SET_GLO(4,___G_jazz_2e_io_2e_literals_3a_construct_2d_directory,___PRC(32))
+   ___SET_GLO(8,___G_jazz_2e_io_2e_literals_3a_construct_2d_path,___PRC(42))
+   ___SET_GLO(7,___G_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___PRC(53))
+   ___SET_GLO(5,___G_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___PRC(64))
+   ___SET_R1(___VOID)
+   ___ADJFP(-2)
+   ___CHECK_HEAP(6,4096)
+___DEF_SLBL(6,___L6_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___POLL(7)
+___DEF_SLBL(7,___L7_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___ADJFP(-2)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(8,___L8_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(8,0,0,0)
+   ___SET_R3(___CLO(___R4,1))
+   ___IF(___NOTFALSEP(___UNBOX(___R3)))
+   ___GOTO(___L20_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___END_IF
+   ___GOTO(___L21_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_SLBL(9,___L9_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R0(___CLO(___STK(-6),1))
+   ___SETBOX(___R0,___TRU)
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L20_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R1(___GLO_jazz_2e_io_2e_Path_3a_Path)
+   ___POLL(10)
+___DEF_SLBL(10,___L10_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L21_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R4)
+   ___SET_R1(___SYM_jazz_2e_io_2e_Path)
+   ___ADJFP(8)
+   ___POLL(11)
+___DEF_SLBL(11,___L11_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R0(___LBL(9))
+   ___JUMPGLOSAFE(___SET_NARGS(1),19,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(12,___L12_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(12,0,0,0)
+   ___SET_R3(___CLO(___R4,1))
+   ___IF(___NOTFALSEP(___UNBOX(___R3)))
+   ___GOTO(___L22_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___END_IF
+   ___GOTO(___L23_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_SLBL(13,___L13_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R0(___CLO(___STK(-6),1))
+   ___SETBOX(___R0,___TRU)
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L22_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R1(___GLO_jazz_2e_io_2e_Manifest_3a_Manifest)
+   ___POLL(14)
+___DEF_SLBL(14,___L14_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L23_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R4)
+   ___SET_R1(___SYM_jazz_2e_io_2e_Manifest)
+   ___ADJFP(8)
+   ___POLL(15)
+___DEF_SLBL(15,___L15_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R0(___LBL(13))
+   ___JUMPGLOSAFE(___SET_NARGS(1),19,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(16,___L16_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(16,0,0,0)
+   ___SET_R3(___CLO(___R4,1))
+   ___IF(___NOTFALSEP(___UNBOX(___R3)))
+   ___GOTO(___L24_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___END_IF
+   ___GOTO(___L25_bin_3a_jazz_2e_io_2e_literals_23_)
+___DEF_SLBL(17,___L17_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R0(___CLO(___STK(-6),1))
+   ___SETBOX(___R0,___TRU)
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L24_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R1(___GLO_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group)
+   ___POLL(18)
+___DEF_SLBL(18,___L18_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L25_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R4)
+   ___SET_R1(___SYM_jazz_2e_io_2e_Directory_2d_Group)
+   ___ADJFP(8)
+   ___POLL(19)
+___DEF_SLBL(19,___L19_bin_3a_jazz_2e_io_2e_literals_23_)
+   ___SET_R0(___LBL(17))
+   ___JUMPGLOSAFE(___SET_NARGS(1),19,___G_jazz_3a_load_2d_unit)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_io_2e_literals_3a_construct_2d_file
+#undef ___PH_LBL0
+#define ___PH_LBL0 22
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_P_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_P_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_P_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_P_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_P_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_P_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_P_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___DEF_P_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_file)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(0,0,0,0)
+___DEF_GLBL(___L_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R1(___GLO_jazz_2e_io_3a_File)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),17,___G_jazz_3a_class_2d_of)
+___DEF_SLBL(2,___L2_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___SET_R2(___VECTORREF(___GLO_jazz_3a_Class,___FIX(11L)))
+   ___SET_R3(___VECTORREF(___R1,___FIX(11L)))
+   ___IF(___NOT(___FIXGE(___R3,___R2)))
+   ___GOTO(___L9_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___END_IF
+   ___SET_R3(___VECTORREF(___R1,___FIX(4L)))
+   ___SET_R3(___VECTORREF(___R3,___R2))
+   ___IF(___NOT(___EQP(___R3,___GLO_jazz_3a_Class)))
+   ___GOTO(___L9_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___END_IF
+   ___SET_R2(___GLO_jazz_3a_Unspecified_2d_Value)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_io_3a_File,___FIX(10L)))
+   ___SET_R0(___LBL(3))
+   ___JUMPPRM(___SET_NARGS(2),___PRM_make_2d_vector)
+___DEF_SLBL(3,___L3_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___SUBTYPESET(___R1,___FIX(7L)) ___SET_R2(___R1)
+   ___VECTORSET(___R2,___FIX(0L),___GLO_jazz_2e_io_3a_File)
+   ___SET_STK(-5,___R2)
+   ___SET_R1(___R2)
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),18,___G_jazz_3a_initialize_2d_slots)
+___DEF_SLBL(4,___L4_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___SET_R2(___STK(-6))
+   ___SET_R1(___STK(-5))
+   ___SET_R3(___VECTORREF(___GLO_jazz_2e_io_3a_File,___FIX(13L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R0(___LBL(5))
+   ___JUMPGENSAFE(___SET_NARGS(2),___R3)
+___DEF_SLBL(5,___L5_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___SET_R1(___STK(-5))
+   ___POLL(6)
+___DEF_SLBL(6,___L6_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L9_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___SET_R1(___SUB(43))
+   ___SET_R0(___LBL(7))
+   ___JUMPGLOSAFE(___SET_NARGS(1),9,___G_error)
+___DEF_SLBL(7,___L7_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_2e_io_2e_literals_3a_construct_2d_file)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_io_2e_literals_3a_construct_2d_directory
+#undef ___PH_LBL0
+#define ___PH_LBL0 32
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_P_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_P_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_P_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_P_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_P_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_P_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_P_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___DEF_P_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(0,0,0,0)
+___DEF_GLBL(___L_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R1(___GLO_jazz_2e_io_3a_Directory)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),17,___G_jazz_3a_class_2d_of)
+___DEF_SLBL(2,___L2_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___SET_R2(___VECTORREF(___GLO_jazz_3a_Class,___FIX(11L)))
+   ___SET_R3(___VECTORREF(___R1,___FIX(11L)))
+   ___IF(___NOT(___FIXGE(___R3,___R2)))
+   ___GOTO(___L9_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___END_IF
+   ___SET_R3(___VECTORREF(___R1,___FIX(4L)))
+   ___SET_R3(___VECTORREF(___R3,___R2))
+   ___IF(___NOT(___EQP(___R3,___GLO_jazz_3a_Class)))
+   ___GOTO(___L9_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___END_IF
+   ___SET_R2(___GLO_jazz_3a_Unspecified_2d_Value)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_io_3a_Directory,___FIX(10L)))
+   ___SET_R0(___LBL(3))
+   ___JUMPPRM(___SET_NARGS(2),___PRM_make_2d_vector)
+___DEF_SLBL(3,___L3_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___SUBTYPESET(___R1,___FIX(7L)) ___SET_R2(___R1)
+   ___VECTORSET(___R2,___FIX(0L),___GLO_jazz_2e_io_3a_Directory)
+   ___SET_STK(-5,___R2)
+   ___SET_R1(___R2)
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),18,___G_jazz_3a_initialize_2d_slots)
+___DEF_SLBL(4,___L4_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___SET_R2(___STK(-6))
+   ___SET_R1(___STK(-5))
+   ___SET_R3(___VECTORREF(___GLO_jazz_2e_io_3a_Directory,___FIX(13L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R0(___LBL(5))
+   ___JUMPGENSAFE(___SET_NARGS(2),___R3)
+___DEF_SLBL(5,___L5_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___SET_R1(___STK(-5))
+   ___POLL(6)
+___DEF_SLBL(6,___L6_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L9_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___SET_R1(___SUB(65))
+   ___SET_R0(___LBL(7))
+   ___JUMPGLOSAFE(___SET_NARGS(1),9,___G_error)
+___DEF_SLBL(7,___L7_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_2e_io_2e_literals_3a_construct_2d_directory)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_io_2e_literals_3a_construct_2d_path
+#undef ___PH_LBL0
+#define ___PH_LBL0 42
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___DEF_P_HLBL(___L9_jazz_2e_io_2e_literals_3a_construct_2d_path)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(0,0,0,0)
+___DEF_GLBL(___L_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(0),3,___G_jazz_2e_io_2e_Path_3a_Path_3a_autoload)
+___DEF_SLBL(2,___L2_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___SET_STK(-5,___R1)
+   ___SET_R0(___LBL(3))
+   ___JUMPGLOSAFE(___SET_NARGS(1),17,___G_jazz_3a_class_2d_of)
+___DEF_SLBL(3,___L3_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___SET_R2(___VECTORREF(___GLO_jazz_3a_Class,___FIX(11L)))
+   ___SET_R3(___VECTORREF(___R1,___FIX(11L)))
+   ___IF(___NOT(___FIXGE(___R3,___R2)))
+   ___GOTO(___L10_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___END_IF
+   ___SET_R3(___VECTORREF(___R1,___FIX(4L)))
+   ___SET_R3(___VECTORREF(___R3,___R2))
+   ___IF(___NOT(___EQP(___R3,___GLO_jazz_3a_Class)))
+   ___GOTO(___L10_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___END_IF
+   ___SET_R1(___VECTORREF(___STK(-5),___FIX(10L)))
+   ___SET_R2(___GLO_jazz_3a_Unspecified_2d_Value)
+   ___SET_R0(___LBL(4))
+   ___JUMPPRM(___SET_NARGS(2),___PRM_make_2d_vector)
+___DEF_SLBL(4,___L4_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___SUBTYPESET(___R1,___FIX(7L)) ___SET_R2(___R1)
+   ___VECTORSET(___R2,___FIX(0L),___STK(-5))
+   ___SET_STK(-4,___R2)
+   ___SET_R1(___R2)
+   ___SET_R0(___LBL(5))
+   ___JUMPGLOSAFE(___SET_NARGS(1),18,___G_jazz_3a_initialize_2d_slots)
+___DEF_SLBL(5,___L5_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___SET_R2(___STK(-6))
+   ___SET_R1(___STK(-4))
+   ___SET_R3(___VECTORREF(___STK(-5),___FIX(13L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R0(___LBL(6))
+   ___JUMPGENSAFE(___SET_NARGS(2),___R3)
+___DEF_SLBL(6,___L6_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___SET_R1(___STK(-4))
+   ___POLL(7)
+___DEF_SLBL(7,___L7_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L10_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___SET_R1(___SUB(87))
+   ___SET_R0(___LBL(8))
+   ___JUMPGLOSAFE(___SET_NARGS(1),9,___G_error)
+___DEF_SLBL(8,___L8_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___POLL(9)
+___DEF_SLBL(9,___L9_jazz_2e_io_2e_literals_3a_construct_2d_path)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest
+#undef ___PH_LBL0
+#define ___PH_LBL0 53
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___DEF_P_HLBL(___L9_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(0,0,0,0)
+___DEF_GLBL(___L_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(0),2,___G_jazz_2e_io_2e_Manifest_3a_Manifest_3a_autoload)
+___DEF_SLBL(2,___L2_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___SET_STK(-5,___R1)
+   ___SET_R0(___LBL(3))
+   ___JUMPGLOSAFE(___SET_NARGS(1),17,___G_jazz_3a_class_2d_of)
+___DEF_SLBL(3,___L3_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___SET_R2(___VECTORREF(___GLO_jazz_3a_Class,___FIX(11L)))
+   ___SET_R3(___VECTORREF(___R1,___FIX(11L)))
+   ___IF(___NOT(___FIXGE(___R3,___R2)))
+   ___GOTO(___L10_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___END_IF
+   ___SET_R3(___VECTORREF(___R1,___FIX(4L)))
+   ___SET_R3(___VECTORREF(___R3,___R2))
+   ___IF(___NOT(___EQP(___R3,___GLO_jazz_3a_Class)))
+   ___GOTO(___L10_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___END_IF
+   ___SET_R1(___VECTORREF(___STK(-5),___FIX(10L)))
+   ___SET_R2(___GLO_jazz_3a_Unspecified_2d_Value)
+   ___SET_R0(___LBL(4))
+   ___JUMPPRM(___SET_NARGS(2),___PRM_make_2d_vector)
+___DEF_SLBL(4,___L4_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___SUBTYPESET(___R1,___FIX(7L)) ___SET_R2(___R1)
+   ___VECTORSET(___R2,___FIX(0L),___STK(-5))
+   ___SET_STK(-4,___R2)
+   ___SET_R1(___R2)
+   ___SET_R0(___LBL(5))
+   ___JUMPGLOSAFE(___SET_NARGS(1),18,___G_jazz_3a_initialize_2d_slots)
+___DEF_SLBL(5,___L5_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___SET_R2(___STK(-6))
+   ___SET_R1(___STK(-4))
+   ___SET_R3(___VECTORREF(___STK(-5),___FIX(13L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R0(___LBL(6))
+   ___JUMPGENSAFE(___SET_NARGS(2),___R3)
+___DEF_SLBL(6,___L6_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___SET_R1(___STK(-4))
+   ___POLL(7)
+___DEF_SLBL(7,___L7_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L10_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___SET_R1(___SUB(111))
+   ___SET_R0(___LBL(8))
+   ___JUMPGLOSAFE(___SET_NARGS(1),9,___G_error)
+___DEF_SLBL(8,___L8_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___POLL(9)
+___DEF_SLBL(9,___L9_jazz_2e_io_2e_literals_3a_construct_2d_manifest)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group
+#undef ___PH_LBL0
+#define ___PH_LBL0 64
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L1_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L2_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L3_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L4_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L5_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L6_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L7_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L8_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___DEF_P_HLBL(___L9_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(0,0,0,0)
+___DEF_GLBL(___L_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(0),1,___G_jazz_2e_io_2e_Directory_2d_Group_3a_Directory_2d_Group_3a_autoload)
+___DEF_SLBL(2,___L2_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___SET_STK(-5,___R1)
+   ___SET_R0(___LBL(3))
+   ___JUMPGLOSAFE(___SET_NARGS(1),17,___G_jazz_3a_class_2d_of)
+___DEF_SLBL(3,___L3_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___SET_R2(___VECTORREF(___GLO_jazz_3a_Class,___FIX(11L)))
+   ___SET_R3(___VECTORREF(___R1,___FIX(11L)))
+   ___IF(___NOT(___FIXGE(___R3,___R2)))
+   ___GOTO(___L10_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___END_IF
+   ___SET_R3(___VECTORREF(___R1,___FIX(4L)))
+   ___SET_R3(___VECTORREF(___R3,___R2))
+   ___IF(___NOT(___EQP(___R3,___GLO_jazz_3a_Class)))
+   ___GOTO(___L10_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___END_IF
+   ___SET_R1(___VECTORREF(___STK(-5),___FIX(10L)))
+   ___SET_R2(___GLO_jazz_3a_Unspecified_2d_Value)
+   ___SET_R0(___LBL(4))
+   ___JUMPPRM(___SET_NARGS(2),___PRM_make_2d_vector)
+___DEF_SLBL(4,___L4_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___SUBTYPESET(___R1,___FIX(7L)) ___SET_R2(___R1)
+   ___VECTORSET(___R2,___FIX(0L),___STK(-5))
+   ___SET_STK(-4,___R2)
+   ___SET_R1(___R2)
+   ___SET_R0(___LBL(5))
+   ___JUMPGLOSAFE(___SET_NARGS(1),18,___G_jazz_3a_initialize_2d_slots)
+___DEF_SLBL(5,___L5_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___SET_R2(___STK(-6))
+   ___SET_R1(___STK(-4))
+   ___SET_R3(___VECTORREF(___STK(-5),___FIX(13L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R3(___VECTORREF(___R3,___FIX(0L)))
+   ___SET_R0(___LBL(6))
+   ___JUMPGENSAFE(___SET_NARGS(2),___R3)
+___DEF_SLBL(6,___L6_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___SET_R1(___STK(-4))
+   ___POLL(7)
+___DEF_SLBL(7,___L7_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L10_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___SET_R1(___SUB(135))
+   ___SET_R0(___LBL(8))
+   ___JUMPGLOSAFE(___SET_NARGS(1),9,___G_error)
+___DEF_SLBL(8,___L8_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___POLL(9)
+___DEF_SLBL(9,___L9_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+___END_M_SW
+___END_M_COD
+
+___BEGIN_LBL
+ ___DEF_LBL_INTRO(___H_bin_3a_jazz_2e_io_2e_literals_23_,"bin:jazz.io.literals#",___REF_SUB(0),20,0)
+
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_io_2e_literals_23_,0,-1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,2,0,0x3f1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,2,0,0x3f1L))
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_io_2e_literals_23_,0,1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_io_2e_literals_23_,0,1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_io_2e_literals_23_,0,1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_io_2e_literals_23_,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,0,___REF_SUB(44),9,0)
+,___DEF_LBL_PROC(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,___IFD(___RETI,8,0,0x3f01L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_file,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,0,___REF_SUB(66),9,0)
+,___DEF_LBL_PROC(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,___IFD(___RETI,8,0,0x3f01L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,0,___REF_SUB(88),10,0)
+,___DEF_LBL_PROC(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETI,8,0,0x3f01L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_path,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,0,___REF_SUB(112),10,0)
+,___DEF_LBL_PROC(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETI,8,0,0x3f01L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_manifest,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,0,___REF_SUB(136),10,0)
+,___DEF_LBL_PROC(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETI,8,0,0x3f01L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,___IFD(___RETI,8,0,0x3f07L))
+___END_LBL
+
+___BEGIN_MOD_PRM
+___DEF_MOD_PRM(0,___G_bin_3a_jazz_2e_io_2e_literals_23_,1)
+___END_MOD_PRM
+
+___BEGIN_MOD_C_INIT
+___END_MOD_C_INIT
+
+___BEGIN_MOD_GLO
+___DEF_MOD_GLO(0,___G_bin_3a_jazz_2e_io_2e_literals_23_,1)
+___END_MOD_GLO
+
+___BEGIN_MOD_SYM_KEY
+___DEF_MOD_SYM(0,___S_bin_3a_jazz_2e_io_2e_literals,"bin:jazz.io.literals")
+___DEF_MOD_SYM(1,___S_construct_2d_directory,"construct-directory")
+___DEF_MOD_SYM(2,___S_construct_2d_directory_2d_group,"construct-directory-group")
+___DEF_MOD_SYM(3,___S_construct_2d_file,"construct-file")
+___DEF_MOD_SYM(4,___S_construct_2d_manifest,"construct-manifest")
+___DEF_MOD_SYM(5,___S_construct_2d_path,"construct-path")
+___DEF_MOD_SYM(6,___S_foundation_2e_dialect,"foundation.dialect")
+___DEF_MOD_SYM(7,___S_jazz,"jazz")
+___DEF_MOD_SYM(8,___S_jazz_2e_io,"jazz.io")
+___DEF_MOD_SYM(9,___S_jazz_2e_io_2e_Directory_2d_Group,"jazz.io.Directory-Group")
+___DEF_MOD_SYM(10,___S_jazz_2e_io_2e_Manifest,"jazz.io.Manifest")
+___DEF_MOD_SYM(11,___S_jazz_2e_io_2e_Path,"jazz.io.Path")
+___DEF_MOD_SYM(12,___S_jazz_2e_io_2e_literals,"jazz.io.literals")
+___DEF_MOD_SYM(13,___S_jazz_2e_io_2e_literals_3a_construct_2d_directory,"jazz.io.literals:construct-directory")
+
+___DEF_MOD_SYM(14,___S_jazz_2e_io_2e_literals_3a_construct_2d_directory_2d_group,"jazz.io.literals:construct-directory-group")
+
+___DEF_MOD_SYM(15,___S_jazz_2e_io_2e_literals_3a_construct_2d_file,"jazz.io.literals:construct-file")
+
+___DEF_MOD_SYM(16,___S_jazz_2e_io_2e_literals_3a_construct_2d_manifest,"jazz.io.literals:construct-manifest")
+
+___DEF_MOD_SYM(17,___S_jazz_2e_io_2e_literals_3a_construct_2d_path,"jazz.io.literals:construct-path")
+
+___DEF_MOD_SYM(18,___S_loaded_3f_,"loaded?")
+___DEF_MOD_SYM(19,___S_obj_5e_0,"obj^0")
+___DEF_MOD_SYM(20,___S_obj_5e_14,"obj^14")
+___DEF_MOD_SYM(21,___S_obj_5e_19,"obj^19")
+___DEF_MOD_SYM(22,___S_obj_5e_4,"obj^4")
+___DEF_MOD_SYM(23,___S_obj_5e_9,"obj^9")
+___DEF_MOD_SYM(24,___S_path,"path")
+___DEF_MOD_SYM(25,___S_public,"public")
+___DEF_MOD_SYM(26,___S_rest,"rest")
+___DEF_MOD_SYM(27,___S_val_5e_13,"val^13")
+___DEF_MOD_SYM(28,___S_val_5e_18,"val^18")
+___DEF_MOD_SYM(29,___S_val_5e_8,"val^8")
+___END_MOD_SYM_KEY
+
+#endif

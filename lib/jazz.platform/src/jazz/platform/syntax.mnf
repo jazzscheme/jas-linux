@@ -1,0 +1,5 @@
+(manifest jazz.platform.syntax
+
+  (version 208070)
+  (digest "b77fb34a55185e8c3321588a01d966c3559abe25")
+  (references (scheme.language.runtime car cdr not string->symbol string-append symbol->string)))

@@ -1,0 +1,7 @@
+(manifest jazz.language.syntax.bind
+
+  (version 208070)
+  (digest "5b8c3cca492b68f29c535caa53524e7f6126d7fb")
+  (references (foundation.language.runtime desourcify generate-symbol source-code sourcify-deep-if)
+              (jazz.language.runtime.kernel binding-specifier with-uniqueness)
+              (scheme.language.runtime cadr car cddr cdr cons length list map null? pair? reverse symbol?)))

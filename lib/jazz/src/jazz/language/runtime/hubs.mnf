@@ -1,0 +1,5 @@
+(manifest jazz.language.runtime.hubs
+
+  (version 208070)
+  (digest "49b162e9d14b9c18abf0733798b9e428116d7dc0")
+  (references))

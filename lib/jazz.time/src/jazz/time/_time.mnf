@@ -1,0 +1,15 @@
+(manifest jazz.time
+
+  (version 208070)
+  (digest "6f15a6af6db2834c53f62e0fdd013a8885009633")
+  (references (gambit.language.runtime cpu-time real-time)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional ->string /= Class Object-Class (Sequence sequence-last) category-name compose concatenate find-if last request-service seconds->milliseconds sleep)
+              (jazz.language.runtime.geometry Range)
+              (jazz.language.runtime.kernel class-of not-null? unimplemented unspecified)
+              (jazz.language.runtime.object Object (Object compare-object) (Object initialize) (Object print))
+              (jazz.language.syntax.assertion assert)
+              (jazz.language.syntax.increase increase!)
+              (scheme.language.runtime * + - / < <= = apply car cdr cons eq? exact->inexact floor inexact->exact length list map not null? number? quotient remainder reverse string->number string-length string=? string? substring symbol?)
+              (time add-duration add-duration! copy-time current-date current-date current-julian-day current-modified-julian-day current-time current-time date->julian-day date->modified-julian-day date->string date->string date->time-monotonic date->time-tai date->time-utc date->time-utc date-day date-day date-hour date-hour date-minute date-minute date-month date-month date-nanosecond date-nanosecond date-second date-second date-week-day date-week-number date-year date-year date-year-day date-zone-offset date-zone-offset date? date? julian-day->date julian-day->time-monotonic julian-day->time-tai julian-day->time-utc local-timezone local-timezone-set! make-date make-date make-time make-time modified-julian-day->date modified-julian-day->time-monotonic modified-julian-day->time-tai modified-julian-day->time-utc set-time-nanosecond! set-time-second! set-time-type! string->date string->date subtract-duration subtract-duration! system-timezone system-timezone system-timezone-set! time-difference time-difference! time-duration time-monotonic time-monotonic->date time-monotonic->julian-day time-monotonic->modified-julian-day time-monotonic->time-tai time-monotonic->time-tai! time-monotonic->time-utc time-monotonic->time-utc! time-nanosecond time-nanosecond time-process time-resolution time-second time-second time-tai time-tai->date time-tai->julian-day time-tai->modified-julian-day time-tai->time-monotonic time-tai->time-monotonic! time-tai->time-utc time-tai->time-utc! time-thread time-type time-type time-utc time-utc time-utc->date time-utc->date time-utc->julian-day time-utc->modified-julian-day time-utc->time-monotonic time-utc->time-monotonic! time-utc->time-tai time-utc->time-tai! time<=? time<? time<? time=? time=? time>=? time>? time? time? tm-current-time)))

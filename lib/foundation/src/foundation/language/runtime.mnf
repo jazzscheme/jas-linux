@@ -1,0 +1,5 @@
+(manifest foundation.language.runtime
+
+  (version 208070)
+  (digest "59b27ffb120e750b515d5b71ba8c32a2dc612434")
+  (references))

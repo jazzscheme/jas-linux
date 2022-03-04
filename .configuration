@@ -1,0 +1,3 @@
+(configuration 208070
+
+  (name: #f system: gambit platform: linux compiler: c processor: #f windowing: x11 safety: develop optimize?: #f debug-environments?: #t debug-location?: #t debug-source?: #f debug-foreign?: #f track-memory?: #f mutable-bindings?: #f kernel-interpret?: #f destination: "binaries/prod" features: (prod) properties: (binaries?: #t)))

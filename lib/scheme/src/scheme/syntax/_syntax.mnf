@@ -1,0 +1,8 @@
+(manifest scheme.syntax
+
+  (version 208070)
+  (digest "fe60764bbe445627febb820e636693a108ef7adb")
+  (references (foundation.language.runtime compose-reference sourcify-deep-if)
+              (scheme.core.kernel current-declaration get-declaration-path get-declaration-toplevel)
+              (scheme.language.runtime apply car)
+              (scheme.syntax-rules syntax-rules)))

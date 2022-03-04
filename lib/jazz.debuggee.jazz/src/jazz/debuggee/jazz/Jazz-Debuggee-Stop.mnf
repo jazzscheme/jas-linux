@@ -1,0 +1,15 @@
+(manifest jazz.debuggee.jazz.Jazz-Debuggee-Stop
+
+  (version 208070)
+  (digest "ed4ec3524c8418501effa008318909e8f168950b")
+  (references (foundation.language.runtime locat->container/line/col)
+              (jazz.debuggee.base Debuggee-Stop (Debuggee-Stop get-detail) (Debuggee-Stop get-frames) (Debuggee-Stop get-id) (Debuggee-Stop get-kind) (Debuggee-Stop get-location) (Debuggee-Stop get-reason) (Debuggee-Stop get-restarts))
+              (jazz.debuggee.jazz.Jazz-Debuggee-Frame Jazz-Debuggee-Frame)
+              (jazz.debuggee.stub Debuggee-Frame-Local-Proxy)
+              (jazz.language.runtime.debug get-continuation-name)
+              (jazz.language.runtime.functional Object-Class (Sequence sequence-element) find-if first naturals third)
+              (jazz.language.runtime.kernel boolean continuation-parent exception-location get-continuation-stack hidden-frame? new object->serial)
+              (jazz.language.runtime.object (Object initialize))
+              (jazz.language.syntax.bind bind)
+              (jazz.presence require-presence)
+              (scheme.language.runtime = car cdr length list map not)))

@@ -1,0 +1,16 @@
+(manifest jazz.event
+
+  (version 208070)
+  (digest "d214738106cf1527ea96cb34166fd36b4d44c823")
+  (references (gambit.language.runtime current-thread)
+              (jazz.component.hubs set-property)
+              (jazz.event.Event Event Event)
+              (jazz.event.Pulse Pulse)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.functional for-each-property primordial-thread primordial-thread? remove! thread-block thread-call thread-execute thread-post thread-write write-delayed-event)
+              (jazz.language.runtime.kernel new not-null? unspecified)
+              (jazz.language.runtime.object copy)
+              (jazz.language.syntax.assertion assert)
+              (jazz.language.syntax.macros when)
+              (jazz.platform modifiers-mask parse-event-modifiers)
+              (scheme.language.runtime append apply eq? for-each list not)))

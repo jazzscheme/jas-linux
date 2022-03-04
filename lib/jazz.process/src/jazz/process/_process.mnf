@@ -1,0 +1,10 @@
+(manifest jazz.process
+
+  (version 208070)
+  (digest "d445b782c003a15e6ea979fb004326b12fb330bb")
+  (references (gambit.language.runtime make-parameter)
+              (jazz.process.Command-Line Command-Line)
+              (jazz.process.Process Process)
+              (jazz.process.Process-Preferences Process-Preferences)
+              (jazz.process.Quit-Listener Quit-Listener)
+              (jazz.process.Save-Environment-Listener Save-Environment-Listener)))

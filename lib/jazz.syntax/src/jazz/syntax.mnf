@@ -1,0 +1,13 @@
+(manifest jazz.syntax
+
+  (version 208070)
+  (digest "c919ad1374da8ef1328b98840ee027cd4464de36")
+  (references (foundation.language.runtime generate-symbol source-code sourcify-deep-if strip-syntactic-closures)
+              (gambit.language.runtime make-parameter)
+              (jazz.dialect.classes.foundation Any Expression (Expression emit-expression) (Expression initialize))
+              (jazz.language.runtime.functional Object-Class)
+              (jazz.language.runtime.kernel compose-identifier new new-code sourcified-form)
+              (jazz.language.runtime.object (Object tree-fold))
+              (jazz.language.syntax.bind bind)
+              (scheme.core.kernel emit emit-one-expression walk)
+              (scheme.language.runtime append apply caddr cadr car cddr cdr list map null? pair? string->symbol string-append symbol->string)))

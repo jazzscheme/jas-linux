@@ -1,0 +1,13 @@
+(manifest jazz.presence.transmission
+
+  (version 208070)
+  (digest "9940f3767b30abb4ab1c65392117e5f0d1d2704d")
+  (references (gambit.language.runtime force-output os-exception? read-u8 write-u8)
+              (jazz.language.runtime.exception Exception (Exception present-exception) (Exception print) throw)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional 32-bit-integer->bytes Object-Class bytes->32-bit-integer code-string->32-bit-integer nu=? read-binary write-binary)
+              (jazz.language.runtime.kernel is? new object?)
+              (jazz.language.runtime.object (Object initialize) print-unreadable)
+              (jazz.language.syntax.macros unless)
+              (jazz.version Version bytes->version construct-version version->bytes)
+              (scheme.language.runtime = eof-object? values)))

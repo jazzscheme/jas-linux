@@ -1,0 +1,10 @@
+(manifest jazz.platform.types
+
+  (version 208070)
+  (digest "8190309660f2c67e06b5bbfc8c324759e17d434a")
+  (references (gambit.language.runtime make-u8vector u32vector-length u32vector-ref u8vector-length u8vector-ref u8vector-set!)
+              (jazz.foreign.syntax c-external c-function c-include)
+              (jazz.language.runtime.object allocated freed)
+              (jazz.language.syntax.macros when)
+              (jazz.platform.types-syntax alloc-lambda define-cast-lambda define-cast-lambda-ptr define-pointer-to-pointer define-pointer-to-type free-lambda get-lambda get-lambda-pt ref-lambda ref-lambda-pt set-lambda size-of)
+              (scheme.language.runtime + < =)))

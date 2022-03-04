@@ -1,0 +1,12 @@
+(manifest jazz.language.syntax.tie
+
+  (version 208070)
+  (digest "4e0517ba356f2598c3256485d40a9de0ab37c266")
+  (references (gambit.language.runtime call-with-input-string get-output-string open-output-string)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional List-Factory (List-Factory get-output) memq? read-delimited)
+              (jazz.language.runtime.hubs get-output put)
+              (jazz.language.runtime.kernel new)
+              (jazz.language.syntax.bind bind)
+              (jazz.language.syntax.macros unless when)
+              (scheme.language.runtime apply car cdr cons display eof-object? not null? read-char string-append symbol?)))

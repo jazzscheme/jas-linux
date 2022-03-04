@@ -1,0 +1,11 @@
+(manifest jazz.process.stub
+
+  (version 208070)
+  (digest "d517563dacc052d12cf42b70723dbcb1e6bcd8d6")
+  (references (jazz.language.runtime.functional Object-Class)
+              (jazz.presence call-remote)
+              (jazz.presence.remotable.Local-Proxy Local-Proxy (Local-Proxy object))
+              (jazz.presence.remotable.Remotable-Stub Remotable-Stub)
+              (jazz.presence.remotable.Remote-Proxy Remote-Proxy)
+              (jazz.presence.remotable.Stub-Interface Stub-Interface (Stub-Interface local-class) (Stub-Interface remote-class))
+              (jazz.presence.syntax remotable-stub)))

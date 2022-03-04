@@ -1,0 +1,11 @@
+(manifest jazz.presence.remotable.Remote-Listener
+
+  (version 208070)
+  (digest "742bf6d5fc84dbae4396fb1cd6fe43cfe281dae7")
+  (references (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional Object-Class)
+              (jazz.language.runtime.kernel jazz-readtable)
+              (jazz.language.runtime.object (Object print) print-unreadable)
+              (jazz.network.host.TCP-Server TCP-Server (TCP-Server accept-connection) (TCP-Server connection-name) (TCP-Server connection-readtable) (TCP-Server initialize) (TCP-Server server-name) (TCP-Server server-title))
+              (jazz.presence accept-remote get-purpose)
+              (scheme.language.runtime apply)))

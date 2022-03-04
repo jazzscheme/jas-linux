@@ -1,0 +1,5 @@
+(manifest foundation
+
+  (version 208070)
+  (digest "ef5c5c0b9a92171c2069d048edf5773778a16bc4")
+  (references (foundation.language.runtime close-digest compose-reference cond-expand-features conditional-satisfied? container->path debug-core? debug-user? desourcify desourcify-all digest-file digest-string digest-substring digest-subu8vector digest-u8vector digest-update-subu8vector er-macro-transformer extract-location feature-satisfied? filepos-col filepos-line generate-symbol identifier=? identifier? iterate-table locat->container/line/col locat->path/container/start/end& locat-container locat-end locat-position locat-start make-syntactic-closure open-digest position->filepos present-source process-conditional rsc-macro-transformer sc-macro-transformer simplify-begin source-code source-locat source? sourcify sourcify-deep sourcify-deep-if sourcify-if strip-source-info strip-syntactic-closures syntactic-closure-form syntactic-closure? text-source? unwrap-syntactic-closure valid-conditional-requirement)))

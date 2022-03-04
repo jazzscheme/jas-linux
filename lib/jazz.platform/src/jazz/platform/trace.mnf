@@ -1,0 +1,8 @@
+(manifest jazz.platform.trace
+
+  (version 208070)
+  (digest "cc3d229c3d1ed8b0a33bdd92de1fe5fba87e3d79")
+  (references (gambit.language.runtime u8vector-length u8vector?)
+              (jazz.language.runtime.kernel terminal)
+              (jazz.syntax define-setting)
+              (scheme.language.runtime apply car list map null?)))

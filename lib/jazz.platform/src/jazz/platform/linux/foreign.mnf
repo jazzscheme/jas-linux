@@ -1,0 +1,5 @@
+(manifest jazz.platform.linux.foreign
+
+  (version 208070)
+  (digest "23c620bb810dfe419750f09f215a8e4da1dd2b85")
+  (references))

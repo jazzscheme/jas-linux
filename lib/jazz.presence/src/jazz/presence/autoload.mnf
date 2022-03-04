@@ -1,0 +1,13 @@
+(manifest jazz.presence.autoload
+
+  (version 208070)
+  (digest "9d9642886de69b1fa309cb42fd72496b7aaa5c38")
+  (references (jazz.presence.register.Register Register)
+              (jazz.presence.register.stub Register-Stub)
+              (jazz.presence.remotable.IOR IOR)
+              (jazz.presence.remotable.Local-Proxy Local-Proxy)
+              (jazz.presence.remotable.Proxy Proxy)
+              (jazz.presence.remotable.Remotable-Stub Remotable-Stub)
+              (jazz.presence.remotable.Remote-Listener Remote-Listener)
+              (jazz.presence.remotable.Remote-Proxy Remote-Proxy)
+              (jazz.presence.remotable.Stub-Interface Stub-Interface)))

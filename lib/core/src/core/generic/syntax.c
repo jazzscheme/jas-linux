@@ -1,0 +1,6465 @@
+#ifdef ___LINKER_INFO
+; File: "syntax.c", produced by Gambit v4.8.9
+(
+408009
+(C)
+"bin:core.generic.syntax"
+(("bin:core.generic.syntax"))
+(
+"%%car"
+"%%list"
+"%%not"
+"%%null?"
+"%%specific-dispatch"
+"%%when"
+"Generic"
+"Specific"
+"ancestor-specifics"
+"apply"
+"begin"
+"bin:core.generic.syntax"
+"body"
+"class/call"
+"core.generic.syntax"
+"define"
+"descendant-specifics"
+"dynamic-signature"
+"dynamic-signature-strings"
+"extra-parameters"
+"formal-signature"
+"function"
+"generic-locator"
+"generic-method-locator"
+"generic-string"
+"gensym-generic"
+"gensym-lambda"
+"gensym-rest"
+"gensym-specific"
+"if"
+"implementation"
+"jazz:Generic"
+"jazz:Object"
+"jazz:Object-Class"
+"jazz:Specific"
+"jazz:allocate-generic"
+"jazz:allocate-specific"
+"jazz:class-of"
+"jazz:define-generic"
+"jazz:define-specific"
+"jazz:dispatch-from-root"
+"jazz:error"
+"jazz:generic-reset"
+"jazz:get-generic-locator"
+"jazz:get-generic-name"
+"jazz:get-generic-pending-specifics"
+"jazz:get-generic-root-specific"
+"jazz:get-specific-ancestor-specifics"
+"jazz:get-specific-descendant-specifics"
+"jazz:get-specific-dynamic-signature"
+"jazz:get-specific-implementation"
+"jazz:global-bound?"
+"jazz:global-ref"
+"jazz:new-generic"
+"jazz:new-specific"
+"jazz:process-pending-specifics"
+"jazz:register-specific"
+"jazz:set-generic-pending-specifics"
+"jazz:set-generic-root-specific"
+"jazz:set-specific-ancestor-specifics"
+"jazz:set-specific-descendant-specifics"
+"jazz:set-specific-dynamic-signature"
+"jazz:set-specific-implementation"
+"lambda"
+"let"
+"let*"
+"locator"
+"mandatory-parameters"
+"modifier"
+"name"
+"nextmethod"
+"parameter"
+"parameters"
+"pending-specifics"
+"quote"
+"rest"
+"result"
+"root"
+"root-specific"
+"root?"
+"signature"
+"specific-implementation-locator"
+"temp.1"
+"temp.3"
+"temp.8"
+"type"
+"x.4"
+"x.9"
+)
+(
+"test"
+)
+(
+"bin:core.generic.syntax#"
+"jazz:Generic"
+"jazz:Specific"
+"jazz:dynamic-parameter-name"
+"jazz:dynamic-parameter-names"
+"jazz:dynamic-parameter-type"
+"jazz:dynamic-parameter-types"
+"jazz:dynamic-parameter?"
+"jazz:expand-define-generic"
+"jazz:expand-define-specific"
+"jazz:generic-object-locator"
+"jazz:generic-parameters"
+"jazz:implementation-locator"
+"jazz:specific-parameters"
+)
+(
+"jazz:Generic!core-level"
+"jazz:Specific!core-level"
+"jazz:allocate-generic"
+"jazz:allocate-specific"
+"jazz:get-generic-locator"
+"jazz:get-generic-name"
+"jazz:get-generic-pending-specifics"
+"jazz:get-generic-root-specific"
+"jazz:get-specific-ancestor-specifics"
+"jazz:get-specific-descendant-specifics"
+"jazz:get-specific-dynamic-signature"
+"jazz:get-specific-implementation"
+"jazz:set-generic-pending-specifics"
+"jazz:set-generic-root-specific"
+"jazz:set-specific-ancestor-specifics"
+"jazz:set-specific-descendant-specifics"
+"jazz:set-specific-dynamic-signature"
+"jazz:set-specific-implementation"
+)
+(
+"##apply"
+"##call-with-values"
+"##interaction-cte"
+"##make-macro-descr"
+"##quasi-append"
+"##string->symbol"
+"##string-append"
+"##symbol->string"
+"##table-set!"
+"##top-cte-add-macro!"
+"eq?"
+"jazz:Object"
+"jazz:Object-Class"
+"jazz:add-slot"
+"jazz:class-info"
+"jazz:composite-identifier?"
+"jazz:generate-symbol"
+"jazz:join-strings"
+"jazz:make-class-info"
+"jazz:new-core-class"
+"jazz:register-macro"
+"jazz:reverse!"
+"jazz:set-core-class"
+"jazz:specifier->name"
+"jazz:specifier?"
+"make-table"
+)
+ ()
+)
+#else
+#define ___VERSION 408009
+#define ___MODULE_NAME "bin:core.generic.syntax"
+#define ___LINKER_ID ___LNK_bin_3a_core_2e_generic_2e_syntax
+#define ___MH_PROC ___H_bin_3a_core_2e_generic_2e_syntax
+#define ___SCRIPT_LINE 0
+#define ___SYMCOUNT 88
+#define ___KEYCOUNT 1
+#define ___GLOCOUNT 58
+#define ___SUPCOUNT 32
+#define ___CNSCOUNT 84
+#define ___SUBCOUNT 482
+#define ___LBLCOUNT 222
+#define ___OFDCOUNT 15
+#define ___MODDESCR ___REF_SUB(481)
+#include "gambit.h"
+
+___NEED_SYM(___S__25__25_car)
+___NEED_SYM(___S__25__25_list)
+___NEED_SYM(___S__25__25_not)
+___NEED_SYM(___S__25__25_null_3f_)
+___NEED_SYM(___S__25__25_specific_2d_dispatch)
+___NEED_SYM(___S__25__25_when)
+___NEED_SYM(___S_Generic)
+___NEED_SYM(___S_Specific)
+___NEED_SYM(___S_ancestor_2d_specifics)
+___NEED_SYM(___S_apply)
+___NEED_SYM(___S_begin)
+___NEED_SYM(___S_bin_3a_core_2e_generic_2e_syntax)
+___NEED_SYM(___S_body)
+___NEED_SYM(___S_class_2f_call)
+___NEED_SYM(___S_core_2e_generic_2e_syntax)
+___NEED_SYM(___S_define)
+___NEED_SYM(___S_descendant_2d_specifics)
+___NEED_SYM(___S_dynamic_2d_signature)
+___NEED_SYM(___S_dynamic_2d_signature_2d_strings)
+___NEED_SYM(___S_extra_2d_parameters)
+___NEED_SYM(___S_formal_2d_signature)
+___NEED_SYM(___S_function)
+___NEED_SYM(___S_generic_2d_locator)
+___NEED_SYM(___S_generic_2d_method_2d_locator)
+___NEED_SYM(___S_generic_2d_string)
+___NEED_SYM(___S_gensym_2d_generic)
+___NEED_SYM(___S_gensym_2d_lambda)
+___NEED_SYM(___S_gensym_2d_rest)
+___NEED_SYM(___S_gensym_2d_specific)
+___NEED_SYM(___S_if)
+___NEED_SYM(___S_implementation)
+___NEED_SYM(___S_jazz_3a_Generic)
+___NEED_SYM(___S_jazz_3a_Object)
+___NEED_SYM(___S_jazz_3a_Object_2d_Class)
+___NEED_SYM(___S_jazz_3a_Specific)
+___NEED_SYM(___S_jazz_3a_allocate_2d_generic)
+___NEED_SYM(___S_jazz_3a_allocate_2d_specific)
+___NEED_SYM(___S_jazz_3a_class_2d_of)
+___NEED_SYM(___S_jazz_3a_define_2d_generic)
+___NEED_SYM(___S_jazz_3a_define_2d_specific)
+___NEED_SYM(___S_jazz_3a_dispatch_2d_from_2d_root)
+___NEED_SYM(___S_jazz_3a_error)
+___NEED_SYM(___S_jazz_3a_generic_2d_reset)
+___NEED_SYM(___S_jazz_3a_get_2d_generic_2d_locator)
+___NEED_SYM(___S_jazz_3a_get_2d_generic_2d_name)
+___NEED_SYM(___S_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+___NEED_SYM(___S_jazz_3a_get_2d_generic_2d_root_2d_specific)
+___NEED_SYM(___S_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+___NEED_SYM(___S_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+___NEED_SYM(___S_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+___NEED_SYM(___S_jazz_3a_get_2d_specific_2d_implementation)
+___NEED_SYM(___S_jazz_3a_global_2d_bound_3f_)
+___NEED_SYM(___S_jazz_3a_global_2d_ref)
+___NEED_SYM(___S_jazz_3a_new_2d_generic)
+___NEED_SYM(___S_jazz_3a_new_2d_specific)
+___NEED_SYM(___S_jazz_3a_process_2d_pending_2d_specifics)
+___NEED_SYM(___S_jazz_3a_register_2d_specific)
+___NEED_SYM(___S_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+___NEED_SYM(___S_jazz_3a_set_2d_generic_2d_root_2d_specific)
+___NEED_SYM(___S_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+___NEED_SYM(___S_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+___NEED_SYM(___S_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+___NEED_SYM(___S_jazz_3a_set_2d_specific_2d_implementation)
+___NEED_SYM(___S_lambda)
+___NEED_SYM(___S_let)
+___NEED_SYM(___S_let_2a_)
+___NEED_SYM(___S_locator)
+___NEED_SYM(___S_mandatory_2d_parameters)
+___NEED_SYM(___S_modifier)
+___NEED_SYM(___S_name)
+___NEED_SYM(___S_nextmethod)
+___NEED_SYM(___S_parameter)
+___NEED_SYM(___S_parameters)
+___NEED_SYM(___S_pending_2d_specifics)
+___NEED_SYM(___S_quote)
+___NEED_SYM(___S_rest)
+___NEED_SYM(___S_result)
+___NEED_SYM(___S_root)
+___NEED_SYM(___S_root_2d_specific)
+___NEED_SYM(___S_root_3f_)
+___NEED_SYM(___S_signature)
+___NEED_SYM(___S_specific_2d_implementation_2d_locator)
+___NEED_SYM(___S_temp_2e_1)
+___NEED_SYM(___S_temp_2e_3)
+___NEED_SYM(___S_temp_2e_8)
+___NEED_SYM(___S_type)
+___NEED_SYM(___S_x_2e_4)
+___NEED_SYM(___S_x_2e_9)
+
+___NEED_KEY(___K_test)
+
+___NEED_GLO(___G__23__23_apply)
+___NEED_GLO(___G__23__23_call_2d_with_2d_values)
+___NEED_GLO(___G__23__23_interaction_2d_cte)
+___NEED_GLO(___G__23__23_make_2d_macro_2d_descr)
+___NEED_GLO(___G__23__23_quasi_2d_append)
+___NEED_GLO(___G__23__23_string_2d__3e_symbol)
+___NEED_GLO(___G__23__23_string_2d_append)
+___NEED_GLO(___G__23__23_symbol_2d__3e_string)
+___NEED_GLO(___G__23__23_table_2d_set_21_)
+___NEED_GLO(___G__23__23_top_2d_cte_2d_add_2d_macro_21_)
+___NEED_GLO(___G_bin_3a_core_2e_generic_2e_syntax_23_)
+___NEED_GLO(___G_eq_3f_)
+___NEED_GLO(___G_jazz_3a_Generic)
+___NEED_GLO(___G_jazz_3a_Generic_21_core_2d_level)
+___NEED_GLO(___G_jazz_3a_Object)
+___NEED_GLO(___G_jazz_3a_Object_2d_Class)
+___NEED_GLO(___G_jazz_3a_Specific)
+___NEED_GLO(___G_jazz_3a_Specific_21_core_2d_level)
+___NEED_GLO(___G_jazz_3a_add_2d_slot)
+___NEED_GLO(___G_jazz_3a_allocate_2d_generic)
+___NEED_GLO(___G_jazz_3a_allocate_2d_specific)
+___NEED_GLO(___G_jazz_3a_class_2d_info)
+___NEED_GLO(___G_jazz_3a_composite_2d_identifier_3f_)
+___NEED_GLO(___G_jazz_3a_dynamic_2d_parameter_2d_name)
+___NEED_GLO(___G_jazz_3a_dynamic_2d_parameter_2d_names)
+___NEED_GLO(___G_jazz_3a_dynamic_2d_parameter_2d_type)
+___NEED_GLO(___G_jazz_3a_dynamic_2d_parameter_2d_types)
+___NEED_GLO(___G_jazz_3a_dynamic_2d_parameter_3f_)
+___NEED_GLO(___G_jazz_3a_expand_2d_define_2d_generic)
+___NEED_GLO(___G_jazz_3a_expand_2d_define_2d_specific)
+___NEED_GLO(___G_jazz_3a_generate_2d_symbol)
+___NEED_GLO(___G_jazz_3a_generic_2d_object_2d_locator)
+___NEED_GLO(___G_jazz_3a_generic_2d_parameters)
+___NEED_GLO(___G_jazz_3a_get_2d_generic_2d_locator)
+___NEED_GLO(___G_jazz_3a_get_2d_generic_2d_name)
+___NEED_GLO(___G_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+___NEED_GLO(___G_jazz_3a_get_2d_generic_2d_root_2d_specific)
+___NEED_GLO(___G_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+___NEED_GLO(___G_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+___NEED_GLO(___G_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+___NEED_GLO(___G_jazz_3a_get_2d_specific_2d_implementation)
+___NEED_GLO(___G_jazz_3a_implementation_2d_locator)
+___NEED_GLO(___G_jazz_3a_join_2d_strings)
+___NEED_GLO(___G_jazz_3a_make_2d_class_2d_info)
+___NEED_GLO(___G_jazz_3a_new_2d_core_2d_class)
+___NEED_GLO(___G_jazz_3a_register_2d_macro)
+___NEED_GLO(___G_jazz_3a_reverse_21_)
+___NEED_GLO(___G_jazz_3a_set_2d_core_2d_class)
+___NEED_GLO(___G_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+___NEED_GLO(___G_jazz_3a_set_2d_generic_2d_root_2d_specific)
+___NEED_GLO(___G_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+___NEED_GLO(___G_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+___NEED_GLO(___G_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+___NEED_GLO(___G_jazz_3a_set_2d_specific_2d_implementation)
+___NEED_GLO(___G_jazz_3a_specific_2d_parameters)
+___NEED_GLO(___G_jazz_3a_specifier_2d__3e_name)
+___NEED_GLO(___G_jazz_3a_specifier_3f_)
+___NEED_GLO(___G_make_2d_table)
+
+___BEGIN_SYM
+___DEF_SYM(0,___S__25__25_car,"%%car")
+___DEF_SYM(1,___S__25__25_list,"%%list")
+___DEF_SYM(2,___S__25__25_not,"%%not")
+___DEF_SYM(3,___S__25__25_null_3f_,"%%null?")
+___DEF_SYM(4,___S__25__25_specific_2d_dispatch,"%%specific-dispatch")
+___DEF_SYM(5,___S__25__25_when,"%%when")
+___DEF_SYM(6,___S_Generic,"Generic")
+___DEF_SYM(7,___S_Specific,"Specific")
+___DEF_SYM(8,___S_ancestor_2d_specifics,"ancestor-specifics")
+___DEF_SYM(9,___S_apply,"apply")
+___DEF_SYM(10,___S_begin,"begin")
+___DEF_SYM(11,___S_bin_3a_core_2e_generic_2e_syntax,"bin:core.generic.syntax")
+___DEF_SYM(12,___S_body,"body")
+___DEF_SYM(13,___S_class_2f_call,"class/call")
+___DEF_SYM(14,___S_core_2e_generic_2e_syntax,"core.generic.syntax")
+___DEF_SYM(15,___S_define,"define")
+___DEF_SYM(16,___S_descendant_2d_specifics,"descendant-specifics")
+___DEF_SYM(17,___S_dynamic_2d_signature,"dynamic-signature")
+___DEF_SYM(18,___S_dynamic_2d_signature_2d_strings,"dynamic-signature-strings")
+___DEF_SYM(19,___S_extra_2d_parameters,"extra-parameters")
+___DEF_SYM(20,___S_formal_2d_signature,"formal-signature")
+___DEF_SYM(21,___S_function,"function")
+___DEF_SYM(22,___S_generic_2d_locator,"generic-locator")
+___DEF_SYM(23,___S_generic_2d_method_2d_locator,"generic-method-locator")
+___DEF_SYM(24,___S_generic_2d_string,"generic-string")
+___DEF_SYM(25,___S_gensym_2d_generic,"gensym-generic")
+___DEF_SYM(26,___S_gensym_2d_lambda,"gensym-lambda")
+___DEF_SYM(27,___S_gensym_2d_rest,"gensym-rest")
+___DEF_SYM(28,___S_gensym_2d_specific,"gensym-specific")
+___DEF_SYM(29,___S_if,"if")
+___DEF_SYM(30,___S_implementation,"implementation")
+___DEF_SYM(31,___S_jazz_3a_Generic,"jazz:Generic")
+___DEF_SYM(32,___S_jazz_3a_Object,"jazz:Object")
+___DEF_SYM(33,___S_jazz_3a_Object_2d_Class,"jazz:Object-Class")
+___DEF_SYM(34,___S_jazz_3a_Specific,"jazz:Specific")
+___DEF_SYM(35,___S_jazz_3a_allocate_2d_generic,"jazz:allocate-generic")
+___DEF_SYM(36,___S_jazz_3a_allocate_2d_specific,"jazz:allocate-specific")
+___DEF_SYM(37,___S_jazz_3a_class_2d_of,"jazz:class-of")
+___DEF_SYM(38,___S_jazz_3a_define_2d_generic,"jazz:define-generic")
+___DEF_SYM(39,___S_jazz_3a_define_2d_specific,"jazz:define-specific")
+___DEF_SYM(40,___S_jazz_3a_dispatch_2d_from_2d_root,"jazz:dispatch-from-root")
+___DEF_SYM(41,___S_jazz_3a_error,"jazz:error")
+___DEF_SYM(42,___S_jazz_3a_generic_2d_reset,"jazz:generic-reset")
+___DEF_SYM(43,___S_jazz_3a_get_2d_generic_2d_locator,"jazz:get-generic-locator")
+___DEF_SYM(44,___S_jazz_3a_get_2d_generic_2d_name,"jazz:get-generic-name")
+___DEF_SYM(45,___S_jazz_3a_get_2d_generic_2d_pending_2d_specifics,"jazz:get-generic-pending-specifics")
+
+___DEF_SYM(46,___S_jazz_3a_get_2d_generic_2d_root_2d_specific,"jazz:get-generic-root-specific")
+
+___DEF_SYM(47,___S_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics,"jazz:get-specific-ancestor-specifics")
+
+___DEF_SYM(48,___S_jazz_3a_get_2d_specific_2d_descendant_2d_specifics,"jazz:get-specific-descendant-specifics")
+
+___DEF_SYM(49,___S_jazz_3a_get_2d_specific_2d_dynamic_2d_signature,"jazz:get-specific-dynamic-signature")
+
+___DEF_SYM(50,___S_jazz_3a_get_2d_specific_2d_implementation,"jazz:get-specific-implementation")
+
+___DEF_SYM(51,___S_jazz_3a_global_2d_bound_3f_,"jazz:global-bound?")
+___DEF_SYM(52,___S_jazz_3a_global_2d_ref,"jazz:global-ref")
+___DEF_SYM(53,___S_jazz_3a_new_2d_generic,"jazz:new-generic")
+___DEF_SYM(54,___S_jazz_3a_new_2d_specific,"jazz:new-specific")
+___DEF_SYM(55,___S_jazz_3a_process_2d_pending_2d_specifics,"jazz:process-pending-specifics")
+
+___DEF_SYM(56,___S_jazz_3a_register_2d_specific,"jazz:register-specific")
+___DEF_SYM(57,___S_jazz_3a_set_2d_generic_2d_pending_2d_specifics,"jazz:set-generic-pending-specifics")
+
+___DEF_SYM(58,___S_jazz_3a_set_2d_generic_2d_root_2d_specific,"jazz:set-generic-root-specific")
+
+___DEF_SYM(59,___S_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics,"jazz:set-specific-ancestor-specifics")
+
+___DEF_SYM(60,___S_jazz_3a_set_2d_specific_2d_descendant_2d_specifics,"jazz:set-specific-descendant-specifics")
+
+___DEF_SYM(61,___S_jazz_3a_set_2d_specific_2d_dynamic_2d_signature,"jazz:set-specific-dynamic-signature")
+
+___DEF_SYM(62,___S_jazz_3a_set_2d_specific_2d_implementation,"jazz:set-specific-implementation")
+
+___DEF_SYM(63,___S_lambda,"lambda")
+___DEF_SYM(64,___S_let,"let")
+___DEF_SYM(65,___S_let_2a_,"let*")
+___DEF_SYM(66,___S_locator,"locator")
+___DEF_SYM(67,___S_mandatory_2d_parameters,"mandatory-parameters")
+___DEF_SYM(68,___S_modifier,"modifier")
+___DEF_SYM(69,___S_name,"name")
+___DEF_SYM(70,___S_nextmethod,"nextmethod")
+___DEF_SYM(71,___S_parameter,"parameter")
+___DEF_SYM(72,___S_parameters,"parameters")
+___DEF_SYM(73,___S_pending_2d_specifics,"pending-specifics")
+___DEF_SYM(74,___S_quote,"quote")
+___DEF_SYM(75,___S_rest,"rest")
+___DEF_SYM(76,___S_result,"result")
+___DEF_SYM(77,___S_root,"root")
+___DEF_SYM(78,___S_root_2d_specific,"root-specific")
+___DEF_SYM(79,___S_root_3f_,"root?")
+___DEF_SYM(80,___S_signature,"signature")
+___DEF_SYM(81,___S_specific_2d_implementation_2d_locator,"specific-implementation-locator")
+
+___DEF_SYM(82,___S_temp_2e_1,"temp.1")
+___DEF_SYM(83,___S_temp_2e_3,"temp.3")
+___DEF_SYM(84,___S_temp_2e_8,"temp.8")
+___DEF_SYM(85,___S_type,"type")
+___DEF_SYM(86,___S_x_2e_4,"x.4")
+___DEF_SYM(87,___S_x_2e_9,"x.9")
+___END_SYM
+
+#define ___SYM__25__25_car ___SYM(0,___S__25__25_car)
+#define ___SYM__25__25_list ___SYM(1,___S__25__25_list)
+#define ___SYM__25__25_not ___SYM(2,___S__25__25_not)
+#define ___SYM__25__25_null_3f_ ___SYM(3,___S__25__25_null_3f_)
+#define ___SYM__25__25_specific_2d_dispatch ___SYM(4,___S__25__25_specific_2d_dispatch)
+#define ___SYM__25__25_when ___SYM(5,___S__25__25_when)
+#define ___SYM_Generic ___SYM(6,___S_Generic)
+#define ___SYM_Specific ___SYM(7,___S_Specific)
+#define ___SYM_ancestor_2d_specifics ___SYM(8,___S_ancestor_2d_specifics)
+#define ___SYM_apply ___SYM(9,___S_apply)
+#define ___SYM_begin ___SYM(10,___S_begin)
+#define ___SYM_bin_3a_core_2e_generic_2e_syntax ___SYM(11,___S_bin_3a_core_2e_generic_2e_syntax)
+#define ___SYM_body ___SYM(12,___S_body)
+#define ___SYM_class_2f_call ___SYM(13,___S_class_2f_call)
+#define ___SYM_core_2e_generic_2e_syntax ___SYM(14,___S_core_2e_generic_2e_syntax)
+#define ___SYM_define ___SYM(15,___S_define)
+#define ___SYM_descendant_2d_specifics ___SYM(16,___S_descendant_2d_specifics)
+#define ___SYM_dynamic_2d_signature ___SYM(17,___S_dynamic_2d_signature)
+#define ___SYM_dynamic_2d_signature_2d_strings ___SYM(18,___S_dynamic_2d_signature_2d_strings)
+#define ___SYM_extra_2d_parameters ___SYM(19,___S_extra_2d_parameters)
+#define ___SYM_formal_2d_signature ___SYM(20,___S_formal_2d_signature)
+#define ___SYM_function ___SYM(21,___S_function)
+#define ___SYM_generic_2d_locator ___SYM(22,___S_generic_2d_locator)
+#define ___SYM_generic_2d_method_2d_locator ___SYM(23,___S_generic_2d_method_2d_locator)
+#define ___SYM_generic_2d_string ___SYM(24,___S_generic_2d_string)
+#define ___SYM_gensym_2d_generic ___SYM(25,___S_gensym_2d_generic)
+#define ___SYM_gensym_2d_lambda ___SYM(26,___S_gensym_2d_lambda)
+#define ___SYM_gensym_2d_rest ___SYM(27,___S_gensym_2d_rest)
+#define ___SYM_gensym_2d_specific ___SYM(28,___S_gensym_2d_specific)
+#define ___SYM_if ___SYM(29,___S_if)
+#define ___SYM_implementation ___SYM(30,___S_implementation)
+#define ___SYM_jazz_3a_Generic ___SYM(31,___S_jazz_3a_Generic)
+#define ___SYM_jazz_3a_Object ___SYM(32,___S_jazz_3a_Object)
+#define ___SYM_jazz_3a_Object_2d_Class ___SYM(33,___S_jazz_3a_Object_2d_Class)
+#define ___SYM_jazz_3a_Specific ___SYM(34,___S_jazz_3a_Specific)
+#define ___SYM_jazz_3a_allocate_2d_generic ___SYM(35,___S_jazz_3a_allocate_2d_generic)
+#define ___SYM_jazz_3a_allocate_2d_specific ___SYM(36,___S_jazz_3a_allocate_2d_specific)
+#define ___SYM_jazz_3a_class_2d_of ___SYM(37,___S_jazz_3a_class_2d_of)
+#define ___SYM_jazz_3a_define_2d_generic ___SYM(38,___S_jazz_3a_define_2d_generic)
+#define ___SYM_jazz_3a_define_2d_specific ___SYM(39,___S_jazz_3a_define_2d_specific)
+#define ___SYM_jazz_3a_dispatch_2d_from_2d_root ___SYM(40,___S_jazz_3a_dispatch_2d_from_2d_root)
+#define ___SYM_jazz_3a_error ___SYM(41,___S_jazz_3a_error)
+#define ___SYM_jazz_3a_generic_2d_reset ___SYM(42,___S_jazz_3a_generic_2d_reset)
+#define ___SYM_jazz_3a_get_2d_generic_2d_locator ___SYM(43,___S_jazz_3a_get_2d_generic_2d_locator)
+#define ___SYM_jazz_3a_get_2d_generic_2d_name ___SYM(44,___S_jazz_3a_get_2d_generic_2d_name)
+#define ___SYM_jazz_3a_get_2d_generic_2d_pending_2d_specifics ___SYM(45,___S_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+#define ___SYM_jazz_3a_get_2d_generic_2d_root_2d_specific ___SYM(46,___S_jazz_3a_get_2d_generic_2d_root_2d_specific)
+#define ___SYM_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics ___SYM(47,___S_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+#define ___SYM_jazz_3a_get_2d_specific_2d_descendant_2d_specifics ___SYM(48,___S_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+#define ___SYM_jazz_3a_get_2d_specific_2d_dynamic_2d_signature ___SYM(49,___S_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+#define ___SYM_jazz_3a_get_2d_specific_2d_implementation ___SYM(50,___S_jazz_3a_get_2d_specific_2d_implementation)
+#define ___SYM_jazz_3a_global_2d_bound_3f_ ___SYM(51,___S_jazz_3a_global_2d_bound_3f_)
+#define ___SYM_jazz_3a_global_2d_ref ___SYM(52,___S_jazz_3a_global_2d_ref)
+#define ___SYM_jazz_3a_new_2d_generic ___SYM(53,___S_jazz_3a_new_2d_generic)
+#define ___SYM_jazz_3a_new_2d_specific ___SYM(54,___S_jazz_3a_new_2d_specific)
+#define ___SYM_jazz_3a_process_2d_pending_2d_specifics ___SYM(55,___S_jazz_3a_process_2d_pending_2d_specifics)
+#define ___SYM_jazz_3a_register_2d_specific ___SYM(56,___S_jazz_3a_register_2d_specific)
+#define ___SYM_jazz_3a_set_2d_generic_2d_pending_2d_specifics ___SYM(57,___S_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+#define ___SYM_jazz_3a_set_2d_generic_2d_root_2d_specific ___SYM(58,___S_jazz_3a_set_2d_generic_2d_root_2d_specific)
+#define ___SYM_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics ___SYM(59,___S_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+#define ___SYM_jazz_3a_set_2d_specific_2d_descendant_2d_specifics ___SYM(60,___S_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+#define ___SYM_jazz_3a_set_2d_specific_2d_dynamic_2d_signature ___SYM(61,___S_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+#define ___SYM_jazz_3a_set_2d_specific_2d_implementation ___SYM(62,___S_jazz_3a_set_2d_specific_2d_implementation)
+#define ___SYM_lambda ___SYM(63,___S_lambda)
+#define ___SYM_let ___SYM(64,___S_let)
+#define ___SYM_let_2a_ ___SYM(65,___S_let_2a_)
+#define ___SYM_locator ___SYM(66,___S_locator)
+#define ___SYM_mandatory_2d_parameters ___SYM(67,___S_mandatory_2d_parameters)
+#define ___SYM_modifier ___SYM(68,___S_modifier)
+#define ___SYM_name ___SYM(69,___S_name)
+#define ___SYM_nextmethod ___SYM(70,___S_nextmethod)
+#define ___SYM_parameter ___SYM(71,___S_parameter)
+#define ___SYM_parameters ___SYM(72,___S_parameters)
+#define ___SYM_pending_2d_specifics ___SYM(73,___S_pending_2d_specifics)
+#define ___SYM_quote ___SYM(74,___S_quote)
+#define ___SYM_rest ___SYM(75,___S_rest)
+#define ___SYM_result ___SYM(76,___S_result)
+#define ___SYM_root ___SYM(77,___S_root)
+#define ___SYM_root_2d_specific ___SYM(78,___S_root_2d_specific)
+#define ___SYM_root_3f_ ___SYM(79,___S_root_3f_)
+#define ___SYM_signature ___SYM(80,___S_signature)
+#define ___SYM_specific_2d_implementation_2d_locator ___SYM(81,___S_specific_2d_implementation_2d_locator)
+#define ___SYM_temp_2e_1 ___SYM(82,___S_temp_2e_1)
+#define ___SYM_temp_2e_3 ___SYM(83,___S_temp_2e_3)
+#define ___SYM_temp_2e_8 ___SYM(84,___S_temp_2e_8)
+#define ___SYM_type ___SYM(85,___S_type)
+#define ___SYM_x_2e_4 ___SYM(86,___S_x_2e_4)
+#define ___SYM_x_2e_9 ___SYM(87,___S_x_2e_9)
+
+___BEGIN_KEY
+___DEF_KEY(0,___K_test,"test")
+___END_KEY
+
+#define ___KEY_test ___KEY(0,___K_test)
+
+___BEGIN_GLO
+___DEF_GLO(0,"bin:core.generic.syntax#")
+___DEF_GLO(1,"jazz:Generic")
+___DEF_GLO(2,"jazz:Generic!core-level")
+___DEF_GLO(3,"jazz:Specific")
+___DEF_GLO(4,"jazz:Specific!core-level")
+___DEF_GLO(5,"jazz:allocate-generic")
+___DEF_GLO(6,"jazz:allocate-specific")
+___DEF_GLO(7,"jazz:dynamic-parameter-name")
+___DEF_GLO(8,"jazz:dynamic-parameter-names")
+___DEF_GLO(9,"jazz:dynamic-parameter-type")
+___DEF_GLO(10,"jazz:dynamic-parameter-types")
+___DEF_GLO(11,"jazz:dynamic-parameter?")
+___DEF_GLO(12,"jazz:expand-define-generic")
+___DEF_GLO(13,"jazz:expand-define-specific")
+___DEF_GLO(14,"jazz:generic-object-locator")
+___DEF_GLO(15,"jazz:generic-parameters")
+___DEF_GLO(16,"jazz:get-generic-locator")
+___DEF_GLO(17,"jazz:get-generic-name")
+___DEF_GLO(18,"jazz:get-generic-pending-specifics")
+
+___DEF_GLO(19,"jazz:get-generic-root-specific")
+___DEF_GLO(20,"jazz:get-specific-ancestor-specifics")
+
+___DEF_GLO(21,"jazz:get-specific-descendant-specifics")
+
+___DEF_GLO(22,"jazz:get-specific-dynamic-signature")
+
+___DEF_GLO(23,"jazz:get-specific-implementation")
+___DEF_GLO(24,"jazz:implementation-locator")
+___DEF_GLO(25,"jazz:set-generic-pending-specifics")
+
+___DEF_GLO(26,"jazz:set-generic-root-specific")
+___DEF_GLO(27,"jazz:set-specific-ancestor-specifics")
+
+___DEF_GLO(28,"jazz:set-specific-descendant-specifics")
+
+___DEF_GLO(29,"jazz:set-specific-dynamic-signature")
+
+___DEF_GLO(30,"jazz:set-specific-implementation")
+___DEF_GLO(31,"jazz:specific-parameters")
+___DEF_GLO(32,"##apply")
+___DEF_GLO(33,"##call-with-values")
+___DEF_GLO(34,"##interaction-cte")
+___DEF_GLO(35,"##make-macro-descr")
+___DEF_GLO(36,"##quasi-append")
+___DEF_GLO(37,"##string->symbol")
+___DEF_GLO(38,"##string-append")
+___DEF_GLO(39,"##symbol->string")
+___DEF_GLO(40,"##table-set!")
+___DEF_GLO(41,"##top-cte-add-macro!")
+___DEF_GLO(42,"eq?")
+___DEF_GLO(43,"jazz:Object")
+___DEF_GLO(44,"jazz:Object-Class")
+___DEF_GLO(45,"jazz:add-slot")
+___DEF_GLO(46,"jazz:class-info")
+___DEF_GLO(47,"jazz:composite-identifier?")
+___DEF_GLO(48,"jazz:generate-symbol")
+___DEF_GLO(49,"jazz:join-strings")
+___DEF_GLO(50,"jazz:make-class-info")
+___DEF_GLO(51,"jazz:new-core-class")
+___DEF_GLO(52,"jazz:register-macro")
+___DEF_GLO(53,"jazz:reverse!")
+___DEF_GLO(54,"jazz:set-core-class")
+___DEF_GLO(55,"jazz:specifier->name")
+___DEF_GLO(56,"jazz:specifier?")
+___DEF_GLO(57,"make-table")
+___END_GLO
+
+#define ___GLO_bin_3a_core_2e_generic_2e_syntax_23_ ___GLO(0,___G_bin_3a_core_2e_generic_2e_syntax_23_)
+#define ___PRM_bin_3a_core_2e_generic_2e_syntax_23_ ___PRM(0,___G_bin_3a_core_2e_generic_2e_syntax_23_)
+#define ___GLO_jazz_3a_Generic ___GLO(1,___G_jazz_3a_Generic)
+#define ___PRM_jazz_3a_Generic ___PRM(1,___G_jazz_3a_Generic)
+#define ___GLO_jazz_3a_Generic_21_core_2d_level ___GLO(2,___G_jazz_3a_Generic_21_core_2d_level)
+#define ___PRM_jazz_3a_Generic_21_core_2d_level ___PRM(2,___G_jazz_3a_Generic_21_core_2d_level)
+#define ___GLO_jazz_3a_Specific ___GLO(3,___G_jazz_3a_Specific)
+#define ___PRM_jazz_3a_Specific ___PRM(3,___G_jazz_3a_Specific)
+#define ___GLO_jazz_3a_Specific_21_core_2d_level ___GLO(4,___G_jazz_3a_Specific_21_core_2d_level)
+#define ___PRM_jazz_3a_Specific_21_core_2d_level ___PRM(4,___G_jazz_3a_Specific_21_core_2d_level)
+#define ___GLO_jazz_3a_allocate_2d_generic ___GLO(5,___G_jazz_3a_allocate_2d_generic)
+#define ___PRM_jazz_3a_allocate_2d_generic ___PRM(5,___G_jazz_3a_allocate_2d_generic)
+#define ___GLO_jazz_3a_allocate_2d_specific ___GLO(6,___G_jazz_3a_allocate_2d_specific)
+#define ___PRM_jazz_3a_allocate_2d_specific ___PRM(6,___G_jazz_3a_allocate_2d_specific)
+#define ___GLO_jazz_3a_dynamic_2d_parameter_2d_name ___GLO(7,___G_jazz_3a_dynamic_2d_parameter_2d_name)
+#define ___PRM_jazz_3a_dynamic_2d_parameter_2d_name ___PRM(7,___G_jazz_3a_dynamic_2d_parameter_2d_name)
+#define ___GLO_jazz_3a_dynamic_2d_parameter_2d_names ___GLO(8,___G_jazz_3a_dynamic_2d_parameter_2d_names)
+#define ___PRM_jazz_3a_dynamic_2d_parameter_2d_names ___PRM(8,___G_jazz_3a_dynamic_2d_parameter_2d_names)
+#define ___GLO_jazz_3a_dynamic_2d_parameter_2d_type ___GLO(9,___G_jazz_3a_dynamic_2d_parameter_2d_type)
+#define ___PRM_jazz_3a_dynamic_2d_parameter_2d_type ___PRM(9,___G_jazz_3a_dynamic_2d_parameter_2d_type)
+#define ___GLO_jazz_3a_dynamic_2d_parameter_2d_types ___GLO(10,___G_jazz_3a_dynamic_2d_parameter_2d_types)
+#define ___PRM_jazz_3a_dynamic_2d_parameter_2d_types ___PRM(10,___G_jazz_3a_dynamic_2d_parameter_2d_types)
+#define ___GLO_jazz_3a_dynamic_2d_parameter_3f_ ___GLO(11,___G_jazz_3a_dynamic_2d_parameter_3f_)
+#define ___PRM_jazz_3a_dynamic_2d_parameter_3f_ ___PRM(11,___G_jazz_3a_dynamic_2d_parameter_3f_)
+#define ___GLO_jazz_3a_expand_2d_define_2d_generic ___GLO(12,___G_jazz_3a_expand_2d_define_2d_generic)
+#define ___PRM_jazz_3a_expand_2d_define_2d_generic ___PRM(12,___G_jazz_3a_expand_2d_define_2d_generic)
+#define ___GLO_jazz_3a_expand_2d_define_2d_specific ___GLO(13,___G_jazz_3a_expand_2d_define_2d_specific)
+#define ___PRM_jazz_3a_expand_2d_define_2d_specific ___PRM(13,___G_jazz_3a_expand_2d_define_2d_specific)
+#define ___GLO_jazz_3a_generic_2d_object_2d_locator ___GLO(14,___G_jazz_3a_generic_2d_object_2d_locator)
+#define ___PRM_jazz_3a_generic_2d_object_2d_locator ___PRM(14,___G_jazz_3a_generic_2d_object_2d_locator)
+#define ___GLO_jazz_3a_generic_2d_parameters ___GLO(15,___G_jazz_3a_generic_2d_parameters)
+#define ___PRM_jazz_3a_generic_2d_parameters ___PRM(15,___G_jazz_3a_generic_2d_parameters)
+#define ___GLO_jazz_3a_get_2d_generic_2d_locator ___GLO(16,___G_jazz_3a_get_2d_generic_2d_locator)
+#define ___PRM_jazz_3a_get_2d_generic_2d_locator ___PRM(16,___G_jazz_3a_get_2d_generic_2d_locator)
+#define ___GLO_jazz_3a_get_2d_generic_2d_name ___GLO(17,___G_jazz_3a_get_2d_generic_2d_name)
+#define ___PRM_jazz_3a_get_2d_generic_2d_name ___PRM(17,___G_jazz_3a_get_2d_generic_2d_name)
+#define ___GLO_jazz_3a_get_2d_generic_2d_pending_2d_specifics ___GLO(18,___G_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+#define ___PRM_jazz_3a_get_2d_generic_2d_pending_2d_specifics ___PRM(18,___G_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+#define ___GLO_jazz_3a_get_2d_generic_2d_root_2d_specific ___GLO(19,___G_jazz_3a_get_2d_generic_2d_root_2d_specific)
+#define ___PRM_jazz_3a_get_2d_generic_2d_root_2d_specific ___PRM(19,___G_jazz_3a_get_2d_generic_2d_root_2d_specific)
+#define ___GLO_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics ___GLO(20,___G_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+#define ___PRM_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics ___PRM(20,___G_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+#define ___GLO_jazz_3a_get_2d_specific_2d_descendant_2d_specifics ___GLO(21,___G_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+#define ___PRM_jazz_3a_get_2d_specific_2d_descendant_2d_specifics ___PRM(21,___G_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+#define ___GLO_jazz_3a_get_2d_specific_2d_dynamic_2d_signature ___GLO(22,___G_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+#define ___PRM_jazz_3a_get_2d_specific_2d_dynamic_2d_signature ___PRM(22,___G_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+#define ___GLO_jazz_3a_get_2d_specific_2d_implementation ___GLO(23,___G_jazz_3a_get_2d_specific_2d_implementation)
+#define ___PRM_jazz_3a_get_2d_specific_2d_implementation ___PRM(23,___G_jazz_3a_get_2d_specific_2d_implementation)
+#define ___GLO_jazz_3a_implementation_2d_locator ___GLO(24,___G_jazz_3a_implementation_2d_locator)
+#define ___PRM_jazz_3a_implementation_2d_locator ___PRM(24,___G_jazz_3a_implementation_2d_locator)
+#define ___GLO_jazz_3a_set_2d_generic_2d_pending_2d_specifics ___GLO(25,___G_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+#define ___PRM_jazz_3a_set_2d_generic_2d_pending_2d_specifics ___PRM(25,___G_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+#define ___GLO_jazz_3a_set_2d_generic_2d_root_2d_specific ___GLO(26,___G_jazz_3a_set_2d_generic_2d_root_2d_specific)
+#define ___PRM_jazz_3a_set_2d_generic_2d_root_2d_specific ___PRM(26,___G_jazz_3a_set_2d_generic_2d_root_2d_specific)
+#define ___GLO_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics ___GLO(27,___G_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+#define ___PRM_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics ___PRM(27,___G_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+#define ___GLO_jazz_3a_set_2d_specific_2d_descendant_2d_specifics ___GLO(28,___G_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+#define ___PRM_jazz_3a_set_2d_specific_2d_descendant_2d_specifics ___PRM(28,___G_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+#define ___GLO_jazz_3a_set_2d_specific_2d_dynamic_2d_signature ___GLO(29,___G_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+#define ___PRM_jazz_3a_set_2d_specific_2d_dynamic_2d_signature ___PRM(29,___G_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+#define ___GLO_jazz_3a_set_2d_specific_2d_implementation ___GLO(30,___G_jazz_3a_set_2d_specific_2d_implementation)
+#define ___PRM_jazz_3a_set_2d_specific_2d_implementation ___PRM(30,___G_jazz_3a_set_2d_specific_2d_implementation)
+#define ___GLO_jazz_3a_specific_2d_parameters ___GLO(31,___G_jazz_3a_specific_2d_parameters)
+#define ___PRM_jazz_3a_specific_2d_parameters ___PRM(31,___G_jazz_3a_specific_2d_parameters)
+#define ___GLO__23__23_apply ___GLO(32,___G__23__23_apply)
+#define ___PRM__23__23_apply ___PRM(32,___G__23__23_apply)
+#define ___GLO__23__23_call_2d_with_2d_values ___GLO(33,___G__23__23_call_2d_with_2d_values)
+#define ___PRM__23__23_call_2d_with_2d_values ___PRM(33,___G__23__23_call_2d_with_2d_values)
+#define ___GLO__23__23_interaction_2d_cte ___GLO(34,___G__23__23_interaction_2d_cte)
+#define ___PRM__23__23_interaction_2d_cte ___PRM(34,___G__23__23_interaction_2d_cte)
+#define ___GLO__23__23_make_2d_macro_2d_descr ___GLO(35,___G__23__23_make_2d_macro_2d_descr)
+#define ___PRM__23__23_make_2d_macro_2d_descr ___PRM(35,___G__23__23_make_2d_macro_2d_descr)
+#define ___GLO__23__23_quasi_2d_append ___GLO(36,___G__23__23_quasi_2d_append)
+#define ___PRM__23__23_quasi_2d_append ___PRM(36,___G__23__23_quasi_2d_append)
+#define ___GLO__23__23_string_2d__3e_symbol ___GLO(37,___G__23__23_string_2d__3e_symbol)
+#define ___PRM__23__23_string_2d__3e_symbol ___PRM(37,___G__23__23_string_2d__3e_symbol)
+#define ___GLO__23__23_string_2d_append ___GLO(38,___G__23__23_string_2d_append)
+#define ___PRM__23__23_string_2d_append ___PRM(38,___G__23__23_string_2d_append)
+#define ___GLO__23__23_symbol_2d__3e_string ___GLO(39,___G__23__23_symbol_2d__3e_string)
+#define ___PRM__23__23_symbol_2d__3e_string ___PRM(39,___G__23__23_symbol_2d__3e_string)
+#define ___GLO__23__23_table_2d_set_21_ ___GLO(40,___G__23__23_table_2d_set_21_)
+#define ___PRM__23__23_table_2d_set_21_ ___PRM(40,___G__23__23_table_2d_set_21_)
+#define ___GLO__23__23_top_2d_cte_2d_add_2d_macro_21_ ___GLO(41,___G__23__23_top_2d_cte_2d_add_2d_macro_21_)
+#define ___PRM__23__23_top_2d_cte_2d_add_2d_macro_21_ ___PRM(41,___G__23__23_top_2d_cte_2d_add_2d_macro_21_)
+#define ___GLO_eq_3f_ ___GLO(42,___G_eq_3f_)
+#define ___PRM_eq_3f_ ___PRM(42,___G_eq_3f_)
+#define ___GLO_jazz_3a_Object ___GLO(43,___G_jazz_3a_Object)
+#define ___PRM_jazz_3a_Object ___PRM(43,___G_jazz_3a_Object)
+#define ___GLO_jazz_3a_Object_2d_Class ___GLO(44,___G_jazz_3a_Object_2d_Class)
+#define ___PRM_jazz_3a_Object_2d_Class ___PRM(44,___G_jazz_3a_Object_2d_Class)
+#define ___GLO_jazz_3a_add_2d_slot ___GLO(45,___G_jazz_3a_add_2d_slot)
+#define ___PRM_jazz_3a_add_2d_slot ___PRM(45,___G_jazz_3a_add_2d_slot)
+#define ___GLO_jazz_3a_class_2d_info ___GLO(46,___G_jazz_3a_class_2d_info)
+#define ___PRM_jazz_3a_class_2d_info ___PRM(46,___G_jazz_3a_class_2d_info)
+#define ___GLO_jazz_3a_composite_2d_identifier_3f_ ___GLO(47,___G_jazz_3a_composite_2d_identifier_3f_)
+#define ___PRM_jazz_3a_composite_2d_identifier_3f_ ___PRM(47,___G_jazz_3a_composite_2d_identifier_3f_)
+#define ___GLO_jazz_3a_generate_2d_symbol ___GLO(48,___G_jazz_3a_generate_2d_symbol)
+#define ___PRM_jazz_3a_generate_2d_symbol ___PRM(48,___G_jazz_3a_generate_2d_symbol)
+#define ___GLO_jazz_3a_join_2d_strings ___GLO(49,___G_jazz_3a_join_2d_strings)
+#define ___PRM_jazz_3a_join_2d_strings ___PRM(49,___G_jazz_3a_join_2d_strings)
+#define ___GLO_jazz_3a_make_2d_class_2d_info ___GLO(50,___G_jazz_3a_make_2d_class_2d_info)
+#define ___PRM_jazz_3a_make_2d_class_2d_info ___PRM(50,___G_jazz_3a_make_2d_class_2d_info)
+#define ___GLO_jazz_3a_new_2d_core_2d_class ___GLO(51,___G_jazz_3a_new_2d_core_2d_class)
+#define ___PRM_jazz_3a_new_2d_core_2d_class ___PRM(51,___G_jazz_3a_new_2d_core_2d_class)
+#define ___GLO_jazz_3a_register_2d_macro ___GLO(52,___G_jazz_3a_register_2d_macro)
+#define ___PRM_jazz_3a_register_2d_macro ___PRM(52,___G_jazz_3a_register_2d_macro)
+#define ___GLO_jazz_3a_reverse_21_ ___GLO(53,___G_jazz_3a_reverse_21_)
+#define ___PRM_jazz_3a_reverse_21_ ___PRM(53,___G_jazz_3a_reverse_21_)
+#define ___GLO_jazz_3a_set_2d_core_2d_class ___GLO(54,___G_jazz_3a_set_2d_core_2d_class)
+#define ___PRM_jazz_3a_set_2d_core_2d_class ___PRM(54,___G_jazz_3a_set_2d_core_2d_class)
+#define ___GLO_jazz_3a_specifier_2d__3e_name ___GLO(55,___G_jazz_3a_specifier_2d__3e_name)
+#define ___PRM_jazz_3a_specifier_2d__3e_name ___PRM(55,___G_jazz_3a_specifier_2d__3e_name)
+#define ___GLO_jazz_3a_specifier_3f_ ___GLO(56,___G_jazz_3a_specifier_3f_)
+#define ___PRM_jazz_3a_specifier_3f_ ___PRM(56,___G_jazz_3a_specifier_3f_)
+#define ___GLO_make_2d_table ___GLO(57,___G_make_2d_table)
+#define ___PRM_make_2d_table ___PRM(57,___G_make_2d_table)
+
+___BEGIN_CNS
+ ___DEF_CNS(___REF_CNS(1),___REF_CNS(5))
+,___DEF_CNS(___REF_SYM(66,___S_locator),___REF_CNS(2))
+,___DEF_CNS(___REF_VOID,___REF_CNS(3))
+,___DEF_CNS(___REF_SYM(43,___S_jazz_3a_get_2d_generic_2d_locator),___REF_CNS(4))
+,___DEF_CNS(___REF_FAL,___REF_NUL)
+,___DEF_CNS(___REF_CNS(6),___REF_CNS(10))
+,___DEF_CNS(___REF_SYM(69,___S_name),___REF_CNS(7))
+,___DEF_CNS(___REF_VOID,___REF_CNS(8))
+,___DEF_CNS(___REF_SYM(44,___S_jazz_3a_get_2d_generic_2d_name),___REF_CNS(9))
+,___DEF_CNS(___REF_FAL,___REF_NUL)
+,___DEF_CNS(___REF_CNS(11),___REF_CNS(15))
+,___DEF_CNS(___REF_SYM(78,___S_root_2d_specific),___REF_CNS(12))
+,___DEF_CNS(___REF_VOID,___REF_CNS(13))
+,___DEF_CNS(___REF_SYM(46,___S_jazz_3a_get_2d_generic_2d_root_2d_specific),___REF_CNS(14))
+,___DEF_CNS(___REF_SYM(58,___S_jazz_3a_set_2d_generic_2d_root_2d_specific),___REF_NUL)
+,___DEF_CNS(___REF_CNS(16),___REF_NUL)
+,___DEF_CNS(___REF_SYM(73,___S_pending_2d_specifics),___REF_CNS(17))
+,___DEF_CNS(___REF_VOID,___REF_CNS(18))
+,___DEF_CNS(___REF_SYM(45,___S_jazz_3a_get_2d_generic_2d_pending_2d_specifics),___REF_CNS(19))
+,___DEF_CNS(___REF_SYM(57,___S_jazz_3a_set_2d_generic_2d_pending_2d_specifics),___REF_NUL)
+,___DEF_CNS(___REF_SYM(66,___S_locator),___REF_CNS(21))
+,___DEF_CNS(___REF_SYM(69,___S_name),___REF_CNS(22))
+,___DEF_CNS(___REF_SYM(78,___S_root_2d_specific),___REF_CNS(23))
+,___DEF_CNS(___REF_SYM(73,___S_pending_2d_specifics),___REF_NUL)
+,___DEF_CNS(___REF_SYM(66,___S_locator),___REF_CNS(25))
+,___DEF_CNS(___REF_SYM(69,___S_name),___REF_CNS(26))
+,___DEF_CNS(___REF_SYM(78,___S_root_2d_specific),___REF_CNS(27))
+,___DEF_CNS(___REF_SYM(73,___S_pending_2d_specifics),___REF_NUL)
+,___DEF_CNS(___REF_CNS(29),___REF_CNS(33))
+,___DEF_CNS(___REF_SYM(17,___S_dynamic_2d_signature),___REF_CNS(30))
+,___DEF_CNS(___REF_VOID,___REF_CNS(31))
+,___DEF_CNS(___REF_SYM(49,___S_jazz_3a_get_2d_specific_2d_dynamic_2d_signature),___REF_CNS(32))
+,___DEF_CNS(___REF_SYM(61,___S_jazz_3a_set_2d_specific_2d_dynamic_2d_signature),___REF_NUL)
+,___DEF_CNS(___REF_CNS(34),___REF_CNS(38))
+,___DEF_CNS(___REF_SYM(30,___S_implementation),___REF_CNS(35))
+,___DEF_CNS(___REF_VOID,___REF_CNS(36))
+,___DEF_CNS(___REF_SYM(50,___S_jazz_3a_get_2d_specific_2d_implementation),___REF_CNS(37))
+,___DEF_CNS(___REF_SYM(62,___S_jazz_3a_set_2d_specific_2d_implementation),___REF_NUL)
+,___DEF_CNS(___REF_CNS(39),___REF_CNS(43))
+,___DEF_CNS(___REF_SYM(8,___S_ancestor_2d_specifics),___REF_CNS(40))
+,___DEF_CNS(___REF_VOID,___REF_CNS(41))
+,___DEF_CNS(___REF_SYM(47,___S_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics),___REF_CNS(42))
+,___DEF_CNS(___REF_SYM(59,___S_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics),___REF_NUL)
+,___DEF_CNS(___REF_CNS(44),___REF_NUL)
+,___DEF_CNS(___REF_SYM(16,___S_descendant_2d_specifics),___REF_CNS(45))
+,___DEF_CNS(___REF_VOID,___REF_CNS(46))
+,___DEF_CNS(___REF_SYM(48,___S_jazz_3a_get_2d_specific_2d_descendant_2d_specifics),___REF_CNS(47))
+,___DEF_CNS(___REF_SYM(60,___S_jazz_3a_set_2d_specific_2d_descendant_2d_specifics),___REF_NUL)
+,___DEF_CNS(___REF_SYM(17,___S_dynamic_2d_signature),___REF_CNS(49))
+,___DEF_CNS(___REF_SYM(30,___S_implementation),___REF_CNS(50))
+,___DEF_CNS(___REF_SYM(8,___S_ancestor_2d_specifics),___REF_CNS(51))
+,___DEF_CNS(___REF_SYM(16,___S_descendant_2d_specifics),___REF_NUL)
+,___DEF_CNS(___REF_SYM(17,___S_dynamic_2d_signature),___REF_CNS(53))
+,___DEF_CNS(___REF_SYM(30,___S_implementation),___REF_CNS(54))
+,___DEF_CNS(___REF_SYM(8,___S_ancestor_2d_specifics),___REF_CNS(55))
+,___DEF_CNS(___REF_SYM(16,___S_descendant_2d_specifics),___REF_NUL)
+,___DEF_CNS(___REF_FIX(294924),___REF_CNS(57))
+,___DEF_CNS(___REF_FIX(262144),___REF_CNS(58))
+,___DEF_CNS(___REF_FIX(229394),___REF_CNS(59))
+,___DEF_CNS(___REF_FIX(196624),___REF_CNS(60))
+,___DEF_CNS(___REF_FIX(163842),___REF_CNS(61))
+,___DEF_CNS(___REF_FIX(131086),___REF_CNS(62))
+,___DEF_CNS(___REF_FIX(98314),___REF_CNS(63))
+,___DEF_CNS(___REF_FIX(65544),___REF_CNS(64))
+,___DEF_CNS(___REF_FIX(32772),___REF_NUL)
+,___DEF_CNS(___REF_FIX(294924),___REF_CNS(66))
+,___DEF_CNS(___REF_FIX(262144),___REF_CNS(67))
+,___DEF_CNS(___REF_FIX(229394),___REF_CNS(68))
+,___DEF_CNS(___REF_FIX(196624),___REF_CNS(69))
+,___DEF_CNS(___REF_FIX(163842),___REF_CNS(70))
+,___DEF_CNS(___REF_FIX(131086),___REF_CNS(71))
+,___DEF_CNS(___REF_FIX(65544),___REF_NUL)
+,___DEF_CNS(___REF_FIX(294924),___REF_CNS(73))
+,___DEF_CNS(___REF_FIX(229394),___REF_CNS(74))
+,___DEF_CNS(___REF_FIX(196624),___REF_CNS(75))
+,___DEF_CNS(___REF_FIX(163842),___REF_CNS(76))
+,___DEF_CNS(___REF_FIX(131086),___REF_CNS(77))
+,___DEF_CNS(___REF_FIX(65544),___REF_NUL)
+,___DEF_CNS(___REF_FIX(294924),___REF_CNS(79))
+,___DEF_CNS(___REF_FIX(196624),___REF_CNS(80))
+,___DEF_CNS(___REF_FIX(163842),___REF_CNS(81))
+,___DEF_CNS(___REF_FIX(131086),___REF_CNS(82))
+,___DEF_CNS(___REF_FIX(65544),___REF_NUL)
+,___DEF_CNS(___REF_FAL,___REF_NUL)
+___END_CNS
+
+___DEF_SUB_VEC(___X0,2UL)
+               ___VEC1(___REF_SUB(1))
+               ___VEC1(___REF_SUB(86))
+               ___VEC0
+___DEF_SUB_VEC(___X1,42UL)
+               ___VEC1(___REF_SUB(2))
+               ___VEC1(___REF_SUB(4))
+               ___VEC1(___REF_SUB(6))
+               ___VEC1(___REF_SUB(8))
+               ___VEC1(___REF_SUB(10))
+               ___VEC1(___REF_SUB(12))
+               ___VEC1(___REF_SUB(14))
+               ___VEC1(___REF_SUB(16))
+               ___VEC1(___REF_SUB(18))
+               ___VEC1(___REF_SUB(20))
+               ___VEC1(___REF_SUB(22))
+               ___VEC1(___REF_SUB(24))
+               ___VEC1(___REF_SUB(26))
+               ___VEC1(___REF_SUB(28))
+               ___VEC1(___REF_SUB(30))
+               ___VEC1(___REF_SUB(32))
+               ___VEC1(___REF_SUB(34))
+               ___VEC1(___REF_SUB(36))
+               ___VEC1(___REF_SUB(38))
+               ___VEC1(___REF_SUB(40))
+               ___VEC1(___REF_SUB(42))
+               ___VEC1(___REF_SUB(44))
+               ___VEC1(___REF_SUB(46))
+               ___VEC1(___REF_SUB(48))
+               ___VEC1(___REF_SUB(50))
+               ___VEC1(___REF_SUB(52))
+               ___VEC1(___REF_SUB(54))
+               ___VEC1(___REF_SUB(56))
+               ___VEC1(___REF_SUB(58))
+               ___VEC1(___REF_SUB(60))
+               ___VEC1(___REF_SUB(62))
+               ___VEC1(___REF_SUB(64))
+               ___VEC1(___REF_SUB(66))
+               ___VEC1(___REF_SUB(68))
+               ___VEC1(___REF_SUB(70))
+               ___VEC1(___REF_SUB(72))
+               ___VEC1(___REF_SUB(74))
+               ___VEC1(___REF_SUB(76))
+               ___VEC1(___REF_SUB(78))
+               ___VEC1(___REF_SUB(80))
+               ___VEC1(___REF_SUB(82))
+               ___VEC1(___REF_SUB(84))
+               ___VEC0
+___DEF_SUB_VEC(___X2,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(3))
+               ___VEC0
+___DEF_SUB_VEC(___X3,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(46))
+               ___VEC0
+___DEF_SUB_VEC(___X4,2UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(5))
+               ___VEC0
+___DEF_SUB_VEC(___X5,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X6,2UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(7))
+               ___VEC0
+___DEF_SUB_VEC(___X7,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X8,2UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(9))
+               ___VEC0
+___DEF_SUB_VEC(___X9,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X10,2UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(11))
+               ___VEC0
+___DEF_SUB_VEC(___X11,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X12,2UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(13))
+               ___VEC0
+___DEF_SUB_VEC(___X13,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X14,2UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(15))
+               ___VEC0
+___DEF_SUB_VEC(___X15,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X16,2UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(17))
+               ___VEC0
+___DEF_SUB_VEC(___X17,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X18,2UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(19))
+               ___VEC0
+___DEF_SUB_VEC(___X19,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X20,2UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(21))
+               ___VEC0
+___DEF_SUB_VEC(___X21,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X22,2UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(23))
+               ___VEC0
+___DEF_SUB_VEC(___X23,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X24,2UL)
+               ___VEC1(___REF_FIX(11))
+               ___VEC1(___REF_SUB(25))
+               ___VEC0
+___DEF_SUB_VEC(___X25,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(205))
+               ___VEC0
+___DEF_SUB_VEC(___X26,2UL)
+               ___VEC1(___REF_FIX(12))
+               ___VEC1(___REF_SUB(27))
+               ___VEC0
+___DEF_SUB_VEC(___X27,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(205))
+               ___VEC0
+___DEF_SUB_VEC(___X28,2UL)
+               ___VEC1(___REF_FIX(13))
+               ___VEC1(___REF_SUB(29))
+               ___VEC0
+___DEF_SUB_VEC(___X29,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(205))
+               ___VEC0
+___DEF_SUB_VEC(___X30,2UL)
+               ___VEC1(___REF_FIX(14))
+               ___VEC1(___REF_SUB(31))
+               ___VEC0
+___DEF_SUB_VEC(___X31,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(209))
+               ___VEC0
+___DEF_SUB_VEC(___X32,2UL)
+               ___VEC1(___REF_FIX(15))
+               ___VEC1(___REF_SUB(33))
+               ___VEC0
+___DEF_SUB_VEC(___X33,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(209))
+               ___VEC0
+___DEF_SUB_VEC(___X34,2UL)
+               ___VEC1(___REF_FIX(16))
+               ___VEC1(___REF_SUB(35))
+               ___VEC0
+___DEF_SUB_VEC(___X35,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(209))
+               ___VEC0
+___DEF_SUB_VEC(___X36,2UL)
+               ___VEC1(___REF_FIX(17))
+               ___VEC1(___REF_SUB(37))
+               ___VEC0
+___DEF_SUB_VEC(___X37,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X38,2UL)
+               ___VEC1(___REF_FIX(18))
+               ___VEC1(___REF_SUB(39))
+               ___VEC0
+___DEF_SUB_VEC(___X39,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X40,2UL)
+               ___VEC1(___REF_FIX(19))
+               ___VEC1(___REF_SUB(41))
+               ___VEC0
+___DEF_SUB_VEC(___X41,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X42,2UL)
+               ___VEC1(___REF_FIX(20))
+               ___VEC1(___REF_SUB(43))
+               ___VEC0
+___DEF_SUB_VEC(___X43,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X44,2UL)
+               ___VEC1(___REF_FIX(21))
+               ___VEC1(___REF_SUB(45))
+               ___VEC0
+___DEF_SUB_VEC(___X45,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X46,2UL)
+               ___VEC1(___REF_FIX(22))
+               ___VEC1(___REF_SUB(47))
+               ___VEC0
+___DEF_SUB_VEC(___X47,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X48,2UL)
+               ___VEC1(___REF_FIX(23))
+               ___VEC1(___REF_SUB(49))
+               ___VEC0
+___DEF_SUB_VEC(___X49,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X50,2UL)
+               ___VEC1(___REF_FIX(24))
+               ___VEC1(___REF_SUB(51))
+               ___VEC0
+___DEF_SUB_VEC(___X51,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X52,2UL)
+               ___VEC1(___REF_FIX(25))
+               ___VEC1(___REF_SUB(53))
+               ___VEC0
+___DEF_SUB_VEC(___X53,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X54,2UL)
+               ___VEC1(___REF_FIX(26))
+               ___VEC1(___REF_SUB(55))
+               ___VEC0
+___DEF_SUB_VEC(___X55,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(232))
+               ___VEC0
+___DEF_SUB_VEC(___X56,2UL)
+               ___VEC1(___REF_FIX(27))
+               ___VEC1(___REF_SUB(57))
+               ___VEC0
+___DEF_SUB_VEC(___X57,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(232))
+               ___VEC0
+___DEF_SUB_VEC(___X58,2UL)
+               ___VEC1(___REF_FIX(28))
+               ___VEC1(___REF_SUB(59))
+               ___VEC0
+___DEF_SUB_VEC(___X59,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(232))
+               ___VEC0
+___DEF_SUB_VEC(___X60,2UL)
+               ___VEC1(___REF_FIX(29))
+               ___VEC1(___REF_SUB(61))
+               ___VEC0
+___DEF_SUB_VEC(___X61,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(232))
+               ___VEC0
+___DEF_SUB_VEC(___X62,2UL)
+               ___VEC1(___REF_FIX(30))
+               ___VEC1(___REF_SUB(63))
+               ___VEC0
+___DEF_SUB_VEC(___X63,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(232))
+               ___VEC0
+___DEF_SUB_VEC(___X64,3UL)
+               ___VEC1(___REF_FIX(31))
+               ___VEC1(___REF_SUB(65))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X65,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(232))
+               ___VEC0
+___DEF_SUB_VEC(___X66,2UL)
+               ___VEC1(___REF_FIX(32))
+               ___VEC1(___REF_SUB(67))
+               ___VEC0
+___DEF_SUB_VEC(___X67,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(232))
+               ___VEC0
+___DEF_SUB_VEC(___X68,3UL)
+               ___VEC1(___REF_FIX(33))
+               ___VEC1(___REF_SUB(69))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X69,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(232))
+               ___VEC0
+___DEF_SUB_VEC(___X70,2UL)
+               ___VEC1(___REF_FIX(34))
+               ___VEC1(___REF_SUB(71))
+               ___VEC0
+___DEF_SUB_VEC(___X71,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(209))
+               ___VEC0
+___DEF_SUB_VEC(___X72,2UL)
+               ___VEC1(___REF_FIX(35))
+               ___VEC1(___REF_SUB(73))
+               ___VEC0
+___DEF_SUB_VEC(___X73,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(209))
+               ___VEC0
+___DEF_SUB_VEC(___X74,2UL)
+               ___VEC1(___REF_FIX(36))
+               ___VEC1(___REF_SUB(75))
+               ___VEC0
+___DEF_SUB_VEC(___X75,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(209))
+               ___VEC0
+___DEF_SUB_VEC(___X76,2UL)
+               ___VEC1(___REF_FIX(37))
+               ___VEC1(___REF_SUB(77))
+               ___VEC0
+___DEF_SUB_VEC(___X77,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(209))
+               ___VEC0
+___DEF_SUB_VEC(___X78,2UL)
+               ___VEC1(___REF_FIX(38))
+               ___VEC1(___REF_SUB(79))
+               ___VEC0
+___DEF_SUB_VEC(___X79,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(205))
+               ___VEC0
+___DEF_SUB_VEC(___X80,3UL)
+               ___VEC1(___REF_FIX(39))
+               ___VEC1(___REF_SUB(81))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X81,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(205))
+               ___VEC0
+___DEF_SUB_VEC(___X82,2UL)
+               ___VEC1(___REF_FIX(40))
+               ___VEC1(___REF_SUB(83))
+               ___VEC0
+___DEF_SUB_VEC(___X83,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(205))
+               ___VEC0
+___DEF_SUB_VEC(___X84,3UL)
+               ___VEC1(___REF_FIX(41))
+               ___VEC1(___REF_SUB(85))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X85,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(205))
+               ___VEC0
+___DEF_SUB_VEC(___X86,1UL)
+               ___VEC1(___REF_SYM(75,___S_rest))
+               ___VEC0
+___DEF_SUB_VEC(___X87,2UL)
+               ___VEC1(___REF_SUB(88))
+               ___VEC1(___REF_SUB(99))
+               ___VEC0
+___DEF_SUB_VEC(___X88,5UL)
+               ___VEC1(___REF_SUB(89))
+               ___VEC1(___REF_SUB(91))
+               ___VEC1(___REF_SUB(93))
+               ___VEC1(___REF_SUB(95))
+               ___VEC1(___REF_SUB(97))
+               ___VEC0
+___DEF_SUB_VEC(___X89,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(90))
+               ___VEC0
+___DEF_SUB_VEC(___X90,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(46))
+               ___VEC0
+___DEF_SUB_VEC(___X91,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(92))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X92,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(852018))
+               ___VEC0
+___DEF_SUB_VEC(___X93,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(94))
+               ___VEC1(___REF_FIX(32770))
+               ___VEC0
+___DEF_SUB_VEC(___X94,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(458803))
+               ___VEC0
+___DEF_SUB_VEC(___X95,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(96))
+               ___VEC1(___REF_FIX(32770))
+               ___VEC0
+___DEF_SUB_VEC(___X96,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(458800))
+               ___VEC0
+___DEF_SUB_VEC(___X97,5UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(98))
+               ___VEC1(___REF_FIX(360448))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X98,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(852018))
+               ___VEC0
+___DEF_SUB_VEC(___X99,2UL)
+               ___VEC1(___REF_SYM(85,___S_type))
+               ___VEC1(___REF_SYM(71,___S_parameter))
+               ___VEC0
+___DEF_SUB_VEC(___X100,2UL)
+               ___VEC1(___REF_SUB(101))
+               ___VEC1(___REF_SUB(114))
+               ___VEC0
+___DEF_SUB_VEC(___X101,6UL)
+               ___VEC1(___REF_SUB(102))
+               ___VEC1(___REF_SUB(104))
+               ___VEC1(___REF_SUB(106))
+               ___VEC1(___REF_SUB(108))
+               ___VEC1(___REF_SUB(110))
+               ___VEC1(___REF_SUB(112))
+               ___VEC0
+___DEF_SUB_VEC(___X102,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(103))
+               ___VEC0
+___DEF_SUB_VEC(___X103,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(54))
+               ___VEC0
+___DEF_SUB_VEC(___X104,5UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(105))
+               ___VEC1(___REF_FIX(360448))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X105,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(524344))
+               ___VEC0
+___DEF_SUB_VEC(___X106,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(107))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X107,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(524344))
+               ___VEC0
+___DEF_SUB_VEC(___X108,2UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(109))
+               ___VEC0
+___DEF_SUB_VEC(___X109,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(393274))
+               ___VEC0
+___DEF_SUB_VEC(___X110,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(111))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X111,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(524345))
+               ___VEC0
+___DEF_SUB_VEC(___X112,4UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(113))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X113,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(524345))
+               ___VEC0
+___DEF_SUB_VEC(___X114,2UL)
+               ___VEC1(___REF_SYM(85,___S_type))
+               ___VEC1(___REF_SYM(71,___S_parameter))
+               ___VEC0
+___DEF_SUB_VEC(___X115,2UL)
+               ___VEC1(___REF_SUB(116))
+               ___VEC1(___REF_SUB(139))
+               ___VEC0
+___DEF_SUB_VEC(___X116,11UL)
+               ___VEC1(___REF_SUB(117))
+               ___VEC1(___REF_SUB(119))
+               ___VEC1(___REF_SUB(121))
+               ___VEC1(___REF_SUB(123))
+               ___VEC1(___REF_SUB(125))
+               ___VEC1(___REF_SUB(127))
+               ___VEC1(___REF_SUB(129))
+               ___VEC1(___REF_SUB(131))
+               ___VEC1(___REF_SUB(133))
+               ___VEC1(___REF_SUB(135))
+               ___VEC1(___REF_SUB(137))
+               ___VEC0
+___DEF_SUB_VEC(___X117,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(118))
+               ___VEC0
+___DEF_SUB_VEC(___X118,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(61))
+               ___VEC0
+___DEF_SUB_VEC(___X119,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(120))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X120,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131134))
+               ___VEC0
+___DEF_SUB_VEC(___X121,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(122))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X122,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1245249))
+               ___VEC0
+___DEF_SUB_VEC(___X123,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(124))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X124,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1048640))
+               ___VEC0
+___DEF_SUB_VEC(___X125,3UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(126))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X126,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1048640))
+               ___VEC0
+___DEF_SUB_VEC(___X127,2UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(128))
+               ___VEC0
+___DEF_SUB_VEC(___X128,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(589891))
+               ___VEC0
+___DEF_SUB_VEC(___X129,3UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(130))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X130,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1245250))
+               ___VEC0
+___DEF_SUB_VEC(___X131,3UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(132))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X132,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(720961))
+               ___VEC0
+___DEF_SUB_VEC(___X133,3UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(134))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X134,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(720961))
+               ___VEC0
+___DEF_SUB_VEC(___X135,3UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(136))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X136,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131134))
+               ___VEC0
+___DEF_SUB_VEC(___X137,3UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(138))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X138,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131134))
+               ___VEC0
+___DEF_SUB_VEC(___X139,1UL)
+               ___VEC1(___REF_SYM(72,___S_parameters))
+               ___VEC0
+___DEF_SUB_VEC(___X140,2UL)
+               ___VEC1(___REF_SUB(141))
+               ___VEC1(___REF_SUB(144))
+               ___VEC0
+___DEF_SUB_VEC(___X141,1UL)
+               ___VEC1(___REF_SUB(142))
+               ___VEC0
+___DEF_SUB_VEC(___X142,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(143))
+               ___VEC0
+___DEF_SUB_VEC(___X143,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(70))
+               ___VEC0
+___DEF_SUB_VEC(___X144,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X145,2UL)
+               ___VEC1(___REF_SUB(146))
+               ___VEC1(___REF_SUB(169))
+               ___VEC0
+___DEF_SUB_VEC(___X146,11UL)
+               ___VEC1(___REF_SUB(147))
+               ___VEC1(___REF_SUB(149))
+               ___VEC1(___REF_SUB(151))
+               ___VEC1(___REF_SUB(153))
+               ___VEC1(___REF_SUB(155))
+               ___VEC1(___REF_SUB(157))
+               ___VEC1(___REF_SUB(159))
+               ___VEC1(___REF_SUB(161))
+               ___VEC1(___REF_SUB(163))
+               ___VEC1(___REF_SUB(165))
+               ___VEC1(___REF_SUB(167))
+               ___VEC0
+___DEF_SUB_VEC(___X147,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(148))
+               ___VEC0
+___DEF_SUB_VEC(___X148,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(74))
+               ___VEC0
+___DEF_SUB_VEC(___X149,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(150))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X150,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131147))
+               ___VEC0
+___DEF_SUB_VEC(___X151,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(152))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X152,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1245262))
+               ___VEC0
+___DEF_SUB_VEC(___X153,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(154))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X154,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1048653))
+               ___VEC0
+___DEF_SUB_VEC(___X155,3UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(156))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X156,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1048653))
+               ___VEC0
+___DEF_SUB_VEC(___X157,2UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(158))
+               ___VEC0
+___DEF_SUB_VEC(___X158,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(589904))
+               ___VEC0
+___DEF_SUB_VEC(___X159,3UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(160))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X160,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1245263))
+               ___VEC0
+___DEF_SUB_VEC(___X161,3UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(162))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X162,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(720974))
+               ___VEC0
+___DEF_SUB_VEC(___X163,3UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(164))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X164,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(720974))
+               ___VEC0
+___DEF_SUB_VEC(___X165,3UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(166))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X166,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131147))
+               ___VEC0
+___DEF_SUB_VEC(___X167,3UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(168))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X168,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131147))
+               ___VEC0
+___DEF_SUB_VEC(___X169,1UL)
+               ___VEC1(___REF_SYM(72,___S_parameters))
+               ___VEC0
+___DEF_SUB_VEC(___X170,2UL)
+               ___VEC1(___REF_SUB(171))
+               ___VEC1(___REF_SUB(212))
+               ___VEC0
+___DEF_SUB_VEC(___X171,20UL)
+               ___VEC1(___REF_SUB(172))
+               ___VEC1(___REF_SUB(174))
+               ___VEC1(___REF_SUB(176))
+               ___VEC1(___REF_SUB(178))
+               ___VEC1(___REF_SUB(180))
+               ___VEC1(___REF_SUB(182))
+               ___VEC1(___REF_SUB(184))
+               ___VEC1(___REF_SUB(186))
+               ___VEC1(___REF_SUB(188))
+               ___VEC1(___REF_SUB(190))
+               ___VEC1(___REF_SUB(192))
+               ___VEC1(___REF_SUB(194))
+               ___VEC1(___REF_SUB(196))
+               ___VEC1(___REF_SUB(198))
+               ___VEC1(___REF_SUB(200))
+               ___VEC1(___REF_SUB(202))
+               ___VEC1(___REF_SUB(204))
+               ___VEC1(___REF_SUB(206))
+               ___VEC1(___REF_SUB(208))
+               ___VEC1(___REF_SUB(210))
+               ___VEC0
+___DEF_SUB_VEC(___X172,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(173))
+               ___VEC0
+___DEF_SUB_VEC(___X173,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(83))
+               ___VEC0
+___DEF_SUB_VEC(___X174,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(175))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X175,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131156))
+               ___VEC0
+___DEF_SUB_VEC(___X176,5UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(177))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X177,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310808))
+               ___VEC0
+___DEF_SUB_VEC(___X178,5UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(179))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X179,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310811))
+               ___VEC0
+___DEF_SUB_VEC(___X180,7UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(181))
+               ___VEC1(___REF_FIX(393218))
+               ___VEC1(___REF_FIX(360452))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X181,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310808))
+               ___VEC0
+___DEF_SUB_VEC(___X182,5UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(183))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X183,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(3670105))
+               ___VEC0
+___DEF_SUB_VEC(___X184,5UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(185))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X185,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310809))
+               ___VEC0
+___DEF_SUB_VEC(___X186,5UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(187))
+               ___VEC1(___REF_FIX(360452))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X187,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1114206))
+               ___VEC0
+___DEF_SUB_VEC(___X188,4UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(189))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X189,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1114206))
+               ___VEC0
+___DEF_SUB_VEC(___X190,4UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(191))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X191,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(589918))
+               ___VEC0
+___DEF_SUB_VEC(___X192,4UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(193))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X193,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(589918))
+               ___VEC0
+___DEF_SUB_VEC(___X194,5UL)
+               ___VEC1(___REF_FIX(11))
+               ___VEC1(___REF_SUB(195))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X195,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310809))
+               ___VEC0
+___DEF_SUB_VEC(___X196,5UL)
+               ___VEC1(___REF_FIX(12))
+               ___VEC1(___REF_SUB(197))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X197,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310809))
+               ___VEC0
+___DEF_SUB_VEC(___X198,5UL)
+               ___VEC1(___REF_FIX(13))
+               ___VEC1(___REF_SUB(199))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X199,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1835101))
+               ___VEC0
+___DEF_SUB_VEC(___X200,5UL)
+               ___VEC1(___REF_FIX(14))
+               ___VEC1(___REF_SUB(201))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X201,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310813))
+               ___VEC0
+___DEF_SUB_VEC(___X202,5UL)
+               ___VEC1(___REF_FIX(15))
+               ___VEC1(___REF_SUB(203))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X203,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310813))
+               ___VEC0
+___DEF_SUB_VEC(___X204,5UL)
+               ___VEC1(___REF_FIX(16))
+               ___VEC1(___REF_SUB(205))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X205,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310811))
+               ___VEC0
+___DEF_SUB_VEC(___X206,5UL)
+               ___VEC1(___REF_FIX(17))
+               ___VEC1(___REF_SUB(207))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X207,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310811))
+               ___VEC0
+___DEF_SUB_VEC(___X208,3UL)
+               ___VEC1(___REF_FIX(18))
+               ___VEC1(___REF_SUB(209))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X209,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131156))
+               ___VEC0
+___DEF_SUB_VEC(___X210,3UL)
+               ___VEC1(___REF_FIX(19))
+               ___VEC1(___REF_SUB(211))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X211,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131156))
+               ___VEC0
+___DEF_SUB_VEC(___X212,3UL)
+               ___VEC1(___REF_SYM(72,___S_parameters))
+               ___VEC1(___REF_SYM(71,___S_parameter))
+               ___VEC1(___REF_SYM(76,___S_result))
+               ___VEC0
+___DEF_SUB_VEC(___X213,2UL)
+               ___VEC1(___REF_SUB(214))
+               ___VEC1(___REF_SUB(237))
+               ___VEC0
+___DEF_SUB_VEC(___X214,11UL)
+               ___VEC1(___REF_SUB(215))
+               ___VEC1(___REF_SUB(217))
+               ___VEC1(___REF_SUB(219))
+               ___VEC1(___REF_SUB(221))
+               ___VEC1(___REF_SUB(223))
+               ___VEC1(___REF_SUB(225))
+               ___VEC1(___REF_SUB(227))
+               ___VEC1(___REF_SUB(229))
+               ___VEC1(___REF_SUB(231))
+               ___VEC1(___REF_SUB(233))
+               ___VEC1(___REF_SUB(235))
+               ___VEC0
+___DEF_SUB_VEC(___X215,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(216))
+               ___VEC0
+___DEF_SUB_VEC(___X216,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(97))
+               ___VEC0
+___DEF_SUB_VEC(___X217,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(218))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X218,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131170))
+               ___VEC0
+___DEF_SUB_VEC(___X219,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(220))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X220,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1835110))
+               ___VEC0
+___DEF_SUB_VEC(___X221,5UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(222))
+               ___VEC1(___REF_FIX(360450))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X222,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310821))
+               ___VEC0
+___DEF_SUB_VEC(___X223,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(224))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X224,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310821))
+               ___VEC0
+___DEF_SUB_VEC(___X225,2UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(226))
+               ___VEC0
+___DEF_SUB_VEC(___X226,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310824))
+               ___VEC0
+___DEF_SUB_VEC(___X227,4UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(228))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X228,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(4456550))
+               ___VEC0
+___DEF_SUB_VEC(___X229,4UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(230))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X230,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310822))
+               ___VEC0
+___DEF_SUB_VEC(___X231,4UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(232))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X232,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310822))
+               ___VEC0
+___DEF_SUB_VEC(___X233,3UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(234))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X234,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131170))
+               ___VEC0
+___DEF_SUB_VEC(___X235,3UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(236))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X236,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131170))
+               ___VEC0
+___DEF_SUB_VEC(___X237,2UL)
+               ___VEC1(___REF_SYM(72,___S_parameters))
+               ___VEC1(___REF_SYM(71,___S_parameter))
+               ___VEC0
+___DEF_SUB_STR(___X238,7UL)
+               ___STR7(103,101,110,101,114,105,99)
+___DEF_SUB_STR(___X239,8UL)
+               ___STR8(115,112,101,99,105,102,105,99)
+               ___STR0
+___DEF_SUB_STR(___X240,23UL)
+               ___STR8(71,101,110,101,114,105,99,32)
+               ___STR8(123,97,125,32,105,115,32,97)
+               ___STR7(98,115,116,114,97,99,116)
+___DEF_SUB_STR(___X241,4UL)
+               ___STR4(114,101,115,116)
+___DEF_SUB_VEC(___X242,2UL)
+               ___VEC1(___REF_SUB(243))
+               ___VEC1(___REF_SUB(320))
+               ___VEC0
+___DEF_SUB_VEC(___X243,38UL)
+               ___VEC1(___REF_SUB(244))
+               ___VEC1(___REF_SUB(246))
+               ___VEC1(___REF_SUB(248))
+               ___VEC1(___REF_SUB(250))
+               ___VEC1(___REF_SUB(252))
+               ___VEC1(___REF_SUB(254))
+               ___VEC1(___REF_SUB(256))
+               ___VEC1(___REF_SUB(258))
+               ___VEC1(___REF_SUB(260))
+               ___VEC1(___REF_SUB(262))
+               ___VEC1(___REF_SUB(264))
+               ___VEC1(___REF_SUB(266))
+               ___VEC1(___REF_SUB(268))
+               ___VEC1(___REF_SUB(270))
+               ___VEC1(___REF_SUB(272))
+               ___VEC1(___REF_SUB(274))
+               ___VEC1(___REF_SUB(276))
+               ___VEC1(___REF_SUB(278))
+               ___VEC1(___REF_SUB(280))
+               ___VEC1(___REF_SUB(282))
+               ___VEC1(___REF_SUB(284))
+               ___VEC1(___REF_SUB(286))
+               ___VEC1(___REF_SUB(288))
+               ___VEC1(___REF_SUB(290))
+               ___VEC1(___REF_SUB(292))
+               ___VEC1(___REF_SUB(294))
+               ___VEC1(___REF_SUB(296))
+               ___VEC1(___REF_SUB(298))
+               ___VEC1(___REF_SUB(300))
+               ___VEC1(___REF_SUB(302))
+               ___VEC1(___REF_SUB(304))
+               ___VEC1(___REF_SUB(306))
+               ___VEC1(___REF_SUB(308))
+               ___VEC1(___REF_SUB(310))
+               ___VEC1(___REF_SUB(312))
+               ___VEC1(___REF_SUB(314))
+               ___VEC1(___REF_SUB(316))
+               ___VEC1(___REF_SUB(318))
+               ___VEC0
+___DEF_SUB_VEC(___X244,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(245))
+               ___VEC0
+___DEF_SUB_VEC(___X245,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(113))
+               ___VEC0
+___DEF_SUB_VEC(___X246,9UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(247))
+               ___VEC1(___REF_FIX(425984))
+               ___VEC1(___REF_FIX(393218))
+               ___VEC1(___REF_FIX(360452))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X247,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1835124))
+               ___VEC0
+___DEF_SUB_VEC(___X248,6UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(249))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X249,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1835124))
+               ___VEC0
+___DEF_SUB_VEC(___X250,7UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(251))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X251,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1769589))
+               ___VEC0
+___DEF_SUB_VEC(___X252,8UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(253))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X253,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2752630))
+               ___VEC0
+___DEF_SUB_VEC(___X254,9UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(255))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X255,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1704055))
+               ___VEC0
+___DEF_SUB_VEC(___X256,10UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(257))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X257,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1638520))
+               ___VEC0
+___DEF_SUB_VEC(___X258,11UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(259))
+               ___VEC1(___REF_FIX(327696))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X259,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1704057))
+               ___VEC0
+___DEF_SUB_VEC(___X260,12UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(261))
+               ___VEC1(___REF_FIX(360466))
+               ___VEC1(___REF_FIX(327696))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X261,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(262266))
+               ___VEC0
+___DEF_SUB_VEC(___X262,12UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(263))
+               ___VEC1(___REF_FIX(360466))
+               ___VEC1(___REF_FIX(327696))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X263,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(262266))
+               ___VEC0
+___DEF_SUB_VEC(___X264,12UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(265))
+               ___VEC1(___REF_FIX(360466))
+               ___VEC1(___REF_FIX(327696))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X265,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(262266))
+               ___VEC0
+___DEF_SUB_VEC(___X266,2UL)
+               ___VEC1(___REF_FIX(11))
+               ___VEC1(___REF_SUB(267))
+               ___VEC0
+___DEF_SUB_VEC(___X267,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(262266))
+               ___VEC0
+___DEF_SUB_VEC(___X268,5UL)
+               ___VEC1(___REF_FIX(12))
+               ___VEC1(___REF_SUB(269))
+               ___VEC1(___REF_FIX(131092))
+               ___VEC1(___REF_FIX(98326))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X269,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(3932283))
+               ___VEC0
+___DEF_SUB_VEC(___X270,6UL)
+               ___VEC1(___REF_FIX(13))
+               ___VEC1(___REF_SUB(271))
+               ___VEC1(___REF_FIX(294938))
+               ___VEC1(___REF_FIX(262172))
+               ___VEC1(___REF_FIX(229398))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X271,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(917630))
+               ___VEC0
+___DEF_SUB_VEC(___X272,7UL)
+               ___VEC1(___REF_FIX(14))
+               ___VEC1(___REF_SUB(273))
+               ___VEC1(___REF_FIX(557082))
+               ___VEC1(___REF_FIX(524316))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X273,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1441931))
+               ___VEC0
+___DEF_SUB_VEC(___X274,6UL)
+               ___VEC1(___REF_FIX(15))
+               ___VEC1(___REF_SUB(275))
+               ___VEC1(___REF_FIX(196634))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X275,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1441931))
+               ___VEC0
+___DEF_SUB_VEC(___X276,6UL)
+               ___VEC1(___REF_FIX(16))
+               ___VEC1(___REF_SUB(277))
+               ___VEC1(___REF_FIX(196638))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X277,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(7995535))
+               ___VEC0
+___DEF_SUB_VEC(___X278,6UL)
+               ___VEC1(___REF_FIX(17))
+               ___VEC1(___REF_SUB(279))
+               ___VEC1(___REF_FIX(196638))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X279,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(6029455))
+               ___VEC0
+___DEF_SUB_VEC(___X280,3UL)
+               ___VEC1(___REF_FIX(18))
+               ___VEC1(___REF_SUB(281))
+               ___VEC1(___REF_FIX(65568))
+               ___VEC0
+___DEF_SUB_VEC(___X281,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(5701774))
+               ___VEC0
+___DEF_SUB_VEC(___X282,3UL)
+               ___VEC1(___REF_FIX(19))
+               ___VEC1(___REF_SUB(283))
+               ___VEC1(___REF_FIX(65568))
+               ___VEC0
+___DEF_SUB_VEC(___X283,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(5701774))
+               ___VEC0
+___DEF_SUB_VEC(___X284,2UL)
+               ___VEC1(___REF_FIX(20))
+               ___VEC1(___REF_SUB(285))
+               ___VEC0
+___DEF_SUB_VEC(___X285,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(7405710))
+               ___VEC0
+___DEF_SUB_VEC(___X286,4UL)
+               ___VEC1(___REF_FIX(21))
+               ___VEC1(___REF_SUB(287))
+               ___VEC1(___REF_FIX(98338))
+               ___VEC1(___REF_FIX(65568))
+               ___VEC0
+___DEF_SUB_VEC(___X287,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(5701774))
+               ___VEC0
+___DEF_SUB_VEC(___X288,4UL)
+               ___VEC1(___REF_FIX(22))
+               ___VEC1(___REF_SUB(289))
+               ___VEC1(___REF_FIX(98338))
+               ___VEC1(___REF_FIX(65568))
+               ___VEC0
+___DEF_SUB_VEC(___X289,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(5701774))
+               ___VEC0
+___DEF_SUB_VEC(___X290,4UL)
+               ___VEC1(___REF_FIX(23))
+               ___VEC1(___REF_SUB(291))
+               ___VEC1(___REF_FIX(98338))
+               ___VEC1(___REF_FIX(65568))
+               ___VEC0
+___DEF_SUB_VEC(___X291,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(5701774))
+               ___VEC0
+___DEF_SUB_VEC(___X292,7UL)
+               ___VEC1(___REF_FIX(24))
+               ___VEC1(___REF_SUB(293))
+               ___VEC1(___REF_FIX(196638))
+               ___VEC1(___REF_FIX(262180))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X293,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(5701774))
+               ___VEC0
+___DEF_SUB_VEC(___X294,6UL)
+               ___VEC1(___REF_FIX(25))
+               ___VEC1(___REF_SUB(295))
+               ___VEC1(___REF_FIX(196638))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X295,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1441936))
+               ___VEC0
+___DEF_SUB_VEC(___X296,6UL)
+               ___VEC1(___REF_FIX(26))
+               ___VEC1(___REF_SUB(297))
+               ___VEC1(___REF_FIX(196646))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X297,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1179792))
+               ___VEC0
+___DEF_SUB_VEC(___X298,6UL)
+               ___VEC1(___REF_FIX(27))
+               ___VEC1(___REF_SUB(299))
+               ___VEC1(___REF_FIX(196638))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X299,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2949266))
+               ___VEC0
+___DEF_SUB_VEC(___X300,6UL)
+               ___VEC1(___REF_FIX(28))
+               ___VEC1(___REF_SUB(301))
+               ___VEC1(___REF_FIX(196646))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X301,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1179792))
+               ___VEC0
+___DEF_SUB_VEC(___X302,5UL)
+               ___VEC1(___REF_FIX(29))
+               ___VEC1(___REF_SUB(303))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X303,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(589948))
+               ___VEC0
+___DEF_SUB_VEC(___X304,5UL)
+               ___VEC1(___REF_FIX(30))
+               ___VEC1(___REF_SUB(305))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X305,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(589948))
+               ___VEC0
+___DEF_SUB_VEC(___X306,6UL)
+               ___VEC1(___REF_FIX(31))
+               ___VEC1(___REF_SUB(307))
+               ___VEC1(___REF_FIX(196638))
+               ___VEC1(___REF_FIX(163868))
+               ___VEC1(___REF_FIX(131094))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X307,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2949266))
+               ___VEC0
+___DEF_SUB_VEC(___X308,6UL)
+               ___VEC1(___REF_FIX(32))
+               ___VEC1(___REF_SUB(309))
+               ___VEC1(___REF_FIX(294938))
+               ___VEC1(___REF_FIX(262172))
+               ___VEC1(___REF_FIX(229398))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X309,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(917630))
+               ___VEC0
+___DEF_SUB_VEC(___X310,6UL)
+               ___VEC1(___REF_FIX(33))
+               ___VEC1(___REF_SUB(311))
+               ___VEC1(___REF_FIX(426004))
+               ___VEC1(___REF_FIX(360470))
+               ___VEC1(___REF_FIX(98326))
+               ___VEC1(___REF_FIX(65560))
+               ___VEC0
+___DEF_SUB_VEC(___X311,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(3932283))
+               ___VEC0
+___DEF_SUB_VEC(___X312,2UL)
+               ___VEC1(___REF_FIX(34))
+               ___VEC1(___REF_SUB(313))
+               ___VEC0
+___DEF_SUB_VEC(___X313,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(262266))
+               ___VEC0
+___DEF_SUB_VEC(___X314,2UL)
+               ___VEC1(___REF_FIX(35))
+               ___VEC1(___REF_SUB(315))
+               ___VEC0
+___DEF_SUB_VEC(___X315,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(3473530))
+               ___VEC0
+___DEF_SUB_VEC(___X316,2UL)
+               ___VEC1(___REF_FIX(36))
+               ___VEC1(___REF_SUB(317))
+               ___VEC0
+___DEF_SUB_VEC(___X317,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(3473530))
+               ___VEC0
+___DEF_SUB_VEC(___X318,2UL)
+               ___VEC1(___REF_FIX(37))
+               ___VEC1(___REF_SUB(319))
+               ___VEC0
+___DEF_SUB_VEC(___X319,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(3473530))
+               ___VEC0
+___DEF_SUB_VEC(___X320,20UL)
+               ___VEC1(___REF_SYM(72,___S_parameters))
+               ___VEC1(___REF_SYM(23,___S_generic_2d_method_2d_locator))
+               ___VEC1(___REF_SYM(12,___S_body))
+               ___VEC1(___REF_SYM(80,___S_signature))
+               ___VEC1(___REF_SYM(17,___S_dynamic_2d_signature))
+               ___VEC1(___REF_SYM(20,___S_formal_2d_signature))
+               ___VEC1(___REF_SYM(81,___S_specific_2d_implementation_2d_locator))
+               ___VEC1(___REF_SYM(22,___S_generic_2d_locator))
+               ___VEC1(___REF_SYM(25,___S_gensym_2d_generic))
+               ___VEC1(___REF_SYM(28,___S_gensym_2d_specific))
+               ___VEC1(___REF_CNS(56))
+               ___VEC1(___REF_SYM(19,___S_extra_2d_parameters))
+               ___VEC1(___REF_SYM(67,___S_mandatory_2d_parameters))
+               ___VEC1(___REF_CNS(65))
+               ___VEC1(___REF_SYM(27,___S_gensym_2d_rest))
+               ___VEC1(___REF_CNS(72))
+               ___VEC1(___REF_SYM(83,___S_temp_2e_3))
+               ___VEC1(___REF_SYM(86,___S_x_2e_4))
+               ___VEC1(___REF_SYM(82,___S_temp_2e_1))
+               ___VEC1(___REF_CNS(78))
+               ___VEC0
+___DEF_SUB_STR(___X321,8UL)
+               ___STR8(33,103,101,110,101,114,105,99)
+               ___STR0
+___DEF_SUB_VEC(___X322,2UL)
+               ___VEC1(___REF_SUB(323))
+               ___VEC1(___REF_SUB(336))
+               ___VEC0
+___DEF_SUB_VEC(___X323,6UL)
+               ___VEC1(___REF_SUB(324))
+               ___VEC1(___REF_SUB(326))
+               ___VEC1(___REF_SUB(328))
+               ___VEC1(___REF_SUB(330))
+               ___VEC1(___REF_SUB(332))
+               ___VEC1(___REF_SUB(334))
+               ___VEC0
+___DEF_SUB_VEC(___X324,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(325))
+               ___VEC0
+___DEF_SUB_VEC(___X325,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(149))
+               ___VEC0
+___DEF_SUB_VEC(___X326,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(327))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X327,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2424982))
+               ___VEC0
+___DEF_SUB_VEC(___X328,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(329))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X329,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(4194454))
+               ___VEC0
+___DEF_SUB_VEC(___X330,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(331))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X331,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1310870))
+               ___VEC0
+___DEF_SUB_VEC(___X332,3UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(333))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X333,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131222))
+               ___VEC0
+___DEF_SUB_VEC(___X334,3UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(335))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X335,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(131222))
+               ___VEC0
+___DEF_SUB_VEC(___X336,1UL)
+               ___VEC1(___REF_SYM(66,___S_locator))
+               ___VEC0
+___DEF_SUB_STR(___X337,8UL)
+               ___STR8(115,112,101,99,105,102,105,99)
+               ___STR0
+___DEF_SUB_STR(___X338,6UL)
+               ___STR6(108,97,109,98,100,97)
+___DEF_SUB_VEC(___X339,2UL)
+               ___VEC1(___REF_SUB(340))
+               ___VEC1(___REF_SUB(363))
+               ___VEC0
+___DEF_SUB_VEC(___X340,11UL)
+               ___VEC1(___REF_SUB(341))
+               ___VEC1(___REF_SUB(343))
+               ___VEC1(___REF_SUB(345))
+               ___VEC1(___REF_SUB(347))
+               ___VEC1(___REF_SUB(349))
+               ___VEC1(___REF_SUB(351))
+               ___VEC1(___REF_SUB(353))
+               ___VEC1(___REF_SUB(355))
+               ___VEC1(___REF_SUB(357))
+               ___VEC1(___REF_SUB(359))
+               ___VEC1(___REF_SUB(361))
+               ___VEC0
+___DEF_SUB_VEC(___X341,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(342))
+               ___VEC0
+___DEF_SUB_VEC(___X342,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(158))
+               ___VEC0
+___DEF_SUB_VEC(___X343,11UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(344))
+               ___VEC1(___REF_FIX(557056))
+               ___VEC1(___REF_FIX(524290))
+               ___VEC1(___REF_FIX(491524))
+               ___VEC1(___REF_FIX(229376))
+               ___VEC1(___REF_FIX(196610))
+               ___VEC1(___REF_FIX(163844))
+               ___VEC1(___REF_FIX(131078))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC1(___REF_FIX(32778))
+               ___VEC0
+___DEF_SUB_VEC(___X344,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1835170))
+               ___VEC0
+___DEF_SUB_VEC(___X345,8UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(346))
+               ___VEC1(___REF_FIX(229376))
+               ___VEC1(___REF_FIX(196610))
+               ___VEC1(___REF_FIX(163844))
+               ___VEC1(___REF_FIX(131078))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC1(___REF_FIX(32778))
+               ___VEC0
+___DEF_SUB_VEC(___X346,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1835170))
+               ___VEC0
+___DEF_SUB_VEC(___X347,9UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(348))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229376))
+               ___VEC1(___REF_FIX(196610))
+               ___VEC1(___REF_FIX(163844))
+               ___VEC1(___REF_FIX(131078))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC1(___REF_FIX(32778))
+               ___VEC0
+___DEF_SUB_VEC(___X348,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1769635))
+               ___VEC0
+___DEF_SUB_VEC(___X349,10UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(350))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229376))
+               ___VEC1(___REF_FIX(196610))
+               ___VEC1(___REF_FIX(163844))
+               ___VEC1(___REF_FIX(131078))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC1(___REF_FIX(32778))
+               ___VEC0
+___DEF_SUB_VEC(___X350,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2752676))
+               ___VEC0
+___DEF_SUB_VEC(___X351,11UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(352))
+               ___VEC1(___REF_FIX(327696))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229376))
+               ___VEC1(___REF_FIX(196610))
+               ___VEC1(___REF_FIX(163844))
+               ___VEC1(___REF_FIX(131078))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC1(___REF_FIX(32778))
+               ___VEC0
+___DEF_SUB_VEC(___X352,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1704101))
+               ___VEC0
+___DEF_SUB_VEC(___X353,12UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(354))
+               ___VEC1(___REF_FIX(360466))
+               ___VEC1(___REF_FIX(327696))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229376))
+               ___VEC1(___REF_FIX(196610))
+               ___VEC1(___REF_FIX(163844))
+               ___VEC1(___REF_FIX(131078))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC1(___REF_FIX(32778))
+               ___VEC0
+___DEF_SUB_VEC(___X354,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1704102))
+               ___VEC0
+___DEF_SUB_VEC(___X355,13UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(356))
+               ___VEC1(___REF_FIX(393236))
+               ___VEC1(___REF_FIX(360466))
+               ___VEC1(___REF_FIX(327696))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229376))
+               ___VEC1(___REF_FIX(196610))
+               ___VEC1(___REF_FIX(163844))
+               ___VEC1(___REF_FIX(131078))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC1(___REF_FIX(32778))
+               ___VEC0
+___DEF_SUB_VEC(___X356,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1573031))
+               ___VEC0
+___DEF_SUB_VEC(___X357,14UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(358))
+               ___VEC1(___REF_FIX(589846))
+               ___VEC1(___REF_FIX(393236))
+               ___VEC1(___REF_FIX(360466))
+               ___VEC1(___REF_FIX(327696))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229376))
+               ___VEC1(___REF_FIX(196610))
+               ___VEC1(___REF_FIX(163844))
+               ___VEC1(___REF_FIX(131078))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC1(___REF_FIX(32778))
+               ___VEC0
+___DEF_SUB_VEC(___X358,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1966248))
+               ___VEC0
+___DEF_SUB_VEC(___X359,2UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(360))
+               ___VEC0
+___DEF_SUB_VEC(___X360,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(327849))
+               ___VEC0
+___DEF_SUB_VEC(___X361,2UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(362))
+               ___VEC0
+___DEF_SUB_VEC(___X362,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(327849))
+               ___VEC0
+___DEF_SUB_VEC(___X363,12UL)
+               ___VEC1(___REF_SYM(79,___S_root_3f_))
+               ___VEC1(___REF_SYM(12,___S_body))
+               ___VEC1(___REF_SYM(68,___S_modifier))
+               ___VEC1(___REF_SYM(80,___S_signature))
+               ___VEC1(___REF_SYM(72,___S_parameters))
+               ___VEC1(___REF_SYM(23,___S_generic_2d_method_2d_locator))
+               ___VEC1(___REF_SYM(17,___S_dynamic_2d_signature))
+               ___VEC1(___REF_SYM(20,___S_formal_2d_signature))
+               ___VEC1(___REF_SYM(81,___S_specific_2d_implementation_2d_locator))
+               ___VEC1(___REF_SYM(22,___S_generic_2d_locator))
+               ___VEC1(___REF_SYM(28,___S_gensym_2d_specific))
+               ___VEC1(___REF_SYM(26,___S_gensym_2d_lambda))
+               ___VEC0
+___DEF_SUB_STR(___X364,1UL)
+               ___STR1(47)
+___DEF_SUB_STR(___X365,16UL)
+               ___STR8(58,105,109,112,108,101,109,101)
+               ___STR8(110,116,97,116,105,111,110,58)
+               ___STR0
+___DEF_SUB_VEC(___X366,2UL)
+               ___VEC1(___REF_SUB(367))
+               ___VEC1(___REF_SUB(396))
+               ___VEC0
+___DEF_SUB_VEC(___X367,14UL)
+               ___VEC1(___REF_SUB(368))
+               ___VEC1(___REF_SUB(370))
+               ___VEC1(___REF_SUB(372))
+               ___VEC1(___REF_SUB(374))
+               ___VEC1(___REF_SUB(376))
+               ___VEC1(___REF_SUB(378))
+               ___VEC1(___REF_SUB(380))
+               ___VEC1(___REF_SUB(382))
+               ___VEC1(___REF_SUB(384))
+               ___VEC1(___REF_SUB(386))
+               ___VEC1(___REF_SUB(388))
+               ___VEC1(___REF_SUB(390))
+               ___VEC1(___REF_SUB(392))
+               ___VEC1(___REF_SUB(394))
+               ___VEC0
+___DEF_SUB_VEC(___X368,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(369))
+               ___VEC0
+___DEF_SUB_VEC(___X369,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(179))
+               ___VEC0
+___DEF_SUB_VEC(___X370,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(371))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X371,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1573044))
+               ___VEC0
+___DEF_SUB_VEC(___X372,5UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(373))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X373,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2293941))
+               ___VEC0
+___DEF_SUB_VEC(___X374,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(375))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X375,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2293941))
+               ___VEC0
+___DEF_SUB_VEC(___X376,3UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(377))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X377,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2293941))
+               ___VEC0
+___DEF_SUB_VEC(___X378,3UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(379))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC0
+___DEF_SUB_VEC(___X379,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2752694))
+               ___VEC0
+___DEF_SUB_VEC(___X380,4UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(381))
+               ___VEC1(___REF_FIX(98314))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X381,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2293941))
+               ___VEC0
+___DEF_SUB_VEC(___X382,4UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(383))
+               ___VEC1(___REF_FIX(98314))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X383,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2293941))
+               ___VEC0
+___DEF_SUB_VEC(___X384,4UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(385))
+               ___VEC1(___REF_FIX(98314))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X385,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2293941))
+               ___VEC0
+___DEF_SUB_VEC(___X386,5UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(387))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X387,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(2293941))
+               ___VEC0
+___DEF_SUB_VEC(___X388,6UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(389))
+               ___VEC1(___REF_FIX(163852))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X389,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(4784312))
+               ___VEC0
+___DEF_SUB_VEC(___X390,6UL)
+               ___VEC1(___REF_FIX(11))
+               ___VEC1(___REF_SUB(391))
+               ___VEC1(___REF_FIX(163852))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X391,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(1441976))
+               ___VEC0
+___DEF_SUB_VEC(___X392,6UL)
+               ___VEC1(___REF_FIX(12))
+               ___VEC1(___REF_SUB(393))
+               ___VEC1(___REF_FIX(163852))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X393,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(262328))
+               ___VEC0
+___DEF_SUB_VEC(___X394,6UL)
+               ___VEC1(___REF_FIX(13))
+               ___VEC1(___REF_SUB(395))
+               ___VEC1(___REF_FIX(163852))
+               ___VEC1(___REF_FIX(131076))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X395,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(262328))
+               ___VEC0
+___DEF_SUB_VEC(___X396,7UL)
+               ___VEC1(___REF_SYM(17,___S_dynamic_2d_signature))
+               ___VEC1(___REF_SYM(22,___S_generic_2d_locator))
+               ___VEC1(___REF_SYM(24,___S_generic_2d_string))
+               ___VEC1(___REF_SYM(84,___S_temp_2e_8))
+               ___VEC1(___REF_SYM(13,___S_class_2f_call))
+               ___VEC1(___REF_SYM(87,___S_x_2e_9))
+               ___VEC1(___REF_SYM(18,___S_dynamic_2d_signature_2d_strings))
+               ___VEC0
+___DEF_SUB_VEC(___X397,2UL)
+               ___VEC1(___REF_SUB(398))
+               ___VEC1(___REF_SUB(401))
+               ___VEC0
+___DEF_SUB_VEC(___X398,1UL)
+               ___VEC1(___REF_SUB(399))
+               ___VEC0
+___DEF_SUB_VEC(___X399,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(400))
+               ___VEC0
+___DEF_SUB_VEC(___X400,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X401,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X402,2UL)
+               ___VEC1(___REF_SUB(403))
+               ___VEC1(___REF_SUB(406))
+               ___VEC0
+___DEF_SUB_VEC(___X403,1UL)
+               ___VEC1(___REF_SUB(404))
+               ___VEC0
+___DEF_SUB_VEC(___X404,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(405))
+               ___VEC0
+___DEF_SUB_VEC(___X405,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X406,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X407,2UL)
+               ___VEC1(___REF_SUB(408))
+               ___VEC1(___REF_SUB(411))
+               ___VEC0
+___DEF_SUB_VEC(___X408,1UL)
+               ___VEC1(___REF_SUB(409))
+               ___VEC0
+___DEF_SUB_VEC(___X409,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(410))
+               ___VEC0
+___DEF_SUB_VEC(___X410,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X411,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X412,2UL)
+               ___VEC1(___REF_SUB(413))
+               ___VEC1(___REF_SUB(416))
+               ___VEC0
+___DEF_SUB_VEC(___X413,1UL)
+               ___VEC1(___REF_SUB(414))
+               ___VEC0
+___DEF_SUB_VEC(___X414,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(415))
+               ___VEC0
+___DEF_SUB_VEC(___X415,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X416,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X417,2UL)
+               ___VEC1(___REF_SUB(418))
+               ___VEC1(___REF_SUB(421))
+               ___VEC0
+___DEF_SUB_VEC(___X418,1UL)
+               ___VEC1(___REF_SUB(419))
+               ___VEC0
+___DEF_SUB_VEC(___X419,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(420))
+               ___VEC0
+___DEF_SUB_VEC(___X420,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X421,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X422,2UL)
+               ___VEC1(___REF_SUB(423))
+               ___VEC1(___REF_SUB(426))
+               ___VEC0
+___DEF_SUB_VEC(___X423,1UL)
+               ___VEC1(___REF_SUB(424))
+               ___VEC0
+___DEF_SUB_VEC(___X424,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(425))
+               ___VEC0
+___DEF_SUB_VEC(___X425,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X426,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X427,2UL)
+               ___VEC1(___REF_SUB(428))
+               ___VEC1(___REF_SUB(433))
+               ___VEC0
+___DEF_SUB_VEC(___X428,2UL)
+               ___VEC1(___REF_SUB(429))
+               ___VEC1(___REF_SUB(431))
+               ___VEC0
+___DEF_SUB_VEC(___X429,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(430))
+               ___VEC0
+___DEF_SUB_VEC(___X430,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X431,2UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(432))
+               ___VEC0
+___DEF_SUB_VEC(___X432,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(198))
+               ___VEC0
+___DEF_SUB_VEC(___X433,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X434,2UL)
+               ___VEC1(___REF_SUB(435))
+               ___VEC1(___REF_SUB(438))
+               ___VEC0
+___DEF_SUB_VEC(___X435,1UL)
+               ___VEC1(___REF_SUB(436))
+               ___VEC0
+___DEF_SUB_VEC(___X436,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(437))
+               ___VEC0
+___DEF_SUB_VEC(___X437,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X438,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X439,2UL)
+               ___VEC1(___REF_SUB(440))
+               ___VEC1(___REF_SUB(443))
+               ___VEC0
+___DEF_SUB_VEC(___X440,1UL)
+               ___VEC1(___REF_SUB(441))
+               ___VEC0
+___DEF_SUB_VEC(___X441,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(442))
+               ___VEC0
+___DEF_SUB_VEC(___X442,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X443,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X444,2UL)
+               ___VEC1(___REF_SUB(445))
+               ___VEC1(___REF_SUB(448))
+               ___VEC0
+___DEF_SUB_VEC(___X445,1UL)
+               ___VEC1(___REF_SUB(446))
+               ___VEC0
+___DEF_SUB_VEC(___X446,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(447))
+               ___VEC0
+___DEF_SUB_VEC(___X447,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X448,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X449,2UL)
+               ___VEC1(___REF_SUB(450))
+               ___VEC1(___REF_SUB(453))
+               ___VEC0
+___DEF_SUB_VEC(___X450,1UL)
+               ___VEC1(___REF_SUB(451))
+               ___VEC0
+___DEF_SUB_VEC(___X451,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(452))
+               ___VEC0
+___DEF_SUB_VEC(___X452,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X453,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X454,2UL)
+               ___VEC1(___REF_SUB(455))
+               ___VEC1(___REF_SUB(458))
+               ___VEC0
+___DEF_SUB_VEC(___X455,1UL)
+               ___VEC1(___REF_SUB(456))
+               ___VEC0
+___DEF_SUB_VEC(___X456,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(457))
+               ___VEC0
+___DEF_SUB_VEC(___X457,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X458,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X459,2UL)
+               ___VEC1(___REF_SUB(460))
+               ___VEC1(___REF_SUB(463))
+               ___VEC0
+___DEF_SUB_VEC(___X460,1UL)
+               ___VEC1(___REF_SUB(461))
+               ___VEC0
+___DEF_SUB_VEC(___X461,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(462))
+               ___VEC0
+___DEF_SUB_VEC(___X462,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X463,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X464,2UL)
+               ___VEC1(___REF_SUB(465))
+               ___VEC1(___REF_SUB(468))
+               ___VEC0
+___DEF_SUB_VEC(___X465,1UL)
+               ___VEC1(___REF_SUB(466))
+               ___VEC0
+___DEF_SUB_VEC(___X466,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(467))
+               ___VEC0
+___DEF_SUB_VEC(___X467,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X468,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X469,2UL)
+               ___VEC1(___REF_SUB(470))
+               ___VEC1(___REF_SUB(473))
+               ___VEC0
+___DEF_SUB_VEC(___X470,1UL)
+               ___VEC1(___REF_SUB(471))
+               ___VEC0
+___DEF_SUB_VEC(___X471,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(472))
+               ___VEC0
+___DEF_SUB_VEC(___X472,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X473,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X474,2UL)
+               ___VEC1(___REF_SUB(475))
+               ___VEC1(___REF_SUB(480))
+               ___VEC0
+___DEF_SUB_VEC(___X475,2UL)
+               ___VEC1(___REF_SUB(476))
+               ___VEC1(___REF_SUB(478))
+               ___VEC0
+___DEF_SUB_VEC(___X476,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(477))
+               ___VEC0
+___DEF_SUB_VEC(___X477,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X478,2UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(479))
+               ___VEC0
+___DEF_SUB_VEC(___X479,2UL)
+               ___VEC1(___REF_SYM(14,___S_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_FIX(225))
+               ___VEC0
+___DEF_SUB_VEC(___X480,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X481,5UL)
+               ___VEC1(___REF_SYM(11,___S_bin_3a_core_2e_generic_2e_syntax))
+               ___VEC1(___REF_PRC(1))
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_NUL)
+               ___VEC1(___REF_FAL)
+               ___VEC0
+
+___BEGIN_SUB
+ ___DEF_SUB(___X0)
+,___DEF_SUB(___X1)
+,___DEF_SUB(___X2)
+,___DEF_SUB(___X3)
+,___DEF_SUB(___X4)
+,___DEF_SUB(___X5)
+,___DEF_SUB(___X6)
+,___DEF_SUB(___X7)
+,___DEF_SUB(___X8)
+,___DEF_SUB(___X9)
+,___DEF_SUB(___X10)
+,___DEF_SUB(___X11)
+,___DEF_SUB(___X12)
+,___DEF_SUB(___X13)
+,___DEF_SUB(___X14)
+,___DEF_SUB(___X15)
+,___DEF_SUB(___X16)
+,___DEF_SUB(___X17)
+,___DEF_SUB(___X18)
+,___DEF_SUB(___X19)
+,___DEF_SUB(___X20)
+,___DEF_SUB(___X21)
+,___DEF_SUB(___X22)
+,___DEF_SUB(___X23)
+,___DEF_SUB(___X24)
+,___DEF_SUB(___X25)
+,___DEF_SUB(___X26)
+,___DEF_SUB(___X27)
+,___DEF_SUB(___X28)
+,___DEF_SUB(___X29)
+,___DEF_SUB(___X30)
+,___DEF_SUB(___X31)
+,___DEF_SUB(___X32)
+,___DEF_SUB(___X33)
+,___DEF_SUB(___X34)
+,___DEF_SUB(___X35)
+,___DEF_SUB(___X36)
+,___DEF_SUB(___X37)
+,___DEF_SUB(___X38)
+,___DEF_SUB(___X39)
+,___DEF_SUB(___X40)
+,___DEF_SUB(___X41)
+,___DEF_SUB(___X42)
+,___DEF_SUB(___X43)
+,___DEF_SUB(___X44)
+,___DEF_SUB(___X45)
+,___DEF_SUB(___X46)
+,___DEF_SUB(___X47)
+,___DEF_SUB(___X48)
+,___DEF_SUB(___X49)
+,___DEF_SUB(___X50)
+,___DEF_SUB(___X51)
+,___DEF_SUB(___X52)
+,___DEF_SUB(___X53)
+,___DEF_SUB(___X54)
+,___DEF_SUB(___X55)
+,___DEF_SUB(___X56)
+,___DEF_SUB(___X57)
+,___DEF_SUB(___X58)
+,___DEF_SUB(___X59)
+,___DEF_SUB(___X60)
+,___DEF_SUB(___X61)
+,___DEF_SUB(___X62)
+,___DEF_SUB(___X63)
+,___DEF_SUB(___X64)
+,___DEF_SUB(___X65)
+,___DEF_SUB(___X66)
+,___DEF_SUB(___X67)
+,___DEF_SUB(___X68)
+,___DEF_SUB(___X69)
+,___DEF_SUB(___X70)
+,___DEF_SUB(___X71)
+,___DEF_SUB(___X72)
+,___DEF_SUB(___X73)
+,___DEF_SUB(___X74)
+,___DEF_SUB(___X75)
+,___DEF_SUB(___X76)
+,___DEF_SUB(___X77)
+,___DEF_SUB(___X78)
+,___DEF_SUB(___X79)
+,___DEF_SUB(___X80)
+,___DEF_SUB(___X81)
+,___DEF_SUB(___X82)
+,___DEF_SUB(___X83)
+,___DEF_SUB(___X84)
+,___DEF_SUB(___X85)
+,___DEF_SUB(___X86)
+,___DEF_SUB(___X87)
+,___DEF_SUB(___X88)
+,___DEF_SUB(___X89)
+,___DEF_SUB(___X90)
+,___DEF_SUB(___X91)
+,___DEF_SUB(___X92)
+,___DEF_SUB(___X93)
+,___DEF_SUB(___X94)
+,___DEF_SUB(___X95)
+,___DEF_SUB(___X96)
+,___DEF_SUB(___X97)
+,___DEF_SUB(___X98)
+,___DEF_SUB(___X99)
+,___DEF_SUB(___X100)
+,___DEF_SUB(___X101)
+,___DEF_SUB(___X102)
+,___DEF_SUB(___X103)
+,___DEF_SUB(___X104)
+,___DEF_SUB(___X105)
+,___DEF_SUB(___X106)
+,___DEF_SUB(___X107)
+,___DEF_SUB(___X108)
+,___DEF_SUB(___X109)
+,___DEF_SUB(___X110)
+,___DEF_SUB(___X111)
+,___DEF_SUB(___X112)
+,___DEF_SUB(___X113)
+,___DEF_SUB(___X114)
+,___DEF_SUB(___X115)
+,___DEF_SUB(___X116)
+,___DEF_SUB(___X117)
+,___DEF_SUB(___X118)
+,___DEF_SUB(___X119)
+,___DEF_SUB(___X120)
+,___DEF_SUB(___X121)
+,___DEF_SUB(___X122)
+,___DEF_SUB(___X123)
+,___DEF_SUB(___X124)
+,___DEF_SUB(___X125)
+,___DEF_SUB(___X126)
+,___DEF_SUB(___X127)
+,___DEF_SUB(___X128)
+,___DEF_SUB(___X129)
+,___DEF_SUB(___X130)
+,___DEF_SUB(___X131)
+,___DEF_SUB(___X132)
+,___DEF_SUB(___X133)
+,___DEF_SUB(___X134)
+,___DEF_SUB(___X135)
+,___DEF_SUB(___X136)
+,___DEF_SUB(___X137)
+,___DEF_SUB(___X138)
+,___DEF_SUB(___X139)
+,___DEF_SUB(___X140)
+,___DEF_SUB(___X141)
+,___DEF_SUB(___X142)
+,___DEF_SUB(___X143)
+,___DEF_SUB(___X144)
+,___DEF_SUB(___X145)
+,___DEF_SUB(___X146)
+,___DEF_SUB(___X147)
+,___DEF_SUB(___X148)
+,___DEF_SUB(___X149)
+,___DEF_SUB(___X150)
+,___DEF_SUB(___X151)
+,___DEF_SUB(___X152)
+,___DEF_SUB(___X153)
+,___DEF_SUB(___X154)
+,___DEF_SUB(___X155)
+,___DEF_SUB(___X156)
+,___DEF_SUB(___X157)
+,___DEF_SUB(___X158)
+,___DEF_SUB(___X159)
+,___DEF_SUB(___X160)
+,___DEF_SUB(___X161)
+,___DEF_SUB(___X162)
+,___DEF_SUB(___X163)
+,___DEF_SUB(___X164)
+,___DEF_SUB(___X165)
+,___DEF_SUB(___X166)
+,___DEF_SUB(___X167)
+,___DEF_SUB(___X168)
+,___DEF_SUB(___X169)
+,___DEF_SUB(___X170)
+,___DEF_SUB(___X171)
+,___DEF_SUB(___X172)
+,___DEF_SUB(___X173)
+,___DEF_SUB(___X174)
+,___DEF_SUB(___X175)
+,___DEF_SUB(___X176)
+,___DEF_SUB(___X177)
+,___DEF_SUB(___X178)
+,___DEF_SUB(___X179)
+,___DEF_SUB(___X180)
+,___DEF_SUB(___X181)
+,___DEF_SUB(___X182)
+,___DEF_SUB(___X183)
+,___DEF_SUB(___X184)
+,___DEF_SUB(___X185)
+,___DEF_SUB(___X186)
+,___DEF_SUB(___X187)
+,___DEF_SUB(___X188)
+,___DEF_SUB(___X189)
+,___DEF_SUB(___X190)
+,___DEF_SUB(___X191)
+,___DEF_SUB(___X192)
+,___DEF_SUB(___X193)
+,___DEF_SUB(___X194)
+,___DEF_SUB(___X195)
+,___DEF_SUB(___X196)
+,___DEF_SUB(___X197)
+,___DEF_SUB(___X198)
+,___DEF_SUB(___X199)
+,___DEF_SUB(___X200)
+,___DEF_SUB(___X201)
+,___DEF_SUB(___X202)
+,___DEF_SUB(___X203)
+,___DEF_SUB(___X204)
+,___DEF_SUB(___X205)
+,___DEF_SUB(___X206)
+,___DEF_SUB(___X207)
+,___DEF_SUB(___X208)
+,___DEF_SUB(___X209)
+,___DEF_SUB(___X210)
+,___DEF_SUB(___X211)
+,___DEF_SUB(___X212)
+,___DEF_SUB(___X213)
+,___DEF_SUB(___X214)
+,___DEF_SUB(___X215)
+,___DEF_SUB(___X216)
+,___DEF_SUB(___X217)
+,___DEF_SUB(___X218)
+,___DEF_SUB(___X219)
+,___DEF_SUB(___X220)
+,___DEF_SUB(___X221)
+,___DEF_SUB(___X222)
+,___DEF_SUB(___X223)
+,___DEF_SUB(___X224)
+,___DEF_SUB(___X225)
+,___DEF_SUB(___X226)
+,___DEF_SUB(___X227)
+,___DEF_SUB(___X228)
+,___DEF_SUB(___X229)
+,___DEF_SUB(___X230)
+,___DEF_SUB(___X231)
+,___DEF_SUB(___X232)
+,___DEF_SUB(___X233)
+,___DEF_SUB(___X234)
+,___DEF_SUB(___X235)
+,___DEF_SUB(___X236)
+,___DEF_SUB(___X237)
+,___DEF_SUB(___X238)
+,___DEF_SUB(___X239)
+,___DEF_SUB(___X240)
+,___DEF_SUB(___X241)
+,___DEF_SUB(___X242)
+,___DEF_SUB(___X243)
+,___DEF_SUB(___X244)
+,___DEF_SUB(___X245)
+,___DEF_SUB(___X246)
+,___DEF_SUB(___X247)
+,___DEF_SUB(___X248)
+,___DEF_SUB(___X249)
+,___DEF_SUB(___X250)
+,___DEF_SUB(___X251)
+,___DEF_SUB(___X252)
+,___DEF_SUB(___X253)
+,___DEF_SUB(___X254)
+,___DEF_SUB(___X255)
+,___DEF_SUB(___X256)
+,___DEF_SUB(___X257)
+,___DEF_SUB(___X258)
+,___DEF_SUB(___X259)
+,___DEF_SUB(___X260)
+,___DEF_SUB(___X261)
+,___DEF_SUB(___X262)
+,___DEF_SUB(___X263)
+,___DEF_SUB(___X264)
+,___DEF_SUB(___X265)
+,___DEF_SUB(___X266)
+,___DEF_SUB(___X267)
+,___DEF_SUB(___X268)
+,___DEF_SUB(___X269)
+,___DEF_SUB(___X270)
+,___DEF_SUB(___X271)
+,___DEF_SUB(___X272)
+,___DEF_SUB(___X273)
+,___DEF_SUB(___X274)
+,___DEF_SUB(___X275)
+,___DEF_SUB(___X276)
+,___DEF_SUB(___X277)
+,___DEF_SUB(___X278)
+,___DEF_SUB(___X279)
+,___DEF_SUB(___X280)
+,___DEF_SUB(___X281)
+,___DEF_SUB(___X282)
+,___DEF_SUB(___X283)
+,___DEF_SUB(___X284)
+,___DEF_SUB(___X285)
+,___DEF_SUB(___X286)
+,___DEF_SUB(___X287)
+,___DEF_SUB(___X288)
+,___DEF_SUB(___X289)
+,___DEF_SUB(___X290)
+,___DEF_SUB(___X291)
+,___DEF_SUB(___X292)
+,___DEF_SUB(___X293)
+,___DEF_SUB(___X294)
+,___DEF_SUB(___X295)
+,___DEF_SUB(___X296)
+,___DEF_SUB(___X297)
+,___DEF_SUB(___X298)
+,___DEF_SUB(___X299)
+,___DEF_SUB(___X300)
+,___DEF_SUB(___X301)
+,___DEF_SUB(___X302)
+,___DEF_SUB(___X303)
+,___DEF_SUB(___X304)
+,___DEF_SUB(___X305)
+,___DEF_SUB(___X306)
+,___DEF_SUB(___X307)
+,___DEF_SUB(___X308)
+,___DEF_SUB(___X309)
+,___DEF_SUB(___X310)
+,___DEF_SUB(___X311)
+,___DEF_SUB(___X312)
+,___DEF_SUB(___X313)
+,___DEF_SUB(___X314)
+,___DEF_SUB(___X315)
+,___DEF_SUB(___X316)
+,___DEF_SUB(___X317)
+,___DEF_SUB(___X318)
+,___DEF_SUB(___X319)
+,___DEF_SUB(___X320)
+,___DEF_SUB(___X321)
+,___DEF_SUB(___X322)
+,___DEF_SUB(___X323)
+,___DEF_SUB(___X324)
+,___DEF_SUB(___X325)
+,___DEF_SUB(___X326)
+,___DEF_SUB(___X327)
+,___DEF_SUB(___X328)
+,___DEF_SUB(___X329)
+,___DEF_SUB(___X330)
+,___DEF_SUB(___X331)
+,___DEF_SUB(___X332)
+,___DEF_SUB(___X333)
+,___DEF_SUB(___X334)
+,___DEF_SUB(___X335)
+,___DEF_SUB(___X336)
+,___DEF_SUB(___X337)
+,___DEF_SUB(___X338)
+,___DEF_SUB(___X339)
+,___DEF_SUB(___X340)
+,___DEF_SUB(___X341)
+,___DEF_SUB(___X342)
+,___DEF_SUB(___X343)
+,___DEF_SUB(___X344)
+,___DEF_SUB(___X345)
+,___DEF_SUB(___X346)
+,___DEF_SUB(___X347)
+,___DEF_SUB(___X348)
+,___DEF_SUB(___X349)
+,___DEF_SUB(___X350)
+,___DEF_SUB(___X351)
+,___DEF_SUB(___X352)
+,___DEF_SUB(___X353)
+,___DEF_SUB(___X354)
+,___DEF_SUB(___X355)
+,___DEF_SUB(___X356)
+,___DEF_SUB(___X357)
+,___DEF_SUB(___X358)
+,___DEF_SUB(___X359)
+,___DEF_SUB(___X360)
+,___DEF_SUB(___X361)
+,___DEF_SUB(___X362)
+,___DEF_SUB(___X363)
+,___DEF_SUB(___X364)
+,___DEF_SUB(___X365)
+,___DEF_SUB(___X366)
+,___DEF_SUB(___X367)
+,___DEF_SUB(___X368)
+,___DEF_SUB(___X369)
+,___DEF_SUB(___X370)
+,___DEF_SUB(___X371)
+,___DEF_SUB(___X372)
+,___DEF_SUB(___X373)
+,___DEF_SUB(___X374)
+,___DEF_SUB(___X375)
+,___DEF_SUB(___X376)
+,___DEF_SUB(___X377)
+,___DEF_SUB(___X378)
+,___DEF_SUB(___X379)
+,___DEF_SUB(___X380)
+,___DEF_SUB(___X381)
+,___DEF_SUB(___X382)
+,___DEF_SUB(___X383)
+,___DEF_SUB(___X384)
+,___DEF_SUB(___X385)
+,___DEF_SUB(___X386)
+,___DEF_SUB(___X387)
+,___DEF_SUB(___X388)
+,___DEF_SUB(___X389)
+,___DEF_SUB(___X390)
+,___DEF_SUB(___X391)
+,___DEF_SUB(___X392)
+,___DEF_SUB(___X393)
+,___DEF_SUB(___X394)
+,___DEF_SUB(___X395)
+,___DEF_SUB(___X396)
+,___DEF_SUB(___X397)
+,___DEF_SUB(___X398)
+,___DEF_SUB(___X399)
+,___DEF_SUB(___X400)
+,___DEF_SUB(___X401)
+,___DEF_SUB(___X402)
+,___DEF_SUB(___X403)
+,___DEF_SUB(___X404)
+,___DEF_SUB(___X405)
+,___DEF_SUB(___X406)
+,___DEF_SUB(___X407)
+,___DEF_SUB(___X408)
+,___DEF_SUB(___X409)
+,___DEF_SUB(___X410)
+,___DEF_SUB(___X411)
+,___DEF_SUB(___X412)
+,___DEF_SUB(___X413)
+,___DEF_SUB(___X414)
+,___DEF_SUB(___X415)
+,___DEF_SUB(___X416)
+,___DEF_SUB(___X417)
+,___DEF_SUB(___X418)
+,___DEF_SUB(___X419)
+,___DEF_SUB(___X420)
+,___DEF_SUB(___X421)
+,___DEF_SUB(___X422)
+,___DEF_SUB(___X423)
+,___DEF_SUB(___X424)
+,___DEF_SUB(___X425)
+,___DEF_SUB(___X426)
+,___DEF_SUB(___X427)
+,___DEF_SUB(___X428)
+,___DEF_SUB(___X429)
+,___DEF_SUB(___X430)
+,___DEF_SUB(___X431)
+,___DEF_SUB(___X432)
+,___DEF_SUB(___X433)
+,___DEF_SUB(___X434)
+,___DEF_SUB(___X435)
+,___DEF_SUB(___X436)
+,___DEF_SUB(___X437)
+,___DEF_SUB(___X438)
+,___DEF_SUB(___X439)
+,___DEF_SUB(___X440)
+,___DEF_SUB(___X441)
+,___DEF_SUB(___X442)
+,___DEF_SUB(___X443)
+,___DEF_SUB(___X444)
+,___DEF_SUB(___X445)
+,___DEF_SUB(___X446)
+,___DEF_SUB(___X447)
+,___DEF_SUB(___X448)
+,___DEF_SUB(___X449)
+,___DEF_SUB(___X450)
+,___DEF_SUB(___X451)
+,___DEF_SUB(___X452)
+,___DEF_SUB(___X453)
+,___DEF_SUB(___X454)
+,___DEF_SUB(___X455)
+,___DEF_SUB(___X456)
+,___DEF_SUB(___X457)
+,___DEF_SUB(___X458)
+,___DEF_SUB(___X459)
+,___DEF_SUB(___X460)
+,___DEF_SUB(___X461)
+,___DEF_SUB(___X462)
+,___DEF_SUB(___X463)
+,___DEF_SUB(___X464)
+,___DEF_SUB(___X465)
+,___DEF_SUB(___X466)
+,___DEF_SUB(___X467)
+,___DEF_SUB(___X468)
+,___DEF_SUB(___X469)
+,___DEF_SUB(___X470)
+,___DEF_SUB(___X471)
+,___DEF_SUB(___X472)
+,___DEF_SUB(___X473)
+,___DEF_SUB(___X474)
+,___DEF_SUB(___X475)
+,___DEF_SUB(___X476)
+,___DEF_SUB(___X477)
+,___DEF_SUB(___X478)
+,___DEF_SUB(___X479)
+,___DEF_SUB(___X480)
+,___DEF_SUB(___X481)
+___END_SUB
+
+
+
+#undef ___MD_ALL
+#define ___MD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___MR_ALL
+#define ___MR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___MW_ALL
+#define ___MW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_M_COD
+___BEGIN_M_HLBL
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L1_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L2_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L3_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L4_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L5_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L6_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L7_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L8_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L9_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L10_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L11_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L12_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L13_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L14_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L15_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L16_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L17_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L18_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L19_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L20_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L21_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L22_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L23_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L24_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L25_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L26_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L27_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L28_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L29_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L30_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L31_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L32_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L33_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L34_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L35_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L36_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L37_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L38_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L39_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L40_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL(___L41_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_M_HLBL(___L1_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_M_HLBL(___L2_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_M_HLBL(___L3_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_M_HLBL(___L4_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_M_HLBL(___L1_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_M_HLBL(___L2_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_M_HLBL(___L3_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_M_HLBL(___L4_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_M_HLBL(___L5_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L1_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L2_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L3_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L4_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L5_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L6_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L7_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L8_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L9_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL(___L10_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_dynamic_2d_parameter_2d_name)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L1_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L2_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L3_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L4_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L5_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L6_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L7_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L8_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L9_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL(___L10_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L1_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L2_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L3_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L4_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L5_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L6_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L7_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L8_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L9_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L10_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L11_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L12_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L13_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L14_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L15_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L16_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L17_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L18_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL(___L19_jazz_3a_generic_2d_parameters)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L1_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L2_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L3_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L4_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L5_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L6_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L7_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L8_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L9_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL(___L10_jazz_3a_specific_2d_parameters)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L1_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L2_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L3_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L4_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L5_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L6_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L7_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L8_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L9_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L10_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L11_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L12_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L13_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L14_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L15_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L16_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L17_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L18_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L19_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L20_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L21_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L22_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L23_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L24_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L25_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L26_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L27_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L28_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L29_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L30_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L31_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L32_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L33_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L34_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L35_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L36_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL(___L37_jazz_3a_expand_2d_define_2d_generic)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_generic_2d_object_2d_locator)
+___DEF_M_HLBL(___L1_jazz_3a_generic_2d_object_2d_locator)
+___DEF_M_HLBL(___L2_jazz_3a_generic_2d_object_2d_locator)
+___DEF_M_HLBL(___L3_jazz_3a_generic_2d_object_2d_locator)
+___DEF_M_HLBL(___L4_jazz_3a_generic_2d_object_2d_locator)
+___DEF_M_HLBL(___L5_jazz_3a_generic_2d_object_2d_locator)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L1_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L2_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L3_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L4_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L5_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L6_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L7_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L8_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L9_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL(___L10_jazz_3a_expand_2d_define_2d_specific)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L1_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L2_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L3_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L4_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L5_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L6_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L7_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L8_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L9_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L10_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L11_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L12_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL(___L13_jazz_3a_implementation_2d_locator)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_get_2d_generic_2d_locator)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_get_2d_generic_2d_name)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_get_2d_generic_2d_root_2d_specific)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_set_2d_generic_2d_root_2d_specific)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_allocate_2d_generic)
+___DEF_M_HLBL(___L1_jazz_3a_allocate_2d_generic)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_get_2d_specific_2d_implementation)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_set_2d_specific_2d_implementation)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_3a_allocate_2d_specific)
+___DEF_M_HLBL(___L1_jazz_3a_allocate_2d_specific)
+___END_M_HLBL
+
+___BEGIN_M_SW
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_bin_3a_core_2e_generic_2e_syntax_23_
+#undef ___PH_LBL0
+#define ___PH_LBL0 1
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L1_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L2_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L3_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L4_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L5_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L6_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L7_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L8_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L9_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L10_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L11_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L12_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L13_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L14_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L15_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L16_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L17_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L18_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L19_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L20_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L21_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L22_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L23_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L24_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L25_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L26_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L27_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L28_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L29_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L30_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L31_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L32_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L33_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L34_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L35_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L36_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L37_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L38_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L39_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L40_bin_3a_core_2e_generic_2e_syntax_23_)
+___DEF_P_HLBL(___L41_bin_3a_core_2e_generic_2e_syntax_23_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(0,0,0,0)
+___DEF_GLBL(___L_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_GLO(11,___G_jazz_3a_dynamic_2d_parameter_3f_,___PRC(44))
+   ___SET_GLO(9,___G_jazz_3a_dynamic_2d_parameter_2d_type,___PRC(50))
+   ___SET_GLO(10,___G_jazz_3a_dynamic_2d_parameter_2d_types,___PRC(57))
+   ___SET_GLO(7,___G_jazz_3a_dynamic_2d_parameter_2d_name,___PRC(69))
+   ___SET_GLO(8,___G_jazz_3a_dynamic_2d_parameter_2d_names,___PRC(71))
+   ___SET_GLO(15,___G_jazz_3a_generic_2d_parameters,___PRC(83))
+   ___SET_GLO(31,___G_jazz_3a_specific_2d_parameters,___PRC(104))
+   ___SET_GLO(12,___G_jazz_3a_expand_2d_define_2d_generic,___PRC(116))
+   ___SET_GLO(14,___G_jazz_3a_generic_2d_object_2d_locator,___PRC(155))
+   ___SET_GLO(13,___G_jazz_3a_expand_2d_define_2d_specific,___PRC(162))
+   ___SET_GLO(24,___G_jazz_3a_implementation_2d_locator,___PRC(174))
+   ___SET_STK(1,___R0)
+   ___SET_STK(5,___SYM_jazz_3a_Object_2d_Class)
+   ___SET_STK(6,___SYM_jazz_3a_Object)
+   ___SET_STK(7,___SYM_jazz_3a_allocate_2d_generic)
+   ___SET_STK(8,___FAL)
+   ___SET_STK(9,___SYM_function)
+   ___SET_STK(10,___CNS(0))
+   ___SET_R3(___FIX(5L))
+   ___SET_R2(___CNS(20))
+   ___SET_R1(___CNS(24))
+   ___ADJFP(10)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(9),50,___G_jazz_3a_make_2d_class_2d_info)
+___DEF_SLBL(2,___L2_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R3(___R1)
+   ___SET_R2(___SYM_jazz_3a_Generic)
+   ___SET_R1(___GLO_jazz_3a_class_2d_info)
+   ___SET_R0(___LBL(3))
+   ___JUMPGLONOTSAFE(___SET_NARGS(3),40,___G__23__23_table_2d_set_21_)
+___DEF_SLBL(3,___L3_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_GLO(16,___G_jazz_3a_get_2d_generic_2d_locator,___PRC(189))
+   ___SET_GLO(17,___G_jazz_3a_get_2d_generic_2d_name,___PRC(191))
+   ___SET_GLO(19,___G_jazz_3a_get_2d_generic_2d_root_2d_specific,___PRC(193))
+   ___SET_GLO(26,___G_jazz_3a_set_2d_generic_2d_root_2d_specific,___PRC(195))
+   ___SET_GLO(18,___G_jazz_3a_get_2d_generic_2d_pending_2d_specifics,___PRC(197))
+   ___SET_GLO(25,___G_jazz_3a_set_2d_generic_2d_pending_2d_specifics,___PRC(199))
+   ___SET_STK(1,___GLO_jazz_3a_Object_2d_Class)
+   ___SET_R2(___PRM_eq_3f_)
+   ___SET_R1(___KEY_test)
+   ___SET_R0(___LBL(4))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(2),57,___G_make_2d_table)
+___DEF_SLBL(4,___L4_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R2(___R1)
+   ___SET_R3(___GLO_jazz_3a_Object)
+   ___SET_R1(___SYM_jazz_3a_Generic)
+   ___SET_R0(___LBL(5))
+   ___ADJFP(-3)
+   ___JUMPGLOSAFE(___SET_NARGS(4),51,___G_jazz_3a_new_2d_core_2d_class)
+___DEF_SLBL(5,___L5_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_GLO(1,___G_jazz_3a_Generic,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_3a_Generic,___FIX(11L)))
+   ___SET_GLO(2,___G_jazz_3a_Generic_21_core_2d_level,___R1)
+   ___SET_GLO(5,___G_jazz_3a_allocate_2d_generic,___PRC(201))
+   ___SET_STK(1,___GLO_jazz_3a_Generic)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_locator)
+   ___SET_R0(___LBL(6))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),45,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(6,___L6_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___GLO_jazz_3a_Generic)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_name)
+   ___SET_R0(___LBL(7))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),45,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(7,___L7_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___GLO_jazz_3a_Generic)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_root_2d_specific)
+   ___SET_R0(___LBL(8))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),45,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(8,___L8_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___GLO_jazz_3a_Generic)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_pending_2d_specifics)
+   ___SET_R0(___LBL(9))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),45,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(9,___L9_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R2(___GLO_jazz_3a_Generic)
+   ___SET_R1(___SYM_Generic)
+   ___SET_R0(___LBL(10))
+   ___JUMPGLOSAFE(___SET_NARGS(2),54,___G_jazz_3a_set_2d_core_2d_class)
+___DEF_SLBL(10,___L10_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___FAL)
+   ___SET_R2(___LBL(40))
+   ___SET_R3(___FAL)
+   ___SET_R1(___FIX(-1L))
+   ___SET_R0(___LBL(11))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),35,___G__23__23_make_2d_macro_2d_descr)
+___DEF_SLBL(11,___L11_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R3(___R1)
+   ___SET_R2(___SYM_jazz_3a_define_2d_generic)
+   ___SET_R1(___GLO__23__23_interaction_2d_cte)
+   ___SET_R0(___LBL(12))
+   ___JUMPGLOSAFE(___SET_NARGS(3),41,___G__23__23_top_2d_cte_2d_add_2d_macro_21_)
+___DEF_SLBL(12,___L12_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R2(___LBL(38))
+   ___SET_R1(___SYM_jazz_3a_define_2d_generic)
+   ___SET_R0(___LBL(13))
+   ___JUMPGLOSAFE(___SET_NARGS(2),52,___G_jazz_3a_register_2d_macro)
+___DEF_SLBL(13,___L13_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___FAL)
+   ___SET_R2(___LBL(36))
+   ___SET_R3(___FAL)
+   ___SET_R1(___FIX(3L))
+   ___SET_R0(___LBL(14))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),35,___G__23__23_make_2d_macro_2d_descr)
+___DEF_SLBL(14,___L14_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R3(___R1)
+   ___SET_R2(___SYM__25__25_specific_2d_dispatch)
+   ___SET_R1(___GLO__23__23_interaction_2d_cte)
+   ___SET_R0(___LBL(15))
+   ___JUMPGLOSAFE(___SET_NARGS(3),41,___G__23__23_top_2d_cte_2d_add_2d_macro_21_)
+___DEF_SLBL(15,___L15_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R2(___LBL(34))
+   ___SET_R1(___SYM__25__25_specific_2d_dispatch)
+   ___SET_R0(___LBL(16))
+   ___JUMPGLOSAFE(___SET_NARGS(2),52,___G_jazz_3a_register_2d_macro)
+___DEF_SLBL(16,___L16_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___SYM_jazz_3a_Object_2d_Class)
+   ___SET_STK(2,___SYM_jazz_3a_Object)
+   ___SET_STK(3,___SYM_jazz_3a_allocate_2d_specific)
+   ___SET_STK(4,___FAL)
+   ___SET_STK(5,___SYM_function)
+   ___SET_STK(6,___CNS(28))
+   ___SET_R3(___FIX(5L))
+   ___SET_R2(___CNS(48))
+   ___SET_R1(___CNS(52))
+   ___SET_R0(___LBL(17))
+   ___ADJFP(6)
+   ___JUMPGLOSAFE(___SET_NARGS(9),50,___G_jazz_3a_make_2d_class_2d_info)
+___DEF_SLBL(17,___L17_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R3(___R1)
+   ___SET_R2(___SYM_jazz_3a_Specific)
+   ___SET_R1(___GLO_jazz_3a_class_2d_info)
+   ___SET_R0(___LBL(18))
+   ___JUMPGLONOTSAFE(___SET_NARGS(3),40,___G__23__23_table_2d_set_21_)
+___DEF_SLBL(18,___L18_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_GLO(22,___G_jazz_3a_get_2d_specific_2d_dynamic_2d_signature,___PRC(204))
+   ___SET_GLO(29,___G_jazz_3a_set_2d_specific_2d_dynamic_2d_signature,___PRC(206))
+   ___SET_GLO(23,___G_jazz_3a_get_2d_specific_2d_implementation,___PRC(208))
+   ___SET_GLO(30,___G_jazz_3a_set_2d_specific_2d_implementation,___PRC(210))
+   ___SET_GLO(20,___G_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics,___PRC(212))
+   ___SET_GLO(27,___G_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics,___PRC(214))
+   ___SET_GLO(21,___G_jazz_3a_get_2d_specific_2d_descendant_2d_specifics,___PRC(216))
+   ___SET_GLO(28,___G_jazz_3a_set_2d_specific_2d_descendant_2d_specifics,___PRC(218))
+   ___SET_STK(1,___GLO_jazz_3a_Object_2d_Class)
+   ___SET_R2(___PRM_eq_3f_)
+   ___SET_R1(___KEY_test)
+   ___SET_R0(___LBL(19))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(2),57,___G_make_2d_table)
+___DEF_SLBL(19,___L19_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R2(___R1)
+   ___SET_R3(___GLO_jazz_3a_Object)
+   ___SET_R1(___SYM_jazz_3a_Specific)
+   ___SET_R0(___LBL(20))
+   ___ADJFP(-3)
+   ___JUMPGLOSAFE(___SET_NARGS(4),51,___G_jazz_3a_new_2d_core_2d_class)
+___DEF_SLBL(20,___L20_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_GLO(3,___G_jazz_3a_Specific,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_3a_Specific,___FIX(11L)))
+   ___SET_GLO(4,___G_jazz_3a_Specific_21_core_2d_level,___R1)
+   ___SET_GLO(6,___G_jazz_3a_allocate_2d_specific,___PRC(220))
+   ___SET_STK(1,___GLO_jazz_3a_Specific)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_dynamic_2d_signature)
+   ___SET_R0(___LBL(21))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),45,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(21,___L21_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___GLO_jazz_3a_Specific)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_implementation)
+   ___SET_R0(___LBL(22))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),45,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(22,___L22_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___GLO_jazz_3a_Specific)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_ancestor_2d_specifics)
+   ___SET_R0(___LBL(23))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),45,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(23,___L23_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___GLO_jazz_3a_Specific)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_descendant_2d_specifics)
+   ___SET_R0(___LBL(24))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),45,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(24,___L24_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R2(___GLO_jazz_3a_Specific)
+   ___SET_R1(___SYM_Specific)
+   ___SET_R0(___LBL(25))
+   ___JUMPGLOSAFE(___SET_NARGS(2),54,___G_jazz_3a_set_2d_core_2d_class)
+___DEF_SLBL(25,___L25_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_STK(1,___FAL)
+   ___SET_R2(___LBL(32))
+   ___SET_R3(___FAL)
+   ___SET_R1(___FIX(-1L))
+   ___SET_R0(___LBL(26))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),35,___G__23__23_make_2d_macro_2d_descr)
+___DEF_SLBL(26,___L26_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R3(___R1)
+   ___SET_R2(___SYM_jazz_3a_define_2d_specific)
+   ___SET_R1(___GLO__23__23_interaction_2d_cte)
+   ___SET_R0(___LBL(27))
+   ___JUMPGLOSAFE(___SET_NARGS(3),41,___G__23__23_top_2d_cte_2d_add_2d_macro_21_)
+___DEF_SLBL(27,___L27_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___SET_R2(___LBL(30))
+   ___SET_R1(___SYM_jazz_3a_define_2d_specific)
+   ___SET_R0(___LBL(28))
+   ___JUMPGLOSAFE(___SET_NARGS(2),52,___G_jazz_3a_register_2d_macro)
+___DEF_SLBL(28,___L28_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___POLL(29)
+___DEF_SLBL(29,___L29_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___ADJFP(-4)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(30,___L30_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(30,0,0,0)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R2(___R1)
+   ___SET_R1(___GLO_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_R0(___LBL(31))
+   ___ADJFP(8)
+   ___JUMPPRM(___SET_NARGS(2),___PRM__23__23_apply)
+___DEF_SLBL(31,___L31_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(32,___L32_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(32,0,0,0)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R2(___R1)
+   ___SET_R1(___GLO_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_R0(___LBL(33))
+   ___ADJFP(8)
+   ___JUMPPRM(___SET_NARGS(2),___PRM__23__23_apply)
+___DEF_SLBL(33,___L33_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(34,___L34_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(34,2,0,0)
+   ___BEGIN_ALLOC_LIST(3UL,___R2)
+   ___ADD_LIST_ELEM(1,___R1)
+   ___ADD_LIST_ELEM(2,___SYM_jazz_3a_dispatch_2d_from_2d_root)
+   ___END_ALLOC_LIST(3)
+   ___SET_R3(___GET_LIST(3))
+   ___BEGIN_ALLOC_LIST(2UL,___R3)
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_get_2d_specific_2d_implementation)
+   ___END_ALLOC_LIST(2)
+   ___SET_R3(___GET_LIST(2))
+   ___SET_R1(___R3)
+   ___CHECK_HEAP(35,4096)
+___DEF_SLBL(35,___L35_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(36,___L36_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(36,2,0,0)
+   ___BEGIN_ALLOC_LIST(3UL,___R2)
+   ___ADD_LIST_ELEM(1,___R1)
+   ___ADD_LIST_ELEM(2,___SYM_jazz_3a_dispatch_2d_from_2d_root)
+   ___END_ALLOC_LIST(3)
+   ___SET_R3(___GET_LIST(3))
+   ___BEGIN_ALLOC_LIST(2UL,___R3)
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_get_2d_specific_2d_implementation)
+   ___END_ALLOC_LIST(2)
+   ___SET_R3(___GET_LIST(2))
+   ___SET_R1(___R3)
+   ___CHECK_HEAP(37,4096)
+___DEF_SLBL(37,___L37_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(38,___L38_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(38,0,0,0)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R2(___R1)
+   ___SET_R1(___GLO_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R0(___LBL(39))
+   ___ADJFP(8)
+   ___JUMPPRM(___SET_NARGS(2),___PRM__23__23_apply)
+___DEF_SLBL(39,___L39_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(40,___L40_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(40,0,0,0)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R2(___R1)
+   ___SET_R1(___GLO_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R0(___LBL(41))
+   ___ADJFP(8)
+   ___JUMPPRM(___SET_NARGS(2),___PRM__23__23_apply)
+___DEF_SLBL(41,___L41_bin_3a_core_2e_generic_2e_syntax_23_)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_dynamic_2d_parameter_3f_
+#undef ___PH_LBL0
+#define ___PH_LBL0 44
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_P_HLBL(___L1_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_P_HLBL(___L2_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_P_HLBL(___L3_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_P_HLBL(___L4_jazz_3a_dynamic_2d_parameter_3f_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_dynamic_2d_parameter_3f_)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_dynamic_2d_parameter_3f_)
+   ___IF(___NOT(___PAIRP(___R1)))
+   ___GOTO(___L8_jazz_3a_dynamic_2d_parameter_3f_)
+   ___END_IF
+   ___SET_R2(___CAR(___R1))
+   ___IF(___NOT(___PAIRP(___R2)))
+   ___GOTO(___L7_jazz_3a_dynamic_2d_parameter_3f_)
+   ___END_IF
+   ___SET_STK(1,___R1)
+   ___SET_R1(___TRU)
+   ___ADJFP(1)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L5_jazz_3a_dynamic_2d_parameter_3f_)
+   ___END_IF
+   ___GOTO(___L6_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_SLBL(1,___L1_jazz_3a_dynamic_2d_parameter_3f_)
+   ___SET_R2(___STK(-5))
+   ___SET_R0(___STK(-7))
+   ___SET_STK(-7,___STK(-6))
+   ___ADJFP(-7)
+   ___IF(___NOT(___NOTFALSEP(___R1)))
+   ___GOTO(___L6_jazz_3a_dynamic_2d_parameter_3f_)
+   ___END_IF
+___DEF_GLBL(___L5_jazz_3a_dynamic_2d_parameter_3f_)
+   ___SET_R1(___CDR(___STK(0)))
+   ___SET_R1(___BOOLEAN(___PAIRP(___R1)))
+   ___POLL(2)
+___DEF_SLBL(2,___L2_jazz_3a_dynamic_2d_parameter_3f_)
+   ___ADJFP(-1)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L6_jazz_3a_dynamic_2d_parameter_3f_)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_3a_dynamic_2d_parameter_3f_)
+   ___ADJFP(-1)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L7_jazz_3a_dynamic_2d_parameter_3f_)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_R1(___R2)
+   ___ADJFP(8)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_3a_dynamic_2d_parameter_3f_)
+   ___SET_R0(___LBL(1))
+   ___JUMPGLOSAFE(___SET_NARGS(1),47,___G_jazz_3a_composite_2d_identifier_3f_)
+___DEF_GLBL(___L8_jazz_3a_dynamic_2d_parameter_3f_)
+   ___SET_STK(1,___R1)
+   ___SET_R1(___FAL)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_dynamic_2d_parameter_2d_type
+#undef ___PH_LBL0
+#define ___PH_LBL0 50
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_P_HLBL(___L1_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_P_HLBL(___L2_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_P_HLBL(___L3_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_P_HLBL(___L4_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_P_HLBL(___L5_jazz_3a_dynamic_2d_parameter_2d_type)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___SET_R2(___CAR(___R1))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_R1(___R2)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),56,___G_jazz_3a_specifier_3f_)
+___DEF_SLBL(2,___L2_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L6_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___END_IF
+   ___SET_R1(___STK(-5))
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L6_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___SET_R1(___STK(-5))
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),55,___G_jazz_3a_specifier_2d__3e_name)
+___DEF_SLBL(4,___L4_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___POLL(5)
+___DEF_SLBL(5,___L5_jazz_3a_dynamic_2d_parameter_2d_type)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_dynamic_2d_parameter_2d_types
+#undef ___PH_LBL0
+#define ___PH_LBL0 57
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L1_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L2_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L3_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L4_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L5_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L6_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L7_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L8_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L9_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_P_HLBL(___L10_jazz_3a_dynamic_2d_parameter_2d_types)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R0(___LBL(9))
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___IF(___PAIRP(___R1))
+   ___GOTO(___L11_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___END_IF
+   ___GOTO(___L12_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_SLBL(2,___L2_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___SET_STK(-5,___R1)
+   ___SET_R1(___CDR(___STK(-6)))
+   ___SET_R0(___LBL(6))
+   ___IF(___NOT(___PAIRP(___R1)))
+   ___GOTO(___L12_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___END_IF
+___DEF_GLBL(___L11_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R1(___CAR(___R1))
+   ___ADJFP(8)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),11,___G_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_SLBL(4,___L4_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L13_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___END_IF
+   ___SET_R1(___STK(-6))
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L12_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___SET_R1(___NUL)
+   ___POLL(5)
+___DEF_SLBL(5,___L5_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L13_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___SET_R1(___CAR(___STK(-6)))
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),9,___G_jazz_3a_dynamic_2d_parameter_2d_type)
+___DEF_SLBL(6,___L6_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___SET_R1(___CONS(___STK(-5),___R1))
+   ___CHECK_HEAP(7,4096)
+___DEF_SLBL(7,___L7_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(9,___L9_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___POLL(10)
+___DEF_SLBL(10,___L10_jazz_3a_dynamic_2d_parameter_2d_types)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_dynamic_2d_parameter_2d_name
+#undef ___PH_LBL0
+#define ___PH_LBL0 69
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_dynamic_2d_parameter_2d_name)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_dynamic_2d_parameter_2d_name)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_dynamic_2d_parameter_2d_name)
+   ___SET_R2(___CADR(___R1))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_dynamic_2d_parameter_2d_names
+#undef ___PH_LBL0
+#define ___PH_LBL0 71
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L1_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L2_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L3_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L4_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L5_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L6_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L7_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L8_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L9_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_P_HLBL(___L10_jazz_3a_dynamic_2d_parameter_2d_names)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R0(___LBL(9))
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___IF(___PAIRP(___R1))
+   ___GOTO(___L11_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___END_IF
+   ___GOTO(___L12_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_SLBL(2,___L2_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___SET_STK(-5,___R1)
+   ___SET_R1(___CDR(___STK(-6)))
+   ___SET_R0(___LBL(6))
+   ___IF(___NOT(___PAIRP(___R1)))
+   ___GOTO(___L12_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___END_IF
+___DEF_GLBL(___L11_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R1(___CAR(___R1))
+   ___ADJFP(8)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),11,___G_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_SLBL(4,___L4_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L13_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___END_IF
+   ___SET_R1(___STK(-6))
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L12_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___SET_R1(___NUL)
+   ___POLL(5)
+___DEF_SLBL(5,___L5_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L13_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___SET_R1(___CAR(___STK(-6)))
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),7,___G_jazz_3a_dynamic_2d_parameter_2d_name)
+___DEF_SLBL(6,___L6_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___SET_R1(___CONS(___STK(-5),___R1))
+   ___CHECK_HEAP(7,4096)
+___DEF_SLBL(7,___L7_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(9,___L9_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___POLL(10)
+___DEF_SLBL(10,___L10_jazz_3a_dynamic_2d_parameter_2d_names)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_generic_2d_parameters
+#undef ___PH_LBL0
+#define ___PH_LBL0 83
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L1_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L2_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L3_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L4_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L5_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L6_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L7_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L8_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L9_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L10_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L11_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L12_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L13_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L14_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L15_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L16_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L17_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L18_jazz_3a_generic_2d_parameters)
+___DEF_P_HLBL(___L19_jazz_3a_generic_2d_parameters)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_generic_2d_parameters)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_generic_2d_parameters)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R2(___NUL)
+   ___SET_R0(___LBL(18))
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_3a_generic_2d_parameters)
+   ___IF(___PAIRP(___R1))
+   ___GOTO(___L20_jazz_3a_generic_2d_parameters)
+   ___END_IF
+   ___GOTO(___L22_jazz_3a_generic_2d_parameters)
+___DEF_SLBL(2,___L2_jazz_3a_generic_2d_parameters)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L21_jazz_3a_generic_2d_parameters)
+   ___END_IF
+   ___IF(___NOT(___SYMBOLP(___STK(-4))))
+   ___GOTO(___L23_jazz_3a_generic_2d_parameters)
+   ___END_IF
+   ___SET_R2(___CONS(___STK(-4),___STK(-5)))
+   ___SET_R1(___CDR(___STK(-6)))
+   ___SET_R0(___LBL(16))
+   ___CHECK_HEAP(3,4096)
+___DEF_SLBL(3,___L3_jazz_3a_generic_2d_parameters)
+   ___IF(___NOT(___PAIRP(___R1)))
+   ___GOTO(___L22_jazz_3a_generic_2d_parameters)
+   ___END_IF
+___DEF_GLBL(___L20_jazz_3a_generic_2d_parameters)
+   ___SET_R3(___CAR(___R1))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_R1(___R3)
+   ___ADJFP(8)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_3a_generic_2d_parameters)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),11,___G_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_GLBL(___L21_jazz_3a_generic_2d_parameters)
+   ___SET_R1(___STK(-4))
+   ___SET_R0(___LBL(5))
+   ___JUMPGLOSAFE(___SET_NARGS(1),7,___G_jazz_3a_dynamic_2d_parameter_2d_name)
+___DEF_SLBL(5,___L5_jazz_3a_generic_2d_parameters)
+   ___SET_R2(___CONS(___R1,___STK(-5)))
+   ___SET_R1(___CDR(___STK(-6)))
+   ___SET_R0(___LBL(11))
+   ___CHECK_HEAP(6,4096)
+___DEF_SLBL(6,___L6_jazz_3a_generic_2d_parameters)
+   ___IF(___PAIRP(___R1))
+   ___GOTO(___L20_jazz_3a_generic_2d_parameters)
+   ___END_IF
+___DEF_GLBL(___L22_jazz_3a_generic_2d_parameters)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_R1(___R2)
+   ___ADJFP(8)
+   ___POLL(7)
+___DEF_SLBL(7,___L7_jazz_3a_generic_2d_parameters)
+   ___SET_R0(___LBL(8))
+   ___JUMPGLOSAFE(___SET_NARGS(1),53,___G_jazz_3a_reverse_21_)
+___DEF_SLBL(8,___L8_jazz_3a_generic_2d_parameters)
+   ___BEGIN_ALLOC_VALUES(2UL)
+   ___ADD_VALUES_ELEM(0,___R1)
+   ___ADD_VALUES_ELEM(1,___STK(-6))
+   ___END_ALLOC_VALUES(2)
+   ___SET_R1(___GET_VALUES(2))
+   ___CHECK_HEAP(9,4096)
+___DEF_SLBL(9,___L9_jazz_3a_generic_2d_parameters)
+   ___POLL(10)
+___DEF_SLBL(10,___L10_jazz_3a_generic_2d_parameters)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(11,___L11_jazz_3a_generic_2d_parameters)
+   ___POLL(12)
+___DEF_SLBL(12,___L12_jazz_3a_generic_2d_parameters)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L23_jazz_3a_generic_2d_parameters)
+   ___SET_R1(___STK(-5))
+   ___SET_R0(___LBL(13))
+   ___JUMPGLOSAFE(___SET_NARGS(1),53,___G_jazz_3a_reverse_21_)
+___DEF_SLBL(13,___L13_jazz_3a_generic_2d_parameters)
+   ___BEGIN_ALLOC_VALUES(2UL)
+   ___ADD_VALUES_ELEM(0,___R1)
+   ___ADD_VALUES_ELEM(1,___STK(-6))
+   ___END_ALLOC_VALUES(2)
+   ___SET_R1(___GET_VALUES(2))
+   ___CHECK_HEAP(14,4096)
+___DEF_SLBL(14,___L14_jazz_3a_generic_2d_parameters)
+   ___POLL(15)
+___DEF_SLBL(15,___L15_jazz_3a_generic_2d_parameters)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(16,___L16_jazz_3a_generic_2d_parameters)
+   ___POLL(17)
+___DEF_SLBL(17,___L17_jazz_3a_generic_2d_parameters)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(18,___L18_jazz_3a_generic_2d_parameters)
+   ___POLL(19)
+___DEF_SLBL(19,___L19_jazz_3a_generic_2d_parameters)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_specific_2d_parameters
+#undef ___PH_LBL0
+#define ___PH_LBL0 104
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L1_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L2_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L3_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L4_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L5_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L6_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L7_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L8_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L9_jazz_3a_specific_2d_parameters)
+___DEF_P_HLBL(___L10_jazz_3a_specific_2d_parameters)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_specific_2d_parameters)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_specific_2d_parameters)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R0(___LBL(9))
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_3a_specific_2d_parameters)
+   ___IF(___PAIRP(___R1))
+   ___GOTO(___L11_jazz_3a_specific_2d_parameters)
+   ___END_IF
+   ___GOTO(___L13_jazz_3a_specific_2d_parameters)
+___DEF_SLBL(2,___L2_jazz_3a_specific_2d_parameters)
+   ___SET_STK(-4,___R1)
+   ___SET_R1(___CDR(___STK(-6)))
+   ___SET_R0(___LBL(6))
+   ___IF(___NOT(___PAIRP(___R1)))
+   ___GOTO(___L13_jazz_3a_specific_2d_parameters)
+   ___END_IF
+___DEF_GLBL(___L11_jazz_3a_specific_2d_parameters)
+   ___SET_R2(___CAR(___R1))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_R1(___R2)
+   ___ADJFP(8)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_3a_specific_2d_parameters)
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),11,___G_jazz_3a_dynamic_2d_parameter_3f_)
+___DEF_SLBL(4,___L4_jazz_3a_specific_2d_parameters)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L12_jazz_3a_specific_2d_parameters)
+   ___END_IF
+   ___SET_R1(___STK(-6))
+   ___POLL(5)
+___DEF_SLBL(5,___L5_jazz_3a_specific_2d_parameters)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L12_jazz_3a_specific_2d_parameters)
+   ___SET_R1(___STK(-5))
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),7,___G_jazz_3a_dynamic_2d_parameter_2d_name)
+___DEF_SLBL(6,___L6_jazz_3a_specific_2d_parameters)
+   ___SET_R1(___CONS(___STK(-4),___R1))
+   ___CHECK_HEAP(7,4096)
+___DEF_SLBL(7,___L7_jazz_3a_specific_2d_parameters)
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_3a_specific_2d_parameters)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L13_jazz_3a_specific_2d_parameters)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(9,___L9_jazz_3a_specific_2d_parameters)
+   ___POLL(10)
+___DEF_SLBL(10,___L10_jazz_3a_specific_2d_parameters)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_expand_2d_define_2d_generic
+#undef ___PH_LBL0
+#define ___PH_LBL0 116
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L1_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L2_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L3_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L4_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L5_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L6_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L7_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L8_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L9_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L10_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L11_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L12_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L13_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L14_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L15_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L16_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L17_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L18_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L19_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L20_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L21_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L22_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L23_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L24_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L25_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L26_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L27_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L28_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L29_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L30_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L31_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L32_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L33_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L34_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L35_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L36_jazz_3a_expand_2d_define_2d_generic)
+___DEF_P_HLBL(___L37_jazz_3a_expand_2d_define_2d_generic)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_expand_2d_define_2d_generic)
+   ___IF_NARGS_EQ(1,___SET_R2(___NUL))
+   ___GET_REST(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R3(___CAR(___R1))
+   ___SET_R4(___CDR(___R1))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_STK(5,___R4)
+   ___SET_R1(___R4)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),10,___G_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_SLBL(2,___L2_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-2,___R1)
+   ___SET_R1(___STK(-3))
+   ___SET_R0(___LBL(3))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(1),31,___G_jazz_3a_specific_2d_parameters)
+___DEF_SLBL(3,___L3_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-5,___R1)
+   ___SET_R2(___STK(-6))
+   ___SET_R1(___STK(-8))
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(2),24,___G_jazz_3a_implementation_2d_locator)
+___DEF_SLBL(4,___L4_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-4,___R1)
+   ___SET_R1(___STK(-8))
+   ___SET_R0(___LBL(5))
+   ___JUMPGLOSAFE(___SET_NARGS(1),14,___G_jazz_3a_generic_2d_object_2d_locator)
+___DEF_SLBL(5,___L5_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-3,___R1)
+   ___SET_R1(___SUB(238))
+   ___SET_R0(___LBL(6))
+   ___JUMPGLOSAFE(___SET_NARGS(1),48,___G_jazz_3a_generate_2d_symbol)
+___DEF_SLBL(6,___L6_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-2,___R1)
+   ___SET_R1(___SUB(239))
+   ___SET_R0(___LBL(7))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(1),48,___G_jazz_3a_generate_2d_symbol)
+___DEF_SLBL(7,___L7_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-5,___R1)
+   ___SET_STK(-4,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(-4),34)
+   ___ADD_CLO_ELEM(0,___STK(-11))
+   ___END_SETUP_CLO(1)
+   ___SET_STK(-3,___ALLOC_CLO(9UL))
+   ___BEGIN_SETUP_CLO(9,___STK(-3),11)
+   ___ADD_CLO_ELEM(0,___STK(-13))
+   ___ADD_CLO_ELEM(1,___STK(-10))
+   ___ADD_CLO_ELEM(2,___STK(-9))
+   ___ADD_CLO_ELEM(3,___STK(-7))
+   ___ADD_CLO_ELEM(4,___STK(-12))
+   ___ADD_CLO_ELEM(5,___STK(-6))
+   ___ADD_CLO_ELEM(6,___R1)
+   ___ADD_CLO_ELEM(7,___STK(-11))
+   ___ADD_CLO_ELEM(8,___STK(-8))
+   ___END_SETUP_CLO(9)
+   ___SET_R2(___STK(-3))
+   ___SET_R1(___STK(-4))
+   ___SET_R0(___LBL(9))
+   ___CHECK_HEAP(8,4096)
+___DEF_SLBL(8,___L8_jazz_3a_expand_2d_define_2d_generic)
+   ___JUMPGLOSAFE(___SET_NARGS(2),33,___G__23__23_call_2d_with_2d_values)
+___DEF_SLBL(9,___L9_jazz_3a_expand_2d_define_2d_generic)
+   ___POLL(10)
+___DEF_SLBL(10,___L10_jazz_3a_expand_2d_define_2d_generic)
+   ___ADJFP(-16)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(11,___L11_jazz_3a_expand_2d_define_2d_generic)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(11,2,0,0)
+   ___IF(___NOT(___NULLP(___R2)))
+   ___GOTO(___L45_jazz_3a_expand_2d_define_2d_generic)
+   ___END_IF
+   ___SET_R3(___NUL)
+   ___GOTO(___L38_jazz_3a_expand_2d_define_2d_generic)
+___DEF_SLBL(12,___L12_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R3(___R1)
+   ___SET_R4(___STK(-4))
+   ___SET_R2(___STK(-5))
+   ___SET_R1(___STK(-6))
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L38_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(1,___CLO(___R4,1))
+   ___ADJFP(1)
+   ___IF(___NOT(___NULLP(___STK(0))))
+   ___GOTO(___L44_jazz_3a_expand_2d_define_2d_generic)
+   ___END_IF
+   ___SET_STK(0,___CLO(___R4,5))
+   ___BEGIN_ALLOC_LIST(3UL,___STK(0))
+   ___ADD_LIST_ELEM(1,___SUB(240))
+   ___ADD_LIST_ELEM(2,___SYM_jazz_3a_error)
+   ___END_ALLOC_LIST(3)
+   ___SET_STK(0,___GET_LIST(3))
+   ___SET_STK(1,___CLO(___R4,3))
+   ___BEGIN_ALLOC_LIST(3UL,___STK(0))
+   ___ADD_LIST_ELEM(1,___STK(1))
+   ___ADD_LIST_ELEM(2,___SYM_lambda)
+   ___END_ALLOC_LIST(3)
+   ___SET_STK(0,___GET_LIST(3))
+   ___SET_STK(1,___R1)
+   ___SET_R1(___STK(0))
+   ___ADJFP(1)
+   ___CHECK_HEAP(13,4096)
+___DEF_SLBL(13,___L13_jazz_3a_expand_2d_define_2d_generic)
+___DEF_GLBL(___L39_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-1,___CLO(___R4,9))
+   ___BEGIN_ALLOC_LIST(3UL,___R1)
+   ___ADD_LIST_ELEM(1,___STK(-1))
+   ___ADD_LIST_ELEM(2,___SYM_define)
+   ___END_ALLOC_LIST(3)
+   ___SET_R1(___GET_LIST(3))
+   ___SET_STK(-1,___R0)
+   ___SET_STK(1,___R1)
+   ___SET_STK(2,___R2)
+   ___SET_STK(3,___R3)
+   ___SET_STK(4,___R4)
+   ___SET_R2(___R3)
+   ___SET_R1(___STK(0))
+   ___SET_R0(___LBL(15))
+   ___ADJFP(10)
+   ___CHECK_HEAP(14,4096)
+___DEF_SLBL(14,___L14_jazz_3a_expand_2d_define_2d_generic)
+   ___JUMPPRM(___SET_NARGS(2),___PRM__23__23_quasi_2d_append)
+___DEF_SLBL(15,___L15_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-5,___R1)
+   ___SET_R1(___CLO(___STK(-6),8))
+   ___POLL(16)
+___DEF_SLBL(16,___L16_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R0(___LBL(17))
+   ___JUMPGLOSAFE(___SET_NARGS(1),8,___G_jazz_3a_dynamic_2d_parameter_2d_names)
+___DEF_SLBL(17,___L17_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-4,___R1)
+   ___SET_R0(___LBL(24))
+   ___IF(___PAIRP(___R1))
+   ___GOTO(___L40_jazz_3a_expand_2d_define_2d_generic)
+   ___END_IF
+   ___GOTO(___L41_jazz_3a_expand_2d_define_2d_generic)
+___DEF_SLBL(18,___L18_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-5,___R1)
+   ___SET_R1(___CDR(___STK(-6)))
+   ___SET_R0(___LBL(21))
+   ___IF(___NOT(___PAIRP(___R1)))
+   ___GOTO(___L41_jazz_3a_expand_2d_define_2d_generic)
+   ___END_IF
+___DEF_GLBL(___L40_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R1(___CAR(___R1))
+   ___SET_R0(___LBL(18))
+   ___ADJFP(8)
+   ___POLL(19)
+___DEF_SLBL(19,___L19_jazz_3a_expand_2d_define_2d_generic)
+   ___BEGIN_ALLOC_LIST(2UL,___R1)
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_class_2d_of)
+   ___END_ALLOC_LIST(2)
+   ___SET_R2(___GET_LIST(2))
+   ___SET_R1(___R2)
+   ___CHECK_HEAP(20,4096)
+___DEF_SLBL(20,___L20_jazz_3a_expand_2d_define_2d_generic)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(21,___L21_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R1(___CONS(___STK(-5),___R1))
+   ___CHECK_HEAP(22,4096)
+___DEF_SLBL(22,___L22_jazz_3a_expand_2d_define_2d_generic)
+   ___POLL(23)
+___DEF_SLBL(23,___L23_jazz_3a_expand_2d_define_2d_generic)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L41_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R1(___NUL)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(24,___L24_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R1(___CONS(___SYM__25__25_list,___R1))
+   ___SET_R0(___CLO(___STK(-6),4))
+   ___BEGIN_ALLOC_LIST(3UL,___R1)
+   ___ADD_LIST_ELEM(1,___R0)
+   ___ADD_LIST_ELEM(2,___SYM__25__25_specific_2d_dispatch)
+   ___END_ALLOC_LIST(3)
+   ___SET_R1(___GET_LIST(3))
+   ___SET_R0(___CLO(___STK(-6),7))
+   ___BEGIN_ALLOC_LIST(2UL,___R1)
+   ___ADD_LIST_ELEM(1,___R0)
+   ___END_ALLOC_LIST(2)
+   ___SET_R1(___GET_LIST(2))
+   ___SET_R1(___CONS(___R1,___NUL))
+   ___CHECK_HEAP(25,4096)
+___DEF_SLBL(25,___L25_jazz_3a_expand_2d_define_2d_generic)
+   ___IF(___NOT(___NULLP(___STK(-8))))
+   ___GOTO(___L43_jazz_3a_expand_2d_define_2d_generic)
+   ___END_IF
+   ___SET_R0(___CLO(___STK(-6),7))
+   ___SET_R2(___CONS(___R0,___STK(-10)))
+   ___CHECK_HEAP(26,4096)
+___DEF_SLBL(26,___L26_jazz_3a_expand_2d_define_2d_generic)
+   ___GOTO(___L42_jazz_3a_expand_2d_define_2d_generic)
+___DEF_SLBL(27,___L27_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R0(___CLO(___STK(-6),7))
+   ___SET_R1(___CONS(___R0,___R1))
+   ___SET_R1(___CONS(___SYM_apply,___R1))
+   ___SET_R2(___R1)
+   ___SET_R1(___STK(-4))
+   ___CHECK_HEAP(28,4096)
+___DEF_SLBL(28,___L28_jazz_3a_expand_2d_define_2d_generic)
+___DEF_GLBL(___L42_jazz_3a_expand_2d_define_2d_generic)
+   ___BEGIN_ALLOC_LIST(3UL,___R2)
+   ___ADD_LIST_ELEM(1,___R1)
+   ___ADD_LIST_ELEM(2,___SYM_let)
+   ___END_ALLOC_LIST(3)
+   ___SET_R1(___GET_LIST(3))
+   ___SET_R0(___CLO(___STK(-6),4))
+   ___BEGIN_ALLOC_LIST(2UL,___R0)
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_process_2d_pending_2d_specifics)
+   ___END_ALLOC_LIST(2)
+   ___SET_R2(___GET_LIST(2))
+   ___SET_R0(___CLO(___STK(-6),4))
+   ___BEGIN_ALLOC_LIST(2UL,___R0)
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+   ___END_ALLOC_LIST(2)
+   ___SET_R3(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(2UL,___R3)
+   ___ADD_LIST_ELEM(1,___SYM__25__25_null_3f_)
+   ___END_ALLOC_LIST(2)
+   ___SET_R3(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(2UL,___R3)
+   ___ADD_LIST_ELEM(1,___SYM__25__25_not)
+   ___END_ALLOC_LIST(2)
+   ___SET_R3(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(3UL,___R2)
+   ___ADD_LIST_ELEM(1,___R3)
+   ___ADD_LIST_ELEM(2,___SYM__25__25_when)
+   ___END_ALLOC_LIST(3)
+   ___SET_R2(___GET_LIST(3))
+   ___BEGIN_ALLOC_LIST(4UL,___R1)
+   ___ADD_LIST_ELEM(1,___R2)
+   ___ADD_LIST_ELEM(2,___STK(-5))
+   ___ADD_LIST_ELEM(3,___SYM_lambda)
+   ___END_ALLOC_LIST(4)
+   ___SET_R1(___GET_LIST(4))
+   ___SET_R0(___CLO(___STK(-6),5))
+   ___BEGIN_ALLOC_LIST(3UL,___R1)
+   ___ADD_LIST_ELEM(1,___R0)
+   ___ADD_LIST_ELEM(2,___SYM_define)
+   ___END_ALLOC_LIST(3)
+   ___SET_R1(___GET_LIST(3))
+   ___SET_R0(___CLO(___STK(-6),9))
+   ___SET_R4(___CLO(___STK(-6),2))
+   ___SET_R2(___CONS(___SYM__25__25_list,___R4))
+   ___BEGIN_ALLOC_LIST(3UL,___R2)
+   ___ADD_LIST_ELEM(1,___NUL)
+   ___ADD_LIST_ELEM(2,___SYM_lambda)
+   ___END_ALLOC_LIST(3)
+   ___SET_R2(___GET_LIST(3))
+   ___SET_R4(___CLO(___STK(-6),5))
+   ___BEGIN_ALLOC_LIST(2UL,___R4)
+   ___ADD_LIST_ELEM(1,___SYM_quote)
+   ___END_ALLOC_LIST(2)
+   ___SET_R3(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(4UL,___R0)
+   ___ADD_LIST_ELEM(1,___R2)
+   ___ADD_LIST_ELEM(2,___R3)
+   ___ADD_LIST_ELEM(3,___SYM_jazz_3a_new_2d_generic)
+   ___END_ALLOC_LIST(4)
+   ___SET_R2(___GET_LIST(4))
+   ___SET_R0(___CLO(___STK(-6),9))
+   ___SET_R4(___CLO(___STK(-6),6))
+   ___BEGIN_ALLOC_LIST(3UL,___R0)
+   ___ADD_LIST_ELEM(1,___R4)
+   ___ADD_LIST_ELEM(2,___SYM_jazz_3a_generic_2d_reset)
+   ___END_ALLOC_LIST(3)
+   ___SET_R3(___GET_LIST(3))
+   ___SET_R0(___CLO(___STK(-6),4))
+   ___BEGIN_ALLOC_LIST(2UL,___R0)
+   ___ADD_LIST_ELEM(1,___SYM_quote)
+   ___END_ALLOC_LIST(2)
+   ___SET_R4(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(2UL,___R4)
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_global_2d_ref)
+   ___END_ALLOC_LIST(2)
+   ___SET_R4(___GET_LIST(2))
+   ___SET_R0(___CLO(___STK(-6),6))
+   ___BEGIN_ALLOC_LIST(2UL,___R4)
+   ___ADD_LIST_ELEM(1,___R0)
+   ___END_ALLOC_LIST(2)
+   ___SET_R4(___GET_LIST(2))
+   ___SET_R4(___CONS(___R4,___NUL))
+   ___SET_R0(___CLO(___STK(-6),6))
+   ___BEGIN_ALLOC_LIST(4UL,___R0)
+   ___ADD_LIST_ELEM(1,___R3)
+   ___ADD_LIST_ELEM(2,___R4)
+   ___ADD_LIST_ELEM(3,___SYM_let)
+   ___END_ALLOC_LIST(4)
+   ___SET_R3(___GET_LIST(4))
+   ___SET_R0(___CLO(___STK(-6),4))
+   ___BEGIN_ALLOC_LIST(2UL,___R0)
+   ___ADD_LIST_ELEM(1,___SYM_quote)
+   ___END_ALLOC_LIST(2)
+   ___SET_R4(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(2UL,___R4)
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_global_2d_bound_3f_)
+   ___END_ALLOC_LIST(2)
+   ___SET_R4(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(4UL,___R2)
+   ___ADD_LIST_ELEM(1,___R3)
+   ___ADD_LIST_ELEM(2,___R4)
+   ___ADD_LIST_ELEM(3,___SYM_if)
+   ___END_ALLOC_LIST(4)
+   ___SET_R2(___GET_LIST(4))
+   ___SET_R0(___CLO(___STK(-6),4))
+   ___BEGIN_ALLOC_LIST(3UL,___R2)
+   ___ADD_LIST_ELEM(1,___R0)
+   ___ADD_LIST_ELEM(2,___SYM_define)
+   ___END_ALLOC_LIST(3)
+   ___SET_R2(___GET_LIST(3))
+   ___BEGIN_ALLOC_LIST(4UL,___R1)
+   ___ADD_LIST_ELEM(1,___R2)
+   ___ADD_LIST_ELEM(2,___STK(-9))
+   ___ADD_LIST_ELEM(3,___SYM_begin)
+   ___END_ALLOC_LIST(4)
+   ___SET_R1(___GET_LIST(4))
+   ___CHECK_HEAP(29,4096)
+___DEF_SLBL(29,___L29_jazz_3a_expand_2d_define_2d_generic)
+   ___POLL(30)
+___DEF_SLBL(30,___L30_jazz_3a_expand_2d_define_2d_generic)
+   ___ADJFP(-12)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L43_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(-4,___R1)
+   ___SET_R2(___CONS(___STK(-7),___NUL))
+   ___SET_R1(___STK(-10))
+   ___SET_R0(___LBL(27))
+   ___CHECK_HEAP(31,4096)
+___DEF_SLBL(31,___L31_jazz_3a_expand_2d_define_2d_generic)
+   ___JUMPPRM(___SET_NARGS(2),___PRM__23__23_quasi_2d_append)
+___DEF_GLBL(___L44_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(0,___CLO(___R4,1))
+   ___SET_STK(1,___CLO(___R4,3))
+   ___SET_STK(0,___CONS(___STK(1),___STK(0)))
+   ___SET_STK(0,___CONS(___SYM_lambda,___STK(0)))
+   ___SET_STK(1,___R1)
+   ___SET_R1(___STK(0))
+   ___ADJFP(1)
+   ___CHECK_HEAP(32,4096)
+___DEF_SLBL(32,___L32_jazz_3a_expand_2d_define_2d_generic)
+   ___GOTO(___L39_jazz_3a_expand_2d_define_2d_generic)
+___DEF_GLBL(___L45_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R4)
+   ___SET_R1(___SUB(241))
+   ___ADJFP(8)
+   ___POLL(33)
+___DEF_SLBL(33,___L33_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R0(___LBL(12))
+   ___JUMPGLOSAFE(___SET_NARGS(1),48,___G_jazz_3a_generate_2d_symbol)
+___DEF_SLBL(34,___L34_jazz_3a_expand_2d_define_2d_generic)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(34,0,0,0)
+   ___SET_STK(1,___R0)
+   ___SET_R1(___CLO(___R4,1))
+   ___ADJFP(4)
+   ___POLL(35)
+___DEF_SLBL(35,___L35_jazz_3a_expand_2d_define_2d_generic)
+   ___SET_R0(___LBL(36))
+   ___JUMPGLOSAFE(___SET_NARGS(1),15,___G_jazz_3a_generic_2d_parameters)
+___DEF_SLBL(36,___L36_jazz_3a_expand_2d_define_2d_generic)
+   ___POLL(37)
+___DEF_SLBL(37,___L37_jazz_3a_expand_2d_define_2d_generic)
+   ___ADJFP(-4)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_generic_2d_object_2d_locator
+#undef ___PH_LBL0
+#define ___PH_LBL0 155
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R2 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_generic_2d_object_2d_locator)
+___DEF_P_HLBL(___L1_jazz_3a_generic_2d_object_2d_locator)
+___DEF_P_HLBL(___L2_jazz_3a_generic_2d_object_2d_locator)
+___DEF_P_HLBL(___L3_jazz_3a_generic_2d_object_2d_locator)
+___DEF_P_HLBL(___L4_jazz_3a_generic_2d_object_2d_locator)
+___DEF_P_HLBL(___L5_jazz_3a_generic_2d_object_2d_locator)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_generic_2d_object_2d_locator)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_generic_2d_object_2d_locator)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R0(___LBL(1))
+   ___ADJFP(8)
+   ___JUMPPRM(___SET_NARGS(1),___PRM__23__23_symbol_2d__3e_string)
+___DEF_SLBL(1,___L1_jazz_3a_generic_2d_object_2d_locator)
+   ___SET_R2(___SUB(321))
+   ___POLL(2)
+___DEF_SLBL(2,___L2_jazz_3a_generic_2d_object_2d_locator)
+   ___SET_R0(___LBL(3))
+   ___JUMPGLONOTSAFE(___SET_NARGS(2),38,___G__23__23_string_2d_append)
+___DEF_SLBL(3,___L3_jazz_3a_generic_2d_object_2d_locator)
+   ___SET_R0(___LBL(4))
+   ___JUMPPRM(___SET_NARGS(1),___PRM__23__23_string_2d__3e_symbol)
+___DEF_SLBL(4,___L4_jazz_3a_generic_2d_object_2d_locator)
+   ___POLL(5)
+___DEF_SLBL(5,___L5_jazz_3a_generic_2d_object_2d_locator)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_expand_2d_define_2d_specific
+#undef ___PH_LBL0
+#define ___PH_LBL0 162
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L1_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L2_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L3_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L4_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L5_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L6_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L7_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L8_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L9_jazz_3a_expand_2d_define_2d_specific)
+___DEF_P_HLBL(___L10_jazz_3a_expand_2d_define_2d_specific)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_expand_2d_define_2d_specific)
+   ___IF_NARGS_EQ(2,___SET_R3(___NUL))
+   ___GET_REST(0,2,0,0)
+___DEF_GLBL(___L_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_R4(___BOOLEAN(___EQP(___R2,___SYM_root)))
+   ___SET_STK(1,___CAR(___R1))
+   ___SET_STK(2,___CDR(___R1))
+   ___SET_STK(3,___R0)
+   ___SET_STK(4,___R1)
+   ___SET_STK(5,___R2)
+   ___SET_STK(6,___R3)
+   ___SET_STK(7,___R4)
+   ___SET_R1(___STK(2))
+   ___ADJFP(12)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),10,___G_jazz_3a_dynamic_2d_parameter_2d_types)
+___DEF_SLBL(2,___L2_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_STK(-4,___R1)
+   ___SET_R1(___STK(-10))
+   ___SET_R0(___LBL(3))
+   ___JUMPGLOSAFE(___SET_NARGS(1),31,___G_jazz_3a_specific_2d_parameters)
+___DEF_SLBL(3,___L3_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_STK(-3,___R1)
+   ___SET_R2(___STK(-4))
+   ___SET_R1(___STK(-11))
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(2),24,___G_jazz_3a_implementation_2d_locator)
+___DEF_SLBL(4,___L4_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_STK(-2,___R1)
+   ___SET_R1(___STK(-11))
+   ___SET_R0(___LBL(5))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(1),14,___G_jazz_3a_generic_2d_object_2d_locator)
+___DEF_SLBL(5,___L5_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_STK(-5,___R1)
+   ___SET_R1(___SUB(337))
+   ___SET_R0(___LBL(6))
+   ___JUMPGLOSAFE(___SET_NARGS(1),48,___G_jazz_3a_generate_2d_symbol)
+___DEF_SLBL(6,___L6_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_STK(-4,___R1)
+   ___SET_R1(___SUB(338))
+   ___SET_R0(___LBL(7))
+   ___JUMPGLOSAFE(___SET_NARGS(1),48,___G_jazz_3a_generate_2d_symbol)
+___DEF_SLBL(7,___L7_jazz_3a_expand_2d_define_2d_specific)
+   ___IF(___NOT(___NOTFALSEP(___STK(-9))))
+   ___GOTO(___L11_jazz_3a_expand_2d_define_2d_specific)
+   ___END_IF
+   ___SET_R2(___NUL)
+   ___GOTO(___L12_jazz_3a_expand_2d_define_2d_specific)
+___DEF_GLBL(___L11_jazz_3a_expand_2d_define_2d_specific)
+   ___BEGIN_ALLOC_LIST(2UL,___STK(-4))
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+   ___END_ALLOC_LIST(2)
+   ___SET_R2(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(2UL,___R2)
+   ___ADD_LIST_ELEM(1,___SYM__25__25_car)
+   ___END_ALLOC_LIST(2)
+   ___SET_R2(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(2UL,___R2)
+   ___ADD_LIST_ELEM(1,___SYM_jazz_3a_get_2d_specific_2d_implementation)
+   ___END_ALLOC_LIST(2)
+   ___SET_R2(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(2UL,___R2)
+   ___ADD_LIST_ELEM(1,___SYM_nextmethod)
+   ___END_ALLOC_LIST(2)
+   ___SET_R2(___GET_LIST(2))
+   ___SET_R2(___CONS(___R2,___NUL))
+   ___CHECK_HEAP(8,4096)
+___DEF_SLBL(8,___L8_jazz_3a_expand_2d_define_2d_specific)
+___DEF_GLBL(___L12_jazz_3a_expand_2d_define_2d_specific)
+   ___SET_R3(___CONS(___R2,___STK(-10)))
+   ___SET_R3(___CONS(___SYM_let,___R3))
+   ___BEGIN_ALLOC_LIST(3UL,___R3)
+   ___ADD_LIST_ELEM(1,___STK(-7))
+   ___ADD_LIST_ELEM(2,___SYM_lambda)
+   ___END_ALLOC_LIST(3)
+   ___SET_R3(___GET_LIST(3))
+   ___BEGIN_ALLOC_LIST(2UL,___R3)
+   ___ADD_LIST_ELEM(1,___R1)
+   ___END_ALLOC_LIST(2)
+   ___SET_R3(___GET_LIST(2))
+   ___SET_R4(___CONS(___SYM__25__25_list,___STK(-8)))
+   ___BEGIN_ALLOC_LIST(3UL,___R4)
+   ___ADD_LIST_ELEM(1,___NUL)
+   ___ADD_LIST_ELEM(2,___SYM_lambda)
+   ___END_ALLOC_LIST(3)
+   ___SET_R4(___GET_LIST(3))
+   ___SET_R4(___CONS(___R4,___CNS(83)))
+   ___SET_R4(___CONS(___SYM_jazz_3a_new_2d_specific,___R4))
+   ___BEGIN_ALLOC_LIST(2UL,___R4)
+   ___ADD_LIST_ELEM(1,___STK(-4))
+   ___END_ALLOC_LIST(2)
+   ___SET_R4(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(2UL,___R3)
+   ___ADD_LIST_ELEM(1,___R4)
+   ___END_ALLOC_LIST(2)
+   ___SET_R3(___GET_LIST(2))
+   ___BEGIN_ALLOC_LIST(3UL,___STK(-4))
+   ___ADD_LIST_ELEM(1,___STK(-5))
+   ___ADD_LIST_ELEM(2,___SYM_jazz_3a_register_2d_specific)
+   ___END_ALLOC_LIST(3)
+   ___SET_R4(___GET_LIST(3))
+   ___BEGIN_ALLOC_LIST(3UL,___R1)
+   ___ADD_LIST_ELEM(1,___STK(-4))
+   ___ADD_LIST_ELEM(2,___SYM_jazz_3a_set_2d_specific_2d_implementation)
+   ___END_ALLOC_LIST(3)
+   ___SET_R0(___GET_LIST(3))
+   ___BEGIN_ALLOC_LIST(5UL,___R1)
+   ___ADD_LIST_ELEM(1,___R4)
+   ___ADD_LIST_ELEM(2,___R0)
+   ___ADD_LIST_ELEM(3,___R3)
+   ___ADD_LIST_ELEM(4,___SYM_let_2a_)
+   ___END_ALLOC_LIST(5)
+   ___SET_R3(___GET_LIST(5))
+   ___BEGIN_ALLOC_LIST(3UL,___R3)
+   ___ADD_LIST_ELEM(1,___STK(-6))
+   ___ADD_LIST_ELEM(2,___SYM_define)
+   ___END_ALLOC_LIST(3)
+   ___SET_R3(___GET_LIST(3))
+   ___SET_R1(___R3)
+   ___CHECK_HEAP(9,4096)
+___DEF_SLBL(9,___L9_jazz_3a_expand_2d_define_2d_specific)
+   ___POLL(10)
+___DEF_SLBL(10,___L10_jazz_3a_expand_2d_define_2d_specific)
+   ___ADJFP(-16)
+   ___JUMPPRM(___NOTHING,___STK(3))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_implementation_2d_locator
+#undef ___PH_LBL0
+#define ___PH_LBL0 174
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L1_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L2_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L3_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L4_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L5_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L6_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L7_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L8_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L9_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L10_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L11_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L12_jazz_3a_implementation_2d_locator)
+___DEF_P_HLBL(___L13_jazz_3a_implementation_2d_locator)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_implementation_2d_locator)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_3a_implementation_2d_locator)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_R0(___LBL(1))
+   ___ADJFP(8)
+   ___JUMPPRM(___SET_NARGS(1),___PRM__23__23_symbol_2d__3e_string)
+___DEF_SLBL(1,___L1_jazz_3a_implementation_2d_locator)
+   ___SET_STK(-4,___R1)
+   ___SET_R1(___STK(-5))
+   ___SET_R0(___LBL(9))
+   ___POLL(2)
+___DEF_SLBL(2,___L2_jazz_3a_implementation_2d_locator)
+   ___IF(___PAIRP(___R1))
+   ___GOTO(___L14_jazz_3a_implementation_2d_locator)
+   ___END_IF
+   ___GOTO(___L16_jazz_3a_implementation_2d_locator)
+___DEF_SLBL(3,___L3_jazz_3a_implementation_2d_locator)
+   ___SET_STK(-5,___R1)
+   ___SET_R1(___CDR(___STK(-6)))
+   ___SET_R0(___LBL(6))
+   ___IF(___NOT(___PAIRP(___R1)))
+   ___GOTO(___L16_jazz_3a_implementation_2d_locator)
+   ___END_IF
+___DEF_GLBL(___L14_jazz_3a_implementation_2d_locator)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R1(___CAR(___R1))
+   ___SET_R0(___LBL(3))
+   ___ADJFP(8)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_3a_implementation_2d_locator)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___ADJFP(2)
+   ___IF(___NOT(___PAIRP(___R1)))
+   ___GOTO(___L15_jazz_3a_implementation_2d_locator)
+   ___END_IF
+   ___SET_R1(___CAR(___R1))
+___DEF_GLBL(___L15_jazz_3a_implementation_2d_locator)
+   ___SET_R0(___LBL(5))
+   ___ADJFP(6)
+   ___JUMPPRM(___SET_NARGS(1),___PRM__23__23_symbol_2d__3e_string)
+___DEF_SLBL(5,___L5_jazz_3a_implementation_2d_locator)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(6,___L6_jazz_3a_implementation_2d_locator)
+   ___SET_R1(___CONS(___STK(-5),___R1))
+   ___CHECK_HEAP(7,4096)
+___DEF_SLBL(7,___L7_jazz_3a_implementation_2d_locator)
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_3a_implementation_2d_locator)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L16_jazz_3a_implementation_2d_locator)
+   ___SET_R1(___NUL)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(9,___L9_jazz_3a_implementation_2d_locator)
+   ___SET_STK(-3,___R1)
+   ___SET_R2(___SUB(364))
+   ___SET_R0(___LBL(10))
+   ___JUMPGLOSAFE(___SET_NARGS(2),49,___G_jazz_3a_join_2d_strings)
+___DEF_SLBL(10,___L10_jazz_3a_implementation_2d_locator)
+   ___SET_R3(___R1)
+   ___SET_R1(___STK(-4))
+   ___SET_R2(___SUB(365))
+   ___SET_R0(___LBL(11))
+   ___JUMPGLONOTSAFE(___SET_NARGS(3),38,___G__23__23_string_2d_append)
+___DEF_SLBL(11,___L11_jazz_3a_implementation_2d_locator)
+   ___SET_R0(___LBL(12))
+   ___JUMPPRM(___SET_NARGS(1),___PRM__23__23_string_2d__3e_symbol)
+___DEF_SLBL(12,___L12_jazz_3a_implementation_2d_locator)
+   ___POLL(13)
+___DEF_SLBL(13,___L13_jazz_3a_implementation_2d_locator)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_get_2d_generic_2d_locator
+#undef ___PH_LBL0
+#define ___PH_LBL0 189
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_get_2d_generic_2d_locator)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_get_2d_generic_2d_locator)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_get_2d_generic_2d_locator)
+   ___SET_R2(___VECTORREF(___R1,___FIX(1L)))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_get_2d_generic_2d_name
+#undef ___PH_LBL0
+#define ___PH_LBL0 191
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_get_2d_generic_2d_name)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_get_2d_generic_2d_name)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_get_2d_generic_2d_name)
+   ___SET_R2(___VECTORREF(___R1,___FIX(2L)))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_get_2d_generic_2d_root_2d_specific
+#undef ___PH_LBL0
+#define ___PH_LBL0 193
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_get_2d_generic_2d_root_2d_specific)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_get_2d_generic_2d_root_2d_specific)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_get_2d_generic_2d_root_2d_specific)
+   ___SET_R2(___VECTORREF(___R1,___FIX(3L)))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_set_2d_generic_2d_root_2d_specific
+#undef ___PH_LBL0
+#define ___PH_LBL0 195
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2 ___D_R3
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2 ___R_R3
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R3
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_set_2d_generic_2d_root_2d_specific)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_set_2d_generic_2d_root_2d_specific)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_3a_set_2d_generic_2d_root_2d_specific)
+   ___VECTORSET(___R1,___FIX(3L),___R2) ___SET_R3(___R1)
+   ___SET_R1(___R3)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_get_2d_generic_2d_pending_2d_specifics
+#undef ___PH_LBL0
+#define ___PH_LBL0 197
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_get_2d_generic_2d_pending_2d_specifics)
+   ___SET_R2(___VECTORREF(___R1,___FIX(4L)))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_set_2d_generic_2d_pending_2d_specifics
+#undef ___PH_LBL0
+#define ___PH_LBL0 199
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2 ___D_R3
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2 ___R_R3
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R3
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_3a_set_2d_generic_2d_pending_2d_specifics)
+   ___VECTORSET(___R1,___FIX(4L),___R2) ___SET_R3(___R1)
+   ___SET_R1(___R3)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_allocate_2d_generic
+#undef ___PH_LBL0
+#define ___PH_LBL0 201
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R1 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_allocate_2d_generic)
+___DEF_P_HLBL(___L1_jazz_3a_allocate_2d_generic)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_allocate_2d_generic)
+   ___IF_NARGS_EQ(4,___NOTHING)
+   ___WRONG_NARGS(0,4,0,0)
+___DEF_GLBL(___L_jazz_3a_allocate_2d_generic)
+   ___BEGIN_ALLOC_VECTOR(5UL)
+   ___ADD_VECTOR_ELEM(0,___GLO_jazz_3a_Generic)
+   ___ADD_VECTOR_ELEM(1,___STK(0))
+   ___ADD_VECTOR_ELEM(2,___R1)
+   ___ADD_VECTOR_ELEM(3,___R2)
+   ___ADD_VECTOR_ELEM(4,___R3)
+   ___END_ALLOC_VECTOR(5)
+   ___SET_R4(___GET_VECTOR(5))
+   ___SUBTYPESET(___R4,___FIX(7L)) ___SET_STK(1,___R4)
+   ___SET_R1(___STK(1))
+   ___ADJFP(-1)
+   ___CHECK_HEAP(1,4096)
+___DEF_SLBL(1,___L1_jazz_3a_allocate_2d_generic)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_get_2d_specific_2d_dynamic_2d_signature
+#undef ___PH_LBL0
+#define ___PH_LBL0 204
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_get_2d_specific_2d_dynamic_2d_signature)
+   ___SET_R2(___VECTORREF(___R1,___FIX(1L)))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_set_2d_specific_2d_dynamic_2d_signature
+#undef ___PH_LBL0
+#define ___PH_LBL0 206
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2 ___D_R3
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2 ___R_R3
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R3
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_3a_set_2d_specific_2d_dynamic_2d_signature)
+   ___VECTORSET(___R1,___FIX(1L),___R2) ___SET_R3(___R1)
+   ___SET_R1(___R3)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_get_2d_specific_2d_implementation
+#undef ___PH_LBL0
+#define ___PH_LBL0 208
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_get_2d_specific_2d_implementation)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_get_2d_specific_2d_implementation)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_get_2d_specific_2d_implementation)
+   ___SET_R2(___VECTORREF(___R1,___FIX(2L)))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_set_2d_specific_2d_implementation
+#undef ___PH_LBL0
+#define ___PH_LBL0 210
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2 ___D_R3
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2 ___R_R3
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R3
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_set_2d_specific_2d_implementation)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_set_2d_specific_2d_implementation)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_3a_set_2d_specific_2d_implementation)
+   ___VECTORSET(___R1,___FIX(2L),___R2) ___SET_R3(___R1)
+   ___SET_R1(___R3)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics
+#undef ___PH_LBL0
+#define ___PH_LBL0 212
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics)
+   ___SET_R2(___VECTORREF(___R1,___FIX(3L)))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics
+#undef ___PH_LBL0
+#define ___PH_LBL0 214
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2 ___D_R3
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2 ___R_R3
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R3
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics)
+   ___VECTORSET(___R1,___FIX(3L),___R2) ___SET_R3(___R1)
+   ___SET_R1(___R3)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_get_2d_specific_2d_descendant_2d_specifics
+#undef ___PH_LBL0
+#define ___PH_LBL0 216
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_3a_get_2d_specific_2d_descendant_2d_specifics)
+   ___SET_R2(___VECTORREF(___R1,___FIX(4L)))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_set_2d_specific_2d_descendant_2d_specifics
+#undef ___PH_LBL0
+#define ___PH_LBL0 218
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2 ___D_R3
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2 ___R_R3
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R3
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_3a_set_2d_specific_2d_descendant_2d_specifics)
+   ___VECTORSET(___R1,___FIX(4L),___R2) ___SET_R3(___R1)
+   ___SET_R1(___R3)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_3a_allocate_2d_specific
+#undef ___PH_LBL0
+#define ___PH_LBL0 220
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R1 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_3a_allocate_2d_specific)
+___DEF_P_HLBL(___L1_jazz_3a_allocate_2d_specific)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_3a_allocate_2d_specific)
+   ___IF_NARGS_EQ(4,___NOTHING)
+   ___WRONG_NARGS(0,4,0,0)
+___DEF_GLBL(___L_jazz_3a_allocate_2d_specific)
+   ___BEGIN_ALLOC_VECTOR(5UL)
+   ___ADD_VECTOR_ELEM(0,___GLO_jazz_3a_Specific)
+   ___ADD_VECTOR_ELEM(1,___STK(0))
+   ___ADD_VECTOR_ELEM(2,___R1)
+   ___ADD_VECTOR_ELEM(3,___R2)
+   ___ADD_VECTOR_ELEM(4,___R3)
+   ___END_ALLOC_VECTOR(5)
+   ___SET_R4(___GET_VECTOR(5))
+   ___SUBTYPESET(___R4,___FIX(7L)) ___SET_STK(1,___R4)
+   ___SET_R1(___STK(1))
+   ___ADJFP(-1)
+   ___CHECK_HEAP(1,4096)
+___DEF_SLBL(1,___L1_jazz_3a_allocate_2d_specific)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+___END_M_SW
+___END_M_COD
+
+___BEGIN_LBL
+ ___DEF_LBL_INTRO(___H_bin_3a_core_2e_generic_2e_syntax_23_,"bin:core.generic.syntax#",___REF_SUB(0),
+42,0)
+,___DEF_LBL_PROC(___H_bin_3a_core_2e_generic_2e_syntax_23_,0,-1)
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___OFD(___RETI,10,0,0x3f3f1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,5,0,0x11L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,5,0,0x11L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_PROC(___H_bin_3a_core_2e_generic_2e_syntax_23_,1,-1)
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_PROC(___H_bin_3a_core_2e_generic_2e_syntax_23_,1,-1)
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_PROC(___H_bin_3a_core_2e_generic_2e_syntax_23_,2,-1)
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_PROC(___H_bin_3a_core_2e_generic_2e_syntax_23_,2,-1)
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_PROC(___H_bin_3a_core_2e_generic_2e_syntax_23_,1,-1)
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_PROC(___H_bin_3a_core_2e_generic_2e_syntax_23_,1,-1)
+,___DEF_LBL_RET(___H_bin_3a_core_2e_generic_2e_syntax_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_INTRO(___H_jazz_3a_dynamic_2d_parameter_3f_,0,___REF_SUB(87),5,0)
+,___DEF_LBL_PROC(___H_jazz_3a_dynamic_2d_parameter_3f_,1,-1)
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_3f_,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_3f_,___IFD(___RETI,1,4,0x3f1L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_3f_,___IFD(___RETI,1,4,0x3f1L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_3f_,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_3a_dynamic_2d_parameter_2d_type,0,___REF_SUB(100),6,0)
+,___DEF_LBL_PROC(___H_jazz_3a_dynamic_2d_parameter_2d_type,1,-1)
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_type,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_type,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_type,___IFD(___RETI,8,0,0x3f01L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_type,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_type,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_3a_dynamic_2d_parameter_2d_types,0,___REF_SUB(115),11,0)
+,___DEF_LBL_PROC(___H_jazz_3a_dynamic_2d_parameter_2d_types,1,-1)
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_types,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_3a_dynamic_2d_parameter_2d_name,0,___REF_SUB(140),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_dynamic_2d_parameter_2d_name,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_dynamic_2d_parameter_2d_names,0,___REF_SUB(145),11,0)
+,___DEF_LBL_PROC(___H_jazz_3a_dynamic_2d_parameter_2d_names,1,-1)
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_dynamic_2d_parameter_2d_names,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_3a_generic_2d_parameters,0,___REF_SUB(170),20,0)
+,___DEF_LBL_PROC(___H_jazz_3a_generic_2d_parameters,1,-1)
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_parameters,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_3a_specific_2d_parameters,0,___REF_SUB(213),11,0)
+,___DEF_LBL_PROC(___H_jazz_3a_specific_2d_parameters,1,-1)
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETI,8,0,0x3f01L))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_specific_2d_parameters,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_3a_expand_2d_define_2d_generic,0,___REF_SUB(242),38,0)
+,___DEF_LBL_PROC(___H_jazz_3a_expand_2d_define_2d_generic,2,-1)
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,8,0,0x3f1fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,5,0,0x1fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,9,0,0x3fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,9,0,0x7fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,9,0,0xffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,9,0,0x1ffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,13,0,0x3ffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,16,0,0x3f0fffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,13,0,0x7ffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,16,0,0x3f07ffL))
+,___DEF_LBL_PROC(___H_jazz_3a_expand_2d_define_2d_generic,2,9)
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,2,4,0x3f2L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,12,0,0x3f03fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,9,0,0x3fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,12,0,0x3f07fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,9,0,0x7fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,9,0,0xffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,12,0,0x3f07fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,12,0,0x3f07fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,9,0,0xffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,12,0,0x3f0ffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,12,0,0x3f01bL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,12,0,0x3f01bL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___OFD(___RETI,12,0,0x3f0ffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,2,4,0x3f2L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_PROC(___H_jazz_3a_expand_2d_define_2d_generic,0,1)
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_generic,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_INTRO(___H_jazz_3a_generic_2d_object_2d_locator,0,___REF_SUB(322),6,0)
+,___DEF_LBL_PROC(___H_jazz_3a_generic_2d_object_2d_locator,1,-1)
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_object_2d_locator,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_object_2d_locator,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_object_2d_locator,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_object_2d_locator,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_generic_2d_object_2d_locator,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_3a_expand_2d_define_2d_specific,0,___REF_SUB(339),11,0)
+,___DEF_LBL_PROC(___H_jazz_3a_expand_2d_define_2d_specific,3,-1)
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___OFD(___RETI,12,2,0x3f07fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___IFD(___RETN,9,2,0x7fL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___IFD(___RETN,9,2,0xffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___IFD(___RETN,9,2,0x1ffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___IFD(___RETN,13,2,0x3ffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___IFD(___RETN,13,2,0x7ffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___IFD(___RETN,13,2,0xfffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___OFD(___RETI,16,2,0x3f0fffL))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___OFD(___RETI,16,2,0x3f0004L))
+,___DEF_LBL_RET(___H_jazz_3a_expand_2d_define_2d_specific,___OFD(___RETI,16,2,0x3f0004L))
+,___DEF_LBL_INTRO(___H_jazz_3a_implementation_2d_locator,0,___REF_SUB(366),14,0)
+,___DEF_LBL_PROC(___H_jazz_3a_implementation_2d_locator,2,-1)
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETN,5,0,0x1fL))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETN,5,0,0x1fL))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETN,5,0,0x1fL))
+,___DEF_LBL_RET(___H_jazz_3a_implementation_2d_locator,___IFD(___RETI,8,0,0x3f1fL))
+,___DEF_LBL_INTRO(___H_jazz_3a_get_2d_generic_2d_locator,0,___REF_SUB(397),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_get_2d_generic_2d_locator,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_get_2d_generic_2d_name,0,___REF_SUB(402),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_get_2d_generic_2d_name,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_get_2d_generic_2d_root_2d_specific,0,___REF_SUB(407),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_get_2d_generic_2d_root_2d_specific,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_set_2d_generic_2d_root_2d_specific,0,___REF_SUB(412),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_set_2d_generic_2d_root_2d_specific,2,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_get_2d_generic_2d_pending_2d_specifics,0,___REF_SUB(417),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_get_2d_generic_2d_pending_2d_specifics,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_set_2d_generic_2d_pending_2d_specifics,0,___REF_SUB(422),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_set_2d_generic_2d_pending_2d_specifics,2,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_allocate_2d_generic,0,___REF_SUB(427),2,0)
+,___DEF_LBL_PROC(___H_jazz_3a_allocate_2d_generic,4,-1)
+,___DEF_LBL_RET(___H_jazz_3a_allocate_2d_generic,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_INTRO(___H_jazz_3a_get_2d_specific_2d_dynamic_2d_signature,0,___REF_SUB(434),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_get_2d_specific_2d_dynamic_2d_signature,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_set_2d_specific_2d_dynamic_2d_signature,0,___REF_SUB(439),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_set_2d_specific_2d_dynamic_2d_signature,2,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_get_2d_specific_2d_implementation,0,___REF_SUB(444),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_get_2d_specific_2d_implementation,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_set_2d_specific_2d_implementation,0,___REF_SUB(449),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_set_2d_specific_2d_implementation,2,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics,0,___REF_SUB(454),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics,0,___REF_SUB(459),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics,2,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_get_2d_specific_2d_descendant_2d_specifics,0,___REF_SUB(464),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_get_2d_specific_2d_descendant_2d_specifics,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_set_2d_specific_2d_descendant_2d_specifics,0,___REF_SUB(469),1,0)
+,___DEF_LBL_PROC(___H_jazz_3a_set_2d_specific_2d_descendant_2d_specifics,2,-1)
+,___DEF_LBL_INTRO(___H_jazz_3a_allocate_2d_specific,0,___REF_SUB(474),2,0)
+,___DEF_LBL_PROC(___H_jazz_3a_allocate_2d_specific,4,-1)
+,___DEF_LBL_RET(___H_jazz_3a_allocate_2d_specific,___IFD(___RETI,0,0,0x3fL))
+___END_LBL
+
+___BEGIN_OFD
+ ___DEF_OFD(___RETI,10,0)
+               ___GCMAP1(0x3f3f1L)
+,___DEF_OFD(___RETI,16,0)
+               ___GCMAP1(0x3f0fffL)
+,___DEF_OFD(___RETI,16,0)
+               ___GCMAP1(0x3f07ffL)
+,___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f03fL)
+,___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f07fL)
+,___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f07fL)
+,___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f07fL)
+,___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f0ffL)
+,___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f01bL)
+,___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f01bL)
+,___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f0ffL)
+,___DEF_OFD(___RETI,12,2)
+               ___GCMAP1(0x3f07fL)
+,___DEF_OFD(___RETI,16,2)
+               ___GCMAP1(0x3f0fffL)
+,___DEF_OFD(___RETI,16,2)
+               ___GCMAP1(0x3f0004L)
+,___DEF_OFD(___RETI,16,2)
+               ___GCMAP1(0x3f0004L)
+___END_OFD
+
+___BEGIN_MOD_PRM
+___DEF_MOD_PRM(0,___G_bin_3a_core_2e_generic_2e_syntax_23_,1)
+___END_MOD_PRM
+
+___BEGIN_MOD_C_INIT
+___END_MOD_C_INIT
+
+___BEGIN_MOD_GLO
+___DEF_MOD_GLO(0,___G_bin_3a_core_2e_generic_2e_syntax_23_,1)
+___END_MOD_GLO
+
+___BEGIN_MOD_SYM_KEY
+___DEF_MOD_SYM(0,___S__25__25_car,"%%car")
+___DEF_MOD_SYM(1,___S__25__25_list,"%%list")
+___DEF_MOD_SYM(2,___S__25__25_not,"%%not")
+___DEF_MOD_SYM(3,___S__25__25_null_3f_,"%%null?")
+___DEF_MOD_SYM(4,___S__25__25_specific_2d_dispatch,"%%specific-dispatch")
+___DEF_MOD_SYM(5,___S__25__25_when,"%%when")
+___DEF_MOD_SYM(6,___S_Generic,"Generic")
+___DEF_MOD_SYM(7,___S_Specific,"Specific")
+___DEF_MOD_SYM(8,___S_ancestor_2d_specifics,"ancestor-specifics")
+___DEF_MOD_SYM(9,___S_apply,"apply")
+___DEF_MOD_SYM(10,___S_begin,"begin")
+___DEF_MOD_SYM(11,___S_bin_3a_core_2e_generic_2e_syntax,"bin:core.generic.syntax")
+___DEF_MOD_SYM(12,___S_body,"body")
+___DEF_MOD_SYM(13,___S_class_2f_call,"class/call")
+___DEF_MOD_SYM(14,___S_core_2e_generic_2e_syntax,"core.generic.syntax")
+___DEF_MOD_SYM(15,___S_define,"define")
+___DEF_MOD_SYM(16,___S_descendant_2d_specifics,"descendant-specifics")
+___DEF_MOD_SYM(17,___S_dynamic_2d_signature,"dynamic-signature")
+___DEF_MOD_SYM(18,___S_dynamic_2d_signature_2d_strings,"dynamic-signature-strings")
+___DEF_MOD_SYM(19,___S_extra_2d_parameters,"extra-parameters")
+___DEF_MOD_SYM(20,___S_formal_2d_signature,"formal-signature")
+___DEF_MOD_SYM(21,___S_function,"function")
+___DEF_MOD_SYM(22,___S_generic_2d_locator,"generic-locator")
+___DEF_MOD_SYM(23,___S_generic_2d_method_2d_locator,"generic-method-locator")
+___DEF_MOD_SYM(24,___S_generic_2d_string,"generic-string")
+___DEF_MOD_SYM(25,___S_gensym_2d_generic,"gensym-generic")
+___DEF_MOD_SYM(26,___S_gensym_2d_lambda,"gensym-lambda")
+___DEF_MOD_SYM(27,___S_gensym_2d_rest,"gensym-rest")
+___DEF_MOD_SYM(28,___S_gensym_2d_specific,"gensym-specific")
+___DEF_MOD_SYM(29,___S_if,"if")
+___DEF_MOD_SYM(30,___S_implementation,"implementation")
+___DEF_MOD_SYM(31,___S_jazz_3a_Generic,"jazz:Generic")
+___DEF_MOD_SYM(32,___S_jazz_3a_Object,"jazz:Object")
+___DEF_MOD_SYM(33,___S_jazz_3a_Object_2d_Class,"jazz:Object-Class")
+___DEF_MOD_SYM(34,___S_jazz_3a_Specific,"jazz:Specific")
+___DEF_MOD_SYM(35,___S_jazz_3a_allocate_2d_generic,"jazz:allocate-generic")
+___DEF_MOD_SYM(36,___S_jazz_3a_allocate_2d_specific,"jazz:allocate-specific")
+___DEF_MOD_SYM(37,___S_jazz_3a_class_2d_of,"jazz:class-of")
+___DEF_MOD_SYM(38,___S_jazz_3a_define_2d_generic,"jazz:define-generic")
+___DEF_MOD_SYM(39,___S_jazz_3a_define_2d_specific,"jazz:define-specific")
+___DEF_MOD_SYM(40,___S_jazz_3a_dispatch_2d_from_2d_root,"jazz:dispatch-from-root")
+___DEF_MOD_SYM(41,___S_jazz_3a_error,"jazz:error")
+___DEF_MOD_SYM(42,___S_jazz_3a_generic_2d_reset,"jazz:generic-reset")
+___DEF_MOD_SYM(43,___S_jazz_3a_get_2d_generic_2d_locator,"jazz:get-generic-locator")
+___DEF_MOD_SYM(44,___S_jazz_3a_get_2d_generic_2d_name,"jazz:get-generic-name")
+___DEF_MOD_SYM(45,___S_jazz_3a_get_2d_generic_2d_pending_2d_specifics,"jazz:get-generic-pending-specifics")
+
+___DEF_MOD_SYM(46,___S_jazz_3a_get_2d_generic_2d_root_2d_specific,"jazz:get-generic-root-specific")
+
+___DEF_MOD_SYM(47,___S_jazz_3a_get_2d_specific_2d_ancestor_2d_specifics,"jazz:get-specific-ancestor-specifics")
+
+___DEF_MOD_SYM(48,___S_jazz_3a_get_2d_specific_2d_descendant_2d_specifics,"jazz:get-specific-descendant-specifics")
+
+___DEF_MOD_SYM(49,___S_jazz_3a_get_2d_specific_2d_dynamic_2d_signature,"jazz:get-specific-dynamic-signature")
+
+___DEF_MOD_SYM(50,___S_jazz_3a_get_2d_specific_2d_implementation,"jazz:get-specific-implementation")
+
+___DEF_MOD_SYM(51,___S_jazz_3a_global_2d_bound_3f_,"jazz:global-bound?")
+___DEF_MOD_SYM(52,___S_jazz_3a_global_2d_ref,"jazz:global-ref")
+___DEF_MOD_SYM(53,___S_jazz_3a_new_2d_generic,"jazz:new-generic")
+___DEF_MOD_SYM(54,___S_jazz_3a_new_2d_specific,"jazz:new-specific")
+___DEF_MOD_SYM(55,___S_jazz_3a_process_2d_pending_2d_specifics,"jazz:process-pending-specifics")
+
+___DEF_MOD_SYM(56,___S_jazz_3a_register_2d_specific,"jazz:register-specific")
+___DEF_MOD_SYM(57,___S_jazz_3a_set_2d_generic_2d_pending_2d_specifics,"jazz:set-generic-pending-specifics")
+
+___DEF_MOD_SYM(58,___S_jazz_3a_set_2d_generic_2d_root_2d_specific,"jazz:set-generic-root-specific")
+
+___DEF_MOD_SYM(59,___S_jazz_3a_set_2d_specific_2d_ancestor_2d_specifics,"jazz:set-specific-ancestor-specifics")
+
+___DEF_MOD_SYM(60,___S_jazz_3a_set_2d_specific_2d_descendant_2d_specifics,"jazz:set-specific-descendant-specifics")
+
+___DEF_MOD_SYM(61,___S_jazz_3a_set_2d_specific_2d_dynamic_2d_signature,"jazz:set-specific-dynamic-signature")
+
+___DEF_MOD_SYM(62,___S_jazz_3a_set_2d_specific_2d_implementation,"jazz:set-specific-implementation")
+
+___DEF_MOD_SYM(63,___S_lambda,"lambda")
+___DEF_MOD_SYM(64,___S_let,"let")
+___DEF_MOD_SYM(65,___S_let_2a_,"let*")
+___DEF_MOD_SYM(66,___S_locator,"locator")
+___DEF_MOD_SYM(67,___S_mandatory_2d_parameters,"mandatory-parameters")
+___DEF_MOD_SYM(68,___S_modifier,"modifier")
+___DEF_MOD_SYM(69,___S_name,"name")
+___DEF_MOD_SYM(70,___S_nextmethod,"nextmethod")
+___DEF_MOD_SYM(71,___S_parameter,"parameter")
+___DEF_MOD_SYM(72,___S_parameters,"parameters")
+___DEF_MOD_SYM(73,___S_pending_2d_specifics,"pending-specifics")
+___DEF_MOD_SYM(74,___S_quote,"quote")
+___DEF_MOD_SYM(75,___S_rest,"rest")
+___DEF_MOD_SYM(76,___S_result,"result")
+___DEF_MOD_SYM(77,___S_root,"root")
+___DEF_MOD_SYM(78,___S_root_2d_specific,"root-specific")
+___DEF_MOD_SYM(79,___S_root_3f_,"root?")
+___DEF_MOD_SYM(80,___S_signature,"signature")
+___DEF_MOD_SYM(81,___S_specific_2d_implementation_2d_locator,"specific-implementation-locator")
+
+___DEF_MOD_SYM(82,___S_temp_2e_1,"temp.1")
+___DEF_MOD_SYM(83,___S_temp_2e_3,"temp.3")
+___DEF_MOD_SYM(84,___S_temp_2e_8,"temp.8")
+___DEF_MOD_SYM(85,___S_type,"type")
+___DEF_MOD_SYM(86,___S_x_2e_4,"x.4")
+___DEF_MOD_SYM(87,___S_x_2e_9,"x.9")
+___DEF_MOD_KEY(0,___K_test,"test")
+___END_MOD_SYM_KEY
+
+#endif

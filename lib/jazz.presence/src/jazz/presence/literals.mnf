@@ -1,0 +1,6 @@
+(manifest jazz.presence.literals
+
+  (version 208070)
+  (digest "9cf68270b5b96834a251fc59b15a43597a6e80b4")
+  (references (jazz.language.runtime.kernel new)
+              (jazz.presence.remotable.IOR IOR)))

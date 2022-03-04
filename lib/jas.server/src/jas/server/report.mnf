@@ -1,0 +1,13 @@
+(manifest jas.server.report
+
+  (version 208070)
+  (digest "fdbae0bc5dca9ca8e22e201475f8ce5cf6ffe13d")
+  (references (gambit.language.runtime open-process process-status thread-start!)
+              (jazz.io Directory delete exists? extension=? get-extension iterate-directory parse)
+              (jazz.io.literals construct-directory)
+              (jazz.language.runtime.functional new-thread)
+              (jazz.language.runtime.hubs get-name)
+              (jazz.language.runtime.kernel enqueue new-queue queue-list)
+              (jazz.language.syntax.bind bind)
+              (jazz.language.syntax.macros when)
+              (scheme.language.runtime = > car cdr for-each length list string-append)))

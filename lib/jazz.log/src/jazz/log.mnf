@@ -1,0 +1,18 @@
+(manifest jazz.log
+
+  (version 208070)
+  (digest "e91ebb34fbe7ef3c4072c59cf48dcce1b79998b9")
+  (references (gambit.language.runtime force-output get-output-string make-mutex make-parameter mutex-lock! mutex-unlock! open-output-string pretty-print)
+              (jazz.component.hubs set-property)
+              (jazz.io Directory create-directories path-settings timestamped-file)
+              (jazz.io.literals construct-directory)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional List-Factory Object-Class for-each-property keyword->symbol memq?)
+              (jazz.language.runtime.hubs get-list get-name put reset set-parent)
+              (jazz.language.runtime.kernel new unimplemented with-jazz-readtable)
+              (jazz.language.runtime.object Object (Object initialize) (Object print) print-unreadable)
+              (jazz.language.syntax.macros prog1 unless unwind-protect when)
+              (jazz.markup add-properties parse-markup)
+              (jazz.markup.model.Markup-Element Markup-Element (Markup-Element add-properties) (Markup-Element set-property))
+              (scheme.language.runtime call-with-input-file call-with-output-file eof-object? newline not read)))

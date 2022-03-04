@@ -1,0 +1,6 @@
+(manifest jazz.platform.requests
+
+  (version 208070)
+  (digest "2c0d6807d24547534eab711c2425cfbf13f03386")
+  (references (jazz.language.runtime.functional do-nothing request-service)
+              (jazz.language.runtime.kernel quit)))

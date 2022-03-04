@@ -1,0 +1,6 @@
+(manifest jazz.debuggee.base
+
+  (version 208070)
+  (digest "cebc5e61c86aa167ae4b924864e31bffa3c18f66")
+  (references (jazz.language.runtime.functional Object-Class)
+              (jazz.language.runtime.object Object)))

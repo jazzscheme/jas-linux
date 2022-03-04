@@ -1,0 +1,13 @@
+(manifest jazz.inspector
+
+  (version 208070)
+  (digest "a855e848d8c77ce34e712e5d03ef2ef0140e1ab3")
+  (references (gambit.language.runtime make-table table->list table-length table-ref table-set! table?)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional ->string (Class coerce-object) List (Sequence sequence-cardinality) (Sequence sequence-element) cardinality category-identifier category-name coerce concatenate di<? memq? naturals null/pair? safe-present-object safe-present-property second sequence? sort subseq)
+              (jazz.language.runtime.hubs get-ascendant get-instance-slots get-offset get-slots)
+              (jazz.language.runtime.kernel class-of closure-environment closure? field-name get-object-slot kind-fields kind-length not-null? object->serial object? structure-kind structure-ref structure?)
+              (jazz.language.syntax.bind bind)
+              (jazz.language.syntax.macros constant)
+              (jazz.presence gc-protect)
+              (scheme.language.runtime + - > >= append car cdr cons eq? length list map not null? pair? string? symbol?)))

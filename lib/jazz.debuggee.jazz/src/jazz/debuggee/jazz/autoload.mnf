@@ -1,0 +1,9 @@
+(manifest jazz.debuggee.jazz.autoload
+
+  (version 208070)
+  (digest "7d300aa6708ea969fd04e9ff12369d2db324c6b8")
+  (references (jazz.debuggee.jazz.Jazz-Debuggee-Frame Jazz-Debuggee-Frame)
+              (jazz.debuggee.jazz.Jazz-Debuggee-Process Jazz-Debuggee-Process)
+              (jazz.debuggee.jazz.Jazz-Debuggee-Restart Jazz-Debuggee-Restart)
+              (jazz.debuggee.jazz.Jazz-Debuggee-Stop Jazz-Debuggee-Stop)
+              (jazz.debuggee.jazz.Jazz-Debuggee-Thread Jazz-Debuggee-Thread)))

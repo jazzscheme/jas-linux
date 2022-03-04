@@ -1,0 +1,12 @@
+(manifest jazz.io.Directory-Group
+
+  (version 208070)
+  (digest "115285e9ede6b19e85f5c3e98b38e48ab935ad1d")
+  (references (jazz.io Directory (Directory create) (Directory delete) (Directory empty) (Directory get-content) (Directory get-directory) (Directory get-last-modification-time) (Directory iterate-directory) (Directory present) (Directory print) (Directory-Class get-protocol) File (Moniker get-list) (Moniker get-name) (Pathname expand) (Pathname get-list) (Pathname get-name) (Pathname validate-components))
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional Object-Class is-not? join member? some?)
+              (jazz.language.runtime.kernel class-of is? new not-null? unspecified)
+              (jazz.language.syntax.macros when)
+              (jazz.language.syntax.typecase typecase)
+              (scheme.language.runtime apply for-each list map not string? symbol?)))

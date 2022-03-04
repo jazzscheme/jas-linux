@@ -1,0 +1,8 @@
+(manifest jazz.network.autoload
+
+  (version 208070)
+  (digest "8155c43a6b4139b85bdd127548eb3d09fe49c387")
+  (references (jazz.network.host.TCP-Client TCP-Client)
+              (jazz.network.host.TCP-Server TCP-Server)
+              (jazz.network.server.Server-Interface Server-Interface)
+              (jazz.network.server.Server-Panel Server-Panel)))

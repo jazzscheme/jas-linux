@@ -1,0 +1,7 @@
+(manifest jazz.language.syntax.with
+
+  (version 208070)
+  (digest "c2348ec06c78b5c56aae656d5cdcf513a75a5aae")
+  (references (foundation.language.runtime source-code sourcify-deep-if)
+              (jazz.language.runtime.kernel binding-specifier)
+              (scheme.language.runtime caddr cadr car cddr cdr list null?)))

@@ -1,0 +1,10 @@
+(manifest jazz.language.syntax.loop
+
+  (version 208070)
+  (digest "7c40831b3cf0eb07268f684e8bade17d03aedec8")
+  (references (foundation.language.runtime desourcify-all simplify-begin source-code sourcify-deep-if)
+              (jazz.language.runtime.kernel not-null? specifier?)
+              (jazz.language.syntax.bind bind)
+              (jazz.language.syntax.increase increase!)
+              (jazz.language.syntax.macros when while)
+              (scheme.language.runtime append assq cadr car cddr cdr cons eq? for-each list map not null? number? pair? procedure? string->symbol string-append symbol? values)))

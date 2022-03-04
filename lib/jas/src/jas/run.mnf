@@ -1,0 +1,9 @@
+(manifest jas.run
+
+  (version 208070)
+  (digest "af65494c9932bfbda5b713b779813767f5e24b61")
+  (references (jas jas$add jas$branch jas$cat jas$checkout jas$clone jas$collect jas$commit jas$config jas$diff jas$discard jas$download jas$help jas$init jas$list jas$log jas$parse jas$remove jas$reset jas$restore jas$retrieve jas$scan jas$status jas$test jas$upload)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.kernel command-arguments register-product-run)
+              (jazz.language.syntax.bind bind)
+              (scheme.language.runtime car cdr current-output-port null? string->symbol)))

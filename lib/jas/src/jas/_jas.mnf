@@ -1,0 +1,17 @@
+(manifest jas
+
+  (version 208070)
+  (digest "33d0a62b8c00b53fcb7432ecd030a94cbb7f61af")
+  (references (gambit.language.runtime continuation-capture continuation-return force-output pp u8vector-length write-subu8vector)
+              (jazz.associative Associative-Exception Associative-Repository bare? get-changes get-digest get-flags get-seconds get-set jas-add jas-branch-name jas-branch? jas-branches jas-checkout jas-collect jas-commit jas-commit-index jas-commit? jas-config-get jas-config-set jas-describe jas-diff jas-discard jas-head-index jas-init jas-open jas-parse jas-read-head jas-remove jas-require-head jas-reset jas-resolve jas-restore jas-retrieve jas-scan jas-staging-index jas-staging-status jas-staging-tree jas-working-index jas-working-status retrieve-blob)
+              (jazz.associative.client Jas-Client (Jas-Client connect) (Jas-Client deconnect) connect deconnect download-all download-all-with-cache download-file download-sets upload-all upload-file)
+              (jazz.associative.remote Jas-Connection-Broke Jas-Inexistant-Repository Jas-Invalid-Path Jas-Invalid-Version Jas-Unable-To-Connect)
+              (jazz.io Directory current-directory-get exists? get-directory new-directory parse tokenise-filename)
+              (jazz.language.runtime.exception call-with-catch)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional (Sequence sequence-last) empty-string? ends-with? find fxfloor last percentage split starts-with?)
+              (jazz.language.runtime.hubs get-message)
+              (jazz.language.runtime.kernel new not-null? pathname-normalize present-binary-bytes unspecified)
+              (jazz.language.syntax.bind bind)
+              (jazz.language.syntax.macros catch unless when)
+              (scheme.language.runtime - > apply cadr car cdr current-output-port eq? equal? eqv? for-each list map member not null? pair? string->number string->symbol string-append string-length substring values)))

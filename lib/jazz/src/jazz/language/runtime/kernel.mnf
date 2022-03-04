@@ -1,0 +1,5 @@
+(manifest jazz.language.runtime.kernel
+
+  (version 208070)
+  (digest "3e1c3aceabdf076823bf40d9a8050ee16cb9216c")
+  (references))

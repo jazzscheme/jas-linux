@@ -1,0 +1,11 @@
+(manifest jazz.presence.register.Register
+
+  (version 208070)
+  (digest "7887973d9d12bde051069e11ec23582147966d19")
+  (references (gambit.language.runtime make-table table-ref table-set!)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.functional Object-Class table-keys)
+              (jazz.language.runtime.kernel load-unit new table-clear)
+              (jazz.language.runtime.object Object)
+              (jazz.presence.register.stub Register-Local-Proxy)
+              (scheme.language.runtime eq? not)))

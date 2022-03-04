@@ -1,0 +1,13 @@
+(manifest jazz.event.Pulse
+
+  (version 208070)
+  (digest "93fb2401a8cba4c5ce41c16c3ed205a73fe3435c")
+  (references (gambit.language.runtime thread-start!)
+              (jazz.event synchronize-event)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.functional Object-Class box-list exit-thread find-keyword new-thread sleep unbox-list)
+              (jazz.language.runtime.kernel not-null?)
+              (jazz.language.runtime.object Object (Object destroy) (Object initialize))
+              (jazz.language.syntax.bind-keywords bind-keywords)
+              (jazz.language.syntax.macros unless when)
+              (scheme.language.runtime not)))

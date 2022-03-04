@@ -1,0 +1,8 @@
+(manifest jazz.debuggee.jazz.Jazz-Debuggee-Restart
+
+  (version 208070)
+  (digest "21d3fa6d1ac2ac291477a192faab2093a5a74c7e")
+  (references (jazz.debuggee.base Debuggee-Restart (Debuggee-Restart get-id) (Debuggee-Restart get-message) (Debuggee-Restart get-name))
+              (jazz.language.runtime.functional Object-Class)
+              (jazz.language.runtime.kernel object->serial)
+              (jazz.language.runtime.object (Object initialize))))

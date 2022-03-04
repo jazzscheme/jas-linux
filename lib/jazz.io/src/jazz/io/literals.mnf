@@ -1,0 +1,9 @@
+(manifest jazz.io.literals
+
+  (version 208070)
+  (digest "94c159693094f776b5b7dd021441248834c9ac8d")
+  (references (jazz.io Directory File)
+              (jazz.io.Directory-Group Directory-Group)
+              (jazz.io.Manifest Manifest)
+              (jazz.io.Path Path)
+              (jazz.language.runtime.kernel new)))

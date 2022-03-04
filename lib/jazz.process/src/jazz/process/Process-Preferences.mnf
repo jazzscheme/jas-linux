@@ -1,0 +1,14 @@
+(manifest jazz.process.Process-Preferences
+
+  (version 208070)
+  (digest "a5b074e838499c239fe9883b86c302ea48f7aa1e")
+  (references (gambit.language.runtime list->table)
+              (jazz.component.Component (Component-Class get-class-form) (Component-Class get-class-forms) (Component-Class set-class-form))
+              (jazz.language.runtime.functional Object-Class)
+              (jazz.language.runtime.kernel new)
+              (jazz.markup construct-form get-class-form-with-origin locators-ref)
+              (jazz.markup.syntax <form> form)
+              (jazz.preferences Preferences (Preferences~Class get-class-descriptor))
+              (jazz.process.descriptors Process-Preferences-Descriptor)
+              (scheme.language.runtime cons list)
+              (scheme.syntax declaration-path)))

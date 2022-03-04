@@ -1,0 +1,8 @@
+(manifest scheme.core
+
+  (version 208070)
+  (digest "90ab4a4f584645ed59e28bda76da0f4ce1624b35")
+  (references (foundation.language.runtime generate-symbol source-code)
+              (jazz.dialect.classes.foundation Any)
+              (scheme.core.kernel add-core-method-node annotate-let compose-helper current-declaration current-declaration-name current-resume current-walker emit emit-expressions emit-expressions emit-one-expression emit-statements-code find-annotated find-annotated-type find-nextmethod get-and-expressions get-class-level get-declaration-path get-declaration-toplevel get-dialect get-expression-source get-object-slot iterate-module-declaration method-implementation-name method-implementation-name new-code new-code new-core-class new-declaration-form new-object new-special-expression new-special-expression new-special-form object-size parse-keywords parse-modifiers reference-name register-binding register-declaration require-dialect set-core-class set-object-class set-object-slot setup-declaration tree-fold tree-fold-list walk walk-list walk-list)
+              (scheme.language.runtime + append caar cadr car cdr char-downcase eq? length list list->string list-ref map not null? string->list string->symbol string-append symbol->string symbol?)))

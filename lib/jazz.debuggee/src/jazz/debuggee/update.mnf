@@ -1,0 +1,5 @@
+(manifest jazz.debuggee.update
+
+  (version 208070)
+  (digest "5ac038533cff68dc0f966f0ddbd60bc5525d7be6")
+  (references (jazz.debuggee update-debuggee-arguments update-debuggee-process)))

@@ -1,0 +1,9 @@
+(manifest jazz.process.autoload
+
+  (version 208070)
+  (digest "d4e439dfcc8b8e5559cc056f771831b2012a84da")
+  (references (jazz.process.Command-Line Command-Line)
+              (jazz.process.Process Process)
+              (jazz.process.Process-Preferences Process-Preferences)
+              (jazz.process.Quit-Listener Quit-Listener)
+              (jazz.process.Save-Environment-Listener Save-Environment-Listener)))

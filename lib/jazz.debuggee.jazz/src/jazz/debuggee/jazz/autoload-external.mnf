@@ -1,0 +1,8 @@
+(manifest jazz.debuggee.jazz.autoload-external
+
+  (version 208070)
+  (digest "4a897d1b5f3e56b6a5122b0424f05fad7ba49e6e")
+  (references (jazz.application current-application)
+              (jazz.platform.x11 get-temporary-file)
+              (jazz.process current-process)
+              (jazz.snapshot new-safe-thread)))

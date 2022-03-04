@@ -1,0 +1,7 @@
+(manifest jazz.language.syntax.assertion
+
+  (version 208070)
+  (digest "83c320c4e9fbf01014ccbdf08337b31f2ccb7b24")
+  (references (foundation.language.runtime debug-user? desourcify generate-symbol simplify-begin source-code sourcify-deep-if)
+              (gambit.language.runtime get-output-string open-output-string)
+              (scheme.language.runtime cadr car cddr cdr display list not null? symbol? write)))

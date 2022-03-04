@@ -1,0 +1,7 @@
+(manifest jazz.language.syntax.bind-optionals
+
+  (version 208070)
+  (digest "2c329b83ff572d1d8c8332af88007f3ef29c5239")
+  (references (foundation.language.runtime generate-symbol source-code sourcify-deep-if)
+              (jazz.language.runtime.kernel binding-specifier proper-list)
+              (scheme.language.runtime caddr cadr car cddr cdr map)))

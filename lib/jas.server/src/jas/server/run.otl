@@ -1,0 +1,9 @@
+(module jas.server.run jazz
+  (import (jazz.debuggee))
+  (import (jazz.io))
+  (import (jazz.logger))
+  (import (jazz.snapshot))
+  (import (jas.server))
+  (import (jas.server.report))
+  (definition (prepare-logger))
+  (definition (prepare-snapshots)))

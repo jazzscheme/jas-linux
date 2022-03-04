@@ -1,0 +1,989 @@
+#ifdef ___LINKER_INFO
+; File: "runtime.c", produced by Gambit v4.8.9
+(
+408009
+(C)
+"bin:foundation.language.runtime"
+(("bin:foundation.language.runtime"))
+(
+"bin:foundation.language.runtime"
+"close-digest"
+"compose-reference"
+"cond-expand-features"
+"conditional-satisfied?"
+"container->path"
+"debug-core?"
+"debug-user?"
+"desourcify"
+"desourcify-all"
+"digest-file"
+"digest-string"
+"digest-substring"
+"digest-subu8vector"
+"digest-u8vector"
+"digest-update-subu8vector"
+"er-macro-transformer"
+"extract-location"
+"feature-satisfied?"
+"filepos-col"
+"filepos-line"
+"foundation.dialect"
+"foundation.language.runtime"
+"foundation.language.runtime:close-digest"
+"foundation.language.runtime:compose-reference"
+"foundation.language.runtime:cond-expand-features"
+"foundation.language.runtime:conditional-satisfied?"
+"foundation.language.runtime:container->path"
+"foundation.language.runtime:debug-core?"
+"foundation.language.runtime:debug-user?"
+"foundation.language.runtime:desourcify"
+"foundation.language.runtime:desourcify-all"
+"foundation.language.runtime:digest-file"
+"foundation.language.runtime:digest-string"
+"foundation.language.runtime:digest-substring"
+"foundation.language.runtime:digest-subu8vector"
+"foundation.language.runtime:digest-u8vector"
+"foundation.language.runtime:digest-update-subu8vector"
+"foundation.language.runtime:er-macro-transformer"
+"foundation.language.runtime:extract-location"
+"foundation.language.runtime:feature-satisfied?"
+"foundation.language.runtime:filepos-col"
+"foundation.language.runtime:filepos-line"
+"foundation.language.runtime:generate-symbol"
+"foundation.language.runtime:identifier=?"
+"foundation.language.runtime:identifier?"
+"foundation.language.runtime:iterate-table"
+"foundation.language.runtime:locat->container/line/col"
+"foundation.language.runtime:locat->path/container/start/end&"
+"foundation.language.runtime:locat-container"
+"foundation.language.runtime:locat-end"
+"foundation.language.runtime:locat-position"
+"foundation.language.runtime:locat-start"
+"foundation.language.runtime:make-syntactic-closure"
+"foundation.language.runtime:open-digest"
+"foundation.language.runtime:position->filepos"
+"foundation.language.runtime:present-source"
+"foundation.language.runtime:process-conditional"
+"foundation.language.runtime:rsc-macro-transformer"
+"foundation.language.runtime:sc-macro-transformer"
+"foundation.language.runtime:simplify-begin"
+"foundation.language.runtime:source-code"
+"foundation.language.runtime:source-locat"
+"foundation.language.runtime:source?"
+"foundation.language.runtime:sourcify"
+"foundation.language.runtime:sourcify-deep"
+"foundation.language.runtime:sourcify-deep-if"
+"foundation.language.runtime:sourcify-if"
+"foundation.language.runtime:strip-source-info"
+"foundation.language.runtime:strip-syntactic-closures"
+"foundation.language.runtime:syntactic-closure-form"
+"foundation.language.runtime:syntactic-closure?"
+"foundation.language.runtime:text-source?"
+"foundation.language.runtime:unwrap-syntactic-closure"
+"foundation.language.runtime:valid-conditional-requirement"
+"generate-symbol"
+"identifier=?"
+"identifier?"
+"iterate-table"
+"locat->container/line/col"
+"locat->path/container/start/end&"
+"locat-container"
+"locat-end"
+"locat-position"
+"locat-start"
+"make-syntactic-closure"
+"open-digest"
+"position->filepos"
+"present-source"
+"process-conditional"
+"public"
+"rsc-macro-transformer"
+"sc-macro-transformer"
+"simplify-begin"
+"source-code"
+"source-locat"
+"source?"
+"sourcify"
+"sourcify-deep"
+"sourcify-deep-if"
+"sourcify-if"
+"strip-source-info"
+"strip-syntactic-closures"
+"syntactic-closure-form"
+"syntactic-closure?"
+"text-source?"
+"unwrap-syntactic-closure"
+"valid-conditional-requirement"
+)
+(
+)
+(
+"bin:foundation.language.runtime#"
+)
+(
+)
+(
+"jazz:load-unit"
+"jazz:register-module"
+)
+ ()
+)
+#else
+#define ___VERSION 408009
+#define ___MODULE_NAME "bin:foundation.language.runtime"
+#define ___LINKER_ID ___LNK_bin_3a_foundation_2e_language_2e_runtime
+#define ___MH_PROC ___H_bin_3a_foundation_2e_language_2e_runtime
+#define ___SCRIPT_LINE 0
+#define ___SYMCOUNT 108
+#define ___GLOCOUNT 3
+#define ___SUPCOUNT 1
+#define ___CNSCOUNT 104
+#define ___SUBCOUNT 14
+#define ___LBLCOUNT 6
+#define ___MODDESCR ___REF_SUB(13)
+#include "gambit.h"
+
+___NEED_SYM(___S_bin_3a_foundation_2e_language_2e_runtime)
+___NEED_SYM(___S_close_2d_digest)
+___NEED_SYM(___S_compose_2d_reference)
+___NEED_SYM(___S_cond_2d_expand_2d_features)
+___NEED_SYM(___S_conditional_2d_satisfied_3f_)
+___NEED_SYM(___S_container_2d__3e_path)
+___NEED_SYM(___S_debug_2d_core_3f_)
+___NEED_SYM(___S_debug_2d_user_3f_)
+___NEED_SYM(___S_desourcify)
+___NEED_SYM(___S_desourcify_2d_all)
+___NEED_SYM(___S_digest_2d_file)
+___NEED_SYM(___S_digest_2d_string)
+___NEED_SYM(___S_digest_2d_substring)
+___NEED_SYM(___S_digest_2d_subu8vector)
+___NEED_SYM(___S_digest_2d_u8vector)
+___NEED_SYM(___S_digest_2d_update_2d_subu8vector)
+___NEED_SYM(___S_er_2d_macro_2d_transformer)
+___NEED_SYM(___S_extract_2d_location)
+___NEED_SYM(___S_feature_2d_satisfied_3f_)
+___NEED_SYM(___S_filepos_2d_col)
+___NEED_SYM(___S_filepos_2d_line)
+___NEED_SYM(___S_foundation_2e_dialect)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_close_2d_digest)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_compose_2d_reference)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_cond_2d_expand_2d_features)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_conditional_2d_satisfied_3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_container_2d__3e_path)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_debug_2d_core_3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_debug_2d_user_3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_desourcify)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_desourcify_2d_all)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_digest_2d_file)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_digest_2d_string)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_digest_2d_substring)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_digest_2d_subu8vector)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_digest_2d_u8vector)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_digest_2d_update_2d_subu8vector)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_er_2d_macro_2d_transformer)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_extract_2d_location)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_feature_2d_satisfied_3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_filepos_2d_col)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_filepos_2d_line)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_generate_2d_symbol)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_identifier_3d__3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_identifier_3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_iterate_2d_table)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_container_2f_line_2f_col)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_path_2f_container_2f_start_2f_end_26_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_locat_2d_container)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_locat_2d_end)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_locat_2d_position)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_locat_2d_start)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_make_2d_syntactic_2d_closure)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_open_2d_digest)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_position_2d__3e_filepos)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_present_2d_source)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_process_2d_conditional)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_rsc_2d_macro_2d_transformer)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_sc_2d_macro_2d_transformer)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_simplify_2d_begin)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_source_2d_code)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_source_2d_locat)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_source_3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_sourcify)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep_2d_if)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_if)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_strip_2d_source_2d_info)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_strip_2d_syntactic_2d_closures)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_2d_form)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_text_2d_source_3f_)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_unwrap_2d_syntactic_2d_closure)
+___NEED_SYM(___S_foundation_2e_language_2e_runtime_3a_valid_2d_conditional_2d_requirement)
+___NEED_SYM(___S_generate_2d_symbol)
+___NEED_SYM(___S_identifier_3d__3f_)
+___NEED_SYM(___S_identifier_3f_)
+___NEED_SYM(___S_iterate_2d_table)
+___NEED_SYM(___S_locat_2d__3e_container_2f_line_2f_col)
+___NEED_SYM(___S_locat_2d__3e_path_2f_container_2f_start_2f_end_26_)
+___NEED_SYM(___S_locat_2d_container)
+___NEED_SYM(___S_locat_2d_end)
+___NEED_SYM(___S_locat_2d_position)
+___NEED_SYM(___S_locat_2d_start)
+___NEED_SYM(___S_make_2d_syntactic_2d_closure)
+___NEED_SYM(___S_open_2d_digest)
+___NEED_SYM(___S_position_2d__3e_filepos)
+___NEED_SYM(___S_present_2d_source)
+___NEED_SYM(___S_process_2d_conditional)
+___NEED_SYM(___S_public)
+___NEED_SYM(___S_rsc_2d_macro_2d_transformer)
+___NEED_SYM(___S_sc_2d_macro_2d_transformer)
+___NEED_SYM(___S_simplify_2d_begin)
+___NEED_SYM(___S_source_2d_code)
+___NEED_SYM(___S_source_2d_locat)
+___NEED_SYM(___S_source_3f_)
+___NEED_SYM(___S_sourcify)
+___NEED_SYM(___S_sourcify_2d_deep)
+___NEED_SYM(___S_sourcify_2d_deep_2d_if)
+___NEED_SYM(___S_sourcify_2d_if)
+___NEED_SYM(___S_strip_2d_source_2d_info)
+___NEED_SYM(___S_strip_2d_syntactic_2d_closures)
+___NEED_SYM(___S_syntactic_2d_closure_2d_form)
+___NEED_SYM(___S_syntactic_2d_closure_3f_)
+___NEED_SYM(___S_text_2d_source_3f_)
+___NEED_SYM(___S_unwrap_2d_syntactic_2d_closure)
+___NEED_SYM(___S_valid_2d_conditional_2d_requirement)
+
+___NEED_GLO(___G_bin_3a_foundation_2e_language_2e_runtime_23_)
+___NEED_GLO(___G_jazz_3a_load_2d_unit)
+___NEED_GLO(___G_jazz_3a_register_2d_module)
+
+___BEGIN_SYM
+___DEF_SYM(0,___S_bin_3a_foundation_2e_language_2e_runtime,"bin:foundation.language.runtime")
+
+___DEF_SYM(1,___S_close_2d_digest,"close-digest")
+___DEF_SYM(2,___S_compose_2d_reference,"compose-reference")
+___DEF_SYM(3,___S_cond_2d_expand_2d_features,"cond-expand-features")
+___DEF_SYM(4,___S_conditional_2d_satisfied_3f_,"conditional-satisfied?")
+___DEF_SYM(5,___S_container_2d__3e_path,"container->path")
+___DEF_SYM(6,___S_debug_2d_core_3f_,"debug-core?")
+___DEF_SYM(7,___S_debug_2d_user_3f_,"debug-user?")
+___DEF_SYM(8,___S_desourcify,"desourcify")
+___DEF_SYM(9,___S_desourcify_2d_all,"desourcify-all")
+___DEF_SYM(10,___S_digest_2d_file,"digest-file")
+___DEF_SYM(11,___S_digest_2d_string,"digest-string")
+___DEF_SYM(12,___S_digest_2d_substring,"digest-substring")
+___DEF_SYM(13,___S_digest_2d_subu8vector,"digest-subu8vector")
+___DEF_SYM(14,___S_digest_2d_u8vector,"digest-u8vector")
+___DEF_SYM(15,___S_digest_2d_update_2d_subu8vector,"digest-update-subu8vector")
+___DEF_SYM(16,___S_er_2d_macro_2d_transformer,"er-macro-transformer")
+___DEF_SYM(17,___S_extract_2d_location,"extract-location")
+___DEF_SYM(18,___S_feature_2d_satisfied_3f_,"feature-satisfied?")
+___DEF_SYM(19,___S_filepos_2d_col,"filepos-col")
+___DEF_SYM(20,___S_filepos_2d_line,"filepos-line")
+___DEF_SYM(21,___S_foundation_2e_dialect,"foundation.dialect")
+___DEF_SYM(22,___S_foundation_2e_language_2e_runtime,"foundation.language.runtime")
+___DEF_SYM(23,___S_foundation_2e_language_2e_runtime_3a_close_2d_digest,"foundation.language.runtime:close-digest")
+
+___DEF_SYM(24,___S_foundation_2e_language_2e_runtime_3a_compose_2d_reference,"foundation.language.runtime:compose-reference")
+
+___DEF_SYM(25,___S_foundation_2e_language_2e_runtime_3a_cond_2d_expand_2d_features,"foundation.language.runtime:cond-expand-features")
+
+___DEF_SYM(26,___S_foundation_2e_language_2e_runtime_3a_conditional_2d_satisfied_3f_,"foundation.language.runtime:conditional-satisfied?")
+
+___DEF_SYM(27,___S_foundation_2e_language_2e_runtime_3a_container_2d__3e_path,"foundation.language.runtime:container->path")
+
+___DEF_SYM(28,___S_foundation_2e_language_2e_runtime_3a_debug_2d_core_3f_,"foundation.language.runtime:debug-core?")
+
+___DEF_SYM(29,___S_foundation_2e_language_2e_runtime_3a_debug_2d_user_3f_,"foundation.language.runtime:debug-user?")
+
+___DEF_SYM(30,___S_foundation_2e_language_2e_runtime_3a_desourcify,"foundation.language.runtime:desourcify")
+
+___DEF_SYM(31,___S_foundation_2e_language_2e_runtime_3a_desourcify_2d_all,"foundation.language.runtime:desourcify-all")
+
+___DEF_SYM(32,___S_foundation_2e_language_2e_runtime_3a_digest_2d_file,"foundation.language.runtime:digest-file")
+
+___DEF_SYM(33,___S_foundation_2e_language_2e_runtime_3a_digest_2d_string,"foundation.language.runtime:digest-string")
+
+___DEF_SYM(34,___S_foundation_2e_language_2e_runtime_3a_digest_2d_substring,"foundation.language.runtime:digest-substring")
+
+___DEF_SYM(35,___S_foundation_2e_language_2e_runtime_3a_digest_2d_subu8vector,"foundation.language.runtime:digest-subu8vector")
+
+___DEF_SYM(36,___S_foundation_2e_language_2e_runtime_3a_digest_2d_u8vector,"foundation.language.runtime:digest-u8vector")
+
+___DEF_SYM(37,___S_foundation_2e_language_2e_runtime_3a_digest_2d_update_2d_subu8vector,"foundation.language.runtime:digest-update-subu8vector")
+
+___DEF_SYM(38,___S_foundation_2e_language_2e_runtime_3a_er_2d_macro_2d_transformer,"foundation.language.runtime:er-macro-transformer")
+
+___DEF_SYM(39,___S_foundation_2e_language_2e_runtime_3a_extract_2d_location,"foundation.language.runtime:extract-location")
+
+___DEF_SYM(40,___S_foundation_2e_language_2e_runtime_3a_feature_2d_satisfied_3f_,"foundation.language.runtime:feature-satisfied?")
+
+___DEF_SYM(41,___S_foundation_2e_language_2e_runtime_3a_filepos_2d_col,"foundation.language.runtime:filepos-col")
+
+___DEF_SYM(42,___S_foundation_2e_language_2e_runtime_3a_filepos_2d_line,"foundation.language.runtime:filepos-line")
+
+___DEF_SYM(43,___S_foundation_2e_language_2e_runtime_3a_generate_2d_symbol,"foundation.language.runtime:generate-symbol")
+
+___DEF_SYM(44,___S_foundation_2e_language_2e_runtime_3a_identifier_3d__3f_,"foundation.language.runtime:identifier=?")
+
+___DEF_SYM(45,___S_foundation_2e_language_2e_runtime_3a_identifier_3f_,"foundation.language.runtime:identifier?")
+
+___DEF_SYM(46,___S_foundation_2e_language_2e_runtime_3a_iterate_2d_table,"foundation.language.runtime:iterate-table")
+
+___DEF_SYM(47,___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_container_2f_line_2f_col,"foundation.language.runtime:locat->container/line/col")
+
+___DEF_SYM(48,___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_path_2f_container_2f_start_2f_end_26_,"foundation.language.runtime:locat->path/container/start/end&")
+
+___DEF_SYM(49,___S_foundation_2e_language_2e_runtime_3a_locat_2d_container,"foundation.language.runtime:locat-container")
+
+___DEF_SYM(50,___S_foundation_2e_language_2e_runtime_3a_locat_2d_end,"foundation.language.runtime:locat-end")
+
+___DEF_SYM(51,___S_foundation_2e_language_2e_runtime_3a_locat_2d_position,"foundation.language.runtime:locat-position")
+
+___DEF_SYM(52,___S_foundation_2e_language_2e_runtime_3a_locat_2d_start,"foundation.language.runtime:locat-start")
+
+___DEF_SYM(53,___S_foundation_2e_language_2e_runtime_3a_make_2d_syntactic_2d_closure,"foundation.language.runtime:make-syntactic-closure")
+
+___DEF_SYM(54,___S_foundation_2e_language_2e_runtime_3a_open_2d_digest,"foundation.language.runtime:open-digest")
+
+___DEF_SYM(55,___S_foundation_2e_language_2e_runtime_3a_position_2d__3e_filepos,"foundation.language.runtime:position->filepos")
+
+___DEF_SYM(56,___S_foundation_2e_language_2e_runtime_3a_present_2d_source,"foundation.language.runtime:present-source")
+
+___DEF_SYM(57,___S_foundation_2e_language_2e_runtime_3a_process_2d_conditional,"foundation.language.runtime:process-conditional")
+
+___DEF_SYM(58,___S_foundation_2e_language_2e_runtime_3a_rsc_2d_macro_2d_transformer,"foundation.language.runtime:rsc-macro-transformer")
+
+___DEF_SYM(59,___S_foundation_2e_language_2e_runtime_3a_sc_2d_macro_2d_transformer,"foundation.language.runtime:sc-macro-transformer")
+
+___DEF_SYM(60,___S_foundation_2e_language_2e_runtime_3a_simplify_2d_begin,"foundation.language.runtime:simplify-begin")
+
+___DEF_SYM(61,___S_foundation_2e_language_2e_runtime_3a_source_2d_code,"foundation.language.runtime:source-code")
+
+___DEF_SYM(62,___S_foundation_2e_language_2e_runtime_3a_source_2d_locat,"foundation.language.runtime:source-locat")
+
+___DEF_SYM(63,___S_foundation_2e_language_2e_runtime_3a_source_3f_,"foundation.language.runtime:source?")
+
+___DEF_SYM(64,___S_foundation_2e_language_2e_runtime_3a_sourcify,"foundation.language.runtime:sourcify")
+
+___DEF_SYM(65,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep,"foundation.language.runtime:sourcify-deep")
+
+___DEF_SYM(66,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep_2d_if,"foundation.language.runtime:sourcify-deep-if")
+
+___DEF_SYM(67,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_if,"foundation.language.runtime:sourcify-if")
+
+___DEF_SYM(68,___S_foundation_2e_language_2e_runtime_3a_strip_2d_source_2d_info,"foundation.language.runtime:strip-source-info")
+
+___DEF_SYM(69,___S_foundation_2e_language_2e_runtime_3a_strip_2d_syntactic_2d_closures,"foundation.language.runtime:strip-syntactic-closures")
+
+___DEF_SYM(70,___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_2d_form,"foundation.language.runtime:syntactic-closure-form")
+
+___DEF_SYM(71,___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_3f_,"foundation.language.runtime:syntactic-closure?")
+
+___DEF_SYM(72,___S_foundation_2e_language_2e_runtime_3a_text_2d_source_3f_,"foundation.language.runtime:text-source?")
+
+___DEF_SYM(73,___S_foundation_2e_language_2e_runtime_3a_unwrap_2d_syntactic_2d_closure,"foundation.language.runtime:unwrap-syntactic-closure")
+
+___DEF_SYM(74,___S_foundation_2e_language_2e_runtime_3a_valid_2d_conditional_2d_requirement,"foundation.language.runtime:valid-conditional-requirement")
+
+___DEF_SYM(75,___S_generate_2d_symbol,"generate-symbol")
+___DEF_SYM(76,___S_identifier_3d__3f_,"identifier=?")
+___DEF_SYM(77,___S_identifier_3f_,"identifier?")
+___DEF_SYM(78,___S_iterate_2d_table,"iterate-table")
+___DEF_SYM(79,___S_locat_2d__3e_container_2f_line_2f_col,"locat->container/line/col")
+___DEF_SYM(80,___S_locat_2d__3e_path_2f_container_2f_start_2f_end_26_,"locat->path/container/start/end&")
+
+___DEF_SYM(81,___S_locat_2d_container,"locat-container")
+___DEF_SYM(82,___S_locat_2d_end,"locat-end")
+___DEF_SYM(83,___S_locat_2d_position,"locat-position")
+___DEF_SYM(84,___S_locat_2d_start,"locat-start")
+___DEF_SYM(85,___S_make_2d_syntactic_2d_closure,"make-syntactic-closure")
+___DEF_SYM(86,___S_open_2d_digest,"open-digest")
+___DEF_SYM(87,___S_position_2d__3e_filepos,"position->filepos")
+___DEF_SYM(88,___S_present_2d_source,"present-source")
+___DEF_SYM(89,___S_process_2d_conditional,"process-conditional")
+___DEF_SYM(90,___S_public,"public")
+___DEF_SYM(91,___S_rsc_2d_macro_2d_transformer,"rsc-macro-transformer")
+___DEF_SYM(92,___S_sc_2d_macro_2d_transformer,"sc-macro-transformer")
+___DEF_SYM(93,___S_simplify_2d_begin,"simplify-begin")
+___DEF_SYM(94,___S_source_2d_code,"source-code")
+___DEF_SYM(95,___S_source_2d_locat,"source-locat")
+___DEF_SYM(96,___S_source_3f_,"source?")
+___DEF_SYM(97,___S_sourcify,"sourcify")
+___DEF_SYM(98,___S_sourcify_2d_deep,"sourcify-deep")
+___DEF_SYM(99,___S_sourcify_2d_deep_2d_if,"sourcify-deep-if")
+___DEF_SYM(100,___S_sourcify_2d_if,"sourcify-if")
+___DEF_SYM(101,___S_strip_2d_source_2d_info,"strip-source-info")
+___DEF_SYM(102,___S_strip_2d_syntactic_2d_closures,"strip-syntactic-closures")
+___DEF_SYM(103,___S_syntactic_2d_closure_2d_form,"syntactic-closure-form")
+___DEF_SYM(104,___S_syntactic_2d_closure_3f_,"syntactic-closure?")
+___DEF_SYM(105,___S_text_2d_source_3f_,"text-source?")
+___DEF_SYM(106,___S_unwrap_2d_syntactic_2d_closure,"unwrap-syntactic-closure")
+___DEF_SYM(107,___S_valid_2d_conditional_2d_requirement,"valid-conditional-requirement")
+
+___END_SYM
+
+#define ___SYM_bin_3a_foundation_2e_language_2e_runtime ___SYM(0,___S_bin_3a_foundation_2e_language_2e_runtime)
+#define ___SYM_close_2d_digest ___SYM(1,___S_close_2d_digest)
+#define ___SYM_compose_2d_reference ___SYM(2,___S_compose_2d_reference)
+#define ___SYM_cond_2d_expand_2d_features ___SYM(3,___S_cond_2d_expand_2d_features)
+#define ___SYM_conditional_2d_satisfied_3f_ ___SYM(4,___S_conditional_2d_satisfied_3f_)
+#define ___SYM_container_2d__3e_path ___SYM(5,___S_container_2d__3e_path)
+#define ___SYM_debug_2d_core_3f_ ___SYM(6,___S_debug_2d_core_3f_)
+#define ___SYM_debug_2d_user_3f_ ___SYM(7,___S_debug_2d_user_3f_)
+#define ___SYM_desourcify ___SYM(8,___S_desourcify)
+#define ___SYM_desourcify_2d_all ___SYM(9,___S_desourcify_2d_all)
+#define ___SYM_digest_2d_file ___SYM(10,___S_digest_2d_file)
+#define ___SYM_digest_2d_string ___SYM(11,___S_digest_2d_string)
+#define ___SYM_digest_2d_substring ___SYM(12,___S_digest_2d_substring)
+#define ___SYM_digest_2d_subu8vector ___SYM(13,___S_digest_2d_subu8vector)
+#define ___SYM_digest_2d_u8vector ___SYM(14,___S_digest_2d_u8vector)
+#define ___SYM_digest_2d_update_2d_subu8vector ___SYM(15,___S_digest_2d_update_2d_subu8vector)
+#define ___SYM_er_2d_macro_2d_transformer ___SYM(16,___S_er_2d_macro_2d_transformer)
+#define ___SYM_extract_2d_location ___SYM(17,___S_extract_2d_location)
+#define ___SYM_feature_2d_satisfied_3f_ ___SYM(18,___S_feature_2d_satisfied_3f_)
+#define ___SYM_filepos_2d_col ___SYM(19,___S_filepos_2d_col)
+#define ___SYM_filepos_2d_line ___SYM(20,___S_filepos_2d_line)
+#define ___SYM_foundation_2e_dialect ___SYM(21,___S_foundation_2e_dialect)
+#define ___SYM_foundation_2e_language_2e_runtime ___SYM(22,___S_foundation_2e_language_2e_runtime)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_close_2d_digest ___SYM(23,___S_foundation_2e_language_2e_runtime_3a_close_2d_digest)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_compose_2d_reference ___SYM(24,___S_foundation_2e_language_2e_runtime_3a_compose_2d_reference)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_cond_2d_expand_2d_features ___SYM(25,___S_foundation_2e_language_2e_runtime_3a_cond_2d_expand_2d_features)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_conditional_2d_satisfied_3f_ ___SYM(26,___S_foundation_2e_language_2e_runtime_3a_conditional_2d_satisfied_3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_container_2d__3e_path ___SYM(27,___S_foundation_2e_language_2e_runtime_3a_container_2d__3e_path)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_debug_2d_core_3f_ ___SYM(28,___S_foundation_2e_language_2e_runtime_3a_debug_2d_core_3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_debug_2d_user_3f_ ___SYM(29,___S_foundation_2e_language_2e_runtime_3a_debug_2d_user_3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_desourcify ___SYM(30,___S_foundation_2e_language_2e_runtime_3a_desourcify)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_desourcify_2d_all ___SYM(31,___S_foundation_2e_language_2e_runtime_3a_desourcify_2d_all)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_digest_2d_file ___SYM(32,___S_foundation_2e_language_2e_runtime_3a_digest_2d_file)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_digest_2d_string ___SYM(33,___S_foundation_2e_language_2e_runtime_3a_digest_2d_string)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_digest_2d_substring ___SYM(34,___S_foundation_2e_language_2e_runtime_3a_digest_2d_substring)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_digest_2d_subu8vector ___SYM(35,___S_foundation_2e_language_2e_runtime_3a_digest_2d_subu8vector)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_digest_2d_u8vector ___SYM(36,___S_foundation_2e_language_2e_runtime_3a_digest_2d_u8vector)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_digest_2d_update_2d_subu8vector ___SYM(37,___S_foundation_2e_language_2e_runtime_3a_digest_2d_update_2d_subu8vector)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_er_2d_macro_2d_transformer ___SYM(38,___S_foundation_2e_language_2e_runtime_3a_er_2d_macro_2d_transformer)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_extract_2d_location ___SYM(39,___S_foundation_2e_language_2e_runtime_3a_extract_2d_location)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_feature_2d_satisfied_3f_ ___SYM(40,___S_foundation_2e_language_2e_runtime_3a_feature_2d_satisfied_3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_filepos_2d_col ___SYM(41,___S_foundation_2e_language_2e_runtime_3a_filepos_2d_col)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_filepos_2d_line ___SYM(42,___S_foundation_2e_language_2e_runtime_3a_filepos_2d_line)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_generate_2d_symbol ___SYM(43,___S_foundation_2e_language_2e_runtime_3a_generate_2d_symbol)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_identifier_3d__3f_ ___SYM(44,___S_foundation_2e_language_2e_runtime_3a_identifier_3d__3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_identifier_3f_ ___SYM(45,___S_foundation_2e_language_2e_runtime_3a_identifier_3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_iterate_2d_table ___SYM(46,___S_foundation_2e_language_2e_runtime_3a_iterate_2d_table)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_locat_2d__3e_container_2f_line_2f_col ___SYM(47,___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_container_2f_line_2f_col)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_locat_2d__3e_path_2f_container_2f_start_2f_end_26_ ___SYM(48,___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_path_2f_container_2f_start_2f_end_26_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_locat_2d_container ___SYM(49,___S_foundation_2e_language_2e_runtime_3a_locat_2d_container)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_locat_2d_end ___SYM(50,___S_foundation_2e_language_2e_runtime_3a_locat_2d_end)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_locat_2d_position ___SYM(51,___S_foundation_2e_language_2e_runtime_3a_locat_2d_position)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_locat_2d_start ___SYM(52,___S_foundation_2e_language_2e_runtime_3a_locat_2d_start)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_make_2d_syntactic_2d_closure ___SYM(53,___S_foundation_2e_language_2e_runtime_3a_make_2d_syntactic_2d_closure)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_open_2d_digest ___SYM(54,___S_foundation_2e_language_2e_runtime_3a_open_2d_digest)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_position_2d__3e_filepos ___SYM(55,___S_foundation_2e_language_2e_runtime_3a_position_2d__3e_filepos)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_present_2d_source ___SYM(56,___S_foundation_2e_language_2e_runtime_3a_present_2d_source)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_process_2d_conditional ___SYM(57,___S_foundation_2e_language_2e_runtime_3a_process_2d_conditional)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_rsc_2d_macro_2d_transformer ___SYM(58,___S_foundation_2e_language_2e_runtime_3a_rsc_2d_macro_2d_transformer)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_sc_2d_macro_2d_transformer ___SYM(59,___S_foundation_2e_language_2e_runtime_3a_sc_2d_macro_2d_transformer)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_simplify_2d_begin ___SYM(60,___S_foundation_2e_language_2e_runtime_3a_simplify_2d_begin)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_source_2d_code ___SYM(61,___S_foundation_2e_language_2e_runtime_3a_source_2d_code)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_source_2d_locat ___SYM(62,___S_foundation_2e_language_2e_runtime_3a_source_2d_locat)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_source_3f_ ___SYM(63,___S_foundation_2e_language_2e_runtime_3a_source_3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_sourcify ___SYM(64,___S_foundation_2e_language_2e_runtime_3a_sourcify)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep ___SYM(65,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep_2d_if ___SYM(66,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep_2d_if)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_sourcify_2d_if ___SYM(67,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_if)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_strip_2d_source_2d_info ___SYM(68,___S_foundation_2e_language_2e_runtime_3a_strip_2d_source_2d_info)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_strip_2d_syntactic_2d_closures ___SYM(69,___S_foundation_2e_language_2e_runtime_3a_strip_2d_syntactic_2d_closures)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_2d_form ___SYM(70,___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_2d_form)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_3f_ ___SYM(71,___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_text_2d_source_3f_ ___SYM(72,___S_foundation_2e_language_2e_runtime_3a_text_2d_source_3f_)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_unwrap_2d_syntactic_2d_closure ___SYM(73,___S_foundation_2e_language_2e_runtime_3a_unwrap_2d_syntactic_2d_closure)
+#define ___SYM_foundation_2e_language_2e_runtime_3a_valid_2d_conditional_2d_requirement ___SYM(74,___S_foundation_2e_language_2e_runtime_3a_valid_2d_conditional_2d_requirement)
+#define ___SYM_generate_2d_symbol ___SYM(75,___S_generate_2d_symbol)
+#define ___SYM_identifier_3d__3f_ ___SYM(76,___S_identifier_3d__3f_)
+#define ___SYM_identifier_3f_ ___SYM(77,___S_identifier_3f_)
+#define ___SYM_iterate_2d_table ___SYM(78,___S_iterate_2d_table)
+#define ___SYM_locat_2d__3e_container_2f_line_2f_col ___SYM(79,___S_locat_2d__3e_container_2f_line_2f_col)
+#define ___SYM_locat_2d__3e_path_2f_container_2f_start_2f_end_26_ ___SYM(80,___S_locat_2d__3e_path_2f_container_2f_start_2f_end_26_)
+#define ___SYM_locat_2d_container ___SYM(81,___S_locat_2d_container)
+#define ___SYM_locat_2d_end ___SYM(82,___S_locat_2d_end)
+#define ___SYM_locat_2d_position ___SYM(83,___S_locat_2d_position)
+#define ___SYM_locat_2d_start ___SYM(84,___S_locat_2d_start)
+#define ___SYM_make_2d_syntactic_2d_closure ___SYM(85,___S_make_2d_syntactic_2d_closure)
+#define ___SYM_open_2d_digest ___SYM(86,___S_open_2d_digest)
+#define ___SYM_position_2d__3e_filepos ___SYM(87,___S_position_2d__3e_filepos)
+#define ___SYM_present_2d_source ___SYM(88,___S_present_2d_source)
+#define ___SYM_process_2d_conditional ___SYM(89,___S_process_2d_conditional)
+#define ___SYM_public ___SYM(90,___S_public)
+#define ___SYM_rsc_2d_macro_2d_transformer ___SYM(91,___S_rsc_2d_macro_2d_transformer)
+#define ___SYM_sc_2d_macro_2d_transformer ___SYM(92,___S_sc_2d_macro_2d_transformer)
+#define ___SYM_simplify_2d_begin ___SYM(93,___S_simplify_2d_begin)
+#define ___SYM_source_2d_code ___SYM(94,___S_source_2d_code)
+#define ___SYM_source_2d_locat ___SYM(95,___S_source_2d_locat)
+#define ___SYM_source_3f_ ___SYM(96,___S_source_3f_)
+#define ___SYM_sourcify ___SYM(97,___S_sourcify)
+#define ___SYM_sourcify_2d_deep ___SYM(98,___S_sourcify_2d_deep)
+#define ___SYM_sourcify_2d_deep_2d_if ___SYM(99,___S_sourcify_2d_deep_2d_if)
+#define ___SYM_sourcify_2d_if ___SYM(100,___S_sourcify_2d_if)
+#define ___SYM_strip_2d_source_2d_info ___SYM(101,___S_strip_2d_source_2d_info)
+#define ___SYM_strip_2d_syntactic_2d_closures ___SYM(102,___S_strip_2d_syntactic_2d_closures)
+#define ___SYM_syntactic_2d_closure_2d_form ___SYM(103,___S_syntactic_2d_closure_2d_form)
+#define ___SYM_syntactic_2d_closure_3f_ ___SYM(104,___S_syntactic_2d_closure_3f_)
+#define ___SYM_text_2d_source_3f_ ___SYM(105,___S_text_2d_source_3f_)
+#define ___SYM_unwrap_2d_syntactic_2d_closure ___SYM(106,___S_unwrap_2d_syntactic_2d_closure)
+#define ___SYM_valid_2d_conditional_2d_requirement ___SYM(107,___S_valid_2d_conditional_2d_requirement)
+
+___BEGIN_GLO
+___DEF_GLO(0,"bin:foundation.language.runtime#")
+___DEF_GLO(1,"jazz:load-unit")
+___DEF_GLO(2,"jazz:register-module")
+___END_GLO
+
+#define ___GLO_bin_3a_foundation_2e_language_2e_runtime_23_ ___GLO(0,___G_bin_3a_foundation_2e_language_2e_runtime_23_)
+#define ___PRM_bin_3a_foundation_2e_language_2e_runtime_23_ ___PRM(0,___G_bin_3a_foundation_2e_language_2e_runtime_23_)
+#define ___GLO_jazz_3a_load_2d_unit ___GLO(1,___G_jazz_3a_load_2d_unit)
+#define ___PRM_jazz_3a_load_2d_unit ___PRM(1,___G_jazz_3a_load_2d_unit)
+#define ___GLO_jazz_3a_register_2d_module ___GLO(2,___G_jazz_3a_register_2d_module)
+#define ___PRM_jazz_3a_register_2d_module ___PRM(2,___G_jazz_3a_register_2d_module)
+
+___BEGIN_CNS
+ ___DEF_CNS(___REF_CNS(1),___REF_CNS(2))
+,___DEF_CNS(___REF_SYM(1,___S_close_2d_digest),___REF_SYM(23,___S_foundation_2e_language_2e_runtime_3a_close_2d_digest))
+,___DEF_CNS(___REF_CNS(3),___REF_CNS(4))
+,___DEF_CNS(___REF_SYM(2,___S_compose_2d_reference),___REF_SYM(24,___S_foundation_2e_language_2e_runtime_3a_compose_2d_reference))
+,___DEF_CNS(___REF_CNS(5),___REF_CNS(6))
+,___DEF_CNS(___REF_SYM(3,___S_cond_2d_expand_2d_features),___REF_SYM(25,___S_foundation_2e_language_2e_runtime_3a_cond_2d_expand_2d_features))
+,___DEF_CNS(___REF_CNS(7),___REF_CNS(8))
+,___DEF_CNS(___REF_SYM(4,___S_conditional_2d_satisfied_3f_),___REF_SYM(26,___S_foundation_2e_language_2e_runtime_3a_conditional_2d_satisfied_3f_))
+,___DEF_CNS(___REF_CNS(9),___REF_CNS(10))
+,___DEF_CNS(___REF_SYM(5,___S_container_2d__3e_path),___REF_SYM(27,___S_foundation_2e_language_2e_runtime_3a_container_2d__3e_path))
+,___DEF_CNS(___REF_CNS(11),___REF_CNS(12))
+,___DEF_CNS(___REF_SYM(6,___S_debug_2d_core_3f_),___REF_SYM(28,___S_foundation_2e_language_2e_runtime_3a_debug_2d_core_3f_))
+,___DEF_CNS(___REF_CNS(13),___REF_CNS(14))
+,___DEF_CNS(___REF_SYM(7,___S_debug_2d_user_3f_),___REF_SYM(29,___S_foundation_2e_language_2e_runtime_3a_debug_2d_user_3f_))
+,___DEF_CNS(___REF_CNS(15),___REF_CNS(16))
+,___DEF_CNS(___REF_SYM(8,___S_desourcify),___REF_SYM(30,___S_foundation_2e_language_2e_runtime_3a_desourcify))
+,___DEF_CNS(___REF_CNS(17),___REF_CNS(18))
+,___DEF_CNS(___REF_SYM(9,___S_desourcify_2d_all),___REF_SYM(31,___S_foundation_2e_language_2e_runtime_3a_desourcify_2d_all))
+,___DEF_CNS(___REF_CNS(19),___REF_CNS(20))
+,___DEF_CNS(___REF_SYM(10,___S_digest_2d_file),___REF_SYM(32,___S_foundation_2e_language_2e_runtime_3a_digest_2d_file))
+,___DEF_CNS(___REF_CNS(21),___REF_CNS(22))
+,___DEF_CNS(___REF_SYM(11,___S_digest_2d_string),___REF_SYM(33,___S_foundation_2e_language_2e_runtime_3a_digest_2d_string))
+,___DEF_CNS(___REF_CNS(23),___REF_CNS(24))
+,___DEF_CNS(___REF_SYM(12,___S_digest_2d_substring),___REF_SYM(34,___S_foundation_2e_language_2e_runtime_3a_digest_2d_substring))
+,___DEF_CNS(___REF_CNS(25),___REF_CNS(26))
+,___DEF_CNS(___REF_SYM(13,___S_digest_2d_subu8vector),___REF_SYM(35,___S_foundation_2e_language_2e_runtime_3a_digest_2d_subu8vector))
+,___DEF_CNS(___REF_CNS(27),___REF_CNS(28))
+,___DEF_CNS(___REF_SYM(14,___S_digest_2d_u8vector),___REF_SYM(36,___S_foundation_2e_language_2e_runtime_3a_digest_2d_u8vector))
+,___DEF_CNS(___REF_CNS(29),___REF_CNS(30))
+,___DEF_CNS(___REF_SYM(15,___S_digest_2d_update_2d_subu8vector),___REF_SYM(37,___S_foundation_2e_language_2e_runtime_3a_digest_2d_update_2d_subu8vector))
+,___DEF_CNS(___REF_CNS(31),___REF_CNS(32))
+,___DEF_CNS(___REF_SYM(16,___S_er_2d_macro_2d_transformer),___REF_SYM(38,___S_foundation_2e_language_2e_runtime_3a_er_2d_macro_2d_transformer))
+,___DEF_CNS(___REF_CNS(33),___REF_CNS(34))
+,___DEF_CNS(___REF_SYM(17,___S_extract_2d_location),___REF_SYM(39,___S_foundation_2e_language_2e_runtime_3a_extract_2d_location))
+,___DEF_CNS(___REF_CNS(35),___REF_CNS(36))
+,___DEF_CNS(___REF_SYM(18,___S_feature_2d_satisfied_3f_),___REF_SYM(40,___S_foundation_2e_language_2e_runtime_3a_feature_2d_satisfied_3f_))
+,___DEF_CNS(___REF_CNS(37),___REF_CNS(38))
+,___DEF_CNS(___REF_SYM(19,___S_filepos_2d_col),___REF_SYM(41,___S_foundation_2e_language_2e_runtime_3a_filepos_2d_col))
+,___DEF_CNS(___REF_CNS(39),___REF_CNS(40))
+,___DEF_CNS(___REF_SYM(20,___S_filepos_2d_line),___REF_SYM(42,___S_foundation_2e_language_2e_runtime_3a_filepos_2d_line))
+,___DEF_CNS(___REF_CNS(41),___REF_CNS(42))
+,___DEF_CNS(___REF_SYM(75,___S_generate_2d_symbol),___REF_SYM(43,___S_foundation_2e_language_2e_runtime_3a_generate_2d_symbol))
+,___DEF_CNS(___REF_CNS(43),___REF_CNS(44))
+,___DEF_CNS(___REF_SYM(76,___S_identifier_3d__3f_),___REF_SYM(44,___S_foundation_2e_language_2e_runtime_3a_identifier_3d__3f_))
+,___DEF_CNS(___REF_CNS(45),___REF_CNS(46))
+,___DEF_CNS(___REF_SYM(77,___S_identifier_3f_),___REF_SYM(45,___S_foundation_2e_language_2e_runtime_3a_identifier_3f_))
+,___DEF_CNS(___REF_CNS(47),___REF_CNS(48))
+,___DEF_CNS(___REF_SYM(78,___S_iterate_2d_table),___REF_SYM(46,___S_foundation_2e_language_2e_runtime_3a_iterate_2d_table))
+,___DEF_CNS(___REF_CNS(49),___REF_CNS(50))
+,___DEF_CNS(___REF_SYM(79,___S_locat_2d__3e_container_2f_line_2f_col),___REF_SYM(47,___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_container_2f_line_2f_col))
+,___DEF_CNS(___REF_CNS(51),___REF_CNS(52))
+,___DEF_CNS(___REF_SYM(80,___S_locat_2d__3e_path_2f_container_2f_start_2f_end_26_),___REF_SYM(48,___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_path_2f_container_2f_start_2f_end_26_))
+,___DEF_CNS(___REF_CNS(53),___REF_CNS(54))
+,___DEF_CNS(___REF_SYM(81,___S_locat_2d_container),___REF_SYM(49,___S_foundation_2e_language_2e_runtime_3a_locat_2d_container))
+,___DEF_CNS(___REF_CNS(55),___REF_CNS(56))
+,___DEF_CNS(___REF_SYM(82,___S_locat_2d_end),___REF_SYM(50,___S_foundation_2e_language_2e_runtime_3a_locat_2d_end))
+,___DEF_CNS(___REF_CNS(57),___REF_CNS(58))
+,___DEF_CNS(___REF_SYM(83,___S_locat_2d_position),___REF_SYM(51,___S_foundation_2e_language_2e_runtime_3a_locat_2d_position))
+,___DEF_CNS(___REF_CNS(59),___REF_CNS(60))
+,___DEF_CNS(___REF_SYM(84,___S_locat_2d_start),___REF_SYM(52,___S_foundation_2e_language_2e_runtime_3a_locat_2d_start))
+,___DEF_CNS(___REF_CNS(61),___REF_CNS(62))
+,___DEF_CNS(___REF_SYM(85,___S_make_2d_syntactic_2d_closure),___REF_SYM(53,___S_foundation_2e_language_2e_runtime_3a_make_2d_syntactic_2d_closure))
+,___DEF_CNS(___REF_CNS(63),___REF_CNS(64))
+,___DEF_CNS(___REF_SYM(86,___S_open_2d_digest),___REF_SYM(54,___S_foundation_2e_language_2e_runtime_3a_open_2d_digest))
+,___DEF_CNS(___REF_CNS(65),___REF_CNS(66))
+,___DEF_CNS(___REF_SYM(87,___S_position_2d__3e_filepos),___REF_SYM(55,___S_foundation_2e_language_2e_runtime_3a_position_2d__3e_filepos))
+,___DEF_CNS(___REF_CNS(67),___REF_CNS(68))
+,___DEF_CNS(___REF_SYM(88,___S_present_2d_source),___REF_SYM(56,___S_foundation_2e_language_2e_runtime_3a_present_2d_source))
+,___DEF_CNS(___REF_CNS(69),___REF_CNS(70))
+,___DEF_CNS(___REF_SYM(89,___S_process_2d_conditional),___REF_SYM(57,___S_foundation_2e_language_2e_runtime_3a_process_2d_conditional))
+,___DEF_CNS(___REF_CNS(71),___REF_CNS(72))
+,___DEF_CNS(___REF_SYM(91,___S_rsc_2d_macro_2d_transformer),___REF_SYM(58,___S_foundation_2e_language_2e_runtime_3a_rsc_2d_macro_2d_transformer))
+,___DEF_CNS(___REF_CNS(73),___REF_CNS(74))
+,___DEF_CNS(___REF_SYM(92,___S_sc_2d_macro_2d_transformer),___REF_SYM(59,___S_foundation_2e_language_2e_runtime_3a_sc_2d_macro_2d_transformer))
+,___DEF_CNS(___REF_CNS(75),___REF_CNS(76))
+,___DEF_CNS(___REF_SYM(93,___S_simplify_2d_begin),___REF_SYM(60,___S_foundation_2e_language_2e_runtime_3a_simplify_2d_begin))
+,___DEF_CNS(___REF_CNS(77),___REF_CNS(78))
+,___DEF_CNS(___REF_SYM(94,___S_source_2d_code),___REF_SYM(61,___S_foundation_2e_language_2e_runtime_3a_source_2d_code))
+,___DEF_CNS(___REF_CNS(79),___REF_CNS(80))
+,___DEF_CNS(___REF_SYM(95,___S_source_2d_locat),___REF_SYM(62,___S_foundation_2e_language_2e_runtime_3a_source_2d_locat))
+,___DEF_CNS(___REF_CNS(81),___REF_CNS(82))
+,___DEF_CNS(___REF_SYM(96,___S_source_3f_),___REF_SYM(63,___S_foundation_2e_language_2e_runtime_3a_source_3f_))
+,___DEF_CNS(___REF_CNS(83),___REF_CNS(84))
+,___DEF_CNS(___REF_SYM(97,___S_sourcify),___REF_SYM(64,___S_foundation_2e_language_2e_runtime_3a_sourcify))
+,___DEF_CNS(___REF_CNS(85),___REF_CNS(86))
+,___DEF_CNS(___REF_SYM(98,___S_sourcify_2d_deep),___REF_SYM(65,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep))
+,___DEF_CNS(___REF_CNS(87),___REF_CNS(88))
+,___DEF_CNS(___REF_SYM(99,___S_sourcify_2d_deep_2d_if),___REF_SYM(66,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep_2d_if))
+,___DEF_CNS(___REF_CNS(89),___REF_CNS(90))
+,___DEF_CNS(___REF_SYM(100,___S_sourcify_2d_if),___REF_SYM(67,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_if))
+,___DEF_CNS(___REF_CNS(91),___REF_CNS(92))
+,___DEF_CNS(___REF_SYM(101,___S_strip_2d_source_2d_info),___REF_SYM(68,___S_foundation_2e_language_2e_runtime_3a_strip_2d_source_2d_info))
+,___DEF_CNS(___REF_CNS(93),___REF_CNS(94))
+,___DEF_CNS(___REF_SYM(102,___S_strip_2d_syntactic_2d_closures),___REF_SYM(69,___S_foundation_2e_language_2e_runtime_3a_strip_2d_syntactic_2d_closures))
+,___DEF_CNS(___REF_CNS(95),___REF_CNS(96))
+,___DEF_CNS(___REF_SYM(103,___S_syntactic_2d_closure_2d_form),___REF_SYM(70,___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_2d_form))
+,___DEF_CNS(___REF_CNS(97),___REF_CNS(98))
+,___DEF_CNS(___REF_SYM(104,___S_syntactic_2d_closure_3f_),___REF_SYM(71,___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_3f_))
+,___DEF_CNS(___REF_CNS(99),___REF_CNS(100))
+,___DEF_CNS(___REF_SYM(105,___S_text_2d_source_3f_),___REF_SYM(72,___S_foundation_2e_language_2e_runtime_3a_text_2d_source_3f_))
+,___DEF_CNS(___REF_CNS(101),___REF_CNS(102))
+,___DEF_CNS(___REF_SYM(106,___S_unwrap_2d_syntactic_2d_closure),___REF_SYM(73,___S_foundation_2e_language_2e_runtime_3a_unwrap_2d_syntactic_2d_closure))
+,___DEF_CNS(___REF_CNS(103),___REF_NUL)
+,___DEF_CNS(___REF_SYM(107,___S_valid_2d_conditional_2d_requirement),___REF_SYM(74,___S_foundation_2e_language_2e_runtime_3a_valid_2d_conditional_2d_requirement))
+___END_CNS
+
+___DEF_SUB_VEC(___X0,2UL)
+               ___VEC1(___REF_SUB(1))
+               ___VEC1(___REF_SUB(12))
+               ___VEC0
+___DEF_SUB_VEC(___X1,5UL)
+               ___VEC1(___REF_SUB(2))
+               ___VEC1(___REF_SUB(4))
+               ___VEC1(___REF_SUB(6))
+               ___VEC1(___REF_SUB(8))
+               ___VEC1(___REF_SUB(10))
+               ___VEC0
+___DEF_SUB_VEC(___X2,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(3))
+               ___VEC0
+___DEF_SUB_VEC(___X3,2UL)
+               ___VEC1(___REF_SYM(22,___S_foundation_2e_language_2e_runtime))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X4,2UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(5))
+               ___VEC0
+___DEF_SUB_VEC(___X5,2UL)
+               ___VEC1(___REF_SYM(22,___S_foundation_2e_language_2e_runtime))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X6,2UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(7))
+               ___VEC0
+___DEF_SUB_VEC(___X7,2UL)
+               ___VEC1(___REF_SYM(22,___S_foundation_2e_language_2e_runtime))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X8,2UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(9))
+               ___VEC0
+___DEF_SUB_VEC(___X9,2UL)
+               ___VEC1(___REF_SYM(22,___S_foundation_2e_language_2e_runtime))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X10,2UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(11))
+               ___VEC0
+___DEF_SUB_VEC(___X11,2UL)
+               ___VEC1(___REF_SYM(22,___S_foundation_2e_language_2e_runtime))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X12,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X13,5UL)
+               ___VEC1(___REF_SYM(0,___S_bin_3a_foundation_2e_language_2e_runtime))
+               ___VEC1(___REF_PRC(1))
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_NUL)
+               ___VEC1(___REF_FAL)
+               ___VEC0
+
+___BEGIN_SUB
+ ___DEF_SUB(___X0)
+,___DEF_SUB(___X1)
+,___DEF_SUB(___X2)
+,___DEF_SUB(___X3)
+,___DEF_SUB(___X4)
+,___DEF_SUB(___X5)
+,___DEF_SUB(___X6)
+,___DEF_SUB(___X7)
+,___DEF_SUB(___X8)
+,___DEF_SUB(___X9)
+,___DEF_SUB(___X10)
+,___DEF_SUB(___X11)
+,___DEF_SUB(___X12)
+,___DEF_SUB(___X13)
+___END_SUB
+
+
+
+#undef ___MD_ALL
+#define ___MD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___MR_ALL
+#define ___MR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___MW_ALL
+#define ___MW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_M_COD
+___BEGIN_M_HLBL
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_bin_3a_foundation_2e_language_2e_runtime_23_)
+___DEF_M_HLBL(___L1_bin_3a_foundation_2e_language_2e_runtime_23_)
+___DEF_M_HLBL(___L2_bin_3a_foundation_2e_language_2e_runtime_23_)
+___DEF_M_HLBL(___L3_bin_3a_foundation_2e_language_2e_runtime_23_)
+___DEF_M_HLBL(___L4_bin_3a_foundation_2e_language_2e_runtime_23_)
+___END_M_HLBL
+
+___BEGIN_M_SW
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_bin_3a_foundation_2e_language_2e_runtime_23_
+#undef ___PH_LBL0
+#define ___PH_LBL0 1
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_bin_3a_foundation_2e_language_2e_runtime_23_)
+___DEF_P_HLBL(___L1_bin_3a_foundation_2e_language_2e_runtime_23_)
+___DEF_P_HLBL(___L2_bin_3a_foundation_2e_language_2e_runtime_23_)
+___DEF_P_HLBL(___L3_bin_3a_foundation_2e_language_2e_runtime_23_)
+___DEF_P_HLBL(___L4_bin_3a_foundation_2e_language_2e_runtime_23_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_bin_3a_foundation_2e_language_2e_runtime_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(0,0,0,0)
+___DEF_GLBL(___L_bin_3a_foundation_2e_language_2e_runtime_23_)
+   ___SET_STK(1,___R0)
+   ___SET_R1(___SYM_foundation_2e_dialect)
+   ___ADJFP(4)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_bin_3a_foundation_2e_language_2e_runtime_23_)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),1,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(2,___L2_bin_3a_foundation_2e_language_2e_runtime_23_)
+   ___SET_STK(1,___SYM_foundation_2e_language_2e_runtime)
+   ___SET_R3(___CNS(0))
+   ___SET_R2(___NUL)
+   ___SET_R1(___SYM_public)
+   ___SET_R0(___LBL(3))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),2,___G_jazz_3a_register_2d_module)
+___DEF_SLBL(3,___L3_bin_3a_foundation_2e_language_2e_runtime_23_)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_bin_3a_foundation_2e_language_2e_runtime_23_)
+   ___ADJFP(-4)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+___END_M_SW
+___END_M_COD
+
+___BEGIN_LBL
+ ___DEF_LBL_INTRO(___H_bin_3a_foundation_2e_language_2e_runtime_23_,"bin:foundation.language.runtime#",
+___REF_SUB(0),5,0)
+,___DEF_LBL_PROC(___H_bin_3a_foundation_2e_language_2e_runtime_23_,0,-1)
+,___DEF_LBL_RET(___H_bin_3a_foundation_2e_language_2e_runtime_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_RET(___H_bin_3a_foundation_2e_language_2e_runtime_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_foundation_2e_language_2e_runtime_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_foundation_2e_language_2e_runtime_23_,___IFD(___RETI,4,0,0x3f1L))
+___END_LBL
+
+___BEGIN_MOD_PRM
+___DEF_MOD_PRM(0,___G_bin_3a_foundation_2e_language_2e_runtime_23_,1)
+___END_MOD_PRM
+
+___BEGIN_MOD_C_INIT
+___END_MOD_C_INIT
+
+___BEGIN_MOD_GLO
+___DEF_MOD_GLO(0,___G_bin_3a_foundation_2e_language_2e_runtime_23_,1)
+___END_MOD_GLO
+
+___BEGIN_MOD_SYM_KEY
+___DEF_MOD_SYM(0,___S_bin_3a_foundation_2e_language_2e_runtime,"bin:foundation.language.runtime")
+
+___DEF_MOD_SYM(1,___S_close_2d_digest,"close-digest")
+___DEF_MOD_SYM(2,___S_compose_2d_reference,"compose-reference")
+___DEF_MOD_SYM(3,___S_cond_2d_expand_2d_features,"cond-expand-features")
+___DEF_MOD_SYM(4,___S_conditional_2d_satisfied_3f_,"conditional-satisfied?")
+___DEF_MOD_SYM(5,___S_container_2d__3e_path,"container->path")
+___DEF_MOD_SYM(6,___S_debug_2d_core_3f_,"debug-core?")
+___DEF_MOD_SYM(7,___S_debug_2d_user_3f_,"debug-user?")
+___DEF_MOD_SYM(8,___S_desourcify,"desourcify")
+___DEF_MOD_SYM(9,___S_desourcify_2d_all,"desourcify-all")
+___DEF_MOD_SYM(10,___S_digest_2d_file,"digest-file")
+___DEF_MOD_SYM(11,___S_digest_2d_string,"digest-string")
+___DEF_MOD_SYM(12,___S_digest_2d_substring,"digest-substring")
+___DEF_MOD_SYM(13,___S_digest_2d_subu8vector,"digest-subu8vector")
+___DEF_MOD_SYM(14,___S_digest_2d_u8vector,"digest-u8vector")
+___DEF_MOD_SYM(15,___S_digest_2d_update_2d_subu8vector,"digest-update-subu8vector")
+___DEF_MOD_SYM(16,___S_er_2d_macro_2d_transformer,"er-macro-transformer")
+___DEF_MOD_SYM(17,___S_extract_2d_location,"extract-location")
+___DEF_MOD_SYM(18,___S_feature_2d_satisfied_3f_,"feature-satisfied?")
+___DEF_MOD_SYM(19,___S_filepos_2d_col,"filepos-col")
+___DEF_MOD_SYM(20,___S_filepos_2d_line,"filepos-line")
+___DEF_MOD_SYM(21,___S_foundation_2e_dialect,"foundation.dialect")
+___DEF_MOD_SYM(22,___S_foundation_2e_language_2e_runtime,"foundation.language.runtime")
+___DEF_MOD_SYM(23,___S_foundation_2e_language_2e_runtime_3a_close_2d_digest,"foundation.language.runtime:close-digest")
+
+___DEF_MOD_SYM(24,___S_foundation_2e_language_2e_runtime_3a_compose_2d_reference,"foundation.language.runtime:compose-reference")
+
+___DEF_MOD_SYM(25,___S_foundation_2e_language_2e_runtime_3a_cond_2d_expand_2d_features,"foundation.language.runtime:cond-expand-features")
+
+___DEF_MOD_SYM(26,___S_foundation_2e_language_2e_runtime_3a_conditional_2d_satisfied_3f_,"foundation.language.runtime:conditional-satisfied?")
+
+___DEF_MOD_SYM(27,___S_foundation_2e_language_2e_runtime_3a_container_2d__3e_path,"foundation.language.runtime:container->path")
+
+___DEF_MOD_SYM(28,___S_foundation_2e_language_2e_runtime_3a_debug_2d_core_3f_,"foundation.language.runtime:debug-core?")
+
+___DEF_MOD_SYM(29,___S_foundation_2e_language_2e_runtime_3a_debug_2d_user_3f_,"foundation.language.runtime:debug-user?")
+
+___DEF_MOD_SYM(30,___S_foundation_2e_language_2e_runtime_3a_desourcify,"foundation.language.runtime:desourcify")
+
+___DEF_MOD_SYM(31,___S_foundation_2e_language_2e_runtime_3a_desourcify_2d_all,"foundation.language.runtime:desourcify-all")
+
+___DEF_MOD_SYM(32,___S_foundation_2e_language_2e_runtime_3a_digest_2d_file,"foundation.language.runtime:digest-file")
+
+___DEF_MOD_SYM(33,___S_foundation_2e_language_2e_runtime_3a_digest_2d_string,"foundation.language.runtime:digest-string")
+
+___DEF_MOD_SYM(34,___S_foundation_2e_language_2e_runtime_3a_digest_2d_substring,"foundation.language.runtime:digest-substring")
+
+___DEF_MOD_SYM(35,___S_foundation_2e_language_2e_runtime_3a_digest_2d_subu8vector,"foundation.language.runtime:digest-subu8vector")
+
+___DEF_MOD_SYM(36,___S_foundation_2e_language_2e_runtime_3a_digest_2d_u8vector,"foundation.language.runtime:digest-u8vector")
+
+___DEF_MOD_SYM(37,___S_foundation_2e_language_2e_runtime_3a_digest_2d_update_2d_subu8vector,"foundation.language.runtime:digest-update-subu8vector")
+
+___DEF_MOD_SYM(38,___S_foundation_2e_language_2e_runtime_3a_er_2d_macro_2d_transformer,"foundation.language.runtime:er-macro-transformer")
+
+___DEF_MOD_SYM(39,___S_foundation_2e_language_2e_runtime_3a_extract_2d_location,"foundation.language.runtime:extract-location")
+
+___DEF_MOD_SYM(40,___S_foundation_2e_language_2e_runtime_3a_feature_2d_satisfied_3f_,"foundation.language.runtime:feature-satisfied?")
+
+___DEF_MOD_SYM(41,___S_foundation_2e_language_2e_runtime_3a_filepos_2d_col,"foundation.language.runtime:filepos-col")
+
+___DEF_MOD_SYM(42,___S_foundation_2e_language_2e_runtime_3a_filepos_2d_line,"foundation.language.runtime:filepos-line")
+
+___DEF_MOD_SYM(43,___S_foundation_2e_language_2e_runtime_3a_generate_2d_symbol,"foundation.language.runtime:generate-symbol")
+
+___DEF_MOD_SYM(44,___S_foundation_2e_language_2e_runtime_3a_identifier_3d__3f_,"foundation.language.runtime:identifier=?")
+
+___DEF_MOD_SYM(45,___S_foundation_2e_language_2e_runtime_3a_identifier_3f_,"foundation.language.runtime:identifier?")
+
+___DEF_MOD_SYM(46,___S_foundation_2e_language_2e_runtime_3a_iterate_2d_table,"foundation.language.runtime:iterate-table")
+
+___DEF_MOD_SYM(47,___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_container_2f_line_2f_col,"foundation.language.runtime:locat->container/line/col")
+
+___DEF_MOD_SYM(48,___S_foundation_2e_language_2e_runtime_3a_locat_2d__3e_path_2f_container_2f_start_2f_end_26_,"foundation.language.runtime:locat->path/container/start/end&")
+
+___DEF_MOD_SYM(49,___S_foundation_2e_language_2e_runtime_3a_locat_2d_container,"foundation.language.runtime:locat-container")
+
+___DEF_MOD_SYM(50,___S_foundation_2e_language_2e_runtime_3a_locat_2d_end,"foundation.language.runtime:locat-end")
+
+___DEF_MOD_SYM(51,___S_foundation_2e_language_2e_runtime_3a_locat_2d_position,"foundation.language.runtime:locat-position")
+
+___DEF_MOD_SYM(52,___S_foundation_2e_language_2e_runtime_3a_locat_2d_start,"foundation.language.runtime:locat-start")
+
+___DEF_MOD_SYM(53,___S_foundation_2e_language_2e_runtime_3a_make_2d_syntactic_2d_closure,"foundation.language.runtime:make-syntactic-closure")
+
+___DEF_MOD_SYM(54,___S_foundation_2e_language_2e_runtime_3a_open_2d_digest,"foundation.language.runtime:open-digest")
+
+___DEF_MOD_SYM(55,___S_foundation_2e_language_2e_runtime_3a_position_2d__3e_filepos,"foundation.language.runtime:position->filepos")
+
+___DEF_MOD_SYM(56,___S_foundation_2e_language_2e_runtime_3a_present_2d_source,"foundation.language.runtime:present-source")
+
+___DEF_MOD_SYM(57,___S_foundation_2e_language_2e_runtime_3a_process_2d_conditional,"foundation.language.runtime:process-conditional")
+
+___DEF_MOD_SYM(58,___S_foundation_2e_language_2e_runtime_3a_rsc_2d_macro_2d_transformer,"foundation.language.runtime:rsc-macro-transformer")
+
+___DEF_MOD_SYM(59,___S_foundation_2e_language_2e_runtime_3a_sc_2d_macro_2d_transformer,"foundation.language.runtime:sc-macro-transformer")
+
+___DEF_MOD_SYM(60,___S_foundation_2e_language_2e_runtime_3a_simplify_2d_begin,"foundation.language.runtime:simplify-begin")
+
+___DEF_MOD_SYM(61,___S_foundation_2e_language_2e_runtime_3a_source_2d_code,"foundation.language.runtime:source-code")
+
+___DEF_MOD_SYM(62,___S_foundation_2e_language_2e_runtime_3a_source_2d_locat,"foundation.language.runtime:source-locat")
+
+___DEF_MOD_SYM(63,___S_foundation_2e_language_2e_runtime_3a_source_3f_,"foundation.language.runtime:source?")
+
+___DEF_MOD_SYM(64,___S_foundation_2e_language_2e_runtime_3a_sourcify,"foundation.language.runtime:sourcify")
+
+___DEF_MOD_SYM(65,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep,"foundation.language.runtime:sourcify-deep")
+
+___DEF_MOD_SYM(66,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_deep_2d_if,"foundation.language.runtime:sourcify-deep-if")
+
+___DEF_MOD_SYM(67,___S_foundation_2e_language_2e_runtime_3a_sourcify_2d_if,"foundation.language.runtime:sourcify-if")
+
+___DEF_MOD_SYM(68,___S_foundation_2e_language_2e_runtime_3a_strip_2d_source_2d_info,"foundation.language.runtime:strip-source-info")
+
+___DEF_MOD_SYM(69,___S_foundation_2e_language_2e_runtime_3a_strip_2d_syntactic_2d_closures,"foundation.language.runtime:strip-syntactic-closures")
+
+___DEF_MOD_SYM(70,___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_2d_form,"foundation.language.runtime:syntactic-closure-form")
+
+___DEF_MOD_SYM(71,___S_foundation_2e_language_2e_runtime_3a_syntactic_2d_closure_3f_,"foundation.language.runtime:syntactic-closure?")
+
+___DEF_MOD_SYM(72,___S_foundation_2e_language_2e_runtime_3a_text_2d_source_3f_,"foundation.language.runtime:text-source?")
+
+___DEF_MOD_SYM(73,___S_foundation_2e_language_2e_runtime_3a_unwrap_2d_syntactic_2d_closure,"foundation.language.runtime:unwrap-syntactic-closure")
+
+___DEF_MOD_SYM(74,___S_foundation_2e_language_2e_runtime_3a_valid_2d_conditional_2d_requirement,"foundation.language.runtime:valid-conditional-requirement")
+
+___DEF_MOD_SYM(75,___S_generate_2d_symbol,"generate-symbol")
+___DEF_MOD_SYM(76,___S_identifier_3d__3f_,"identifier=?")
+___DEF_MOD_SYM(77,___S_identifier_3f_,"identifier?")
+___DEF_MOD_SYM(78,___S_iterate_2d_table,"iterate-table")
+___DEF_MOD_SYM(79,___S_locat_2d__3e_container_2f_line_2f_col,"locat->container/line/col")
+___DEF_MOD_SYM(80,___S_locat_2d__3e_path_2f_container_2f_start_2f_end_26_,"locat->path/container/start/end&")
+
+___DEF_MOD_SYM(81,___S_locat_2d_container,"locat-container")
+___DEF_MOD_SYM(82,___S_locat_2d_end,"locat-end")
+___DEF_MOD_SYM(83,___S_locat_2d_position,"locat-position")
+___DEF_MOD_SYM(84,___S_locat_2d_start,"locat-start")
+___DEF_MOD_SYM(85,___S_make_2d_syntactic_2d_closure,"make-syntactic-closure")
+___DEF_MOD_SYM(86,___S_open_2d_digest,"open-digest")
+___DEF_MOD_SYM(87,___S_position_2d__3e_filepos,"position->filepos")
+___DEF_MOD_SYM(88,___S_present_2d_source,"present-source")
+___DEF_MOD_SYM(89,___S_process_2d_conditional,"process-conditional")
+___DEF_MOD_SYM(90,___S_public,"public")
+___DEF_MOD_SYM(91,___S_rsc_2d_macro_2d_transformer,"rsc-macro-transformer")
+___DEF_MOD_SYM(92,___S_sc_2d_macro_2d_transformer,"sc-macro-transformer")
+___DEF_MOD_SYM(93,___S_simplify_2d_begin,"simplify-begin")
+___DEF_MOD_SYM(94,___S_source_2d_code,"source-code")
+___DEF_MOD_SYM(95,___S_source_2d_locat,"source-locat")
+___DEF_MOD_SYM(96,___S_source_3f_,"source?")
+___DEF_MOD_SYM(97,___S_sourcify,"sourcify")
+___DEF_MOD_SYM(98,___S_sourcify_2d_deep,"sourcify-deep")
+___DEF_MOD_SYM(99,___S_sourcify_2d_deep_2d_if,"sourcify-deep-if")
+___DEF_MOD_SYM(100,___S_sourcify_2d_if,"sourcify-if")
+___DEF_MOD_SYM(101,___S_strip_2d_source_2d_info,"strip-source-info")
+___DEF_MOD_SYM(102,___S_strip_2d_syntactic_2d_closures,"strip-syntactic-closures")
+___DEF_MOD_SYM(103,___S_syntactic_2d_closure_2d_form,"syntactic-closure-form")
+___DEF_MOD_SYM(104,___S_syntactic_2d_closure_3f_,"syntactic-closure?")
+___DEF_MOD_SYM(105,___S_text_2d_source_3f_,"text-source?")
+___DEF_MOD_SYM(106,___S_unwrap_2d_syntactic_2d_closure,"unwrap-syntactic-closure")
+___DEF_MOD_SYM(107,___S_valid_2d_conditional_2d_requirement,"valid-conditional-requirement")
+
+___END_MOD_SYM_KEY
+
+#endif

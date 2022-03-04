@@ -1,0 +1,7 @@
+(module jazz.platform.linux jazz
+  (export (jazz.platform.linux.foreign))
+  (import (jazz.platform.linux.foreign))
+  (definition protected (system-memory))
+  (definition public (prevent-computer-sleep))
+  (definition public (allow-computer-sleep))
+  (definition public (collect-process-threads)))

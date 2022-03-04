@@ -1,0 +1,12 @@
+(manifest jazz.zlib
+
+  (version 208070)
+  (digest "b2883be21cb10d01c0b27b6af5a8958ecd3ac2c2")
+  (references (gambit.language.runtime call-with-output-u8vector make-u8vector object->u8vector read-subu8vector u8vector->object u8vector-length write-subu8vector)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.functional /= deserialize read-32-bit-integer serialize write-32-bit-integer)
+              (jazz.language.runtime.kernel eof-object unspecified)
+              (jazz.language.syntax.assertion assert)
+              (jazz.language.syntax.macros when)
+              (jazz.zlib.foreign DEFAULT_MEM_LEVEL DEFAULT_MEM_LEVEL DEFAULT_WBITS DEFAULT_WBITS GZIP_WBITS GZIP_WBITS MAX_WBITS MAX_WBITS Z_BEST_COMPRESSION Z_BEST_SPEED Z_DATA_ERROR Z_DEFAULT_COMPRESSION Z_DEFAULT_COMPRESSION Z_DEFAULT_STRATEGY Z_DEFAULT_STRATEGY Z_DEFLATED Z_DEFLATED Z_FINISH Z_FINISH Z_MEM_ERROR Z_NEED_DICT Z_NO_COMPRESSION Z_NO_FLUSH Z_NO_FLUSH Z_NULL Z_OK Z_OK Z_STREAM_END Z_STREAM_ERROR Z_STREAM_ERROR alloc_func deflate deflate deflate-end deflate-end deflate-init2 deflate-init2 free_func inflate inflate inflate-end inflate-end inflate-init2 inflate-init2 with-z_stream with-z_stream z_stream z_stream* z_stream-adler-ref z_stream-adler-set! z_stream-avail_in-ref z_stream-avail_in-set! z_stream-avail_in-set! z_stream-avail_out-ref z_stream-avail_out-ref z_stream-avail_out-set! z_stream-avail_out-set! z_stream-data_type-ref z_stream-data_type-set! z_stream-free z_stream-make z_stream-msg-ref z_stream-msg-set! z_stream-next_in-ref z_stream-next_in-set! z_stream-next_in-set! z_stream-next_in-setup! z_stream-next_in-setup! z_stream-next_out-ref z_stream-next_out-set! z_stream-next_out-setup! z_stream-next_out-setup! z_stream-opaque-ref z_stream-opaque-set! z_stream-opaque-set! z_stream-reserved-ref z_stream-reserved-set! z_stream-sizeof z_stream-total_in-ref z_stream-total_in-set! z_stream-total_out-ref z_stream-total_out-set! z_stream-zalloc-ref z_stream-zalloc-set! z_stream-zalloc-set! z_stream-zfree-ref z_stream-zfree-set! z_stream-zfree-set!)
+              (scheme.language.runtime + - = eof-object? not)))

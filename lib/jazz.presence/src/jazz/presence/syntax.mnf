@@ -1,0 +1,14 @@
+(manifest jazz.presence.syntax
+
+  (version 208070)
+  (digest "406238bc502af4638c9cadc118ab6aa4abdccc9b")
+  (references (foundation.language.runtime sourcify-deep-if strip-syntactic-closures)
+              (gambit.language.runtime string->keyword)
+              (jazz.dialect.classes.foundation Any)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.functional neq?)
+              (jazz.language.runtime.kernel enqueue enqueue-list new-queue not-null? queue-list specified?)
+              (jazz.language.syntax.assertion assert)
+              (jazz.language.syntax.macros when)
+              (scheme.core.kernel current-declaration current-resume current-walker parse-keywords parse-modifiers)
+              (scheme.language.runtime > car cdr eq? for-each not null? string->symbol string-append string-length string=? substring symbol->string symbol? values)))

@@ -1,0 +1,6 @@
+(manifest jazz.event.autoload
+
+  (version 208070)
+  (digest "a1546281c0d0cfc44637217a17435c13a037cd5a")
+  (references (jazz.event.Event Event)
+              (jazz.event.Pulse Pulse)))

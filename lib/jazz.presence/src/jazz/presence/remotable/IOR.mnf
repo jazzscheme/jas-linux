@@ -1,0 +1,13 @@
+(manifest jazz.presence.remotable.IOR
+
+  (version 208070)
+  (digest "61a41bdac14f1f7b2d0729fe53a22b4305854a49")
+  (references (jazz.component.hubs get-reference)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional (Class marshall-object) (Class unmarshall-object) Object-Class category-name serialize-object)
+              (jazz.language.runtime.hubs get-values)
+              (jazz.language.runtime.kernel class-of)
+              (jazz.language.runtime.object Object (Object initialize) (Object print))
+              (jazz.language.syntax.state state)
+              (jazz.presence get-purpose get-stub-interface get-uuid)
+              (scheme.language.runtime vector vector-ref)))

@@ -1,0 +1,15 @@
+(manifest jas.server.run
+
+  (version 208070)
+  (digest "48ee65f0d2eea1dceaed12bc9ab69e09d4e921f3")
+  (references (jas.server start-jas-server)
+              (jas.server.report send-crash-reports)
+              (jazz.debuggee get-controller-debugger set-default-context)
+              (jazz.io Directory (Directory create-directories) (Pathname create-directories) create-directories initialize-aliases)
+              (jazz.io.literals construct-directory)
+              (jazz.language.runtime.debug start-jazz-repl)
+              (jazz.language.runtime.functional sleep)
+              (jazz.language.runtime.kernel register-product-run)
+              (jazz.logger set-logger-directory set-logger-prefix)
+              (jazz.snapshot snapshot-max-depth snapshot-prefix snapshots-directory)
+              (scheme.language.runtime not)))

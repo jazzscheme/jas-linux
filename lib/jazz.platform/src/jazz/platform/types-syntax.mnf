@@ -1,0 +1,5 @@
+(manifest jazz.platform.types-syntax
+
+  (version 208070)
+  (digest "ec1a7b6ef2d7067e2a65b6c69e9a1d6bc4ace92c")
+  (references (scheme.language.runtime string->symbol string-append symbol->string)))

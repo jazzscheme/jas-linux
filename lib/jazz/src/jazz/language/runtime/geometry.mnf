@@ -1,0 +1,14 @@
+(manifest jazz.language.runtime.geometry
+
+  (version 208070)
+  (digest "fe817738368e3754b47866c8480a9471893a1173")
+  (references (gambit.language.runtime eqv?-hash flonum? fxwrap+)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional (Class coerce-object) (Class marshall-object) (Class unmarshall-object) Numeric (Numeric numeric-add) (Numeric numeric-inverse) (Numeric numeric-multiply) (Numeric numeric-negate) (Numeric numeric-norm) Object-Class category-name is-not? neq? serialize-object)
+              (jazz.language.runtime.hubs get-bottom get-col get-end get-h get-height get-left get-line get-right get-start get-top get-v get-width get-x get-y)
+              (jazz.language.runtime.kernel class-of is? new)
+              (jazz.language.runtime.object Object (Object compare-object) (Object copy-object) (Object di-compare-object) (Object initialize) (Object print) compare copy di-compare)
+              (jazz.language.syntax.macros when)
+              (jazz.language.syntax.state state)
+              (jazz.language.syntax.typecase typecase)
+              (scheme.language.runtime * + - < <= = > >= eq? expt integer? max min not real? sqrt vector vector-ref)))

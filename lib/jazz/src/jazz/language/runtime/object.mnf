@@ -1,0 +1,10 @@
+(manifest jazz.language.runtime.object
+
+  (version 208070)
+  (digest "237680f41b2b615255d6135e6bd7fb08d7ab1960")
+  (references (gambit.language.runtime get-output-string make-mutex make-table make-will mutex-lock! mutex-unlock! open-output-string table-ref table-set! with-exception-catcher)
+              (jazz.language.runtime.debug execution-backtrace execution-stack)
+              (jazz.language.runtime.hubs ci-compare-object compare-object copy-object di-compare-object get-name hash-object)
+              (jazz.language.runtime.kernel class-of global-setting object->serial object? reference-name unspecified)
+              (jazz.language.syntax.macros unless when)
+              (scheme.language.runtime cons display eq? eqv? string=? write)))

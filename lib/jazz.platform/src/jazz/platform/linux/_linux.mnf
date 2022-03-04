@@ -1,0 +1,5 @@
+(manifest jazz.platform.linux
+
+  (version 208070)
+  (digest "4b80b2dd52f8fe7a79ee0e26326419f991895d28")
+  (references (jazz.language.runtime.kernel unimplemented unspecified)))

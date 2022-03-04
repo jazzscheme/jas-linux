@@ -1,0 +1,6 @@
+(manifest jazz.language.runtime.platform
+
+  (version 208070)
+  (digest "72de8aeb98f28841e5f3875f262018cf979ec0f9")
+  (references (jazz.language.runtime.kernel module-ref)
+              (scheme.language.runtime apply)))

@@ -1,0 +1,13 @@
+(manifest jazz.language.runtime.exception
+
+  (version 208070)
+  (digest "4ef04f9091880115a02930351542dec86f1dcab8")
+  (references (gambit.language.runtime continuation-capture continuation-return make-parameter make-table raise table-ref table-set!)
+              (jazz.language.runtime.format format format-gender)
+              (jazz.language.runtime.functional Class (Class marshall-object) (Class unmarshall-object) Object-Class box-list category-identifier category-name collect-if find-if find-keyword new-thread serialize-object unbox-list)
+              (jazz.language.runtime.geometry Range Range$Cell$)
+              (jazz.language.runtime.hubs get-children get-handler get-icon get-location get-name get-title)
+              (jazz.language.runtime.kernel catch-exception-filter class-of invoke-exception-hook is? new not-null? object? system-exception-hook)
+              (jazz.language.runtime.object Object (Object initialize) (Object print) print-unreadable)
+              (jazz.language.syntax.bind-keywords bind-keywords)
+              (scheme.language.runtime apply car cons eq? list procedure? string? vector vector-ref)))

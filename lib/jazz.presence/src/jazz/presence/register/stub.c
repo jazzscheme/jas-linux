@@ -1,0 +1,5490 @@
+#ifdef ___LINKER_INFO
+; File: "stub.c", produced by Gambit v4.8.9
+(
+408009
+(C)
+"bin:jazz.presence.register.stub"
+(("bin:jazz.presence.register.stub"))
+(
+"Register-Local-Proxy"
+"Register-Local-Proxy~Class"
+"Register-Remote-Proxy"
+"Register-Remote-Proxy~Class"
+"Register-Stub"
+"Register-Stub-Interface"
+"Register-Stub-Interface~Class"
+"__module-name"
+"__name"
+"__object"
+"__rest"
+"bin:jazz.presence.register.stub"
+"find-object"
+"foundation.dialect"
+"get-manifest"
+"jazz"
+"jazz.presence"
+"jazz.presence.register.stub"
+"jazz.presence.register.stub:Register-Local-Proxy"
+"jazz.presence.register.stub:Register-Local-Proxy~Class"
+"jazz.presence.register.stub:Register-Remote-Proxy"
+"jazz.presence.register.stub:Register-Remote-Proxy~Class"
+"jazz.presence.register.stub:Register-Stub"
+"jazz.presence.register.stub:Register-Stub-Interface"
+"jazz.presence.register.stub:Register-Stub-Interface~Class"
+"jazz.presence.remotable.Local-Proxy"
+"jazz.presence.remotable.Remotable-Stub"
+"jazz.presence.remotable.Remote-Proxy"
+"jazz.presence.remotable.Stub-Interface"
+"load-object"
+"loaded?"
+"local-class"
+"module-private"
+"public"
+"register-object"
+"remote-class"
+"require-object"
+"rest"
+"self"
+"stub-reference"
+"unregister-object"
+"val^10"
+"val^15"
+"val^4"
+"val^7"
+)
+(
+)
+(
+"bin:jazz.presence.register.stub#"
+"jazz.presence.register.stub:Register-Local-Proxy"
+"jazz.presence.register.stub:Register-Local-Proxy:find-object"
+"jazz.presence.register.stub:Register-Local-Proxy:get-manifest"
+"jazz.presence.register.stub:Register-Local-Proxy:load-object"
+"jazz.presence.register.stub:Register-Local-Proxy:register-object"
+"jazz.presence.register.stub:Register-Local-Proxy:require-object"
+"jazz.presence.register.stub:Register-Local-Proxy:stub-reference"
+"jazz.presence.register.stub:Register-Local-Proxy:unregister-object"
+"jazz.presence.register.stub:Register-Local-Proxy~Class"
+"jazz.presence.register.stub:Register-Remote-Proxy"
+"jazz.presence.register.stub:Register-Remote-Proxy:find-object"
+"jazz.presence.register.stub:Register-Remote-Proxy:get-manifest"
+"jazz.presence.register.stub:Register-Remote-Proxy:load-object"
+"jazz.presence.register.stub:Register-Remote-Proxy:register-object"
+"jazz.presence.register.stub:Register-Remote-Proxy:require-object"
+"jazz.presence.register.stub:Register-Remote-Proxy:stub-reference"
+"jazz.presence.register.stub:Register-Remote-Proxy:unregister-object"
+"jazz.presence.register.stub:Register-Remote-Proxy~Class"
+"jazz.presence.register.stub:Register-Stub"
+"jazz.presence.register.stub:Register-Stub-Interface"
+"jazz.presence.register.stub:Register-Stub-Interface:local-class"
+"jazz.presence.register.stub:Register-Stub-Interface:remote-class"
+"jazz.presence.register.stub:Register-Stub-Interface~Class"
+"jazz.presence.register.stub:Register-Stub:find-object"
+"jazz.presence.register.stub:Register-Stub:get-manifest"
+"jazz.presence.register.stub:Register-Stub:load-object"
+"jazz.presence.register.stub:Register-Stub:register-object"
+"jazz.presence.register.stub:Register-Stub:require-object"
+"jazz.presence.register.stub:Register-Stub:unregister-object"
+"jazz.presence.remotable.Local-Proxy:Local-Proxy:autoload"
+"jazz.presence.remotable.Remotable-Stub:Remotable-Stub:autoload"
+"jazz.presence.remotable.Remote-Proxy:Remote-Proxy:autoload"
+"jazz.presence.remotable.Stub-Interface:Stub-Interface:autoload"
+"jazz/presence/register/stub_find-object!d^3"
+"jazz/presence/register/stub_get-manifest!d^14"
+"jazz/presence/register/stub_load-object!d^9"
+"jazz/presence/register/stub_require-object!d^6"
+)
+(
+"jazz.presence.register.stub:Register-Local-Proxy!level"
+"jazz.presence.register.stub:Register-Local-Proxy:find-object!node"
+"jazz.presence.register.stub:Register-Local-Proxy:get-manifest!node"
+"jazz.presence.register.stub:Register-Local-Proxy:load-object!node"
+"jazz.presence.register.stub:Register-Local-Proxy:register-object!node"
+"jazz.presence.register.stub:Register-Local-Proxy:require-object!node"
+"jazz.presence.register.stub:Register-Local-Proxy:stub-reference!node"
+"jazz.presence.register.stub:Register-Local-Proxy:unregister-object!node"
+"jazz.presence.register.stub:Register-Local-Proxy~Class!level"
+"jazz.presence.register.stub:Register-Remote-Proxy!level"
+"jazz.presence.register.stub:Register-Remote-Proxy:find-object!node"
+"jazz.presence.register.stub:Register-Remote-Proxy:get-manifest!node"
+"jazz.presence.register.stub:Register-Remote-Proxy:load-object!node"
+"jazz.presence.register.stub:Register-Remote-Proxy:register-object!node"
+"jazz.presence.register.stub:Register-Remote-Proxy:require-object!node"
+"jazz.presence.register.stub:Register-Remote-Proxy:stub-reference!node"
+"jazz.presence.register.stub:Register-Remote-Proxy:unregister-object!node"
+"jazz.presence.register.stub:Register-Remote-Proxy~Class!level"
+"jazz.presence.register.stub:Register-Stub!rank"
+"jazz.presence.register.stub:Register-Stub-Interface!level"
+"jazz.presence.register.stub:Register-Stub-Interface:local-class!node"
+"jazz.presence.register.stub:Register-Stub-Interface:remote-class!node"
+"jazz.presence.register.stub:Register-Stub-Interface~Class!level"
+"jazz.presence.register.stub:Register-Stub:find-object!rank"
+"jazz.presence.register.stub:Register-Stub:get-manifest!rank"
+"jazz.presence.register.stub:Register-Stub:load-object!rank"
+"jazz.presence.register.stub:Register-Stub:register-object!rank"
+"jazz.presence.register.stub:Register-Stub:require-object!rank"
+"jazz.presence.register.stub:Register-Stub:unregister-object!rank"
+)
+(
+"apply"
+"jazz.presence.remotable.Local-Proxy:Local-Proxy"
+"jazz.presence.remotable.Local-Proxy:Local-Proxy:object!offset"
+"jazz.presence.remotable.Remotable-Stub:Remotable-Stub"
+"jazz.presence.remotable.Remote-Proxy:Remote-Proxy"
+"jazz.presence.remotable.Stub-Interface:Stub-Interface"
+"jazz.presence:call-remote"
+"jazz:add-method-node"
+"jazz:add-virtual-method"
+"jazz:cache-dispatch"
+"jazz:call-into-abstract"
+"jazz:class-of"
+"jazz:dispatch"
+"jazz:global-bound?"
+"jazz:global-ref"
+"jazz:load-unit"
+"jazz:new-class"
+"jazz:new-interface"
+"jazz:new-runtime-reference"
+"jazz:register-module"
+)
+ ()
+)
+#else
+#define ___VERSION 408009
+#define ___MODULE_NAME "bin:jazz.presence.register.stub"
+#define ___LINKER_ID ___LNK_bin_3a_jazz_2e_presence_2e_register_2e_stub
+#define ___MH_PROC ___H_bin_3a_jazz_2e_presence_2e_register_2e_stub
+#define ___SCRIPT_LINE 0
+#define ___SYMCOUNT 45
+#define ___GLOCOUNT 87
+#define ___SUPCOUNT 67
+#define ___CNSCOUNT 21
+#define ___SUBCOUNT 434
+#define ___LBLCOUNT 205
+#define ___OFDCOUNT 8
+#define ___MODDESCR ___REF_SUB(433)
+#include "gambit.h"
+
+___NEED_SYM(___S_Register_2d_Local_2d_Proxy)
+___NEED_SYM(___S_Register_2d_Local_2d_Proxy_7e_Class)
+___NEED_SYM(___S_Register_2d_Remote_2d_Proxy)
+___NEED_SYM(___S_Register_2d_Remote_2d_Proxy_7e_Class)
+___NEED_SYM(___S_Register_2d_Stub)
+___NEED_SYM(___S_Register_2d_Stub_2d_Interface)
+___NEED_SYM(___S_Register_2d_Stub_2d_Interface_7e_Class)
+___NEED_SYM(___S_____module_2d_name)
+___NEED_SYM(___S_____name)
+___NEED_SYM(___S_____object)
+___NEED_SYM(___S_____rest)
+___NEED_SYM(___S_bin_3a_jazz_2e_presence_2e_register_2e_stub)
+___NEED_SYM(___S_find_2d_object)
+___NEED_SYM(___S_foundation_2e_dialect)
+___NEED_SYM(___S_get_2d_manifest)
+___NEED_SYM(___S_jazz)
+___NEED_SYM(___S_jazz_2e_presence)
+___NEED_SYM(___S_jazz_2e_presence_2e_register_2e_stub)
+___NEED_SYM(___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+___NEED_SYM(___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+___NEED_SYM(___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+___NEED_SYM(___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+___NEED_SYM(___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+___NEED_SYM(___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+___NEED_SYM(___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+___NEED_SYM(___S_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy)
+___NEED_SYM(___S_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub)
+___NEED_SYM(___S_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy)
+___NEED_SYM(___S_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface)
+___NEED_SYM(___S_load_2d_object)
+___NEED_SYM(___S_loaded_3f_)
+___NEED_SYM(___S_local_2d_class)
+___NEED_SYM(___S_module_2d_private)
+___NEED_SYM(___S_public)
+___NEED_SYM(___S_register_2d_object)
+___NEED_SYM(___S_remote_2d_class)
+___NEED_SYM(___S_require_2d_object)
+___NEED_SYM(___S_rest)
+___NEED_SYM(___S_self)
+___NEED_SYM(___S_stub_2d_reference)
+___NEED_SYM(___S_unregister_2d_object)
+___NEED_SYM(___S_val_5e_10)
+___NEED_SYM(___S_val_5e_15)
+___NEED_SYM(___S_val_5e_4)
+___NEED_SYM(___S_val_5e_7)
+
+___NEED_GLO(___G_apply)
+___NEED_GLO(___G_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_21_level)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class_21_level)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_21_level)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class_21_level)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_21_rank)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_21_level)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class_21_node)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class_21_level)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object_21_rank)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest_21_rank)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object_21_rank)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object_21_rank)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object_21_rank)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___NEED_GLO(___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object_21_rank)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub_3a_autoload)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface)
+___NEED_GLO(___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload)
+___NEED_GLO(___G_jazz_2e_presence_3a_call_2d_remote)
+___NEED_GLO(___G_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3)
+___NEED_GLO(___G_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14)
+___NEED_GLO(___G_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9)
+___NEED_GLO(___G_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6)
+___NEED_GLO(___G_jazz_3a_add_2d_method_2d_node)
+___NEED_GLO(___G_jazz_3a_add_2d_virtual_2d_method)
+___NEED_GLO(___G_jazz_3a_cache_2d_dispatch)
+___NEED_GLO(___G_jazz_3a_call_2d_into_2d_abstract)
+___NEED_GLO(___G_jazz_3a_class_2d_of)
+___NEED_GLO(___G_jazz_3a_dispatch)
+___NEED_GLO(___G_jazz_3a_global_2d_bound_3f_)
+___NEED_GLO(___G_jazz_3a_global_2d_ref)
+___NEED_GLO(___G_jazz_3a_load_2d_unit)
+___NEED_GLO(___G_jazz_3a_new_2d_class)
+___NEED_GLO(___G_jazz_3a_new_2d_interface)
+___NEED_GLO(___G_jazz_3a_new_2d_runtime_2d_reference)
+___NEED_GLO(___G_jazz_3a_register_2d_module)
+
+___BEGIN_SYM
+___DEF_SYM(0,___S_Register_2d_Local_2d_Proxy,"Register-Local-Proxy")
+___DEF_SYM(1,___S_Register_2d_Local_2d_Proxy_7e_Class,"Register-Local-Proxy~Class")
+___DEF_SYM(2,___S_Register_2d_Remote_2d_Proxy,"Register-Remote-Proxy")
+___DEF_SYM(3,___S_Register_2d_Remote_2d_Proxy_7e_Class,"Register-Remote-Proxy~Class")
+___DEF_SYM(4,___S_Register_2d_Stub,"Register-Stub")
+___DEF_SYM(5,___S_Register_2d_Stub_2d_Interface,"Register-Stub-Interface")
+___DEF_SYM(6,___S_Register_2d_Stub_2d_Interface_7e_Class,"Register-Stub-Interface~Class")
+
+___DEF_SYM(7,___S_____module_2d_name,"__module-name")
+___DEF_SYM(8,___S_____name,"__name")
+___DEF_SYM(9,___S_____object,"__object")
+___DEF_SYM(10,___S_____rest,"__rest")
+___DEF_SYM(11,___S_bin_3a_jazz_2e_presence_2e_register_2e_stub,"bin:jazz.presence.register.stub")
+
+___DEF_SYM(12,___S_find_2d_object,"find-object")
+___DEF_SYM(13,___S_foundation_2e_dialect,"foundation.dialect")
+___DEF_SYM(14,___S_get_2d_manifest,"get-manifest")
+___DEF_SYM(15,___S_jazz,"jazz")
+___DEF_SYM(16,___S_jazz_2e_presence,"jazz.presence")
+___DEF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub,"jazz.presence.register.stub")
+___DEF_SYM(18,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy,"jazz.presence.register.stub:Register-Local-Proxy")
+
+___DEF_SYM(19,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class,"jazz.presence.register.stub:Register-Local-Proxy~Class")
+
+___DEF_SYM(20,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy,"jazz.presence.register.stub:Register-Remote-Proxy")
+
+___DEF_SYM(21,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class,"jazz.presence.register.stub:Register-Remote-Proxy~Class")
+
+___DEF_SYM(22,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub,"jazz.presence.register.stub:Register-Stub")
+
+___DEF_SYM(23,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface,"jazz.presence.register.stub:Register-Stub-Interface")
+
+___DEF_SYM(24,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class,"jazz.presence.register.stub:Register-Stub-Interface~Class")
+
+___DEF_SYM(25,___S_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy,"jazz.presence.remotable.Local-Proxy")
+
+___DEF_SYM(26,___S_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub,"jazz.presence.remotable.Remotable-Stub")
+
+___DEF_SYM(27,___S_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy,"jazz.presence.remotable.Remote-Proxy")
+
+___DEF_SYM(28,___S_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface,"jazz.presence.remotable.Stub-Interface")
+
+___DEF_SYM(29,___S_load_2d_object,"load-object")
+___DEF_SYM(30,___S_loaded_3f_,"loaded?")
+___DEF_SYM(31,___S_local_2d_class,"local-class")
+___DEF_SYM(32,___S_module_2d_private,"module-private")
+___DEF_SYM(33,___S_public,"public")
+___DEF_SYM(34,___S_register_2d_object,"register-object")
+___DEF_SYM(35,___S_remote_2d_class,"remote-class")
+___DEF_SYM(36,___S_require_2d_object,"require-object")
+___DEF_SYM(37,___S_rest,"rest")
+___DEF_SYM(38,___S_self,"self")
+___DEF_SYM(39,___S_stub_2d_reference,"stub-reference")
+___DEF_SYM(40,___S_unregister_2d_object,"unregister-object")
+___DEF_SYM(41,___S_val_5e_10,"val^10")
+___DEF_SYM(42,___S_val_5e_15,"val^15")
+___DEF_SYM(43,___S_val_5e_4,"val^4")
+___DEF_SYM(44,___S_val_5e_7,"val^7")
+___END_SYM
+
+#define ___SYM_Register_2d_Local_2d_Proxy ___SYM(0,___S_Register_2d_Local_2d_Proxy)
+#define ___SYM_Register_2d_Local_2d_Proxy_7e_Class ___SYM(1,___S_Register_2d_Local_2d_Proxy_7e_Class)
+#define ___SYM_Register_2d_Remote_2d_Proxy ___SYM(2,___S_Register_2d_Remote_2d_Proxy)
+#define ___SYM_Register_2d_Remote_2d_Proxy_7e_Class ___SYM(3,___S_Register_2d_Remote_2d_Proxy_7e_Class)
+#define ___SYM_Register_2d_Stub ___SYM(4,___S_Register_2d_Stub)
+#define ___SYM_Register_2d_Stub_2d_Interface ___SYM(5,___S_Register_2d_Stub_2d_Interface)
+#define ___SYM_Register_2d_Stub_2d_Interface_7e_Class ___SYM(6,___S_Register_2d_Stub_2d_Interface_7e_Class)
+#define ___SYM_____module_2d_name ___SYM(7,___S_____module_2d_name)
+#define ___SYM_____name ___SYM(8,___S_____name)
+#define ___SYM_____object ___SYM(9,___S_____object)
+#define ___SYM_____rest ___SYM(10,___S_____rest)
+#define ___SYM_bin_3a_jazz_2e_presence_2e_register_2e_stub ___SYM(11,___S_bin_3a_jazz_2e_presence_2e_register_2e_stub)
+#define ___SYM_find_2d_object ___SYM(12,___S_find_2d_object)
+#define ___SYM_foundation_2e_dialect ___SYM(13,___S_foundation_2e_dialect)
+#define ___SYM_get_2d_manifest ___SYM(14,___S_get_2d_manifest)
+#define ___SYM_jazz ___SYM(15,___S_jazz)
+#define ___SYM_jazz_2e_presence ___SYM(16,___S_jazz_2e_presence)
+#define ___SYM_jazz_2e_presence_2e_register_2e_stub ___SYM(17,___S_jazz_2e_presence_2e_register_2e_stub)
+#define ___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy ___SYM(18,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+#define ___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class ___SYM(19,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+#define ___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy ___SYM(20,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+#define ___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class ___SYM(21,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+#define ___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub ___SYM(22,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+#define ___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface ___SYM(23,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+#define ___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class ___SYM(24,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+#define ___SYM_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy ___SYM(25,___S_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy)
+#define ___SYM_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub ___SYM(26,___S_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub)
+#define ___SYM_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy ___SYM(27,___S_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy)
+#define ___SYM_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface ___SYM(28,___S_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface)
+#define ___SYM_load_2d_object ___SYM(29,___S_load_2d_object)
+#define ___SYM_loaded_3f_ ___SYM(30,___S_loaded_3f_)
+#define ___SYM_local_2d_class ___SYM(31,___S_local_2d_class)
+#define ___SYM_module_2d_private ___SYM(32,___S_module_2d_private)
+#define ___SYM_public ___SYM(33,___S_public)
+#define ___SYM_register_2d_object ___SYM(34,___S_register_2d_object)
+#define ___SYM_remote_2d_class ___SYM(35,___S_remote_2d_class)
+#define ___SYM_require_2d_object ___SYM(36,___S_require_2d_object)
+#define ___SYM_rest ___SYM(37,___S_rest)
+#define ___SYM_self ___SYM(38,___S_self)
+#define ___SYM_stub_2d_reference ___SYM(39,___S_stub_2d_reference)
+#define ___SYM_unregister_2d_object ___SYM(40,___S_unregister_2d_object)
+#define ___SYM_val_5e_10 ___SYM(41,___S_val_5e_10)
+#define ___SYM_val_5e_15 ___SYM(42,___S_val_5e_15)
+#define ___SYM_val_5e_4 ___SYM(43,___S_val_5e_4)
+#define ___SYM_val_5e_7 ___SYM(44,___S_val_5e_7)
+
+___BEGIN_GLO
+___DEF_GLO(0,"bin:jazz.presence.register.stub#")
+___DEF_GLO(1,"jazz.presence.register.stub:Register-Local-Proxy")
+
+___DEF_GLO(2,"jazz.presence.register.stub:Register-Local-Proxy!level")
+
+___DEF_GLO(3,"jazz.presence.register.stub:Register-Local-Proxy:find-object")
+
+___DEF_GLO(4,"jazz.presence.register.stub:Register-Local-Proxy:find-object!node")
+
+___DEF_GLO(5,"jazz.presence.register.stub:Register-Local-Proxy:get-manifest")
+
+___DEF_GLO(6,"jazz.presence.register.stub:Register-Local-Proxy:get-manifest!node")
+
+___DEF_GLO(7,"jazz.presence.register.stub:Register-Local-Proxy:load-object")
+
+___DEF_GLO(8,"jazz.presence.register.stub:Register-Local-Proxy:load-object!node")
+
+___DEF_GLO(9,"jazz.presence.register.stub:Register-Local-Proxy:register-object")
+
+___DEF_GLO(10,"jazz.presence.register.stub:Register-Local-Proxy:register-object!node")
+
+___DEF_GLO(11,"jazz.presence.register.stub:Register-Local-Proxy:require-object")
+
+___DEF_GLO(12,"jazz.presence.register.stub:Register-Local-Proxy:require-object!node")
+
+___DEF_GLO(13,"jazz.presence.register.stub:Register-Local-Proxy:stub-reference")
+
+___DEF_GLO(14,"jazz.presence.register.stub:Register-Local-Proxy:stub-reference!node")
+
+___DEF_GLO(15,"jazz.presence.register.stub:Register-Local-Proxy:unregister-object")
+
+___DEF_GLO(16,"jazz.presence.register.stub:Register-Local-Proxy:unregister-object!node")
+
+___DEF_GLO(17,"jazz.presence.register.stub:Register-Local-Proxy~Class")
+
+___DEF_GLO(18,"jazz.presence.register.stub:Register-Local-Proxy~Class!level")
+
+___DEF_GLO(19,"jazz.presence.register.stub:Register-Remote-Proxy")
+
+___DEF_GLO(20,"jazz.presence.register.stub:Register-Remote-Proxy!level")
+
+___DEF_GLO(21,"jazz.presence.register.stub:Register-Remote-Proxy:find-object")
+
+___DEF_GLO(22,"jazz.presence.register.stub:Register-Remote-Proxy:find-object!node")
+
+___DEF_GLO(23,"jazz.presence.register.stub:Register-Remote-Proxy:get-manifest")
+
+___DEF_GLO(24,"jazz.presence.register.stub:Register-Remote-Proxy:get-manifest!node")
+
+___DEF_GLO(25,"jazz.presence.register.stub:Register-Remote-Proxy:load-object")
+
+___DEF_GLO(26,"jazz.presence.register.stub:Register-Remote-Proxy:load-object!node")
+
+___DEF_GLO(27,"jazz.presence.register.stub:Register-Remote-Proxy:register-object")
+
+___DEF_GLO(28,"jazz.presence.register.stub:Register-Remote-Proxy:register-object!node")
+
+___DEF_GLO(29,"jazz.presence.register.stub:Register-Remote-Proxy:require-object")
+
+___DEF_GLO(30,"jazz.presence.register.stub:Register-Remote-Proxy:require-object!node")
+
+___DEF_GLO(31,"jazz.presence.register.stub:Register-Remote-Proxy:stub-reference")
+
+___DEF_GLO(32,"jazz.presence.register.stub:Register-Remote-Proxy:stub-reference!node")
+
+___DEF_GLO(33,"jazz.presence.register.stub:Register-Remote-Proxy:unregister-object")
+
+___DEF_GLO(34,"jazz.presence.register.stub:Register-Remote-Proxy:unregister-object!node")
+
+___DEF_GLO(35,"jazz.presence.register.stub:Register-Remote-Proxy~Class")
+
+___DEF_GLO(36,"jazz.presence.register.stub:Register-Remote-Proxy~Class!level")
+
+___DEF_GLO(37,"jazz.presence.register.stub:Register-Stub")
+
+___DEF_GLO(38,"jazz.presence.register.stub:Register-Stub!rank")
+
+___DEF_GLO(39,"jazz.presence.register.stub:Register-Stub-Interface")
+
+___DEF_GLO(40,"jazz.presence.register.stub:Register-Stub-Interface!level")
+
+___DEF_GLO(41,"jazz.presence.register.stub:Register-Stub-Interface:local-class")
+
+___DEF_GLO(42,"jazz.presence.register.stub:Register-Stub-Interface:local-class!node")
+
+___DEF_GLO(43,"jazz.presence.register.stub:Register-Stub-Interface:remote-class")
+
+___DEF_GLO(44,"jazz.presence.register.stub:Register-Stub-Interface:remote-class!node")
+
+___DEF_GLO(45,"jazz.presence.register.stub:Register-Stub-Interface~Class")
+
+___DEF_GLO(46,"jazz.presence.register.stub:Register-Stub-Interface~Class!level")
+
+___DEF_GLO(47,"jazz.presence.register.stub:Register-Stub:find-object")
+
+___DEF_GLO(48,"jazz.presence.register.stub:Register-Stub:find-object!rank")
+
+___DEF_GLO(49,"jazz.presence.register.stub:Register-Stub:get-manifest")
+
+___DEF_GLO(50,"jazz.presence.register.stub:Register-Stub:get-manifest!rank")
+
+___DEF_GLO(51,"jazz.presence.register.stub:Register-Stub:load-object")
+
+___DEF_GLO(52,"jazz.presence.register.stub:Register-Stub:load-object!rank")
+
+___DEF_GLO(53,"jazz.presence.register.stub:Register-Stub:register-object")
+
+___DEF_GLO(54,"jazz.presence.register.stub:Register-Stub:register-object!rank")
+
+___DEF_GLO(55,"jazz.presence.register.stub:Register-Stub:require-object")
+
+___DEF_GLO(56,"jazz.presence.register.stub:Register-Stub:require-object!rank")
+
+___DEF_GLO(57,"jazz.presence.register.stub:Register-Stub:unregister-object")
+
+___DEF_GLO(58,"jazz.presence.register.stub:Register-Stub:unregister-object!rank")
+
+___DEF_GLO(59,"jazz.presence.remotable.Local-Proxy:Local-Proxy:autoload")
+
+___DEF_GLO(60,"jazz.presence.remotable.Remotable-Stub:Remotable-Stub:autoload")
+
+___DEF_GLO(61,"jazz.presence.remotable.Remote-Proxy:Remote-Proxy:autoload")
+
+___DEF_GLO(62,"jazz.presence.remotable.Stub-Interface:Stub-Interface:autoload")
+
+___DEF_GLO(63,"jazz/presence/register/stub_find-object!d^3")
+
+___DEF_GLO(64,"jazz/presence/register/stub_get-manifest!d^14")
+
+___DEF_GLO(65,"jazz/presence/register/stub_load-object!d^9")
+
+___DEF_GLO(66,"jazz/presence/register/stub_require-object!d^6")
+
+___DEF_GLO(67,"apply")
+___DEF_GLO(68,"jazz.presence.remotable.Local-Proxy:Local-Proxy")
+
+___DEF_GLO(69,"jazz.presence.remotable.Local-Proxy:Local-Proxy:object!offset")
+
+___DEF_GLO(70,"jazz.presence.remotable.Remotable-Stub:Remotable-Stub")
+
+___DEF_GLO(71,"jazz.presence.remotable.Remote-Proxy:Remote-Proxy")
+
+___DEF_GLO(72,"jazz.presence.remotable.Stub-Interface:Stub-Interface")
+
+___DEF_GLO(73,"jazz.presence:call-remote")
+___DEF_GLO(74,"jazz:add-method-node")
+___DEF_GLO(75,"jazz:add-virtual-method")
+___DEF_GLO(76,"jazz:cache-dispatch")
+___DEF_GLO(77,"jazz:call-into-abstract")
+___DEF_GLO(78,"jazz:class-of")
+___DEF_GLO(79,"jazz:dispatch")
+___DEF_GLO(80,"jazz:global-bound?")
+___DEF_GLO(81,"jazz:global-ref")
+___DEF_GLO(82,"jazz:load-unit")
+___DEF_GLO(83,"jazz:new-class")
+___DEF_GLO(84,"jazz:new-interface")
+___DEF_GLO(85,"jazz:new-runtime-reference")
+___DEF_GLO(86,"jazz:register-module")
+___END_GLO
+
+#define ___GLO_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_ ___GLO(0,___G_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+#define ___PRM_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_ ___PRM(0,___G_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy ___GLO(1,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy ___PRM(1,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_21_level ___GLO(2,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_21_level)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_21_level ___PRM(2,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_21_level)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object ___GLO(3,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object ___PRM(3,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object_21_node ___GLO(4,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object_21_node ___PRM(4,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest ___GLO(5,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest ___PRM(5,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest_21_node ___GLO(6,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest_21_node ___PRM(6,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object ___GLO(7,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object ___PRM(7,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object_21_node ___GLO(8,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object_21_node ___PRM(8,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object ___GLO(9,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object ___PRM(9,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object_21_node ___GLO(10,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object_21_node ___PRM(10,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object ___GLO(11,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object ___PRM(11,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object_21_node ___GLO(12,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object_21_node ___PRM(12,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference ___GLO(13,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference ___PRM(13,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference_21_node ___GLO(14,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference_21_node ___PRM(14,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object ___GLO(15,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object ___PRM(15,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object_21_node ___GLO(16,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object_21_node ___PRM(16,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class ___GLO(17,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class ___PRM(17,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class_21_level ___GLO(18,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class_21_level)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class_21_level ___PRM(18,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class_21_level)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy ___GLO(19,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy ___PRM(19,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_21_level ___GLO(20,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_21_level)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_21_level ___PRM(20,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_21_level)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object ___GLO(21,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object ___PRM(21,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object_21_node ___GLO(22,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object_21_node ___PRM(22,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest ___GLO(23,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest ___PRM(23,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest_21_node ___GLO(24,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest_21_node ___PRM(24,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object ___GLO(25,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object ___PRM(25,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object_21_node ___GLO(26,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object_21_node ___PRM(26,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object ___GLO(27,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object ___PRM(27,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object_21_node ___GLO(28,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object_21_node ___PRM(28,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object ___GLO(29,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object ___PRM(29,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object_21_node ___GLO(30,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object_21_node ___PRM(30,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference ___GLO(31,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference ___PRM(31,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference_21_node ___GLO(32,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference_21_node ___PRM(32,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object ___GLO(33,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object ___PRM(33,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object_21_node ___GLO(34,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object_21_node ___PRM(34,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class ___GLO(35,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class ___PRM(35,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class_21_level ___GLO(36,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class_21_level)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class_21_level ___PRM(36,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class_21_level)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub ___GLO(37,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub ___PRM(37,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_21_rank ___GLO(38,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_21_rank)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_21_rank ___PRM(38,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_21_rank)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface ___GLO(39,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface ___PRM(39,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_21_level ___GLO(40,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_21_level)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_21_level ___PRM(40,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_21_level)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class ___GLO(41,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class ___PRM(41,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class_21_node ___GLO(42,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class_21_node ___PRM(42,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class ___GLO(43,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class ___PRM(43,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class_21_node ___GLO(44,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class_21_node)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class_21_node ___PRM(44,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class_21_node)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class ___GLO(45,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class ___PRM(45,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class_21_level ___GLO(46,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class_21_level)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class_21_level ___PRM(46,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class_21_level)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object ___GLO(47,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object ___PRM(47,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object_21_rank ___GLO(48,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object_21_rank)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object_21_rank ___PRM(48,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object_21_rank)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest ___GLO(49,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest ___PRM(49,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest_21_rank ___GLO(50,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest_21_rank)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest_21_rank ___PRM(50,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest_21_rank)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object ___GLO(51,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object ___PRM(51,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object_21_rank ___GLO(52,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object_21_rank)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object_21_rank ___PRM(52,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object_21_rank)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object ___GLO(53,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object ___PRM(53,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object_21_rank ___GLO(54,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object_21_rank)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object_21_rank ___PRM(54,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object_21_rank)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object ___GLO(55,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object ___PRM(55,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object_21_rank ___GLO(56,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object_21_rank)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object_21_rank ___PRM(56,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object_21_rank)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object ___GLO(57,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object ___PRM(57,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+#define ___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object_21_rank ___GLO(58,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object_21_rank)
+#define ___PRM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object_21_rank ___PRM(58,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object_21_rank)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload ___GLO(59,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload ___PRM(59,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub_3a_autoload ___GLO(60,___G_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub_3a_autoload)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub_3a_autoload ___PRM(60,___G_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub_3a_autoload)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload ___GLO(61,___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload ___PRM(61,___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload ___GLO(62,___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload ___PRM(62,___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload)
+#define ___GLO_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3 ___GLO(63,___G_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3)
+#define ___PRM_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3 ___PRM(63,___G_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3)
+#define ___GLO_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14 ___GLO(64,___G_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14)
+#define ___PRM_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14 ___PRM(64,___G_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14)
+#define ___GLO_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9 ___GLO(65,___G_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9)
+#define ___PRM_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9 ___PRM(65,___G_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9)
+#define ___GLO_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6 ___GLO(66,___G_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6)
+#define ___PRM_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6 ___PRM(66,___G_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6)
+#define ___GLO_apply ___GLO(67,___G_apply)
+#define ___PRM_apply ___PRM(67,___G_apply)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy ___GLO(68,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy ___PRM(68,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset ___GLO(69,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset ___PRM(69,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub ___GLO(70,___G_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub ___PRM(70,___G_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy ___GLO(71,___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy ___PRM(71,___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy)
+#define ___GLO_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface ___GLO(72,___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface)
+#define ___PRM_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface ___PRM(72,___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface)
+#define ___GLO_jazz_2e_presence_3a_call_2d_remote ___GLO(73,___G_jazz_2e_presence_3a_call_2d_remote)
+#define ___PRM_jazz_2e_presence_3a_call_2d_remote ___PRM(73,___G_jazz_2e_presence_3a_call_2d_remote)
+#define ___GLO_jazz_3a_add_2d_method_2d_node ___GLO(74,___G_jazz_3a_add_2d_method_2d_node)
+#define ___PRM_jazz_3a_add_2d_method_2d_node ___PRM(74,___G_jazz_3a_add_2d_method_2d_node)
+#define ___GLO_jazz_3a_add_2d_virtual_2d_method ___GLO(75,___G_jazz_3a_add_2d_virtual_2d_method)
+#define ___PRM_jazz_3a_add_2d_virtual_2d_method ___PRM(75,___G_jazz_3a_add_2d_virtual_2d_method)
+#define ___GLO_jazz_3a_cache_2d_dispatch ___GLO(76,___G_jazz_3a_cache_2d_dispatch)
+#define ___PRM_jazz_3a_cache_2d_dispatch ___PRM(76,___G_jazz_3a_cache_2d_dispatch)
+#define ___GLO_jazz_3a_call_2d_into_2d_abstract ___GLO(77,___G_jazz_3a_call_2d_into_2d_abstract)
+#define ___PRM_jazz_3a_call_2d_into_2d_abstract ___PRM(77,___G_jazz_3a_call_2d_into_2d_abstract)
+#define ___GLO_jazz_3a_class_2d_of ___GLO(78,___G_jazz_3a_class_2d_of)
+#define ___PRM_jazz_3a_class_2d_of ___PRM(78,___G_jazz_3a_class_2d_of)
+#define ___GLO_jazz_3a_dispatch ___GLO(79,___G_jazz_3a_dispatch)
+#define ___PRM_jazz_3a_dispatch ___PRM(79,___G_jazz_3a_dispatch)
+#define ___GLO_jazz_3a_global_2d_bound_3f_ ___GLO(80,___G_jazz_3a_global_2d_bound_3f_)
+#define ___PRM_jazz_3a_global_2d_bound_3f_ ___PRM(80,___G_jazz_3a_global_2d_bound_3f_)
+#define ___GLO_jazz_3a_global_2d_ref ___GLO(81,___G_jazz_3a_global_2d_ref)
+#define ___PRM_jazz_3a_global_2d_ref ___PRM(81,___G_jazz_3a_global_2d_ref)
+#define ___GLO_jazz_3a_load_2d_unit ___GLO(82,___G_jazz_3a_load_2d_unit)
+#define ___PRM_jazz_3a_load_2d_unit ___PRM(82,___G_jazz_3a_load_2d_unit)
+#define ___GLO_jazz_3a_new_2d_class ___GLO(83,___G_jazz_3a_new_2d_class)
+#define ___PRM_jazz_3a_new_2d_class ___PRM(83,___G_jazz_3a_new_2d_class)
+#define ___GLO_jazz_3a_new_2d_interface ___GLO(84,___G_jazz_3a_new_2d_interface)
+#define ___PRM_jazz_3a_new_2d_interface ___PRM(84,___G_jazz_3a_new_2d_interface)
+#define ___GLO_jazz_3a_new_2d_runtime_2d_reference ___GLO(85,___G_jazz_3a_new_2d_runtime_2d_reference)
+#define ___PRM_jazz_3a_new_2d_runtime_2d_reference ___PRM(85,___G_jazz_3a_new_2d_runtime_2d_reference)
+#define ___GLO_jazz_3a_register_2d_module ___GLO(86,___G_jazz_3a_register_2d_module)
+#define ___PRM_jazz_3a_register_2d_module ___PRM(86,___G_jazz_3a_register_2d_module)
+
+___BEGIN_CNS
+ ___DEF_CNS(___REF_CNS(1),___REF_CNS(2))
+,___DEF_CNS(___REF_SYM(0,___S_Register_2d_Local_2d_Proxy),___REF_SYM(18,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy))
+,___DEF_CNS(___REF_CNS(3),___REF_CNS(4))
+,___DEF_CNS(___REF_SYM(1,___S_Register_2d_Local_2d_Proxy_7e_Class),___REF_SYM(19,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class))
+,___DEF_CNS(___REF_CNS(5),___REF_CNS(6))
+,___DEF_CNS(___REF_SYM(2,___S_Register_2d_Remote_2d_Proxy),___REF_SYM(20,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy))
+,___DEF_CNS(___REF_CNS(7),___REF_CNS(8))
+,___DEF_CNS(___REF_SYM(3,___S_Register_2d_Remote_2d_Proxy_7e_Class),___REF_SYM(21,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class))
+,___DEF_CNS(___REF_CNS(9),___REF_CNS(10))
+,___DEF_CNS(___REF_SYM(4,___S_Register_2d_Stub),___REF_SYM(22,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub))
+,___DEF_CNS(___REF_CNS(11),___REF_CNS(12))
+,___DEF_CNS(___REF_SYM(5,___S_Register_2d_Stub_2d_Interface),___REF_SYM(23,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface))
+,___DEF_CNS(___REF_CNS(13),___REF_NUL)
+,___DEF_CNS(___REF_SYM(6,___S_Register_2d_Stub_2d_Interface_7e_Class),___REF_SYM(24,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class))
+,___DEF_CNS(___REF_FIX(32769),___REF_NUL)
+,___DEF_CNS(___REF_SYM(32,___S_module_2d_private),___REF_CNS(16))
+,___DEF_CNS(___REF_SYM(22,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub),___REF_NUL)
+,___DEF_CNS(___REF_FIX(32774),___REF_NUL)
+,___DEF_CNS(___REF_FIX(32772),___REF_NUL)
+,___DEF_CNS(___REF_SYM(32,___S_module_2d_private),___REF_CNS(20))
+,___DEF_CNS(___REF_SYM(22,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub),___REF_NUL)
+___END_CNS
+
+___DEF_SUB_VEC(___X0,2UL)
+               ___VEC1(___REF_SUB(1))
+               ___VEC1(___REF_SUB(178))
+               ___VEC0
+___DEF_SUB_VEC(___X1,88UL)
+               ___VEC1(___REF_SUB(2))
+               ___VEC1(___REF_SUB(4))
+               ___VEC1(___REF_SUB(6))
+               ___VEC1(___REF_SUB(8))
+               ___VEC1(___REF_SUB(10))
+               ___VEC1(___REF_SUB(12))
+               ___VEC1(___REF_SUB(14))
+               ___VEC1(___REF_SUB(16))
+               ___VEC1(___REF_SUB(18))
+               ___VEC1(___REF_SUB(20))
+               ___VEC1(___REF_SUB(22))
+               ___VEC1(___REF_SUB(24))
+               ___VEC1(___REF_SUB(26))
+               ___VEC1(___REF_SUB(28))
+               ___VEC1(___REF_SUB(30))
+               ___VEC1(___REF_SUB(32))
+               ___VEC1(___REF_SUB(34))
+               ___VEC1(___REF_SUB(36))
+               ___VEC1(___REF_SUB(38))
+               ___VEC1(___REF_SUB(40))
+               ___VEC1(___REF_SUB(42))
+               ___VEC1(___REF_SUB(44))
+               ___VEC1(___REF_SUB(46))
+               ___VEC1(___REF_SUB(48))
+               ___VEC1(___REF_SUB(50))
+               ___VEC1(___REF_SUB(52))
+               ___VEC1(___REF_SUB(54))
+               ___VEC1(___REF_SUB(56))
+               ___VEC1(___REF_SUB(58))
+               ___VEC1(___REF_SUB(60))
+               ___VEC1(___REF_SUB(62))
+               ___VEC1(___REF_SUB(64))
+               ___VEC1(___REF_SUB(66))
+               ___VEC1(___REF_SUB(68))
+               ___VEC1(___REF_SUB(70))
+               ___VEC1(___REF_SUB(72))
+               ___VEC1(___REF_SUB(74))
+               ___VEC1(___REF_SUB(76))
+               ___VEC1(___REF_SUB(78))
+               ___VEC1(___REF_SUB(80))
+               ___VEC1(___REF_SUB(82))
+               ___VEC1(___REF_SUB(84))
+               ___VEC1(___REF_SUB(86))
+               ___VEC1(___REF_SUB(88))
+               ___VEC1(___REF_SUB(90))
+               ___VEC1(___REF_SUB(92))
+               ___VEC1(___REF_SUB(94))
+               ___VEC1(___REF_SUB(96))
+               ___VEC1(___REF_SUB(98))
+               ___VEC1(___REF_SUB(100))
+               ___VEC1(___REF_SUB(102))
+               ___VEC1(___REF_SUB(104))
+               ___VEC1(___REF_SUB(106))
+               ___VEC1(___REF_SUB(108))
+               ___VEC1(___REF_SUB(110))
+               ___VEC1(___REF_SUB(112))
+               ___VEC1(___REF_SUB(114))
+               ___VEC1(___REF_SUB(116))
+               ___VEC1(___REF_SUB(118))
+               ___VEC1(___REF_SUB(120))
+               ___VEC1(___REF_SUB(122))
+               ___VEC1(___REF_SUB(124))
+               ___VEC1(___REF_SUB(126))
+               ___VEC1(___REF_SUB(128))
+               ___VEC1(___REF_SUB(130))
+               ___VEC1(___REF_SUB(132))
+               ___VEC1(___REF_SUB(134))
+               ___VEC1(___REF_SUB(136))
+               ___VEC1(___REF_SUB(138))
+               ___VEC1(___REF_SUB(140))
+               ___VEC1(___REF_SUB(142))
+               ___VEC1(___REF_SUB(144))
+               ___VEC1(___REF_SUB(146))
+               ___VEC1(___REF_SUB(148))
+               ___VEC1(___REF_SUB(150))
+               ___VEC1(___REF_SUB(152))
+               ___VEC1(___REF_SUB(154))
+               ___VEC1(___REF_SUB(156))
+               ___VEC1(___REF_SUB(158))
+               ___VEC1(___REF_SUB(160))
+               ___VEC1(___REF_SUB(162))
+               ___VEC1(___REF_SUB(164))
+               ___VEC1(___REF_SUB(166))
+               ___VEC1(___REF_SUB(168))
+               ___VEC1(___REF_SUB(170))
+               ___VEC1(___REF_SUB(172))
+               ___VEC1(___REF_SUB(174))
+               ___VEC1(___REF_SUB(176))
+               ___VEC0
+___DEF_SUB_VEC(___X2,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(3))
+               ___VEC0
+___DEF_SUB_VEC(___X3,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X4,2UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(5))
+               ___VEC0
+___DEF_SUB_VEC(___X5,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X6,2UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(7))
+               ___VEC0
+___DEF_SUB_VEC(___X7,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X8,2UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(9))
+               ___VEC0
+___DEF_SUB_VEC(___X9,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X10,2UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(11))
+               ___VEC0
+___DEF_SUB_VEC(___X11,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X12,2UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(13))
+               ___VEC0
+___DEF_SUB_VEC(___X13,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X14,2UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(15))
+               ___VEC0
+___DEF_SUB_VEC(___X15,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X16,2UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(17))
+               ___VEC0
+___DEF_SUB_VEC(___X17,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X18,2UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(19))
+               ___VEC0
+___DEF_SUB_VEC(___X19,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X20,2UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(21))
+               ___VEC0
+___DEF_SUB_VEC(___X21,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X22,2UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(23))
+               ___VEC0
+___DEF_SUB_VEC(___X23,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X24,2UL)
+               ___VEC1(___REF_FIX(11))
+               ___VEC1(___REF_SUB(25))
+               ___VEC0
+___DEF_SUB_VEC(___X25,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X26,2UL)
+               ___VEC1(___REF_FIX(12))
+               ___VEC1(___REF_SUB(27))
+               ___VEC0
+___DEF_SUB_VEC(___X27,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X28,2UL)
+               ___VEC1(___REF_FIX(13))
+               ___VEC1(___REF_SUB(29))
+               ___VEC0
+___DEF_SUB_VEC(___X29,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X30,2UL)
+               ___VEC1(___REF_FIX(14))
+               ___VEC1(___REF_SUB(31))
+               ___VEC0
+___DEF_SUB_VEC(___X31,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X32,2UL)
+               ___VEC1(___REF_FIX(15))
+               ___VEC1(___REF_SUB(33))
+               ___VEC0
+___DEF_SUB_VEC(___X33,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X34,2UL)
+               ___VEC1(___REF_FIX(16))
+               ___VEC1(___REF_SUB(35))
+               ___VEC0
+___DEF_SUB_VEC(___X35,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X36,2UL)
+               ___VEC1(___REF_FIX(17))
+               ___VEC1(___REF_SUB(37))
+               ___VEC0
+___DEF_SUB_VEC(___X37,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X38,2UL)
+               ___VEC1(___REF_FIX(18))
+               ___VEC1(___REF_SUB(39))
+               ___VEC0
+___DEF_SUB_VEC(___X39,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X40,2UL)
+               ___VEC1(___REF_FIX(19))
+               ___VEC1(___REF_SUB(41))
+               ___VEC0
+___DEF_SUB_VEC(___X41,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X42,2UL)
+               ___VEC1(___REF_FIX(20))
+               ___VEC1(___REF_SUB(43))
+               ___VEC0
+___DEF_SUB_VEC(___X43,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X44,2UL)
+               ___VEC1(___REF_FIX(21))
+               ___VEC1(___REF_SUB(45))
+               ___VEC0
+___DEF_SUB_VEC(___X45,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X46,2UL)
+               ___VEC1(___REF_FIX(22))
+               ___VEC1(___REF_SUB(47))
+               ___VEC0
+___DEF_SUB_VEC(___X47,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X48,2UL)
+               ___VEC1(___REF_FIX(23))
+               ___VEC1(___REF_SUB(49))
+               ___VEC0
+___DEF_SUB_VEC(___X49,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X50,2UL)
+               ___VEC1(___REF_FIX(24))
+               ___VEC1(___REF_SUB(51))
+               ___VEC0
+___DEF_SUB_VEC(___X51,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X52,2UL)
+               ___VEC1(___REF_FIX(25))
+               ___VEC1(___REF_SUB(53))
+               ___VEC0
+___DEF_SUB_VEC(___X53,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X54,2UL)
+               ___VEC1(___REF_FIX(26))
+               ___VEC1(___REF_SUB(55))
+               ___VEC0
+___DEF_SUB_VEC(___X55,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X56,2UL)
+               ___VEC1(___REF_FIX(27))
+               ___VEC1(___REF_SUB(57))
+               ___VEC0
+___DEF_SUB_VEC(___X57,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X58,2UL)
+               ___VEC1(___REF_FIX(28))
+               ___VEC1(___REF_SUB(59))
+               ___VEC0
+___DEF_SUB_VEC(___X59,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X60,2UL)
+               ___VEC1(___REF_FIX(29))
+               ___VEC1(___REF_SUB(61))
+               ___VEC0
+___DEF_SUB_VEC(___X61,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X62,2UL)
+               ___VEC1(___REF_FIX(30))
+               ___VEC1(___REF_SUB(63))
+               ___VEC0
+___DEF_SUB_VEC(___X63,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X64,2UL)
+               ___VEC1(___REF_FIX(31))
+               ___VEC1(___REF_SUB(65))
+               ___VEC0
+___DEF_SUB_VEC(___X65,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X66,2UL)
+               ___VEC1(___REF_FIX(32))
+               ___VEC1(___REF_SUB(67))
+               ___VEC0
+___DEF_SUB_VEC(___X67,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X68,2UL)
+               ___VEC1(___REF_FIX(33))
+               ___VEC1(___REF_SUB(69))
+               ___VEC0
+___DEF_SUB_VEC(___X69,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X70,2UL)
+               ___VEC1(___REF_FIX(34))
+               ___VEC1(___REF_SUB(71))
+               ___VEC0
+___DEF_SUB_VEC(___X71,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X72,2UL)
+               ___VEC1(___REF_FIX(35))
+               ___VEC1(___REF_SUB(73))
+               ___VEC0
+___DEF_SUB_VEC(___X73,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X74,2UL)
+               ___VEC1(___REF_FIX(36))
+               ___VEC1(___REF_SUB(75))
+               ___VEC0
+___DEF_SUB_VEC(___X75,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X76,2UL)
+               ___VEC1(___REF_FIX(37))
+               ___VEC1(___REF_SUB(77))
+               ___VEC0
+___DEF_SUB_VEC(___X77,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X78,2UL)
+               ___VEC1(___REF_FIX(38))
+               ___VEC1(___REF_SUB(79))
+               ___VEC0
+___DEF_SUB_VEC(___X79,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X80,2UL)
+               ___VEC1(___REF_FIX(39))
+               ___VEC1(___REF_SUB(81))
+               ___VEC0
+___DEF_SUB_VEC(___X81,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X82,2UL)
+               ___VEC1(___REF_FIX(40))
+               ___VEC1(___REF_SUB(83))
+               ___VEC0
+___DEF_SUB_VEC(___X83,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X84,2UL)
+               ___VEC1(___REF_FIX(41))
+               ___VEC1(___REF_SUB(85))
+               ___VEC0
+___DEF_SUB_VEC(___X85,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X86,2UL)
+               ___VEC1(___REF_FIX(42))
+               ___VEC1(___REF_SUB(87))
+               ___VEC0
+___DEF_SUB_VEC(___X87,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X88,2UL)
+               ___VEC1(___REF_FIX(43))
+               ___VEC1(___REF_SUB(89))
+               ___VEC0
+___DEF_SUB_VEC(___X89,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X90,2UL)
+               ___VEC1(___REF_FIX(44))
+               ___VEC1(___REF_SUB(91))
+               ___VEC0
+___DEF_SUB_VEC(___X91,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X92,2UL)
+               ___VEC1(___REF_FIX(45))
+               ___VEC1(___REF_SUB(93))
+               ___VEC0
+___DEF_SUB_VEC(___X93,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X94,2UL)
+               ___VEC1(___REF_FIX(46))
+               ___VEC1(___REF_SUB(95))
+               ___VEC0
+___DEF_SUB_VEC(___X95,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X96,2UL)
+               ___VEC1(___REF_FIX(47))
+               ___VEC1(___REF_SUB(97))
+               ___VEC0
+___DEF_SUB_VEC(___X97,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X98,2UL)
+               ___VEC1(___REF_FIX(48))
+               ___VEC1(___REF_SUB(99))
+               ___VEC0
+___DEF_SUB_VEC(___X99,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X100,2UL)
+               ___VEC1(___REF_FIX(49))
+               ___VEC1(___REF_SUB(101))
+               ___VEC0
+___DEF_SUB_VEC(___X101,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X102,2UL)
+               ___VEC1(___REF_FIX(50))
+               ___VEC1(___REF_SUB(103))
+               ___VEC0
+___DEF_SUB_VEC(___X103,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X104,2UL)
+               ___VEC1(___REF_FIX(51))
+               ___VEC1(___REF_SUB(105))
+               ___VEC0
+___DEF_SUB_VEC(___X105,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X106,2UL)
+               ___VEC1(___REF_FIX(52))
+               ___VEC1(___REF_SUB(107))
+               ___VEC0
+___DEF_SUB_VEC(___X107,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X108,2UL)
+               ___VEC1(___REF_FIX(53))
+               ___VEC1(___REF_SUB(109))
+               ___VEC0
+___DEF_SUB_VEC(___X109,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X110,2UL)
+               ___VEC1(___REF_FIX(54))
+               ___VEC1(___REF_SUB(111))
+               ___VEC0
+___DEF_SUB_VEC(___X111,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X112,2UL)
+               ___VEC1(___REF_FIX(55))
+               ___VEC1(___REF_SUB(113))
+               ___VEC0
+___DEF_SUB_VEC(___X113,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X114,2UL)
+               ___VEC1(___REF_FIX(56))
+               ___VEC1(___REF_SUB(115))
+               ___VEC0
+___DEF_SUB_VEC(___X115,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X116,2UL)
+               ___VEC1(___REF_FIX(57))
+               ___VEC1(___REF_SUB(117))
+               ___VEC0
+___DEF_SUB_VEC(___X117,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X118,2UL)
+               ___VEC1(___REF_FIX(58))
+               ___VEC1(___REF_SUB(119))
+               ___VEC0
+___DEF_SUB_VEC(___X119,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X120,2UL)
+               ___VEC1(___REF_FIX(59))
+               ___VEC1(___REF_SUB(121))
+               ___VEC0
+___DEF_SUB_VEC(___X121,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X122,2UL)
+               ___VEC1(___REF_FIX(60))
+               ___VEC1(___REF_SUB(123))
+               ___VEC0
+___DEF_SUB_VEC(___X123,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X124,2UL)
+               ___VEC1(___REF_FIX(61))
+               ___VEC1(___REF_SUB(125))
+               ___VEC0
+___DEF_SUB_VEC(___X125,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X126,2UL)
+               ___VEC1(___REF_FIX(62))
+               ___VEC1(___REF_SUB(127))
+               ___VEC0
+___DEF_SUB_VEC(___X127,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X128,2UL)
+               ___VEC1(___REF_FIX(63))
+               ___VEC1(___REF_SUB(129))
+               ___VEC0
+___DEF_SUB_VEC(___X129,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X130,2UL)
+               ___VEC1(___REF_FIX(64))
+               ___VEC1(___REF_SUB(131))
+               ___VEC0
+___DEF_SUB_VEC(___X131,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X132,2UL)
+               ___VEC1(___REF_FIX(65))
+               ___VEC1(___REF_SUB(133))
+               ___VEC0
+___DEF_SUB_VEC(___X133,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X134,2UL)
+               ___VEC1(___REF_FIX(66))
+               ___VEC1(___REF_SUB(135))
+               ___VEC0
+___DEF_SUB_VEC(___X135,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X136,2UL)
+               ___VEC1(___REF_FIX(67))
+               ___VEC1(___REF_SUB(137))
+               ___VEC0
+___DEF_SUB_VEC(___X137,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X138,2UL)
+               ___VEC1(___REF_FIX(68))
+               ___VEC1(___REF_SUB(139))
+               ___VEC0
+___DEF_SUB_VEC(___X139,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X140,2UL)
+               ___VEC1(___REF_FIX(69))
+               ___VEC1(___REF_SUB(141))
+               ___VEC0
+___DEF_SUB_VEC(___X141,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X142,2UL)
+               ___VEC1(___REF_FIX(70))
+               ___VEC1(___REF_SUB(143))
+               ___VEC0
+___DEF_SUB_VEC(___X143,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X144,2UL)
+               ___VEC1(___REF_FIX(71))
+               ___VEC1(___REF_SUB(145))
+               ___VEC0
+___DEF_SUB_VEC(___X145,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X146,2UL)
+               ___VEC1(___REF_FIX(72))
+               ___VEC1(___REF_SUB(147))
+               ___VEC0
+___DEF_SUB_VEC(___X147,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X148,3UL)
+               ___VEC1(___REF_FIX(73))
+               ___VEC1(___REF_SUB(149))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X149,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X150,2UL)
+               ___VEC1(___REF_FIX(74))
+               ___VEC1(___REF_SUB(151))
+               ___VEC0
+___DEF_SUB_VEC(___X151,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X152,3UL)
+               ___VEC1(___REF_FIX(75))
+               ___VEC1(___REF_SUB(153))
+               ___VEC1(___REF_FIX(425986))
+               ___VEC0
+___DEF_SUB_VEC(___X153,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X154,2UL)
+               ___VEC1(___REF_FIX(76))
+               ___VEC1(___REF_SUB(155))
+               ___VEC0
+___DEF_SUB_VEC(___X155,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X156,3UL)
+               ___VEC1(___REF_FIX(77))
+               ___VEC1(___REF_SUB(157))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X157,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X158,2UL)
+               ___VEC1(___REF_FIX(78))
+               ___VEC1(___REF_SUB(159))
+               ___VEC0
+___DEF_SUB_VEC(___X159,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X160,3UL)
+               ___VEC1(___REF_FIX(79))
+               ___VEC1(___REF_SUB(161))
+               ___VEC1(___REF_FIX(425986))
+               ___VEC0
+___DEF_SUB_VEC(___X161,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X162,2UL)
+               ___VEC1(___REF_FIX(80))
+               ___VEC1(___REF_SUB(163))
+               ___VEC0
+___DEF_SUB_VEC(___X163,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X164,3UL)
+               ___VEC1(___REF_FIX(81))
+               ___VEC1(___REF_SUB(165))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X165,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X166,2UL)
+               ___VEC1(___REF_FIX(82))
+               ___VEC1(___REF_SUB(167))
+               ___VEC0
+___DEF_SUB_VEC(___X167,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X168,3UL)
+               ___VEC1(___REF_FIX(83))
+               ___VEC1(___REF_SUB(169))
+               ___VEC1(___REF_FIX(425986))
+               ___VEC0
+___DEF_SUB_VEC(___X169,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X170,2UL)
+               ___VEC1(___REF_FIX(84))
+               ___VEC1(___REF_SUB(171))
+               ___VEC0
+___DEF_SUB_VEC(___X171,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X172,3UL)
+               ___VEC1(___REF_FIX(85))
+               ___VEC1(___REF_SUB(173))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X173,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X174,2UL)
+               ___VEC1(___REF_FIX(86))
+               ___VEC1(___REF_SUB(175))
+               ___VEC0
+___DEF_SUB_VEC(___X175,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X176,3UL)
+               ___VEC1(___REF_FIX(87))
+               ___VEC1(___REF_SUB(177))
+               ___VEC1(___REF_FIX(425986))
+               ___VEC0
+___DEF_SUB_VEC(___X177,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X178,2UL)
+               ___VEC1(___REF_SYM(30,___S_loaded_3f_))
+               ___VEC1(___REF_CNS(14))
+               ___VEC0
+___DEF_SUB_VEC(___X179,2UL)
+               ___VEC1(___REF_SUB(180))
+               ___VEC1(___REF_SUB(183))
+               ___VEC0
+___DEF_SUB_VEC(___X180,1UL)
+               ___VEC1(___REF_SUB(181))
+               ___VEC0
+___DEF_SUB_VEC(___X181,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(182))
+               ___VEC0
+___DEF_SUB_VEC(___X182,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X183,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X184,2UL)
+               ___VEC1(___REF_SUB(185))
+               ___VEC1(___REF_SUB(188))
+               ___VEC0
+___DEF_SUB_VEC(___X185,1UL)
+               ___VEC1(___REF_SUB(186))
+               ___VEC0
+___DEF_SUB_VEC(___X186,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(187))
+               ___VEC0
+___DEF_SUB_VEC(___X187,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X188,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X189,2UL)
+               ___VEC1(___REF_SUB(190))
+               ___VEC1(___REF_SUB(199))
+               ___VEC0
+___DEF_SUB_VEC(___X190,4UL)
+               ___VEC1(___REF_SUB(191))
+               ___VEC1(___REF_SUB(193))
+               ___VEC1(___REF_SUB(195))
+               ___VEC1(___REF_SUB(197))
+               ___VEC0
+___DEF_SUB_VEC(___X191,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(192))
+               ___VEC0
+___DEF_SUB_VEC(___X192,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X193,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(194))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X194,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X195,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(196))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X196,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X197,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(198))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X198,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X199,2UL)
+               ___VEC1(___REF_SYM(37,___S_rest))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X200,2UL)
+               ___VEC1(___REF_SUB(201))
+               ___VEC1(___REF_SUB(210))
+               ___VEC0
+___DEF_SUB_VEC(___X201,4UL)
+               ___VEC1(___REF_SUB(202))
+               ___VEC1(___REF_SUB(204))
+               ___VEC1(___REF_SUB(206))
+               ___VEC1(___REF_SUB(208))
+               ___VEC0
+___DEF_SUB_VEC(___X202,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(203))
+               ___VEC0
+___DEF_SUB_VEC(___X203,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X204,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(205))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X205,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X206,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(207))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X207,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X208,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(209))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X209,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X210,2UL)
+               ___VEC1(___REF_SYM(37,___S_rest))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X211,2UL)
+               ___VEC1(___REF_SUB(212))
+               ___VEC1(___REF_SUB(221))
+               ___VEC0
+___DEF_SUB_VEC(___X212,4UL)
+               ___VEC1(___REF_SUB(213))
+               ___VEC1(___REF_SUB(215))
+               ___VEC1(___REF_SUB(217))
+               ___VEC1(___REF_SUB(219))
+               ___VEC0
+___DEF_SUB_VEC(___X213,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(214))
+               ___VEC0
+___DEF_SUB_VEC(___X214,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X215,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(216))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X216,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X217,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(218))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X218,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X219,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(220))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X220,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X221,2UL)
+               ___VEC1(___REF_SYM(37,___S_rest))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X222,2UL)
+               ___VEC1(___REF_SUB(223))
+               ___VEC1(___REF_SUB(232))
+               ___VEC0
+___DEF_SUB_VEC(___X223,4UL)
+               ___VEC1(___REF_SUB(224))
+               ___VEC1(___REF_SUB(226))
+               ___VEC1(___REF_SUB(228))
+               ___VEC1(___REF_SUB(230))
+               ___VEC0
+___DEF_SUB_VEC(___X224,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(225))
+               ___VEC0
+___DEF_SUB_VEC(___X225,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X226,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(227))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X227,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X228,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(229))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X229,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X230,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(231))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X231,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X232,2UL)
+               ___VEC1(___REF_SYM(37,___S_rest))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X233,2UL)
+               ___VEC1(___REF_SUB(234))
+               ___VEC1(___REF_SUB(243))
+               ___VEC0
+___DEF_SUB_VEC(___X234,4UL)
+               ___VEC1(___REF_SUB(235))
+               ___VEC1(___REF_SUB(237))
+               ___VEC1(___REF_SUB(239))
+               ___VEC1(___REF_SUB(241))
+               ___VEC0
+___DEF_SUB_VEC(___X235,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(236))
+               ___VEC0
+___DEF_SUB_VEC(___X236,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X237,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(238))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X238,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X239,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(240))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X240,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X241,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(242))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X242,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X243,2UL)
+               ___VEC1(___REF_SYM(37,___S_rest))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X244,2UL)
+               ___VEC1(___REF_SUB(245))
+               ___VEC1(___REF_SUB(254))
+               ___VEC0
+___DEF_SUB_VEC(___X245,4UL)
+               ___VEC1(___REF_SUB(246))
+               ___VEC1(___REF_SUB(248))
+               ___VEC1(___REF_SUB(250))
+               ___VEC1(___REF_SUB(252))
+               ___VEC0
+___DEF_SUB_VEC(___X246,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(247))
+               ___VEC0
+___DEF_SUB_VEC(___X247,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X248,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(249))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X249,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X250,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(251))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X251,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X252,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(253))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X253,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X254,2UL)
+               ___VEC1(___REF_SYM(37,___S_rest))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X255,2UL)
+               ___VEC1(___REF_SUB(256))
+               ___VEC1(___REF_SUB(267))
+               ___VEC0
+___DEF_SUB_VEC(___X256,5UL)
+               ___VEC1(___REF_SUB(257))
+               ___VEC1(___REF_SUB(259))
+               ___VEC1(___REF_SUB(261))
+               ___VEC1(___REF_SUB(263))
+               ___VEC1(___REF_SUB(265))
+               ___VEC0
+___DEF_SUB_VEC(___X257,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(258))
+               ___VEC0
+___DEF_SUB_VEC(___X258,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X259,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(260))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X260,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X261,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(262))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X262,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X263,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(264))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X264,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X265,2UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(266))
+               ___VEC0
+___DEF_SUB_VEC(___X266,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X267,1UL)
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X268,2UL)
+               ___VEC1(___REF_SUB(269))
+               ___VEC1(___REF_SUB(280))
+               ___VEC0
+___DEF_SUB_VEC(___X269,5UL)
+               ___VEC1(___REF_SUB(270))
+               ___VEC1(___REF_SUB(272))
+               ___VEC1(___REF_SUB(274))
+               ___VEC1(___REF_SUB(276))
+               ___VEC1(___REF_SUB(278))
+               ___VEC0
+___DEF_SUB_VEC(___X270,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(271))
+               ___VEC0
+___DEF_SUB_VEC(___X271,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X272,7UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(273))
+               ___VEC1(___REF_FIX(393216))
+               ___VEC1(___REF_FIX(360450))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X273,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X274,5UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(275))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X275,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X276,5UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(277))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X277,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X278,5UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(279))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X279,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X280,3UL)
+               ___VEC1(___REF_SYM(43,___S_val_5e_4))
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X281,2UL)
+               ___VEC1(___REF_SUB(282))
+               ___VEC1(___REF_SUB(293))
+               ___VEC0
+___DEF_SUB_VEC(___X282,5UL)
+               ___VEC1(___REF_SUB(283))
+               ___VEC1(___REF_SUB(285))
+               ___VEC1(___REF_SUB(287))
+               ___VEC1(___REF_SUB(289))
+               ___VEC1(___REF_SUB(291))
+               ___VEC0
+___DEF_SUB_VEC(___X283,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(284))
+               ___VEC0
+___DEF_SUB_VEC(___X284,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X285,7UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(286))
+               ___VEC1(___REF_FIX(393216))
+               ___VEC1(___REF_FIX(360450))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X286,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X287,5UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(288))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X288,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X289,5UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(290))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X290,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X291,5UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(292))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X292,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X293,3UL)
+               ___VEC1(___REF_SYM(44,___S_val_5e_7))
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X294,2UL)
+               ___VEC1(___REF_SUB(295))
+               ___VEC1(___REF_SUB(306))
+               ___VEC0
+___DEF_SUB_VEC(___X295,5UL)
+               ___VEC1(___REF_SUB(296))
+               ___VEC1(___REF_SUB(298))
+               ___VEC1(___REF_SUB(300))
+               ___VEC1(___REF_SUB(302))
+               ___VEC1(___REF_SUB(304))
+               ___VEC0
+___DEF_SUB_VEC(___X296,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(297))
+               ___VEC0
+___DEF_SUB_VEC(___X297,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X298,9UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(299))
+               ___VEC1(___REF_FIX(425984))
+               ___VEC1(___REF_FIX(393218))
+               ___VEC1(___REF_FIX(360452))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X299,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X300,6UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(301))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X301,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X302,6UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(303))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X303,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X304,6UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(305))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(65542))
+               ___VEC0
+___DEF_SUB_VEC(___X305,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X306,4UL)
+               ___VEC1(___REF_SYM(41,___S_val_5e_10))
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(7,___S_____module_2d_name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X307,2UL)
+               ___VEC1(___REF_SUB(308))
+               ___VEC1(___REF_SUB(327))
+               ___VEC0
+___DEF_SUB_VEC(___X308,9UL)
+               ___VEC1(___REF_SUB(309))
+               ___VEC1(___REF_SUB(311))
+               ___VEC1(___REF_SUB(313))
+               ___VEC1(___REF_SUB(315))
+               ___VEC1(___REF_SUB(317))
+               ___VEC1(___REF_SUB(319))
+               ___VEC1(___REF_SUB(321))
+               ___VEC1(___REF_SUB(323))
+               ___VEC1(___REF_SUB(325))
+               ___VEC0
+___DEF_SUB_VEC(___X309,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(310))
+               ___VEC0
+___DEF_SUB_VEC(___X310,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X311,9UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(312))
+               ___VEC1(___REF_FIX(524288))
+               ___VEC1(___REF_FIX(491522))
+               ___VEC1(___REF_FIX(458756))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(32774))
+               ___VEC0
+___DEF_SUB_VEC(___X312,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X313,6UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(314))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(32774))
+               ___VEC0
+___DEF_SUB_VEC(___X314,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X315,2UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(316))
+               ___VEC0
+___DEF_SUB_VEC(___X316,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X317,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(318))
+               ___VEC1(___REF_FIX(425992))
+               ___VEC1(___REF_FIX(65546))
+               ___VEC0
+___DEF_SUB_VEC(___X318,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X319,4UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(320))
+               ___VEC1(___REF_FIX(98312))
+               ___VEC1(___REF_FIX(65546))
+               ___VEC0
+___DEF_SUB_VEC(___X320,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X321,4UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(322))
+               ___VEC1(___REF_FIX(98312))
+               ___VEC1(___REF_FIX(65546))
+               ___VEC0
+___DEF_SUB_VEC(___X322,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X323,3UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(324))
+               ___VEC1(___REF_FIX(65546))
+               ___VEC0
+___DEF_SUB_VEC(___X324,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X325,3UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(326))
+               ___VEC1(___REF_FIX(65546))
+               ___VEC0
+___DEF_SUB_VEC(___X326,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X327,6UL)
+               ___VEC1(___REF_SYM(10,___S_____rest))
+               ___VEC1(___REF_SYM(9,___S_____object))
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC1(___REF_CNS(17))
+               ___VEC1(___REF_SYM(37,___S_rest))
+               ___VEC0
+___DEF_SUB_VEC(___X328,2UL)
+               ___VEC1(___REF_SUB(329))
+               ___VEC1(___REF_SUB(348))
+               ___VEC0
+___DEF_SUB_VEC(___X329,9UL)
+               ___VEC1(___REF_SUB(330))
+               ___VEC1(___REF_SUB(332))
+               ___VEC1(___REF_SUB(334))
+               ___VEC1(___REF_SUB(336))
+               ___VEC1(___REF_SUB(338))
+               ___VEC1(___REF_SUB(340))
+               ___VEC1(___REF_SUB(342))
+               ___VEC1(___REF_SUB(344))
+               ___VEC1(___REF_SUB(346))
+               ___VEC0
+___DEF_SUB_VEC(___X330,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(331))
+               ___VEC0
+___DEF_SUB_VEC(___X331,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X332,5UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(333))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X333,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X334,5UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(335))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X335,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X336,2UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(337))
+               ___VEC0
+___DEF_SUB_VEC(___X337,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X338,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(339))
+               ___VEC1(___REF_FIX(425990))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC0
+___DEF_SUB_VEC(___X339,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X340,4UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(341))
+               ___VEC1(___REF_FIX(98310))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC0
+___DEF_SUB_VEC(___X341,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X342,4UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(343))
+               ___VEC1(___REF_FIX(98310))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC0
+___DEF_SUB_VEC(___X343,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X344,3UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(345))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC0
+___DEF_SUB_VEC(___X345,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X346,3UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(347))
+               ___VEC1(___REF_FIX(65544))
+               ___VEC0
+___DEF_SUB_VEC(___X347,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X348,5UL)
+               ___VEC1(___REF_SYM(10,___S_____rest))
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC1(___REF_CNS(18))
+               ___VEC1(___REF_SYM(37,___S_rest))
+               ___VEC0
+___DEF_SUB_VEC(___X349,2UL)
+               ___VEC1(___REF_SUB(350))
+               ___VEC1(___REF_SUB(361))
+               ___VEC0
+___DEF_SUB_VEC(___X350,5UL)
+               ___VEC1(___REF_SUB(351))
+               ___VEC1(___REF_SUB(353))
+               ___VEC1(___REF_SUB(355))
+               ___VEC1(___REF_SUB(357))
+               ___VEC1(___REF_SUB(359))
+               ___VEC0
+___DEF_SUB_VEC(___X351,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(352))
+               ___VEC0
+___DEF_SUB_VEC(___X352,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X353,5UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(354))
+               ___VEC1(___REF_FIX(360448))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X354,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X355,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(356))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X356,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X357,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(358))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X358,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X359,4UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(360))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X360,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X361,2UL)
+               ___VEC1(___REF_SYM(42,___S_val_5e_15))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X362,2UL)
+               ___VEC1(___REF_SUB(363))
+               ___VEC1(___REF_SUB(374))
+               ___VEC0
+___DEF_SUB_VEC(___X363,5UL)
+               ___VEC1(___REF_SUB(364))
+               ___VEC1(___REF_SUB(366))
+               ___VEC1(___REF_SUB(368))
+               ___VEC1(___REF_SUB(370))
+               ___VEC1(___REF_SUB(372))
+               ___VEC0
+___DEF_SUB_VEC(___X364,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(365))
+               ___VEC0
+___DEF_SUB_VEC(___X365,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X366,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(367))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X367,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X368,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(369))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X369,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X370,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(371))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X371,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X372,2UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(373))
+               ___VEC0
+___DEF_SUB_VEC(___X373,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X374,1UL)
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X375,2UL)
+               ___VEC1(___REF_SUB(376))
+               ___VEC1(___REF_SUB(385))
+               ___VEC0
+___DEF_SUB_VEC(___X376,4UL)
+               ___VEC1(___REF_SUB(377))
+               ___VEC1(___REF_SUB(379))
+               ___VEC1(___REF_SUB(381))
+               ___VEC1(___REF_SUB(383))
+               ___VEC0
+___DEF_SUB_VEC(___X377,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(378))
+               ___VEC0
+___DEF_SUB_VEC(___X378,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X379,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(380))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X380,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X381,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(382))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X382,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X383,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(384))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X384,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X385,2UL)
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X386,2UL)
+               ___VEC1(___REF_SUB(387))
+               ___VEC1(___REF_SUB(396))
+               ___VEC0
+___DEF_SUB_VEC(___X387,4UL)
+               ___VEC1(___REF_SUB(388))
+               ___VEC1(___REF_SUB(390))
+               ___VEC1(___REF_SUB(392))
+               ___VEC1(___REF_SUB(394))
+               ___VEC0
+___DEF_SUB_VEC(___X388,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(389))
+               ___VEC0
+___DEF_SUB_VEC(___X389,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X390,4UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(391))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X391,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X392,4UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(393))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X393,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X394,4UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(395))
+               ___VEC1(___REF_FIX(98304))
+               ___VEC1(___REF_FIX(65538))
+               ___VEC0
+___DEF_SUB_VEC(___X395,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X396,2UL)
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X397,2UL)
+               ___VEC1(___REF_SUB(398))
+               ___VEC1(___REF_SUB(407))
+               ___VEC0
+___DEF_SUB_VEC(___X398,4UL)
+               ___VEC1(___REF_SUB(399))
+               ___VEC1(___REF_SUB(401))
+               ___VEC1(___REF_SUB(403))
+               ___VEC1(___REF_SUB(405))
+               ___VEC0
+___DEF_SUB_VEC(___X399,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(400))
+               ___VEC0
+___DEF_SUB_VEC(___X400,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X401,8UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(402))
+               ___VEC1(___REF_FIX(524288))
+               ___VEC1(___REF_FIX(491522))
+               ___VEC1(___REF_FIX(458756))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X402,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X403,5UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(404))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X404,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X405,5UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(406))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X406,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X407,3UL)
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(7,___S_____module_2d_name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X408,2UL)
+               ___VEC1(___REF_SUB(409))
+               ___VEC1(___REF_SUB(414))
+               ___VEC0
+___DEF_SUB_VEC(___X409,2UL)
+               ___VEC1(___REF_SUB(410))
+               ___VEC1(___REF_SUB(412))
+               ___VEC0
+___DEF_SUB_VEC(___X410,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(411))
+               ___VEC0
+___DEF_SUB_VEC(___X411,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X412,6UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(413))
+               ___VEC1(___REF_FIX(163840))
+               ___VEC1(___REF_FIX(131074))
+               ___VEC1(___REF_FIX(98308))
+               ___VEC1(___REF_FIX(32774))
+               ___VEC0
+___DEF_SUB_VEC(___X413,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X414,4UL)
+               ___VEC1(___REF_SYM(10,___S_____rest))
+               ___VEC1(___REF_SYM(9,___S_____object))
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X415,2UL)
+               ___VEC1(___REF_SUB(416))
+               ___VEC1(___REF_SUB(421))
+               ___VEC0
+___DEF_SUB_VEC(___X416,2UL)
+               ___VEC1(___REF_SUB(417))
+               ___VEC1(___REF_SUB(419))
+               ___VEC0
+___DEF_SUB_VEC(___X417,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(418))
+               ___VEC0
+___DEF_SUB_VEC(___X418,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X419,5UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(420))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X420,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X421,3UL)
+               ___VEC1(___REF_SYM(10,___S_____rest))
+               ___VEC1(___REF_SYM(8,___S_____name))
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X422,2UL)
+               ___VEC1(___REF_SUB(423))
+               ___VEC1(___REF_SUB(432))
+               ___VEC0
+___DEF_SUB_VEC(___X423,4UL)
+               ___VEC1(___REF_SUB(424))
+               ___VEC1(___REF_SUB(426))
+               ___VEC1(___REF_SUB(428))
+               ___VEC1(___REF_SUB(430))
+               ___VEC0
+___DEF_SUB_VEC(___X424,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(425))
+               ___VEC0
+___DEF_SUB_VEC(___X425,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X426,3UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(427))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X427,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X428,3UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(429))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X429,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X430,3UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(431))
+               ___VEC1(___REF_FIX(65536))
+               ___VEC0
+___DEF_SUB_VEC(___X431,2UL)
+               ___VEC1(___REF_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_FIX(44))
+               ___VEC0
+___DEF_SUB_VEC(___X432,1UL)
+               ___VEC1(___REF_SYM(38,___S_self))
+               ___VEC0
+___DEF_SUB_VEC(___X433,5UL)
+               ___VEC1(___REF_SYM(11,___S_bin_3a_jazz_2e_presence_2e_register_2e_stub))
+               ___VEC1(___REF_PRC(1))
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_NUL)
+               ___VEC1(___REF_FAL)
+               ___VEC0
+
+___BEGIN_SUB
+ ___DEF_SUB(___X0)
+,___DEF_SUB(___X1)
+,___DEF_SUB(___X2)
+,___DEF_SUB(___X3)
+,___DEF_SUB(___X4)
+,___DEF_SUB(___X5)
+,___DEF_SUB(___X6)
+,___DEF_SUB(___X7)
+,___DEF_SUB(___X8)
+,___DEF_SUB(___X9)
+,___DEF_SUB(___X10)
+,___DEF_SUB(___X11)
+,___DEF_SUB(___X12)
+,___DEF_SUB(___X13)
+,___DEF_SUB(___X14)
+,___DEF_SUB(___X15)
+,___DEF_SUB(___X16)
+,___DEF_SUB(___X17)
+,___DEF_SUB(___X18)
+,___DEF_SUB(___X19)
+,___DEF_SUB(___X20)
+,___DEF_SUB(___X21)
+,___DEF_SUB(___X22)
+,___DEF_SUB(___X23)
+,___DEF_SUB(___X24)
+,___DEF_SUB(___X25)
+,___DEF_SUB(___X26)
+,___DEF_SUB(___X27)
+,___DEF_SUB(___X28)
+,___DEF_SUB(___X29)
+,___DEF_SUB(___X30)
+,___DEF_SUB(___X31)
+,___DEF_SUB(___X32)
+,___DEF_SUB(___X33)
+,___DEF_SUB(___X34)
+,___DEF_SUB(___X35)
+,___DEF_SUB(___X36)
+,___DEF_SUB(___X37)
+,___DEF_SUB(___X38)
+,___DEF_SUB(___X39)
+,___DEF_SUB(___X40)
+,___DEF_SUB(___X41)
+,___DEF_SUB(___X42)
+,___DEF_SUB(___X43)
+,___DEF_SUB(___X44)
+,___DEF_SUB(___X45)
+,___DEF_SUB(___X46)
+,___DEF_SUB(___X47)
+,___DEF_SUB(___X48)
+,___DEF_SUB(___X49)
+,___DEF_SUB(___X50)
+,___DEF_SUB(___X51)
+,___DEF_SUB(___X52)
+,___DEF_SUB(___X53)
+,___DEF_SUB(___X54)
+,___DEF_SUB(___X55)
+,___DEF_SUB(___X56)
+,___DEF_SUB(___X57)
+,___DEF_SUB(___X58)
+,___DEF_SUB(___X59)
+,___DEF_SUB(___X60)
+,___DEF_SUB(___X61)
+,___DEF_SUB(___X62)
+,___DEF_SUB(___X63)
+,___DEF_SUB(___X64)
+,___DEF_SUB(___X65)
+,___DEF_SUB(___X66)
+,___DEF_SUB(___X67)
+,___DEF_SUB(___X68)
+,___DEF_SUB(___X69)
+,___DEF_SUB(___X70)
+,___DEF_SUB(___X71)
+,___DEF_SUB(___X72)
+,___DEF_SUB(___X73)
+,___DEF_SUB(___X74)
+,___DEF_SUB(___X75)
+,___DEF_SUB(___X76)
+,___DEF_SUB(___X77)
+,___DEF_SUB(___X78)
+,___DEF_SUB(___X79)
+,___DEF_SUB(___X80)
+,___DEF_SUB(___X81)
+,___DEF_SUB(___X82)
+,___DEF_SUB(___X83)
+,___DEF_SUB(___X84)
+,___DEF_SUB(___X85)
+,___DEF_SUB(___X86)
+,___DEF_SUB(___X87)
+,___DEF_SUB(___X88)
+,___DEF_SUB(___X89)
+,___DEF_SUB(___X90)
+,___DEF_SUB(___X91)
+,___DEF_SUB(___X92)
+,___DEF_SUB(___X93)
+,___DEF_SUB(___X94)
+,___DEF_SUB(___X95)
+,___DEF_SUB(___X96)
+,___DEF_SUB(___X97)
+,___DEF_SUB(___X98)
+,___DEF_SUB(___X99)
+,___DEF_SUB(___X100)
+,___DEF_SUB(___X101)
+,___DEF_SUB(___X102)
+,___DEF_SUB(___X103)
+,___DEF_SUB(___X104)
+,___DEF_SUB(___X105)
+,___DEF_SUB(___X106)
+,___DEF_SUB(___X107)
+,___DEF_SUB(___X108)
+,___DEF_SUB(___X109)
+,___DEF_SUB(___X110)
+,___DEF_SUB(___X111)
+,___DEF_SUB(___X112)
+,___DEF_SUB(___X113)
+,___DEF_SUB(___X114)
+,___DEF_SUB(___X115)
+,___DEF_SUB(___X116)
+,___DEF_SUB(___X117)
+,___DEF_SUB(___X118)
+,___DEF_SUB(___X119)
+,___DEF_SUB(___X120)
+,___DEF_SUB(___X121)
+,___DEF_SUB(___X122)
+,___DEF_SUB(___X123)
+,___DEF_SUB(___X124)
+,___DEF_SUB(___X125)
+,___DEF_SUB(___X126)
+,___DEF_SUB(___X127)
+,___DEF_SUB(___X128)
+,___DEF_SUB(___X129)
+,___DEF_SUB(___X130)
+,___DEF_SUB(___X131)
+,___DEF_SUB(___X132)
+,___DEF_SUB(___X133)
+,___DEF_SUB(___X134)
+,___DEF_SUB(___X135)
+,___DEF_SUB(___X136)
+,___DEF_SUB(___X137)
+,___DEF_SUB(___X138)
+,___DEF_SUB(___X139)
+,___DEF_SUB(___X140)
+,___DEF_SUB(___X141)
+,___DEF_SUB(___X142)
+,___DEF_SUB(___X143)
+,___DEF_SUB(___X144)
+,___DEF_SUB(___X145)
+,___DEF_SUB(___X146)
+,___DEF_SUB(___X147)
+,___DEF_SUB(___X148)
+,___DEF_SUB(___X149)
+,___DEF_SUB(___X150)
+,___DEF_SUB(___X151)
+,___DEF_SUB(___X152)
+,___DEF_SUB(___X153)
+,___DEF_SUB(___X154)
+,___DEF_SUB(___X155)
+,___DEF_SUB(___X156)
+,___DEF_SUB(___X157)
+,___DEF_SUB(___X158)
+,___DEF_SUB(___X159)
+,___DEF_SUB(___X160)
+,___DEF_SUB(___X161)
+,___DEF_SUB(___X162)
+,___DEF_SUB(___X163)
+,___DEF_SUB(___X164)
+,___DEF_SUB(___X165)
+,___DEF_SUB(___X166)
+,___DEF_SUB(___X167)
+,___DEF_SUB(___X168)
+,___DEF_SUB(___X169)
+,___DEF_SUB(___X170)
+,___DEF_SUB(___X171)
+,___DEF_SUB(___X172)
+,___DEF_SUB(___X173)
+,___DEF_SUB(___X174)
+,___DEF_SUB(___X175)
+,___DEF_SUB(___X176)
+,___DEF_SUB(___X177)
+,___DEF_SUB(___X178)
+,___DEF_SUB(___X179)
+,___DEF_SUB(___X180)
+,___DEF_SUB(___X181)
+,___DEF_SUB(___X182)
+,___DEF_SUB(___X183)
+,___DEF_SUB(___X184)
+,___DEF_SUB(___X185)
+,___DEF_SUB(___X186)
+,___DEF_SUB(___X187)
+,___DEF_SUB(___X188)
+,___DEF_SUB(___X189)
+,___DEF_SUB(___X190)
+,___DEF_SUB(___X191)
+,___DEF_SUB(___X192)
+,___DEF_SUB(___X193)
+,___DEF_SUB(___X194)
+,___DEF_SUB(___X195)
+,___DEF_SUB(___X196)
+,___DEF_SUB(___X197)
+,___DEF_SUB(___X198)
+,___DEF_SUB(___X199)
+,___DEF_SUB(___X200)
+,___DEF_SUB(___X201)
+,___DEF_SUB(___X202)
+,___DEF_SUB(___X203)
+,___DEF_SUB(___X204)
+,___DEF_SUB(___X205)
+,___DEF_SUB(___X206)
+,___DEF_SUB(___X207)
+,___DEF_SUB(___X208)
+,___DEF_SUB(___X209)
+,___DEF_SUB(___X210)
+,___DEF_SUB(___X211)
+,___DEF_SUB(___X212)
+,___DEF_SUB(___X213)
+,___DEF_SUB(___X214)
+,___DEF_SUB(___X215)
+,___DEF_SUB(___X216)
+,___DEF_SUB(___X217)
+,___DEF_SUB(___X218)
+,___DEF_SUB(___X219)
+,___DEF_SUB(___X220)
+,___DEF_SUB(___X221)
+,___DEF_SUB(___X222)
+,___DEF_SUB(___X223)
+,___DEF_SUB(___X224)
+,___DEF_SUB(___X225)
+,___DEF_SUB(___X226)
+,___DEF_SUB(___X227)
+,___DEF_SUB(___X228)
+,___DEF_SUB(___X229)
+,___DEF_SUB(___X230)
+,___DEF_SUB(___X231)
+,___DEF_SUB(___X232)
+,___DEF_SUB(___X233)
+,___DEF_SUB(___X234)
+,___DEF_SUB(___X235)
+,___DEF_SUB(___X236)
+,___DEF_SUB(___X237)
+,___DEF_SUB(___X238)
+,___DEF_SUB(___X239)
+,___DEF_SUB(___X240)
+,___DEF_SUB(___X241)
+,___DEF_SUB(___X242)
+,___DEF_SUB(___X243)
+,___DEF_SUB(___X244)
+,___DEF_SUB(___X245)
+,___DEF_SUB(___X246)
+,___DEF_SUB(___X247)
+,___DEF_SUB(___X248)
+,___DEF_SUB(___X249)
+,___DEF_SUB(___X250)
+,___DEF_SUB(___X251)
+,___DEF_SUB(___X252)
+,___DEF_SUB(___X253)
+,___DEF_SUB(___X254)
+,___DEF_SUB(___X255)
+,___DEF_SUB(___X256)
+,___DEF_SUB(___X257)
+,___DEF_SUB(___X258)
+,___DEF_SUB(___X259)
+,___DEF_SUB(___X260)
+,___DEF_SUB(___X261)
+,___DEF_SUB(___X262)
+,___DEF_SUB(___X263)
+,___DEF_SUB(___X264)
+,___DEF_SUB(___X265)
+,___DEF_SUB(___X266)
+,___DEF_SUB(___X267)
+,___DEF_SUB(___X268)
+,___DEF_SUB(___X269)
+,___DEF_SUB(___X270)
+,___DEF_SUB(___X271)
+,___DEF_SUB(___X272)
+,___DEF_SUB(___X273)
+,___DEF_SUB(___X274)
+,___DEF_SUB(___X275)
+,___DEF_SUB(___X276)
+,___DEF_SUB(___X277)
+,___DEF_SUB(___X278)
+,___DEF_SUB(___X279)
+,___DEF_SUB(___X280)
+,___DEF_SUB(___X281)
+,___DEF_SUB(___X282)
+,___DEF_SUB(___X283)
+,___DEF_SUB(___X284)
+,___DEF_SUB(___X285)
+,___DEF_SUB(___X286)
+,___DEF_SUB(___X287)
+,___DEF_SUB(___X288)
+,___DEF_SUB(___X289)
+,___DEF_SUB(___X290)
+,___DEF_SUB(___X291)
+,___DEF_SUB(___X292)
+,___DEF_SUB(___X293)
+,___DEF_SUB(___X294)
+,___DEF_SUB(___X295)
+,___DEF_SUB(___X296)
+,___DEF_SUB(___X297)
+,___DEF_SUB(___X298)
+,___DEF_SUB(___X299)
+,___DEF_SUB(___X300)
+,___DEF_SUB(___X301)
+,___DEF_SUB(___X302)
+,___DEF_SUB(___X303)
+,___DEF_SUB(___X304)
+,___DEF_SUB(___X305)
+,___DEF_SUB(___X306)
+,___DEF_SUB(___X307)
+,___DEF_SUB(___X308)
+,___DEF_SUB(___X309)
+,___DEF_SUB(___X310)
+,___DEF_SUB(___X311)
+,___DEF_SUB(___X312)
+,___DEF_SUB(___X313)
+,___DEF_SUB(___X314)
+,___DEF_SUB(___X315)
+,___DEF_SUB(___X316)
+,___DEF_SUB(___X317)
+,___DEF_SUB(___X318)
+,___DEF_SUB(___X319)
+,___DEF_SUB(___X320)
+,___DEF_SUB(___X321)
+,___DEF_SUB(___X322)
+,___DEF_SUB(___X323)
+,___DEF_SUB(___X324)
+,___DEF_SUB(___X325)
+,___DEF_SUB(___X326)
+,___DEF_SUB(___X327)
+,___DEF_SUB(___X328)
+,___DEF_SUB(___X329)
+,___DEF_SUB(___X330)
+,___DEF_SUB(___X331)
+,___DEF_SUB(___X332)
+,___DEF_SUB(___X333)
+,___DEF_SUB(___X334)
+,___DEF_SUB(___X335)
+,___DEF_SUB(___X336)
+,___DEF_SUB(___X337)
+,___DEF_SUB(___X338)
+,___DEF_SUB(___X339)
+,___DEF_SUB(___X340)
+,___DEF_SUB(___X341)
+,___DEF_SUB(___X342)
+,___DEF_SUB(___X343)
+,___DEF_SUB(___X344)
+,___DEF_SUB(___X345)
+,___DEF_SUB(___X346)
+,___DEF_SUB(___X347)
+,___DEF_SUB(___X348)
+,___DEF_SUB(___X349)
+,___DEF_SUB(___X350)
+,___DEF_SUB(___X351)
+,___DEF_SUB(___X352)
+,___DEF_SUB(___X353)
+,___DEF_SUB(___X354)
+,___DEF_SUB(___X355)
+,___DEF_SUB(___X356)
+,___DEF_SUB(___X357)
+,___DEF_SUB(___X358)
+,___DEF_SUB(___X359)
+,___DEF_SUB(___X360)
+,___DEF_SUB(___X361)
+,___DEF_SUB(___X362)
+,___DEF_SUB(___X363)
+,___DEF_SUB(___X364)
+,___DEF_SUB(___X365)
+,___DEF_SUB(___X366)
+,___DEF_SUB(___X367)
+,___DEF_SUB(___X368)
+,___DEF_SUB(___X369)
+,___DEF_SUB(___X370)
+,___DEF_SUB(___X371)
+,___DEF_SUB(___X372)
+,___DEF_SUB(___X373)
+,___DEF_SUB(___X374)
+,___DEF_SUB(___X375)
+,___DEF_SUB(___X376)
+,___DEF_SUB(___X377)
+,___DEF_SUB(___X378)
+,___DEF_SUB(___X379)
+,___DEF_SUB(___X380)
+,___DEF_SUB(___X381)
+,___DEF_SUB(___X382)
+,___DEF_SUB(___X383)
+,___DEF_SUB(___X384)
+,___DEF_SUB(___X385)
+,___DEF_SUB(___X386)
+,___DEF_SUB(___X387)
+,___DEF_SUB(___X388)
+,___DEF_SUB(___X389)
+,___DEF_SUB(___X390)
+,___DEF_SUB(___X391)
+,___DEF_SUB(___X392)
+,___DEF_SUB(___X393)
+,___DEF_SUB(___X394)
+,___DEF_SUB(___X395)
+,___DEF_SUB(___X396)
+,___DEF_SUB(___X397)
+,___DEF_SUB(___X398)
+,___DEF_SUB(___X399)
+,___DEF_SUB(___X400)
+,___DEF_SUB(___X401)
+,___DEF_SUB(___X402)
+,___DEF_SUB(___X403)
+,___DEF_SUB(___X404)
+,___DEF_SUB(___X405)
+,___DEF_SUB(___X406)
+,___DEF_SUB(___X407)
+,___DEF_SUB(___X408)
+,___DEF_SUB(___X409)
+,___DEF_SUB(___X410)
+,___DEF_SUB(___X411)
+,___DEF_SUB(___X412)
+,___DEF_SUB(___X413)
+,___DEF_SUB(___X414)
+,___DEF_SUB(___X415)
+,___DEF_SUB(___X416)
+,___DEF_SUB(___X417)
+,___DEF_SUB(___X418)
+,___DEF_SUB(___X419)
+,___DEF_SUB(___X420)
+,___DEF_SUB(___X421)
+,___DEF_SUB(___X422)
+,___DEF_SUB(___X423)
+,___DEF_SUB(___X424)
+,___DEF_SUB(___X425)
+,___DEF_SUB(___X426)
+,___DEF_SUB(___X427)
+,___DEF_SUB(___X428)
+,___DEF_SUB(___X429)
+,___DEF_SUB(___X430)
+,___DEF_SUB(___X431)
+,___DEF_SUB(___X432)
+,___DEF_SUB(___X433)
+___END_SUB
+
+
+
+#undef ___MD_ALL
+#define ___MD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___MR_ALL
+#define ___MR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___MW_ALL
+#define ___MW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_M_COD
+___BEGIN_M_HLBL
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L1_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L2_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L3_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L4_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L5_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L6_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L7_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L8_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L9_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L10_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L11_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L12_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L13_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L14_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L15_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L16_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L17_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L18_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L19_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L20_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L21_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L22_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L23_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L24_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L25_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L26_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L27_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L28_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L29_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L30_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L31_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L32_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L33_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L34_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L35_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L36_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L37_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L38_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L39_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L40_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L41_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L42_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L43_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L44_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L45_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L46_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L47_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L48_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L49_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L50_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L51_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L52_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L53_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L54_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L55_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L56_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L57_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L58_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L59_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L60_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L61_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L62_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L63_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L64_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L65_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L66_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L67_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L68_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L69_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L70_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L71_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L72_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L73_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L74_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L75_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L76_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L77_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L78_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L79_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L80_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L81_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L82_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L83_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L84_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L85_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L86_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL(___L87_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L5_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L6_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L7_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L8_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L5_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L6_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L7_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L8_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_M_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___DEF_M_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___DEF_M_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___DEF_M_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___END_M_HLBL
+
+___BEGIN_M_SW
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_
+#undef ___PH_LBL0
+#define ___PH_LBL0 1
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L1_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L2_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L3_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L4_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L5_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L6_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L7_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L8_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L9_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L10_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L11_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L12_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L13_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L14_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L15_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L16_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L17_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L18_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L19_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L20_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L21_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L22_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L23_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L24_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L25_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L26_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L27_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L28_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L29_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L30_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L31_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L32_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L33_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L34_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L35_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L36_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L37_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L38_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L39_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L40_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L41_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L42_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L43_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L44_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L45_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L46_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L47_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L48_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L49_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L50_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L51_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L52_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L53_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L54_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L55_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L56_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L57_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L58_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L59_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L60_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L61_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L62_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L63_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L64_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L65_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L66_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L67_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L68_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L69_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L70_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L71_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L72_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L73_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L74_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L75_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L76_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L77_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L78_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L79_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L80_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L81_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L82_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L83_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L84_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L85_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L86_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_P_HLBL(___L87_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(0,0,0,0)
+___DEF_GLBL(___L_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_STK(1,___R0)
+   ___SET_R1(___SYM_foundation_2e_dialect)
+   ___ADJFP(4)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),82,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(2,___L2_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___SYM_jazz)
+   ___SET_R0(___LBL(3))
+   ___JUMPGLOSAFE(___SET_NARGS(1),82,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(3,___L3_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___SYM_jazz_2e_presence)
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),82,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(4,___L4_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_STK(1,___SYM_jazz_2e_presence_2e_register_2e_stub)
+   ___SET_R3(___CNS(0))
+   ___SET_R2(___NUL)
+   ___SET_R1(___SYM_public)
+   ___SET_R0(___LBL(5))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),86,___G_jazz_3a_register_2d_module)
+___DEF_SLBL(5,___L5_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___BOX(___FAL))
+   ___SET_STK(-2,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(-2),84)
+   ___ADD_CLO_ELEM(0,___R1)
+   ___END_SETUP_CLO(1)
+   ___SET_GLO(59,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload,___STK(-2))
+   ___SET_R1(___BOX(___FAL))
+   ___SET_STK(-2,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(-2),80)
+   ___ADD_CLO_ELEM(0,___R1)
+   ___END_SETUP_CLO(1)
+   ___SET_GLO(60,___G_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub_3a_autoload,___STK(-2))
+   ___SET_R1(___BOX(___FAL))
+   ___SET_STK(-2,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(-2),76)
+   ___ADD_CLO_ELEM(0,___R1)
+   ___END_SETUP_CLO(1)
+   ___SET_GLO(61,___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload,___STK(-2))
+   ___SET_R1(___BOX(___FAL))
+   ___SET_STK(-2,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(-2),72)
+   ___ADD_CLO_ELEM(0,___R1)
+   ___END_SETUP_CLO(1)
+   ___SET_GLO(62,___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload,___STK(-2))
+   ___SET_GLO(63,___G_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3,___FAL)
+   ___SET_R2(___LBL(71))
+   ___SET_R1(___SYM_find_2d_object)
+   ___SET_R0(___LBL(7))
+   ___CHECK_HEAP(6,4096)
+___DEF_SLBL(6,___L6_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___JUMPGLOSAFE(___SET_NARGS(2),76,___G_jazz_3a_cache_2d_dispatch)
+___DEF_SLBL(7,___L7_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(63,___G_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3,___R1)
+   ___SET_GLO(66,___G_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6,___FAL)
+   ___SET_R2(___LBL(70))
+   ___SET_R1(___SYM_require_2d_object)
+   ___SET_R0(___LBL(8))
+   ___JUMPGLOSAFE(___SET_NARGS(2),76,___G_jazz_3a_cache_2d_dispatch)
+___DEF_SLBL(8,___L8_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(66,___G_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6,___R1)
+   ___SET_GLO(65,___G_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9,___FAL)
+   ___SET_R2(___LBL(69))
+   ___SET_R1(___SYM_load_2d_object)
+   ___SET_R0(___LBL(9))
+   ___JUMPGLOSAFE(___SET_NARGS(2),76,___G_jazz_3a_cache_2d_dispatch)
+___DEF_SLBL(9,___L9_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(65,___G_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9,___R1)
+   ___SET_GLO(64,___G_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14,___FAL)
+   ___SET_R2(___LBL(68))
+   ___SET_R1(___SYM_get_2d_manifest)
+   ___SET_R0(___LBL(10))
+   ___JUMPGLOSAFE(___SET_NARGS(2),76,___G_jazz_3a_cache_2d_dispatch)
+___DEF_SLBL(10,___L10_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(64,___G_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14,___R1)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+   ___SET_R0(___LBL(11))
+   ___JUMPGLOSAFE(___SET_NARGS(1),80,___G_jazz_3a_global_2d_bound_3f_)
+___DEF_SLBL(11,___L11_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF(___NOT(___NOTFALSEP(___R1)))
+   ___GOTO(___L101_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+   ___SET_R0(___LBL(12))
+   ___JUMPGLOSAFE(___SET_NARGS(1),81,___G_jazz_3a_global_2d_ref)
+___DEF_SLBL(12,___L12_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___GOTO(___L88_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(13,___L13_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_GLBL(___L88_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(45,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class,___FIX(11L)))
+   ___SET_GLO(46,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class_21_level,___R1)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+   ___SET_R0(___LBL(14))
+   ___JUMPGLOSAFE(___SET_NARGS(1),80,___G_jazz_3a_global_2d_bound_3f_)
+___DEF_SLBL(14,___L14_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L100_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___SET_STK(1,___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+   ___SET_R0(___LBL(15))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(0),62,___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload)
+___DEF_SLBL(15,___L15_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R2(___R1)
+   ___SET_R3(___NUL)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+   ___SET_R0(___LBL(16))
+   ___ADJFP(-3)
+   ___JUMPGLOSAFE(___SET_NARGS(4),83,___G_jazz_3a_new_2d_class)
+___DEF_SLBL(16,___L16_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___GOTO(___L89_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(17,___L17_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_GLBL(___L89_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(39,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface,___FIX(11L)))
+   ___SET_GLO(40,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_21_level,___R1)
+   ___SET_GLO(41,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class,___PRC(90))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class)
+   ___SET_R2(___SYM_local_2d_class)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+   ___SET_R0(___LBL(18))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(18,___L18_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(42,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class_21_node,___R1)
+   ___SET_GLO(43,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class,___PRC(92))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class)
+   ___SET_R2(___SYM_remote_2d_class)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+   ___SET_R0(___LBL(19))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(19,___L19_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(44,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class_21_node,___R1)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R0(___LBL(20))
+   ___JUMPGLOSAFE(___SET_NARGS(1),80,___G_jazz_3a_global_2d_bound_3f_)
+___DEF_SLBL(20,___L20_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF(___NOT(___NOTFALSEP(___R1)))
+   ___GOTO(___L99_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R0(___LBL(21))
+   ___JUMPGLOSAFE(___SET_NARGS(1),81,___G_jazz_3a_global_2d_ref)
+___DEF_SLBL(21,___L21_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___GOTO(___L90_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(22,___L22_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_GLBL(___L90_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(37,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub,___FIX(7L)))
+   ___SET_GLO(38,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_21_rank,___R1)
+   ___SET_GLO(47,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object,___PRC(94))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+   ___SET_R2(___SYM_find_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R0(___LBL(23))
+   ___JUMPGLOSAFE(___SET_NARGS(3),75,___G_jazz_3a_add_2d_virtual_2d_method)
+___DEF_SLBL(23,___L23_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(48,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object_21_rank,___R1)
+   ___SET_GLO(55,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object,___PRC(99))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+   ___SET_R2(___SYM_require_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R0(___LBL(24))
+   ___JUMPGLOSAFE(___SET_NARGS(3),75,___G_jazz_3a_add_2d_virtual_2d_method)
+___DEF_SLBL(24,___L24_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(56,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object_21_rank,___R1)
+   ___SET_GLO(51,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object,___PRC(104))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+   ___SET_R2(___SYM_load_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R0(___LBL(25))
+   ___JUMPGLOSAFE(___SET_NARGS(3),75,___G_jazz_3a_add_2d_virtual_2d_method)
+___DEF_SLBL(25,___L25_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(52,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object_21_rank,___R1)
+   ___SET_GLO(53,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object,___PRC(109))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+   ___SET_R2(___SYM_register_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R0(___LBL(26))
+   ___JUMPGLOSAFE(___SET_NARGS(3),75,___G_jazz_3a_add_2d_virtual_2d_method)
+___DEF_SLBL(26,___L26_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(54,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object_21_rank,___R1)
+   ___SET_GLO(57,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object,___PRC(114))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+   ___SET_R2(___SYM_unregister_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R0(___LBL(27))
+   ___JUMPGLOSAFE(___SET_NARGS(3),75,___G_jazz_3a_add_2d_virtual_2d_method)
+___DEF_SLBL(27,___L27_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(58,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object_21_rank,___R1)
+   ___SET_GLO(49,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest,___PRC(119))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+   ___SET_R2(___SYM_get_2d_manifest)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R0(___LBL(28))
+   ___JUMPGLOSAFE(___SET_NARGS(3),75,___G_jazz_3a_add_2d_virtual_2d_method)
+___DEF_SLBL(28,___L28_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(50,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest_21_rank,___R1)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+   ___SET_R0(___LBL(29))
+   ___JUMPGLOSAFE(___SET_NARGS(1),80,___G_jazz_3a_global_2d_bound_3f_)
+___DEF_SLBL(29,___L29_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF(___NOT(___NOTFALSEP(___R1)))
+   ___GOTO(___L98_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+   ___SET_R0(___LBL(30))
+   ___JUMPGLOSAFE(___SET_NARGS(1),81,___G_jazz_3a_global_2d_ref)
+___DEF_SLBL(30,___L30_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___GOTO(___L91_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(31,___L31_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_GLBL(___L91_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(17,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class,___FIX(11L)))
+   ___SET_GLO(18,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class_21_level,___R1)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(32))
+   ___JUMPGLOSAFE(___SET_NARGS(1),80,___G_jazz_3a_global_2d_bound_3f_)
+___DEF_SLBL(32,___L32_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L97_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___SET_STK(1,___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+   ___SET_R0(___LBL(33))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(0),59,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload)
+___DEF_SLBL(33,___L33_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R2(___R1)
+   ___SET_R3(___CONS(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub,___NUL))
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(35))
+   ___ADJFP(-3)
+   ___CHECK_HEAP(34,4096)
+___DEF_SLBL(34,___L34_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___JUMPGLOSAFE(___SET_NARGS(4),83,___G_jazz_3a_new_2d_class)
+___DEF_SLBL(35,___L35_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___GOTO(___L92_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(36,___L36_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_GLBL(___L92_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(1,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy,___FIX(11L)))
+   ___SET_GLO(2,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_21_level,___R1)
+   ___SET_GLO(13,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference,___PRC(124))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+   ___SET_R2(___SYM_stub_2d_reference)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(37))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(37,___L37_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(14,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference_21_node,___R1)
+   ___SET_GLO(3,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object,___PRC(130))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+   ___SET_R2(___SYM_find_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(38))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(38,___L38_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(4,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object_21_node,___R1)
+   ___SET_GLO(11,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object,___PRC(136))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+   ___SET_R2(___SYM_require_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(39))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(39,___L39_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(12,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object_21_node,___R1)
+   ___SET_GLO(7,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object,___PRC(142))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+   ___SET_R2(___SYM_load_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(40))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(40,___L40_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(8,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object_21_node,___R1)
+   ___SET_GLO(9,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,___PRC(148))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___SET_R2(___SYM_register_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(41))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(41,___L41_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(10,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object_21_node,___R1)
+   ___SET_GLO(15,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,___PRC(158))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___SET_R2(___SYM_unregister_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(42))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(42,___L42_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(16,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object_21_node,___R1)
+   ___SET_GLO(5,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest,___PRC(168))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+   ___SET_R2(___SYM_get_2d_manifest)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(43))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(43,___L43_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(6,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest_21_node,___R1)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+   ___SET_R0(___LBL(44))
+   ___JUMPGLOSAFE(___SET_NARGS(1),80,___G_jazz_3a_global_2d_bound_3f_)
+___DEF_SLBL(44,___L44_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF(___NOT(___NOTFALSEP(___R1)))
+   ___GOTO(___L96_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+   ___SET_R0(___LBL(45))
+   ___JUMPGLOSAFE(___SET_NARGS(1),81,___G_jazz_3a_global_2d_ref)
+___DEF_SLBL(45,___L45_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___GOTO(___L93_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(46,___L46_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_GLBL(___L93_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(35,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class,___FIX(11L)))
+   ___SET_GLO(36,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class_21_level,___R1)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(47))
+   ___JUMPGLOSAFE(___SET_NARGS(1),80,___G_jazz_3a_global_2d_bound_3f_)
+___DEF_SLBL(47,___L47_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF(___NOTFALSEP(___R1))
+   ___GOTO(___L95_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___SET_STK(1,___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+   ___SET_R0(___LBL(48))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(0),61,___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload)
+___DEF_SLBL(48,___L48_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R2(___R1)
+   ___SET_R3(___CONS(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub,___NUL))
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(50))
+   ___ADJFP(-3)
+   ___CHECK_HEAP(49,4096)
+___DEF_SLBL(49,___L49_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___JUMPGLOSAFE(___SET_NARGS(4),83,___G_jazz_3a_new_2d_class)
+___DEF_SLBL(50,___L50_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___GOTO(___L94_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(51,___L51_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_GLBL(___L94_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(19,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy,___FIX(11L)))
+   ___SET_GLO(20,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_21_level,___R1)
+   ___SET_GLO(31,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference,___PRC(174))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+   ___SET_R2(___SYM_stub_2d_reference)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(52))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(52,___L52_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(32,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference_21_node,___R1)
+   ___SET_GLO(21,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object,___PRC(180))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+   ___SET_R2(___SYM_find_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(53))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(53,___L53_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(22,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object_21_node,___R1)
+   ___SET_GLO(29,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object,___PRC(185))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+   ___SET_R2(___SYM_require_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(54))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(54,___L54_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(30,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object_21_node,___R1)
+   ___SET_GLO(25,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object,___PRC(190))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+   ___SET_R2(___SYM_load_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(55))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(55,___L55_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(26,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object_21_node,___R1)
+   ___SET_GLO(27,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object,___PRC(195))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+   ___SET_R2(___SYM_register_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(56))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(56,___L56_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(28,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object_21_node,___R1)
+   ___SET_GLO(33,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object,___PRC(198))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+   ___SET_R2(___SYM_unregister_2d_object)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(57))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(57,___L57_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(34,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object_21_node,___R1)
+   ___SET_GLO(23,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest,___PRC(201))
+   ___SET_R3(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+   ___SET_R2(___SYM_get_2d_manifest)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(58))
+   ___JUMPGLOSAFE(___SET_NARGS(3),74,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(58,___L58_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_GLO(24,___G_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest_21_node,___R1)
+   ___SET_R1(___VOID)
+   ___POLL(59)
+___DEF_SLBL(59,___L59_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___ADJFP(-4)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_GLBL(___L95_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___SET_R0(___LBL(51))
+   ___JUMPGLOSAFE(___SET_NARGS(1),81,___G_jazz_3a_global_2d_ref)
+___DEF_GLBL(___L96_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(60))
+   ___JUMPGLOSAFE(___SET_NARGS(0),61,___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload)
+___DEF_SLBL(60,___L60_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___VECTORREF(___R1,___FIX(0L)))
+   ___SET_STK(1,___VECTORREF(___R1,___FIX(0L)))
+   ___SET_R0(___LBL(61))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(0),61,___G_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy_3a_autoload)
+___DEF_SLBL(61,___L61_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R2(___VECTORREF(___R1,___FIX(0L)))
+   ___SET_R3(___NUL)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class)
+   ___SET_R0(___LBL(46))
+   ___ADJFP(-3)
+   ___JUMPGLOSAFE(___SET_NARGS(4),83,___G_jazz_3a_new_2d_class)
+___DEF_GLBL(___L97_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___SET_R0(___LBL(36))
+   ___JUMPGLOSAFE(___SET_NARGS(1),81,___G_jazz_3a_global_2d_ref)
+___DEF_GLBL(___L98_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(62))
+   ___JUMPGLOSAFE(___SET_NARGS(0),59,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload)
+___DEF_SLBL(62,___L62_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___VECTORREF(___R1,___FIX(0L)))
+   ___SET_STK(1,___VECTORREF(___R1,___FIX(0L)))
+   ___SET_R0(___LBL(63))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(0),59,___G_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_autoload)
+___DEF_SLBL(63,___L63_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R2(___VECTORREF(___R1,___FIX(0L)))
+   ___SET_R3(___NUL)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class)
+   ___SET_R0(___LBL(31))
+   ___ADJFP(-3)
+   ___JUMPGLOSAFE(___SET_NARGS(4),83,___G_jazz_3a_new_2d_class)
+___DEF_GLBL(___L99_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(64))
+   ___JUMPGLOSAFE(___SET_NARGS(0),60,___G_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub_3a_autoload)
+___DEF_SLBL(64,___L64_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R3(___CONS(___R1,___NUL))
+   ___SET_R2(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+   ___SET_R0(___LBL(22))
+   ___CHECK_HEAP(65,4096)
+___DEF_SLBL(65,___L65_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___JUMPGLOSAFE(___SET_NARGS(3),84,___G_jazz_3a_new_2d_interface)
+___DEF_GLBL(___L100_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface)
+   ___SET_R0(___LBL(17))
+   ___JUMPGLOSAFE(___SET_NARGS(1),81,___G_jazz_3a_global_2d_ref)
+___DEF_GLBL(___L101_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(66))
+   ___JUMPGLOSAFE(___SET_NARGS(0),62,___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload)
+___DEF_SLBL(66,___L66_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___VECTORREF(___R1,___FIX(0L)))
+   ___SET_STK(1,___VECTORREF(___R1,___FIX(0L)))
+   ___SET_R0(___LBL(67))
+   ___ADJFP(4)
+   ___JUMPGLOSAFE(___SET_NARGS(0),62,___G_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface_3a_autoload)
+___DEF_SLBL(67,___L67_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R2(___VECTORREF(___R1,___FIX(0L)))
+   ___SET_R3(___NUL)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class)
+   ___SET_R0(___LBL(13))
+   ___ADJFP(-3)
+   ___JUMPGLOSAFE(___SET_NARGS(4),83,___G_jazz_3a_new_2d_class)
+___DEF_SLBL(68,___L68_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(68,1,0,0)
+   ___SET_GLO(64,___G_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14,___R1)
+   ___SET_R1(___VOID)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(69,___L69_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(69,1,0,0)
+   ___SET_GLO(65,___G_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9,___R1)
+   ___SET_R1(___VOID)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(70,___L70_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(70,1,0,0)
+   ___SET_GLO(66,___G_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6,___R1)
+   ___SET_R1(___VOID)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(71,___L71_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(71,1,0,0)
+   ___SET_GLO(63,___G_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3,___R1)
+   ___SET_R1(___VOID)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(72,___L72_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(72,0,0,0)
+   ___SET_R3(___CLO(___R4,1))
+   ___IF(___NOTFALSEP(___UNBOX(___R3)))
+   ___GOTO(___L102_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___GOTO(___L103_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(73,___L73_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___CLO(___STK(-6),1))
+   ___SETBOX(___R0,___TRU)
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L102_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface_3a_Stub_2d_Interface)
+   ___POLL(74)
+___DEF_SLBL(74,___L74_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L103_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R4)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface)
+   ___ADJFP(8)
+   ___POLL(75)
+___DEF_SLBL(75,___L75_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(73))
+   ___JUMPGLOSAFE(___SET_NARGS(1),82,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(76,___L76_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(76,0,0,0)
+   ___SET_R3(___CLO(___R4,1))
+   ___IF(___NOTFALSEP(___UNBOX(___R3)))
+   ___GOTO(___L104_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___GOTO(___L105_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(77,___L77_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___CLO(___STK(-6),1))
+   ___SETBOX(___R0,___TRU)
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L104_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy_3a_Remote_2d_Proxy)
+   ___POLL(78)
+___DEF_SLBL(78,___L78_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L105_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R4)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy)
+   ___ADJFP(8)
+   ___POLL(79)
+___DEF_SLBL(79,___L79_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(77))
+   ___JUMPGLOSAFE(___SET_NARGS(1),82,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(80,___L80_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(80,0,0,0)
+   ___SET_R3(___CLO(___R4,1))
+   ___IF(___NOTFALSEP(___UNBOX(___R3)))
+   ___GOTO(___L106_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___GOTO(___L107_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(81,___L81_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___CLO(___STK(-6),1))
+   ___SETBOX(___R0,___TRU)
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L106_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub_3a_Remotable_2d_Stub)
+   ___POLL(82)
+___DEF_SLBL(82,___L82_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L107_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R4)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub)
+   ___ADJFP(8)
+   ___POLL(83)
+___DEF_SLBL(83,___L83_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(81))
+   ___JUMPGLOSAFE(___SET_NARGS(1),82,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(84,___L84_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(84,0,0,0)
+   ___SET_R3(___CLO(___R4,1))
+   ___IF(___NOTFALSEP(___UNBOX(___R3)))
+   ___GOTO(___L108_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___END_IF
+   ___GOTO(___L109_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+___DEF_SLBL(85,___L85_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___CLO(___STK(-6),1))
+   ___SETBOX(___R0,___TRU)
+   ___SET_R0(___STK(-7))
+   ___ADJFP(-8)
+___DEF_GLBL(___L108_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy)
+   ___POLL(86)
+___DEF_SLBL(86,___L86_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_GLBL(___L109_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R4)
+   ___SET_R1(___SYM_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy)
+   ___ADJFP(8)
+   ___POLL(87)
+___DEF_SLBL(87,___L87_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_)
+   ___SET_R0(___LBL(85))
+   ___JUMPGLOSAFE(___SET_NARGS(1),82,___G_jazz_3a_load_2d_unit)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class
+#undef ___PH_LBL0
+#define ___PH_LBL0 90
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class
+#undef ___PH_LBL0
+#define ___PH_LBL0 92
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 94
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+   ___IF_NARGS_EQ(1,___SET_R2(___NUL))
+   ___GET_REST(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(9,___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R3(___R2)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_find_2d_object)
+   ___ADJFP(9)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(4),77,___G_jazz_3a_call_2d_into_2d_abstract)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 99
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+   ___IF_NARGS_EQ(1,___SET_R2(___NUL))
+   ___GET_REST(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(9,___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R3(___R2)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_require_2d_object)
+   ___ADJFP(9)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(4),77,___G_jazz_3a_call_2d_into_2d_abstract)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 104
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+   ___IF_NARGS_EQ(1,___SET_R2(___NUL))
+   ___GET_REST(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(9,___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R3(___R2)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_load_2d_object)
+   ___ADJFP(9)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(4),77,___G_jazz_3a_call_2d_into_2d_abstract)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 109
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+   ___IF_NARGS_EQ(1,___SET_R2(___NUL))
+   ___GET_REST(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(9,___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R3(___R2)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_register_2d_object)
+   ___ADJFP(9)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(4),77,___G_jazz_3a_call_2d_into_2d_abstract)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 114
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+   ___IF_NARGS_EQ(1,___SET_R2(___NUL))
+   ___GET_REST(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(9,___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R3(___R2)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_unregister_2d_object)
+   ___ADJFP(9)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(4),77,___G_jazz_3a_call_2d_into_2d_abstract)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest
+#undef ___PH_LBL0
+#define ___PH_LBL0 119
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+   ___IF_NARGS_EQ(1,___SET_R2(___NUL))
+   ___GET_REST(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(9,___SYM_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___SET_R3(___R2)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_get_2d_manifest)
+   ___ADJFP(9)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(4),77,___G_jazz_3a_call_2d_into_2d_abstract)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference
+#undef ___PH_LBL0
+#define ___PH_LBL0 124
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___DEF_P_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R1(___LBL(4))
+   ___SET_R2(___CNS(15))
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(2),85,___G_jazz_3a_new_2d_runtime_2d_reference)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(4,___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(4,0,0,0)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 130
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___DEF_P_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+   ___SET_R3(___VECTORREF(___R1,___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_R1(___R3)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),63,___G_jazz_2f_presence_2f_register_2f_stub__find_2d_object_21_d_5e_3)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+   ___SET_R2(___STK(-5))
+   ___SET_STK(-3,___R1)
+   ___SET_R1(___STK(-4))
+   ___SET_R0(___LBL(3))
+   ___JUMPGENSAFE(___SET_NARGS(2),___STK(-3))
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 136
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___DEF_P_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+   ___SET_R3(___VECTORREF(___R1,___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_R1(___R3)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),66,___G_jazz_2f_presence_2f_register_2f_stub__require_2d_object_21_d_5e_6)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+   ___SET_R2(___STK(-5))
+   ___SET_STK(-3,___R1)
+   ___SET_R1(___STK(-4))
+   ___SET_R0(___LBL(3))
+   ___JUMPGENSAFE(___SET_NARGS(2),___STK(-3))
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 142
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___DEF_P_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+   ___IF_NARGS_EQ(3,___NOTHING)
+   ___WRONG_NARGS(0,3,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+   ___SET_R4(___VECTORREF(___R1,___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_STK(5,___R4)
+   ___SET_R1(___R4)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),65,___G_jazz_2f_presence_2f_register_2f_stub__load_2d_object_21_d_5e_9)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+   ___SET_R3(___STK(-4))
+   ___SET_R2(___STK(-5))
+   ___SET_STK(-2,___R1)
+   ___SET_R1(___STK(-3))
+   ___SET_R0(___LBL(3))
+   ___JUMPGENSAFE(___SET_NARGS(3),___STK(-2))
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 148
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L5_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L6_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L7_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L8_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___IF_NARGS_EQ(3,___PUSH(___R1) ___SET_R1(___R2) ___SET_R2(___R3) ___SET_R3(___NUL))
+   ___GET_REST(0,3,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_STK(5,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(5),3)
+   ___ADD_CLO_ELEM(0,___STK(0))
+   ___END_SETUP_CLO(1)
+   ___SET_STK(8,___STK(5))
+   ___SET_R0(___LBL(2))
+   ___ADJFP(8)
+   ___CHECK_HEAP(1,4096)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___JUMPPRM(___SET_NARGS(4),___PRM_apply)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(2))
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(3,0,0,0)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R4)
+   ___SET_R0(___CLO(___R4,1))
+   ___SET_R1(___VECTORREF(___R0,___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset))
+   ___ADJFP(8)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___SET_R0(___LBL(5))
+   ___JUMPGLOSAFE(___SET_NARGS(1),78,___G_jazz_3a_class_2d_of)
+___DEF_SLBL(5,___L5_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___SET_R2(___SYM_register_2d_object)
+   ___SET_R0(___LBL(6))
+   ___JUMPGLOSAFE(___SET_NARGS(2),79,___G_jazz_3a_dispatch)
+___DEF_SLBL(6,___L6_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___SET_R3(___STK(-6))
+   ___SET_R0(___CLO(___STK(-5),1))
+   ___SET_R2(___VECTORREF(___R0,___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset))
+   ___SET_R0(___LBL(7))
+   ___JUMPPRM(___SET_NARGS(3),___PRM_apply)
+___DEF_SLBL(7,___L7_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 158
+#undef ___PD_ALL
+#define ___PD_ALL ___D_HEAP ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_HEAP ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_HEAP ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L5_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L6_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L7_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L8_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___IF_NARGS_EQ(2,___SET_R3(___NUL))
+   ___GET_REST(0,2,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_STK(5,___ALLOC_CLO(1UL))
+   ___BEGIN_SETUP_CLO(1,___STK(5),3)
+   ___ADD_CLO_ELEM(0,___R1)
+   ___END_SETUP_CLO(1)
+   ___SET_R1(___STK(5))
+   ___SET_R0(___LBL(2))
+   ___ADJFP(8)
+   ___CHECK_HEAP(1,4096)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___JUMPPRM(___SET_NARGS(3),___PRM_apply)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___IF_NARGS_EQ(0,___SET_R1(___NUL))
+   ___GET_REST(3,0,0,0)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R4)
+   ___SET_R0(___CLO(___R4,1))
+   ___SET_R1(___VECTORREF(___R0,___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset))
+   ___ADJFP(8)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___SET_R0(___LBL(5))
+   ___JUMPGLOSAFE(___SET_NARGS(1),78,___G_jazz_3a_class_2d_of)
+___DEF_SLBL(5,___L5_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___SET_R2(___SYM_unregister_2d_object)
+   ___SET_R0(___LBL(6))
+   ___JUMPGLOSAFE(___SET_NARGS(2),79,___G_jazz_3a_dispatch)
+___DEF_SLBL(6,___L6_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___SET_R3(___STK(-6))
+   ___SET_R0(___CLO(___STK(-5),1))
+   ___SET_R2(___VECTORREF(___R0,___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset))
+   ___SET_R0(___LBL(7))
+   ___JUMPPRM(___SET_NARGS(3),___PRM_apply)
+___DEF_SLBL(7,___L7_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest
+#undef ___PH_LBL0
+#define ___PH_LBL0 168
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___DEF_P_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy_3a_Local_2d_Proxy_3a_object_21_offset))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_R1(___R2)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),64,___G_jazz_2f_presence_2f_register_2f_stub__get_2d_manifest_21_d_5e_14)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+   ___SET_STK(-4,___R1)
+   ___SET_R1(___STK(-5))
+   ___SET_R0(___LBL(3))
+   ___JUMPGENSAFE(___SET_NARGS(1),___STK(-4))
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+   ___POLL(4)
+___DEF_SLBL(4,___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference
+#undef ___PH_LBL0
+#define ___PH_LBL0 174
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___DEF_P_HLBL(___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R1(___LBL(4))
+   ___SET_R2(___CNS(19))
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(2),85,___G_jazz_3a_new_2d_runtime_2d_reference)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(4,___L4_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(4,0,0,0)
+   ___SET_R1(___GLO_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 180
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_R3(___R2)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_find_2d_object)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(3),73,___G_jazz_2e_presence_3a_call_2d_remote)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 185
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+   ___IF_NARGS_EQ(2,___NOTHING)
+   ___WRONG_NARGS(0,2,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_R3(___R2)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_require_2d_object)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(3),73,___G_jazz_2e_presence_3a_call_2d_remote)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 190
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+   ___IF_NARGS_EQ(3,___NOTHING)
+   ___WRONG_NARGS(0,3,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_STK(9,___SYM_load_2d_object)
+   ___ADJFP(9)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(4),73,___G_jazz_2e_presence_3a_call_2d_remote)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 195
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+   ___IF_NARGS_EQ(3,___PUSH(___R1) ___SET_R1(___R2) ___SET_R2(___R3) ___SET_R3(___NUL))
+   ___GET_REST(0,3,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_STK(8,___GLO_jazz_2e_presence_3a_call_2d_remote)
+   ___SET_STK(9,___SYM_register_2d_object)
+   ___SET_STK(10,___STK(0))
+   ___SET_R0(___LBL(1))
+   ___ADJFP(10)
+   ___JUMPPRM(___SET_NARGS(6),___PRM_apply)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(2))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object
+#undef ___PH_LBL0
+#define ___PH_LBL0 198
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R3
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+   ___IF_NARGS_EQ(2,___SET_R3(___NUL))
+   ___GET_REST(0,2,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_STK(9,___GLO_jazz_2e_presence_3a_call_2d_remote)
+   ___SET_STK(10,___SYM_unregister_2d_object)
+   ___SET_R0(___LBL(1))
+   ___ADJFP(10)
+   ___JUMPPRM(___SET_NARGS(5),___PRM_apply)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest
+#undef ___PH_LBL0
+#define ___PH_LBL0 201
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___DEF_P_HLBL(___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___DEF_P_HLBL(___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___DEF_P_HLBL(___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_R2(___R1)
+   ___SET_R1(___SYM_get_2d_manifest)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(2),73,___G_jazz_2e_presence_3a_call_2d_remote)
+___DEF_SLBL(2,___L2_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+   ___POLL(3)
+___DEF_SLBL(3,___L3_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest)
+   ___ADJFP(-8)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+___END_M_SW
+___END_M_COD
+
+___BEGIN_LBL
+ ___DEF_LBL_INTRO(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,"bin:jazz.presence.register.stub#",
+___REF_SUB(0),88,0)
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,0,-1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x11L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x11L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,5,0,0x3f11L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x11L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,5,0,0x3f11L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x11L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x11L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x11L))
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,1,-1)
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,1,-1)
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,1,-1)
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,1,-1)
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,0,1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,0,1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,0,1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,0,1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,0,0,0x3fL))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class,0,___REF_SUB(179),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_local_2d_class,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class,0,___REF_SUB(184),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_3a_remote_2d_class,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object,0,___REF_SUB(189),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object,___OFD(___RETI,9,0,0x3f107L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_find_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object,0,___REF_SUB(200),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object,___OFD(___RETI,9,0,0x3f107L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_require_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object,0,___REF_SUB(211),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object,___OFD(___RETI,9,0,0x3f107L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_load_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object,0,___REF_SUB(222),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object,___OFD(___RETI,9,0,0x3f107L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_register_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object,0,___REF_SUB(233),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object,___OFD(___RETI,9,0,0x3f107L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_unregister_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest,0,___REF_SUB(244),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest,___OFD(___RETI,9,0,0x3f107L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_3a_get_2d_manifest,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference,0,___REF_SUB(255),5,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_stub_2d_reference,0,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object,0,___REF_SUB(268),5,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_find_2d_object,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object,0,___REF_SUB(281),5,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_require_2d_object,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object,0,___REF_SUB(294),5,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object,3,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object,___IFD(___RETI,8,0,0x3f1fL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object,___IFD(___RETN,5,0,0x1fL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object,___IFD(___RETN,5,0,0x1fL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_load_2d_object,___IFD(___RETI,8,0,0x3f1fL))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,0,___REF_SUB(307),9,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,4,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,___OFD(___RETI,9,1,0x3f11fL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,___IFD(___RETN,5,1,0x1fL))
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,1,1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_register_2d_object,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,0,___REF_SUB(328),9,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,3,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,1,1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_unregister_2d_object,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest,0,___REF_SUB(349),5,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_3a_get_2d_manifest,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference,0,___REF_SUB(362),5,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_stub_2d_reference,0,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object,0,___REF_SUB(375),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_find_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object,0,___REF_SUB(386),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object,___IFD(___RETN,5,0,0x7L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_require_2d_object,___IFD(___RETI,8,0,0x3f07L))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object,0,___REF_SUB(397),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object,3,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object,___OFD(___RETI,9,0,0x3f10fL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_load_2d_object,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object,0,___REF_SUB(408),2,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object,4,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_register_2d_object,___IFD(___RETN,5,1,0x1fL))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object,0,___REF_SUB(415),2,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object,3,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_unregister_2d_object,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_INTRO(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest,0,___REF_SUB(422),4,0)
+,___DEF_LBL_PROC(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest,1,-1)
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest,___IFD(___RETI,8,0,0x3f03L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest,___IFD(___RETN,5,0,0x3L))
+,___DEF_LBL_RET(___H_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_3a_get_2d_manifest,___IFD(___RETI,8,0,0x3f03L))
+___END_LBL
+
+___BEGIN_OFD
+ ___DEF_OFD(___RETI,9,0)
+               ___GCMAP1(0x3f107L)
+,___DEF_OFD(___RETI,9,0)
+               ___GCMAP1(0x3f107L)
+,___DEF_OFD(___RETI,9,0)
+               ___GCMAP1(0x3f107L)
+,___DEF_OFD(___RETI,9,0)
+               ___GCMAP1(0x3f107L)
+,___DEF_OFD(___RETI,9,0)
+               ___GCMAP1(0x3f107L)
+,___DEF_OFD(___RETI,9,0)
+               ___GCMAP1(0x3f107L)
+,___DEF_OFD(___RETI,9,1)
+               ___GCMAP1(0x3f11fL)
+,___DEF_OFD(___RETI,9,0)
+               ___GCMAP1(0x3f10fL)
+___END_OFD
+
+___BEGIN_MOD_PRM
+___DEF_MOD_PRM(0,___G_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,1)
+___END_MOD_PRM
+
+___BEGIN_MOD_C_INIT
+___END_MOD_C_INIT
+
+___BEGIN_MOD_GLO
+___DEF_MOD_GLO(0,___G_bin_3a_jazz_2e_presence_2e_register_2e_stub_23_,1)
+___END_MOD_GLO
+
+___BEGIN_MOD_SYM_KEY
+___DEF_MOD_SYM(0,___S_Register_2d_Local_2d_Proxy,"Register-Local-Proxy")
+___DEF_MOD_SYM(1,___S_Register_2d_Local_2d_Proxy_7e_Class,"Register-Local-Proxy~Class")
+___DEF_MOD_SYM(2,___S_Register_2d_Remote_2d_Proxy,"Register-Remote-Proxy")
+___DEF_MOD_SYM(3,___S_Register_2d_Remote_2d_Proxy_7e_Class,"Register-Remote-Proxy~Class")
+___DEF_MOD_SYM(4,___S_Register_2d_Stub,"Register-Stub")
+___DEF_MOD_SYM(5,___S_Register_2d_Stub_2d_Interface,"Register-Stub-Interface")
+___DEF_MOD_SYM(6,___S_Register_2d_Stub_2d_Interface_7e_Class,"Register-Stub-Interface~Class")
+
+___DEF_MOD_SYM(7,___S_____module_2d_name,"__module-name")
+___DEF_MOD_SYM(8,___S_____name,"__name")
+___DEF_MOD_SYM(9,___S_____object,"__object")
+___DEF_MOD_SYM(10,___S_____rest,"__rest")
+___DEF_MOD_SYM(11,___S_bin_3a_jazz_2e_presence_2e_register_2e_stub,"bin:jazz.presence.register.stub")
+
+___DEF_MOD_SYM(12,___S_find_2d_object,"find-object")
+___DEF_MOD_SYM(13,___S_foundation_2e_dialect,"foundation.dialect")
+___DEF_MOD_SYM(14,___S_get_2d_manifest,"get-manifest")
+___DEF_MOD_SYM(15,___S_jazz,"jazz")
+___DEF_MOD_SYM(16,___S_jazz_2e_presence,"jazz.presence")
+___DEF_MOD_SYM(17,___S_jazz_2e_presence_2e_register_2e_stub,"jazz.presence.register.stub")
+___DEF_MOD_SYM(18,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy,"jazz.presence.register.stub:Register-Local-Proxy")
+
+___DEF_MOD_SYM(19,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Local_2d_Proxy_7e_Class,"jazz.presence.register.stub:Register-Local-Proxy~Class")
+
+___DEF_MOD_SYM(20,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy,"jazz.presence.register.stub:Register-Remote-Proxy")
+
+___DEF_MOD_SYM(21,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Remote_2d_Proxy_7e_Class,"jazz.presence.register.stub:Register-Remote-Proxy~Class")
+
+___DEF_MOD_SYM(22,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub,"jazz.presence.register.stub:Register-Stub")
+
+___DEF_MOD_SYM(23,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface,"jazz.presence.register.stub:Register-Stub-Interface")
+
+___DEF_MOD_SYM(24,___S_jazz_2e_presence_2e_register_2e_stub_3a_Register_2d_Stub_2d_Interface_7e_Class,"jazz.presence.register.stub:Register-Stub-Interface~Class")
+
+___DEF_MOD_SYM(25,___S_jazz_2e_presence_2e_remotable_2e_Local_2d_Proxy,"jazz.presence.remotable.Local-Proxy")
+
+___DEF_MOD_SYM(26,___S_jazz_2e_presence_2e_remotable_2e_Remotable_2d_Stub,"jazz.presence.remotable.Remotable-Stub")
+
+___DEF_MOD_SYM(27,___S_jazz_2e_presence_2e_remotable_2e_Remote_2d_Proxy,"jazz.presence.remotable.Remote-Proxy")
+
+___DEF_MOD_SYM(28,___S_jazz_2e_presence_2e_remotable_2e_Stub_2d_Interface,"jazz.presence.remotable.Stub-Interface")
+
+___DEF_MOD_SYM(29,___S_load_2d_object,"load-object")
+___DEF_MOD_SYM(30,___S_loaded_3f_,"loaded?")
+___DEF_MOD_SYM(31,___S_local_2d_class,"local-class")
+___DEF_MOD_SYM(32,___S_module_2d_private,"module-private")
+___DEF_MOD_SYM(33,___S_public,"public")
+___DEF_MOD_SYM(34,___S_register_2d_object,"register-object")
+___DEF_MOD_SYM(35,___S_remote_2d_class,"remote-class")
+___DEF_MOD_SYM(36,___S_require_2d_object,"require-object")
+___DEF_MOD_SYM(37,___S_rest,"rest")
+___DEF_MOD_SYM(38,___S_self,"self")
+___DEF_MOD_SYM(39,___S_stub_2d_reference,"stub-reference")
+___DEF_MOD_SYM(40,___S_unregister_2d_object,"unregister-object")
+___DEF_MOD_SYM(41,___S_val_5e_10,"val^10")
+___DEF_MOD_SYM(42,___S_val_5e_15,"val^15")
+___DEF_MOD_SYM(43,___S_val_5e_4,"val^4")
+___DEF_MOD_SYM(44,___S_val_5e_7,"val^7")
+___END_MOD_SYM_KEY
+
+#endif

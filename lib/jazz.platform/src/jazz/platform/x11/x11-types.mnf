@@ -1,0 +1,5 @@
+(manifest jazz.platform.x11.x11-types
+
+  (version 208070)
+  (digest "d70855af20bc43f47c18ae60d084348647932258")
+  (references (jazz.platform.types int)))

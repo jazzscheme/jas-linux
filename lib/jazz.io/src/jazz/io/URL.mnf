@@ -1,0 +1,10 @@
+(manifest jazz.io.URL
+
+  (version 208070)
+  (digest "17ee50ee3ce2afe13b066a242836b0b68add840e")
+  (references (jazz.io Pathname (Pathname get-name) (Pathname initialize) (Pathname parse))
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional /= Object-Class find split subseq)
+              (jazz.language.runtime.object (Object print) print-unreadable)
+              (scheme.language.runtime + null? values)))

@@ -1,0 +1,16 @@
+(manifest jazz.network
+
+  (version 208070)
+  (digest "e11514a9b2644da9d8a095299a6df5bf57e0044d")
+  (references (gambit.language.runtime bitwise-ior extract-bit-field open-process read-line u8vector u8vector-ref u8vector?)
+              (jazz.language.runtime.exception error)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional ->string (Sequence sequence-cardinality) cardinality every? find numeric? split subseq upcase)
+              (jazz.language.runtime.kernel command-argument random-integer-65536 vector-memv?)
+              (jazz.language.runtime.object Object (Object object-upcase))
+              (jazz.language.syntax.loop loop)
+              (jazz.network.host.TCP-Client TCP-Client)
+              (jazz.network.host.TCP-Server TCP-Server)
+              (jazz.network.server.Server-Interface Server-Interface)
+              (jazz.network.server.Server-Panel Server-Panel)
+              (scheme.language.runtime + - < = apply assq cdr equal? eqv? integer? list map not number->string string string->number string-length string-ref string? substring values vector-ref)))

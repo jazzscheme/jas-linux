@@ -1,0 +1,8 @@
+(manifest jazz.zlib.foreign
+
+  (version 208070)
+  (digest "b9b5988bf53734423186248355af195e59429318")
+  (references (jazz.foreign.syntax c-code c-enumerant c-external c-function c-include c-structure)
+              (jazz.language.runtime.object allocated freed)
+              (jazz.language.syntax.macros constant prog1)
+              (jazz.platform.types char-string int scheme-object uchar* uint ulong void void*)))

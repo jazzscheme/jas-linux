@@ -1,0 +1,7643 @@
+#ifdef ___LINKER_INFO
+; File: "jazz.c", produced by Gambit v4.8.9
+(
+408009
+(C)
+"bin:jazz.dialect.classes.jazz"
+(("bin:jazz.dialect.classes.jazz"))
+(
+"Allocate"
+"Cast"
+"Category-Declaration"
+"Class-Declaration"
+"Definition-Declaration"
+"Field-Declaration"
+"Generic-Declaration"
+"Hub-Declaration"
+"Interface-Declaration"
+"Jazz-Dialect"
+"Jazz-Walker"
+"Method-Declaration"
+"Node-Declaration"
+"Property-Declaration"
+"Slot-Declaration"
+"Specialize"
+"Specific-Declaration"
+"With-Dynamic-Self"
+"With-Self"
+"abstraction"
+"ascendant"
+"ascendant-base"
+"ascendant-relation"
+"ascendants"
+"bin:jazz.dialect.classes.jazz"
+"body"
+"box^0"
+"class"
+"code"
+"dispatch-types"
+"dynamic?"
+"expansion"
+"expression"
+"foundation.dialect"
+"generic"
+"get-abstraction"
+"get-ascendant"
+"get-ascendant-base"
+"get-ascendant-relation"
+"get-ascendants"
+"get-body"
+"get-class"
+"get-code"
+"get-dispatch-types"
+"get-dynamic?"
+"get-expansion"
+"get-expression"
+"get-generic"
+"get-getter"
+"get-getter-generation"
+"get-getter-name"
+"get-hub-name"
+"get-implementor"
+"get-initialize"
+"get-interfaces"
+"get-metaclass"
+"get-metaclass-explicit?"
+"get-nodes"
+"get-propagation"
+"get-remote"
+"get-root"
+"get-root?"
+"get-setter"
+"get-setter-generation"
+"get-setter-name"
+"get-signature"
+"get-specifier-source"
+"get-synchronized"
+"get-value"
+"get-values"
+"getter"
+"getter-generation"
+"getter-name"
+"hub-name"
+"implementor"
+"initialize"
+"interfaces"
+"jazz.dialect"
+"jazz.dialect.classes.jazz"
+"jazz.dialect.classes.jazz:Allocate"
+"jazz.dialect.classes.jazz:Cast"
+"jazz.dialect.classes.jazz:Category-Declaration"
+"jazz.dialect.classes.jazz:Class-Declaration"
+"jazz.dialect.classes.jazz:Definition-Declaration"
+"jazz.dialect.classes.jazz:Field-Declaration"
+"jazz.dialect.classes.jazz:Generic-Declaration"
+"jazz.dialect.classes.jazz:Hub-Declaration"
+"jazz.dialect.classes.jazz:Interface-Declaration"
+"jazz.dialect.classes.jazz:Jazz-Dialect"
+"jazz.dialect.classes.jazz:Jazz-Walker"
+"jazz.dialect.classes.jazz:Method-Declaration"
+"jazz.dialect.classes.jazz:Node-Declaration"
+"jazz.dialect.classes.jazz:Property-Declaration"
+"jazz.dialect.classes.jazz:Slot-Declaration"
+"jazz.dialect.classes.jazz:Specialize"
+"jazz.dialect.classes.jazz:Specific-Declaration"
+"jazz.dialect.classes.jazz:With-Dynamic-Self"
+"jazz.dialect.classes.jazz:With-Self"
+"jazz.dialect.classes.scheme"
+"jazz.language.runtime.format"
+"jazz.language.runtime.functional"
+"jazz.language.runtime.kernel"
+"jazz.language.runtime.object"
+"jazz:Allocate"
+"jazz:Cast"
+"jazz:Category-Declaration"
+"jazz:Class-Declaration"
+"jazz:Definition-Declaration"
+"jazz:Field-Declaration"
+"jazz:Generic-Declaration"
+"jazz:Hub-Declaration"
+"jazz:Interface-Declaration"
+"jazz:Jazz-Dialect"
+"jazz:Jazz-Walker"
+"jazz:Method-Declaration"
+"jazz:Node-Declaration"
+"jazz:Property-Declaration"
+"jazz:Slot-Declaration"
+"jazz:Specialize"
+"jazz:Specific-Declaration"
+"jazz:With-Dynamic-Self"
+"jazz:With-Self"
+"metaclass"
+"metaclass-explicit?"
+"nextmethod"
+"nodes"
+"others"
+"propagation"
+"protected"
+"remote"
+"rest"
+"root"
+"root?"
+"self"
+"setter"
+"setter-generation"
+"setter-name"
+"signature"
+"specifier-source"
+"synchronized"
+"value"
+"values"
+)
+(
+"expansion"
+"signature"
+"specifier-source"
+)
+(
+"bin:jazz.dialect.classes.jazz#"
+"jazz.dialect.classes.jazz:Allocate"
+"jazz.dialect.classes.jazz:Allocate:class!offset"
+"jazz.dialect.classes.jazz:Allocate:class!slot"
+"jazz.dialect.classes.jazz:Allocate:get-class"
+"jazz.dialect.classes.jazz:Allocate:get-values"
+"jazz.dialect.classes.jazz:Allocate:values!offset"
+"jazz.dialect.classes.jazz:Allocate:values!slot"
+"jazz.dialect.classes.jazz:Cast"
+"jazz.dialect.classes.jazz:Cast:expression!offset"
+"jazz.dialect.classes.jazz:Cast:expression!slot"
+"jazz.dialect.classes.jazz:Cast:get-expression"
+"jazz.dialect.classes.jazz:Category-Declaration"
+"jazz.dialect.classes.jazz:Category-Declaration:get-implementor"
+"jazz.dialect.classes.jazz:Category-Declaration:get-metaclass"
+"jazz.dialect.classes.jazz:Category-Declaration:get-metaclass-explicit?"
+"jazz.dialect.classes.jazz:Category-Declaration:implementor!offset"
+"jazz.dialect.classes.jazz:Category-Declaration:implementor!slot"
+"jazz.dialect.classes.jazz:Category-Declaration:metaclass!offset"
+"jazz.dialect.classes.jazz:Category-Declaration:metaclass!slot"
+"jazz.dialect.classes.jazz:Category-Declaration:metaclass-explicit?!offset"
+"jazz.dialect.classes.jazz:Category-Declaration:metaclass-explicit?!slot"
+"jazz.dialect.classes.jazz:Class-Declaration"
+"jazz.dialect.classes.jazz:Class-Declaration:ascendant!offset"
+"jazz.dialect.classes.jazz:Class-Declaration:ascendant!slot"
+"jazz.dialect.classes.jazz:Class-Declaration:ascendant-base!offset"
+"jazz.dialect.classes.jazz:Class-Declaration:ascendant-base!slot"
+"jazz.dialect.classes.jazz:Class-Declaration:ascendant-relation!offset"
+"jazz.dialect.classes.jazz:Class-Declaration:ascendant-relation!slot"
+"jazz.dialect.classes.jazz:Class-Declaration:get-ascendant"
+"jazz.dialect.classes.jazz:Class-Declaration:get-ascendant-base"
+"jazz.dialect.classes.jazz:Class-Declaration:get-ascendant-relation"
+"jazz.dialect.classes.jazz:Class-Declaration:get-interfaces"
+"jazz.dialect.classes.jazz:Class-Declaration:interfaces!offset"
+"jazz.dialect.classes.jazz:Class-Declaration:interfaces!slot"
+"jazz.dialect.classes.jazz:Definition-Declaration"
+"jazz.dialect.classes.jazz:Definition-Declaration:expansion!offset"
+"jazz.dialect.classes.jazz:Definition-Declaration:expansion!slot"
+"jazz.dialect.classes.jazz:Definition-Declaration:get-expansion"
+"jazz.dialect.classes.jazz:Definition-Declaration:get-signature"
+"jazz.dialect.classes.jazz:Definition-Declaration:get-specifier-source"
+"jazz.dialect.classes.jazz:Definition-Declaration:get-value"
+"jazz.dialect.classes.jazz:Definition-Declaration:initialize"
+"jazz.dialect.classes.jazz:Definition-Declaration:initialize!node"
+"jazz.dialect.classes.jazz:Definition-Declaration:signature!offset"
+"jazz.dialect.classes.jazz:Definition-Declaration:signature!slot"
+"jazz.dialect.classes.jazz:Definition-Declaration:specifier-source!offset"
+"jazz.dialect.classes.jazz:Definition-Declaration:specifier-source!slot"
+"jazz.dialect.classes.jazz:Definition-Declaration:value!offset"
+"jazz.dialect.classes.jazz:Definition-Declaration:value!slot"
+"jazz.dialect.classes.jazz:Field-Declaration"
+"jazz.dialect.classes.jazz:Generic-Declaration"
+"jazz.dialect.classes.jazz:Generic-Declaration:body!offset"
+"jazz.dialect.classes.jazz:Generic-Declaration:body!slot"
+"jazz.dialect.classes.jazz:Generic-Declaration:dispatch-types!offset"
+"jazz.dialect.classes.jazz:Generic-Declaration:dispatch-types!slot"
+"jazz.dialect.classes.jazz:Generic-Declaration:get-body"
+"jazz.dialect.classes.jazz:Generic-Declaration:get-dispatch-types"
+"jazz.dialect.classes.jazz:Generic-Declaration:get-signature"
+"jazz.dialect.classes.jazz:Generic-Declaration:signature!offset"
+"jazz.dialect.classes.jazz:Generic-Declaration:signature!slot"
+"jazz.dialect.classes.jazz:Hub-Declaration"
+"jazz.dialect.classes.jazz:Hub-Declaration:get-nodes"
+"jazz.dialect.classes.jazz:Hub-Declaration:nodes!offset"
+"jazz.dialect.classes.jazz:Hub-Declaration:nodes!slot"
+"jazz.dialect.classes.jazz:Interface-Declaration"
+"jazz.dialect.classes.jazz:Interface-Declaration:ascendants!offset"
+"jazz.dialect.classes.jazz:Interface-Declaration:ascendants!slot"
+"jazz.dialect.classes.jazz:Interface-Declaration:get-ascendants"
+"jazz.dialect.classes.jazz:Jazz-Dialect"
+"jazz.dialect.classes.jazz:Jazz-Walker"
+"jazz.dialect.classes.jazz:Method-Declaration"
+"jazz.dialect.classes.jazz:Method-Declaration:abstraction!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:abstraction!slot"
+"jazz.dialect.classes.jazz:Method-Declaration:body!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:body!slot"
+"jazz.dialect.classes.jazz:Method-Declaration:expansion!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:expansion!slot"
+"jazz.dialect.classes.jazz:Method-Declaration:get-abstraction"
+"jazz.dialect.classes.jazz:Method-Declaration:get-body"
+"jazz.dialect.classes.jazz:Method-Declaration:get-expansion"
+"jazz.dialect.classes.jazz:Method-Declaration:get-propagation"
+"jazz.dialect.classes.jazz:Method-Declaration:get-remote"
+"jazz.dialect.classes.jazz:Method-Declaration:get-root"
+"jazz.dialect.classes.jazz:Method-Declaration:get-signature"
+"jazz.dialect.classes.jazz:Method-Declaration:get-specifier-source"
+"jazz.dialect.classes.jazz:Method-Declaration:get-synchronized"
+"jazz.dialect.classes.jazz:Method-Declaration:propagation!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:propagation!slot"
+"jazz.dialect.classes.jazz:Method-Declaration:remote!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:remote!slot"
+"jazz.dialect.classes.jazz:Method-Declaration:root!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:root!slot"
+"jazz.dialect.classes.jazz:Method-Declaration:signature!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:signature!slot"
+"jazz.dialect.classes.jazz:Method-Declaration:specifier-source!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:specifier-source!slot"
+"jazz.dialect.classes.jazz:Method-Declaration:synchronized!offset"
+"jazz.dialect.classes.jazz:Method-Declaration:synchronized!slot"
+"jazz.dialect.classes.jazz:Node-Declaration"
+"jazz.dialect.classes.jazz:Node-Declaration:get-hub-name"
+"jazz.dialect.classes.jazz:Node-Declaration:get-signature"
+"jazz.dialect.classes.jazz:Node-Declaration:hub-name!offset"
+"jazz.dialect.classes.jazz:Node-Declaration:hub-name!slot"
+"jazz.dialect.classes.jazz:Node-Declaration:signature!offset"
+"jazz.dialect.classes.jazz:Node-Declaration:signature!slot"
+"jazz.dialect.classes.jazz:Property-Declaration"
+"jazz.dialect.classes.jazz:Property-Declaration:get-getter"
+"jazz.dialect.classes.jazz:Property-Declaration:get-setter"
+"jazz.dialect.classes.jazz:Property-Declaration:getter!offset"
+"jazz.dialect.classes.jazz:Property-Declaration:getter!slot"
+"jazz.dialect.classes.jazz:Property-Declaration:setter!offset"
+"jazz.dialect.classes.jazz:Property-Declaration:setter!slot"
+"jazz.dialect.classes.jazz:Slot-Declaration"
+"jazz.dialect.classes.jazz:Slot-Declaration:dynamic?!offset"
+"jazz.dialect.classes.jazz:Slot-Declaration:dynamic?!slot"
+"jazz.dialect.classes.jazz:Slot-Declaration:get-dynamic?"
+"jazz.dialect.classes.jazz:Slot-Declaration:get-getter-generation"
+"jazz.dialect.classes.jazz:Slot-Declaration:get-getter-name"
+"jazz.dialect.classes.jazz:Slot-Declaration:get-initialize"
+"jazz.dialect.classes.jazz:Slot-Declaration:get-setter-generation"
+"jazz.dialect.classes.jazz:Slot-Declaration:get-setter-name"
+"jazz.dialect.classes.jazz:Slot-Declaration:get-specifier-source"
+"jazz.dialect.classes.jazz:Slot-Declaration:getter-generation!offset"
+"jazz.dialect.classes.jazz:Slot-Declaration:getter-generation!slot"
+"jazz.dialect.classes.jazz:Slot-Declaration:getter-name!offset"
+"jazz.dialect.classes.jazz:Slot-Declaration:getter-name!slot"
+"jazz.dialect.classes.jazz:Slot-Declaration:initialize!offset"
+"jazz.dialect.classes.jazz:Slot-Declaration:initialize!slot"
+"jazz.dialect.classes.jazz:Slot-Declaration:setter-generation!offset"
+"jazz.dialect.classes.jazz:Slot-Declaration:setter-generation!slot"
+"jazz.dialect.classes.jazz:Slot-Declaration:setter-name!offset"
+"jazz.dialect.classes.jazz:Slot-Declaration:setter-name!slot"
+"jazz.dialect.classes.jazz:Slot-Declaration:specifier-source!offset"
+"jazz.dialect.classes.jazz:Slot-Declaration:specifier-source!slot"
+"jazz.dialect.classes.jazz:Specialize"
+"jazz.dialect.classes.jazz:Specific-Declaration"
+"jazz.dialect.classes.jazz:Specific-Declaration:body!offset"
+"jazz.dialect.classes.jazz:Specific-Declaration:body!slot"
+"jazz.dialect.classes.jazz:Specific-Declaration:generic!offset"
+"jazz.dialect.classes.jazz:Specific-Declaration:generic!slot"
+"jazz.dialect.classes.jazz:Specific-Declaration:get-body"
+"jazz.dialect.classes.jazz:Specific-Declaration:get-generic"
+"jazz.dialect.classes.jazz:Specific-Declaration:get-root?"
+"jazz.dialect.classes.jazz:Specific-Declaration:get-signature"
+"jazz.dialect.classes.jazz:Specific-Declaration:root?!offset"
+"jazz.dialect.classes.jazz:Specific-Declaration:root?!slot"
+"jazz.dialect.classes.jazz:Specific-Declaration:signature!offset"
+"jazz.dialect.classes.jazz:Specific-Declaration:signature!slot"
+"jazz.dialect.classes.jazz:With-Dynamic-Self"
+"jazz.dialect.classes.jazz:With-Dynamic-Self:body!offset"
+"jazz.dialect.classes.jazz:With-Dynamic-Self:body!slot"
+"jazz.dialect.classes.jazz:With-Dynamic-Self:code!offset"
+"jazz.dialect.classes.jazz:With-Dynamic-Self:code!slot"
+"jazz.dialect.classes.jazz:With-Dynamic-Self:get-body"
+"jazz.dialect.classes.jazz:With-Dynamic-Self:get-code"
+"jazz.dialect.classes.jazz:With-Self"
+"jazz.dialect.classes.jazz:With-Self:body!offset"
+"jazz.dialect.classes.jazz:With-Self:body!slot"
+"jazz.dialect.classes.jazz:With-Self:get-body"
+)
+(
+"jazz.dialect.classes.jazz:Allocate!level"
+"jazz.dialect.classes.jazz:Cast!level"
+"jazz.dialect.classes.jazz:Category-Declaration!level"
+"jazz.dialect.classes.jazz:Class-Declaration!level"
+"jazz.dialect.classes.jazz:Definition-Declaration!level"
+"jazz.dialect.classes.jazz:Field-Declaration!level"
+"jazz.dialect.classes.jazz:Generic-Declaration!level"
+"jazz.dialect.classes.jazz:Hub-Declaration!level"
+"jazz.dialect.classes.jazz:Interface-Declaration!level"
+"jazz.dialect.classes.jazz:Jazz-Dialect!level"
+"jazz.dialect.classes.jazz:Jazz-Walker!level"
+"jazz.dialect.classes.jazz:Method-Declaration!level"
+"jazz.dialect.classes.jazz:Node-Declaration!level"
+"jazz.dialect.classes.jazz:Property-Declaration!level"
+"jazz.dialect.classes.jazz:Slot-Declaration!level"
+"jazz.dialect.classes.jazz:Specialize!level"
+"jazz.dialect.classes.jazz:Specific-Declaration!level"
+"jazz.dialect.classes.jazz:With-Dynamic-Self!level"
+"jazz.dialect.classes.jazz:With-Self!level"
+)
+(
+"apply"
+"jazz.language.runtime.functional:box-list"
+"jazz.language.runtime.functional:find-keyword"
+"jazz.language.runtime.functional:unbox-list"
+"jazz:Allocate"
+"jazz:Cast"
+"jazz:Category-Declaration"
+"jazz:Class-Declaration"
+"jazz:Definition-Declaration"
+"jazz:Field-Declaration"
+"jazz:Generic-Declaration"
+"jazz:Hub-Declaration"
+"jazz:Interface-Declaration"
+"jazz:Jazz-Dialect"
+"jazz:Jazz-Walker"
+"jazz:Method-Declaration"
+"jazz:Node-Declaration"
+"jazz:Property-Declaration"
+"jazz:Slot-Declaration"
+"jazz:Specialize"
+"jazz:Specific-Declaration"
+"jazz:With-Dynamic-Self"
+"jazz:With-Self"
+"jazz:add-final-method"
+"jazz:add-method-node"
+"jazz:add-slot"
+"jazz:load-unit"
+"jazz:register-module"
+"jazz:set-core-class-redefined"
+)
+ ()
+)
+#else
+#define ___VERSION 408009
+#define ___MODULE_NAME "bin:jazz.dialect.classes.jazz"
+#define ___LINKER_ID ___LNK_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz
+#define ___MH_PROC ___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz
+#define ___SCRIPT_LINE 0
+#define ___SYMCOUNT 142
+#define ___KEYCOUNT 3
+#define ___GLOCOUNT 208
+#define ___SUPCOUNT 179
+#define ___CNSCOUNT 39
+#define ___SUBCOUNT 507
+#define ___LBLCOUNT 229
+#define ___OFDCOUNT 1
+#define ___MODDESCR ___REF_SUB(506)
+#include "gambit.h"
+
+___NEED_SYM(___S_Allocate)
+___NEED_SYM(___S_Cast)
+___NEED_SYM(___S_Category_2d_Declaration)
+___NEED_SYM(___S_Class_2d_Declaration)
+___NEED_SYM(___S_Definition_2d_Declaration)
+___NEED_SYM(___S_Field_2d_Declaration)
+___NEED_SYM(___S_Generic_2d_Declaration)
+___NEED_SYM(___S_Hub_2d_Declaration)
+___NEED_SYM(___S_Interface_2d_Declaration)
+___NEED_SYM(___S_Jazz_2d_Dialect)
+___NEED_SYM(___S_Jazz_2d_Walker)
+___NEED_SYM(___S_Method_2d_Declaration)
+___NEED_SYM(___S_Node_2d_Declaration)
+___NEED_SYM(___S_Property_2d_Declaration)
+___NEED_SYM(___S_Slot_2d_Declaration)
+___NEED_SYM(___S_Specialize)
+___NEED_SYM(___S_Specific_2d_Declaration)
+___NEED_SYM(___S_With_2d_Dynamic_2d_Self)
+___NEED_SYM(___S_With_2d_Self)
+___NEED_SYM(___S_abstraction)
+___NEED_SYM(___S_ascendant)
+___NEED_SYM(___S_ascendant_2d_base)
+___NEED_SYM(___S_ascendant_2d_relation)
+___NEED_SYM(___S_ascendants)
+___NEED_SYM(___S_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz)
+___NEED_SYM(___S_body)
+___NEED_SYM(___S_box_5e_0)
+___NEED_SYM(___S_class)
+___NEED_SYM(___S_code)
+___NEED_SYM(___S_dispatch_2d_types)
+___NEED_SYM(___S_dynamic_3f_)
+___NEED_SYM(___S_expansion)
+___NEED_SYM(___S_expression)
+___NEED_SYM(___S_foundation_2e_dialect)
+___NEED_SYM(___S_generic)
+___NEED_SYM(___S_get_2d_abstraction)
+___NEED_SYM(___S_get_2d_ascendant)
+___NEED_SYM(___S_get_2d_ascendant_2d_base)
+___NEED_SYM(___S_get_2d_ascendant_2d_relation)
+___NEED_SYM(___S_get_2d_ascendants)
+___NEED_SYM(___S_get_2d_body)
+___NEED_SYM(___S_get_2d_class)
+___NEED_SYM(___S_get_2d_code)
+___NEED_SYM(___S_get_2d_dispatch_2d_types)
+___NEED_SYM(___S_get_2d_dynamic_3f_)
+___NEED_SYM(___S_get_2d_expansion)
+___NEED_SYM(___S_get_2d_expression)
+___NEED_SYM(___S_get_2d_generic)
+___NEED_SYM(___S_get_2d_getter)
+___NEED_SYM(___S_get_2d_getter_2d_generation)
+___NEED_SYM(___S_get_2d_getter_2d_name)
+___NEED_SYM(___S_get_2d_hub_2d_name)
+___NEED_SYM(___S_get_2d_implementor)
+___NEED_SYM(___S_get_2d_initialize)
+___NEED_SYM(___S_get_2d_interfaces)
+___NEED_SYM(___S_get_2d_metaclass)
+___NEED_SYM(___S_get_2d_metaclass_2d_explicit_3f_)
+___NEED_SYM(___S_get_2d_nodes)
+___NEED_SYM(___S_get_2d_propagation)
+___NEED_SYM(___S_get_2d_remote)
+___NEED_SYM(___S_get_2d_root)
+___NEED_SYM(___S_get_2d_root_3f_)
+___NEED_SYM(___S_get_2d_setter)
+___NEED_SYM(___S_get_2d_setter_2d_generation)
+___NEED_SYM(___S_get_2d_setter_2d_name)
+___NEED_SYM(___S_get_2d_signature)
+___NEED_SYM(___S_get_2d_specifier_2d_source)
+___NEED_SYM(___S_get_2d_synchronized)
+___NEED_SYM(___S_get_2d_value)
+___NEED_SYM(___S_get_2d_values)
+___NEED_SYM(___S_getter)
+___NEED_SYM(___S_getter_2d_generation)
+___NEED_SYM(___S_getter_2d_name)
+___NEED_SYM(___S_hub_2d_name)
+___NEED_SYM(___S_implementor)
+___NEED_SYM(___S_initialize)
+___NEED_SYM(___S_interfaces)
+___NEED_SYM(___S_jazz_2e_dialect)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self)
+___NEED_SYM(___S_jazz_2e_dialect_2e_classes_2e_scheme)
+___NEED_SYM(___S_jazz_2e_language_2e_runtime_2e_format)
+___NEED_SYM(___S_jazz_2e_language_2e_runtime_2e_functional)
+___NEED_SYM(___S_jazz_2e_language_2e_runtime_2e_kernel)
+___NEED_SYM(___S_jazz_2e_language_2e_runtime_2e_object)
+___NEED_SYM(___S_jazz_3a_Allocate)
+___NEED_SYM(___S_jazz_3a_Cast)
+___NEED_SYM(___S_jazz_3a_Category_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Class_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Definition_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Field_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Generic_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Hub_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Interface_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Jazz_2d_Dialect)
+___NEED_SYM(___S_jazz_3a_Jazz_2d_Walker)
+___NEED_SYM(___S_jazz_3a_Method_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Node_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Property_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Slot_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_Specialize)
+___NEED_SYM(___S_jazz_3a_Specific_2d_Declaration)
+___NEED_SYM(___S_jazz_3a_With_2d_Dynamic_2d_Self)
+___NEED_SYM(___S_jazz_3a_With_2d_Self)
+___NEED_SYM(___S_metaclass)
+___NEED_SYM(___S_metaclass_2d_explicit_3f_)
+___NEED_SYM(___S_nextmethod)
+___NEED_SYM(___S_nodes)
+___NEED_SYM(___S_others)
+___NEED_SYM(___S_propagation)
+___NEED_SYM(___S_protected)
+___NEED_SYM(___S_remote)
+___NEED_SYM(___S_rest)
+___NEED_SYM(___S_root)
+___NEED_SYM(___S_root_3f_)
+___NEED_SYM(___S_self)
+___NEED_SYM(___S_setter)
+___NEED_SYM(___S_setter_2d_generation)
+___NEED_SYM(___S_setter_2d_name)
+___NEED_SYM(___S_signature)
+___NEED_SYM(___S_specifier_2d_source)
+___NEED_SYM(___S_synchronized)
+___NEED_SYM(___S_value)
+___NEED_SYM(___S_values)
+
+___NEED_KEY(___K_expansion)
+___NEED_KEY(___K_signature)
+___NEED_KEY(___K_specifier_2d_source)
+
+___NEED_GLO(___G_apply)
+___NEED_GLO(___G_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize_21_node)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_21_level)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_offset)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_slot)
+___NEED_GLO(___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body)
+___NEED_GLO(___G_jazz_2e_language_2e_runtime_2e_functional_3a_box_2d_list)
+___NEED_GLO(___G_jazz_2e_language_2e_runtime_2e_functional_3a_find_2d_keyword)
+___NEED_GLO(___G_jazz_2e_language_2e_runtime_2e_functional_3a_unbox_2d_list)
+___NEED_GLO(___G_jazz_3a_Allocate)
+___NEED_GLO(___G_jazz_3a_Cast)
+___NEED_GLO(___G_jazz_3a_Category_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Class_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Definition_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Field_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Generic_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Hub_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Interface_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Jazz_2d_Dialect)
+___NEED_GLO(___G_jazz_3a_Jazz_2d_Walker)
+___NEED_GLO(___G_jazz_3a_Method_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Node_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Property_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Slot_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_Specialize)
+___NEED_GLO(___G_jazz_3a_Specific_2d_Declaration)
+___NEED_GLO(___G_jazz_3a_With_2d_Dynamic_2d_Self)
+___NEED_GLO(___G_jazz_3a_With_2d_Self)
+___NEED_GLO(___G_jazz_3a_add_2d_final_2d_method)
+___NEED_GLO(___G_jazz_3a_add_2d_method_2d_node)
+___NEED_GLO(___G_jazz_3a_add_2d_slot)
+___NEED_GLO(___G_jazz_3a_load_2d_unit)
+___NEED_GLO(___G_jazz_3a_register_2d_module)
+___NEED_GLO(___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+
+___BEGIN_SYM
+___DEF_SYM(0,___S_Allocate,"Allocate")
+___DEF_SYM(1,___S_Cast,"Cast")
+___DEF_SYM(2,___S_Category_2d_Declaration,"Category-Declaration")
+___DEF_SYM(3,___S_Class_2d_Declaration,"Class-Declaration")
+___DEF_SYM(4,___S_Definition_2d_Declaration,"Definition-Declaration")
+___DEF_SYM(5,___S_Field_2d_Declaration,"Field-Declaration")
+___DEF_SYM(6,___S_Generic_2d_Declaration,"Generic-Declaration")
+___DEF_SYM(7,___S_Hub_2d_Declaration,"Hub-Declaration")
+___DEF_SYM(8,___S_Interface_2d_Declaration,"Interface-Declaration")
+___DEF_SYM(9,___S_Jazz_2d_Dialect,"Jazz-Dialect")
+___DEF_SYM(10,___S_Jazz_2d_Walker,"Jazz-Walker")
+___DEF_SYM(11,___S_Method_2d_Declaration,"Method-Declaration")
+___DEF_SYM(12,___S_Node_2d_Declaration,"Node-Declaration")
+___DEF_SYM(13,___S_Property_2d_Declaration,"Property-Declaration")
+___DEF_SYM(14,___S_Slot_2d_Declaration,"Slot-Declaration")
+___DEF_SYM(15,___S_Specialize,"Specialize")
+___DEF_SYM(16,___S_Specific_2d_Declaration,"Specific-Declaration")
+___DEF_SYM(17,___S_With_2d_Dynamic_2d_Self,"With-Dynamic-Self")
+___DEF_SYM(18,___S_With_2d_Self,"With-Self")
+___DEF_SYM(19,___S_abstraction,"abstraction")
+___DEF_SYM(20,___S_ascendant,"ascendant")
+___DEF_SYM(21,___S_ascendant_2d_base,"ascendant-base")
+___DEF_SYM(22,___S_ascendant_2d_relation,"ascendant-relation")
+___DEF_SYM(23,___S_ascendants,"ascendants")
+___DEF_SYM(24,___S_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz,"bin:jazz.dialect.classes.jazz")
+
+___DEF_SYM(25,___S_body,"body")
+___DEF_SYM(26,___S_box_5e_0,"box^0")
+___DEF_SYM(27,___S_class,"class")
+___DEF_SYM(28,___S_code,"code")
+___DEF_SYM(29,___S_dispatch_2d_types,"dispatch-types")
+___DEF_SYM(30,___S_dynamic_3f_,"dynamic?")
+___DEF_SYM(31,___S_expansion,"expansion")
+___DEF_SYM(32,___S_expression,"expression")
+___DEF_SYM(33,___S_foundation_2e_dialect,"foundation.dialect")
+___DEF_SYM(34,___S_generic,"generic")
+___DEF_SYM(35,___S_get_2d_abstraction,"get-abstraction")
+___DEF_SYM(36,___S_get_2d_ascendant,"get-ascendant")
+___DEF_SYM(37,___S_get_2d_ascendant_2d_base,"get-ascendant-base")
+___DEF_SYM(38,___S_get_2d_ascendant_2d_relation,"get-ascendant-relation")
+___DEF_SYM(39,___S_get_2d_ascendants,"get-ascendants")
+___DEF_SYM(40,___S_get_2d_body,"get-body")
+___DEF_SYM(41,___S_get_2d_class,"get-class")
+___DEF_SYM(42,___S_get_2d_code,"get-code")
+___DEF_SYM(43,___S_get_2d_dispatch_2d_types,"get-dispatch-types")
+___DEF_SYM(44,___S_get_2d_dynamic_3f_,"get-dynamic?")
+___DEF_SYM(45,___S_get_2d_expansion,"get-expansion")
+___DEF_SYM(46,___S_get_2d_expression,"get-expression")
+___DEF_SYM(47,___S_get_2d_generic,"get-generic")
+___DEF_SYM(48,___S_get_2d_getter,"get-getter")
+___DEF_SYM(49,___S_get_2d_getter_2d_generation,"get-getter-generation")
+___DEF_SYM(50,___S_get_2d_getter_2d_name,"get-getter-name")
+___DEF_SYM(51,___S_get_2d_hub_2d_name,"get-hub-name")
+___DEF_SYM(52,___S_get_2d_implementor,"get-implementor")
+___DEF_SYM(53,___S_get_2d_initialize,"get-initialize")
+___DEF_SYM(54,___S_get_2d_interfaces,"get-interfaces")
+___DEF_SYM(55,___S_get_2d_metaclass,"get-metaclass")
+___DEF_SYM(56,___S_get_2d_metaclass_2d_explicit_3f_,"get-metaclass-explicit?")
+___DEF_SYM(57,___S_get_2d_nodes,"get-nodes")
+___DEF_SYM(58,___S_get_2d_propagation,"get-propagation")
+___DEF_SYM(59,___S_get_2d_remote,"get-remote")
+___DEF_SYM(60,___S_get_2d_root,"get-root")
+___DEF_SYM(61,___S_get_2d_root_3f_,"get-root?")
+___DEF_SYM(62,___S_get_2d_setter,"get-setter")
+___DEF_SYM(63,___S_get_2d_setter_2d_generation,"get-setter-generation")
+___DEF_SYM(64,___S_get_2d_setter_2d_name,"get-setter-name")
+___DEF_SYM(65,___S_get_2d_signature,"get-signature")
+___DEF_SYM(66,___S_get_2d_specifier_2d_source,"get-specifier-source")
+___DEF_SYM(67,___S_get_2d_synchronized,"get-synchronized")
+___DEF_SYM(68,___S_get_2d_value,"get-value")
+___DEF_SYM(69,___S_get_2d_values,"get-values")
+___DEF_SYM(70,___S_getter,"getter")
+___DEF_SYM(71,___S_getter_2d_generation,"getter-generation")
+___DEF_SYM(72,___S_getter_2d_name,"getter-name")
+___DEF_SYM(73,___S_hub_2d_name,"hub-name")
+___DEF_SYM(74,___S_implementor,"implementor")
+___DEF_SYM(75,___S_initialize,"initialize")
+___DEF_SYM(76,___S_interfaces,"interfaces")
+___DEF_SYM(77,___S_jazz_2e_dialect,"jazz.dialect")
+___DEF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz,"jazz.dialect.classes.jazz")
+___DEF_SYM(79,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate,"jazz.dialect.classes.jazz:Allocate")
+
+___DEF_SYM(80,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast,"jazz.dialect.classes.jazz:Cast")
+
+___DEF_SYM(81,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration,"jazz.dialect.classes.jazz:Category-Declaration")
+
+___DEF_SYM(82,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration,"jazz.dialect.classes.jazz:Class-Declaration")
+
+___DEF_SYM(83,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration,"jazz.dialect.classes.jazz:Definition-Declaration")
+
+___DEF_SYM(84,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration,"jazz.dialect.classes.jazz:Field-Declaration")
+
+___DEF_SYM(85,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration,"jazz.dialect.classes.jazz:Generic-Declaration")
+
+___DEF_SYM(86,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration,"jazz.dialect.classes.jazz:Hub-Declaration")
+
+___DEF_SYM(87,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration,"jazz.dialect.classes.jazz:Interface-Declaration")
+
+___DEF_SYM(88,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect,"jazz.dialect.classes.jazz:Jazz-Dialect")
+
+___DEF_SYM(89,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker,"jazz.dialect.classes.jazz:Jazz-Walker")
+
+___DEF_SYM(90,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration,"jazz.dialect.classes.jazz:Method-Declaration")
+
+___DEF_SYM(91,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration,"jazz.dialect.classes.jazz:Node-Declaration")
+
+___DEF_SYM(92,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration,"jazz.dialect.classes.jazz:Property-Declaration")
+
+___DEF_SYM(93,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration,"jazz.dialect.classes.jazz:Slot-Declaration")
+
+___DEF_SYM(94,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize,"jazz.dialect.classes.jazz:Specialize")
+
+___DEF_SYM(95,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration,"jazz.dialect.classes.jazz:Specific-Declaration")
+
+___DEF_SYM(96,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self,"jazz.dialect.classes.jazz:With-Dynamic-Self")
+
+___DEF_SYM(97,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self,"jazz.dialect.classes.jazz:With-Self")
+
+___DEF_SYM(98,___S_jazz_2e_dialect_2e_classes_2e_scheme,"jazz.dialect.classes.scheme")
+___DEF_SYM(99,___S_jazz_2e_language_2e_runtime_2e_format,"jazz.language.runtime.format")
+___DEF_SYM(100,___S_jazz_2e_language_2e_runtime_2e_functional,"jazz.language.runtime.functional")
+
+___DEF_SYM(101,___S_jazz_2e_language_2e_runtime_2e_kernel,"jazz.language.runtime.kernel")
+___DEF_SYM(102,___S_jazz_2e_language_2e_runtime_2e_object,"jazz.language.runtime.object")
+___DEF_SYM(103,___S_jazz_3a_Allocate,"jazz:Allocate")
+___DEF_SYM(104,___S_jazz_3a_Cast,"jazz:Cast")
+___DEF_SYM(105,___S_jazz_3a_Category_2d_Declaration,"jazz:Category-Declaration")
+___DEF_SYM(106,___S_jazz_3a_Class_2d_Declaration,"jazz:Class-Declaration")
+___DEF_SYM(107,___S_jazz_3a_Definition_2d_Declaration,"jazz:Definition-Declaration")
+___DEF_SYM(108,___S_jazz_3a_Field_2d_Declaration,"jazz:Field-Declaration")
+___DEF_SYM(109,___S_jazz_3a_Generic_2d_Declaration,"jazz:Generic-Declaration")
+___DEF_SYM(110,___S_jazz_3a_Hub_2d_Declaration,"jazz:Hub-Declaration")
+___DEF_SYM(111,___S_jazz_3a_Interface_2d_Declaration,"jazz:Interface-Declaration")
+___DEF_SYM(112,___S_jazz_3a_Jazz_2d_Dialect,"jazz:Jazz-Dialect")
+___DEF_SYM(113,___S_jazz_3a_Jazz_2d_Walker,"jazz:Jazz-Walker")
+___DEF_SYM(114,___S_jazz_3a_Method_2d_Declaration,"jazz:Method-Declaration")
+___DEF_SYM(115,___S_jazz_3a_Node_2d_Declaration,"jazz:Node-Declaration")
+___DEF_SYM(116,___S_jazz_3a_Property_2d_Declaration,"jazz:Property-Declaration")
+___DEF_SYM(117,___S_jazz_3a_Slot_2d_Declaration,"jazz:Slot-Declaration")
+___DEF_SYM(118,___S_jazz_3a_Specialize,"jazz:Specialize")
+___DEF_SYM(119,___S_jazz_3a_Specific_2d_Declaration,"jazz:Specific-Declaration")
+___DEF_SYM(120,___S_jazz_3a_With_2d_Dynamic_2d_Self,"jazz:With-Dynamic-Self")
+___DEF_SYM(121,___S_jazz_3a_With_2d_Self,"jazz:With-Self")
+___DEF_SYM(122,___S_metaclass,"metaclass")
+___DEF_SYM(123,___S_metaclass_2d_explicit_3f_,"metaclass-explicit?")
+___DEF_SYM(124,___S_nextmethod,"nextmethod")
+___DEF_SYM(125,___S_nodes,"nodes")
+___DEF_SYM(126,___S_others,"others")
+___DEF_SYM(127,___S_propagation,"propagation")
+___DEF_SYM(128,___S_protected,"protected")
+___DEF_SYM(129,___S_remote,"remote")
+___DEF_SYM(130,___S_rest,"rest")
+___DEF_SYM(131,___S_root,"root")
+___DEF_SYM(132,___S_root_3f_,"root?")
+___DEF_SYM(133,___S_self,"self")
+___DEF_SYM(134,___S_setter,"setter")
+___DEF_SYM(135,___S_setter_2d_generation,"setter-generation")
+___DEF_SYM(136,___S_setter_2d_name,"setter-name")
+___DEF_SYM(137,___S_signature,"signature")
+___DEF_SYM(138,___S_specifier_2d_source,"specifier-source")
+___DEF_SYM(139,___S_synchronized,"synchronized")
+___DEF_SYM(140,___S_value,"value")
+___DEF_SYM(141,___S_values,"values")
+___END_SYM
+
+#define ___SYM_Allocate ___SYM(0,___S_Allocate)
+#define ___SYM_Cast ___SYM(1,___S_Cast)
+#define ___SYM_Category_2d_Declaration ___SYM(2,___S_Category_2d_Declaration)
+#define ___SYM_Class_2d_Declaration ___SYM(3,___S_Class_2d_Declaration)
+#define ___SYM_Definition_2d_Declaration ___SYM(4,___S_Definition_2d_Declaration)
+#define ___SYM_Field_2d_Declaration ___SYM(5,___S_Field_2d_Declaration)
+#define ___SYM_Generic_2d_Declaration ___SYM(6,___S_Generic_2d_Declaration)
+#define ___SYM_Hub_2d_Declaration ___SYM(7,___S_Hub_2d_Declaration)
+#define ___SYM_Interface_2d_Declaration ___SYM(8,___S_Interface_2d_Declaration)
+#define ___SYM_Jazz_2d_Dialect ___SYM(9,___S_Jazz_2d_Dialect)
+#define ___SYM_Jazz_2d_Walker ___SYM(10,___S_Jazz_2d_Walker)
+#define ___SYM_Method_2d_Declaration ___SYM(11,___S_Method_2d_Declaration)
+#define ___SYM_Node_2d_Declaration ___SYM(12,___S_Node_2d_Declaration)
+#define ___SYM_Property_2d_Declaration ___SYM(13,___S_Property_2d_Declaration)
+#define ___SYM_Slot_2d_Declaration ___SYM(14,___S_Slot_2d_Declaration)
+#define ___SYM_Specialize ___SYM(15,___S_Specialize)
+#define ___SYM_Specific_2d_Declaration ___SYM(16,___S_Specific_2d_Declaration)
+#define ___SYM_With_2d_Dynamic_2d_Self ___SYM(17,___S_With_2d_Dynamic_2d_Self)
+#define ___SYM_With_2d_Self ___SYM(18,___S_With_2d_Self)
+#define ___SYM_abstraction ___SYM(19,___S_abstraction)
+#define ___SYM_ascendant ___SYM(20,___S_ascendant)
+#define ___SYM_ascendant_2d_base ___SYM(21,___S_ascendant_2d_base)
+#define ___SYM_ascendant_2d_relation ___SYM(22,___S_ascendant_2d_relation)
+#define ___SYM_ascendants ___SYM(23,___S_ascendants)
+#define ___SYM_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz ___SYM(24,___S_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz)
+#define ___SYM_body ___SYM(25,___S_body)
+#define ___SYM_box_5e_0 ___SYM(26,___S_box_5e_0)
+#define ___SYM_class ___SYM(27,___S_class)
+#define ___SYM_code ___SYM(28,___S_code)
+#define ___SYM_dispatch_2d_types ___SYM(29,___S_dispatch_2d_types)
+#define ___SYM_dynamic_3f_ ___SYM(30,___S_dynamic_3f_)
+#define ___SYM_expansion ___SYM(31,___S_expansion)
+#define ___SYM_expression ___SYM(32,___S_expression)
+#define ___SYM_foundation_2e_dialect ___SYM(33,___S_foundation_2e_dialect)
+#define ___SYM_generic ___SYM(34,___S_generic)
+#define ___SYM_get_2d_abstraction ___SYM(35,___S_get_2d_abstraction)
+#define ___SYM_get_2d_ascendant ___SYM(36,___S_get_2d_ascendant)
+#define ___SYM_get_2d_ascendant_2d_base ___SYM(37,___S_get_2d_ascendant_2d_base)
+#define ___SYM_get_2d_ascendant_2d_relation ___SYM(38,___S_get_2d_ascendant_2d_relation)
+#define ___SYM_get_2d_ascendants ___SYM(39,___S_get_2d_ascendants)
+#define ___SYM_get_2d_body ___SYM(40,___S_get_2d_body)
+#define ___SYM_get_2d_class ___SYM(41,___S_get_2d_class)
+#define ___SYM_get_2d_code ___SYM(42,___S_get_2d_code)
+#define ___SYM_get_2d_dispatch_2d_types ___SYM(43,___S_get_2d_dispatch_2d_types)
+#define ___SYM_get_2d_dynamic_3f_ ___SYM(44,___S_get_2d_dynamic_3f_)
+#define ___SYM_get_2d_expansion ___SYM(45,___S_get_2d_expansion)
+#define ___SYM_get_2d_expression ___SYM(46,___S_get_2d_expression)
+#define ___SYM_get_2d_generic ___SYM(47,___S_get_2d_generic)
+#define ___SYM_get_2d_getter ___SYM(48,___S_get_2d_getter)
+#define ___SYM_get_2d_getter_2d_generation ___SYM(49,___S_get_2d_getter_2d_generation)
+#define ___SYM_get_2d_getter_2d_name ___SYM(50,___S_get_2d_getter_2d_name)
+#define ___SYM_get_2d_hub_2d_name ___SYM(51,___S_get_2d_hub_2d_name)
+#define ___SYM_get_2d_implementor ___SYM(52,___S_get_2d_implementor)
+#define ___SYM_get_2d_initialize ___SYM(53,___S_get_2d_initialize)
+#define ___SYM_get_2d_interfaces ___SYM(54,___S_get_2d_interfaces)
+#define ___SYM_get_2d_metaclass ___SYM(55,___S_get_2d_metaclass)
+#define ___SYM_get_2d_metaclass_2d_explicit_3f_ ___SYM(56,___S_get_2d_metaclass_2d_explicit_3f_)
+#define ___SYM_get_2d_nodes ___SYM(57,___S_get_2d_nodes)
+#define ___SYM_get_2d_propagation ___SYM(58,___S_get_2d_propagation)
+#define ___SYM_get_2d_remote ___SYM(59,___S_get_2d_remote)
+#define ___SYM_get_2d_root ___SYM(60,___S_get_2d_root)
+#define ___SYM_get_2d_root_3f_ ___SYM(61,___S_get_2d_root_3f_)
+#define ___SYM_get_2d_setter ___SYM(62,___S_get_2d_setter)
+#define ___SYM_get_2d_setter_2d_generation ___SYM(63,___S_get_2d_setter_2d_generation)
+#define ___SYM_get_2d_setter_2d_name ___SYM(64,___S_get_2d_setter_2d_name)
+#define ___SYM_get_2d_signature ___SYM(65,___S_get_2d_signature)
+#define ___SYM_get_2d_specifier_2d_source ___SYM(66,___S_get_2d_specifier_2d_source)
+#define ___SYM_get_2d_synchronized ___SYM(67,___S_get_2d_synchronized)
+#define ___SYM_get_2d_value ___SYM(68,___S_get_2d_value)
+#define ___SYM_get_2d_values ___SYM(69,___S_get_2d_values)
+#define ___SYM_getter ___SYM(70,___S_getter)
+#define ___SYM_getter_2d_generation ___SYM(71,___S_getter_2d_generation)
+#define ___SYM_getter_2d_name ___SYM(72,___S_getter_2d_name)
+#define ___SYM_hub_2d_name ___SYM(73,___S_hub_2d_name)
+#define ___SYM_implementor ___SYM(74,___S_implementor)
+#define ___SYM_initialize ___SYM(75,___S_initialize)
+#define ___SYM_interfaces ___SYM(76,___S_interfaces)
+#define ___SYM_jazz_2e_dialect ___SYM(77,___S_jazz_2e_dialect)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz ___SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate ___SYM(79,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast ___SYM(80,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration ___SYM(81,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration ___SYM(82,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration ___SYM(83,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration ___SYM(84,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration ___SYM(85,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration ___SYM(86,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration ___SYM(87,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect ___SYM(88,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker ___SYM(89,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration ___SYM(90,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration ___SYM(91,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration ___SYM(92,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration ___SYM(93,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize ___SYM(94,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration ___SYM(95,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self ___SYM(96,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self ___SYM(97,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self)
+#define ___SYM_jazz_2e_dialect_2e_classes_2e_scheme ___SYM(98,___S_jazz_2e_dialect_2e_classes_2e_scheme)
+#define ___SYM_jazz_2e_language_2e_runtime_2e_format ___SYM(99,___S_jazz_2e_language_2e_runtime_2e_format)
+#define ___SYM_jazz_2e_language_2e_runtime_2e_functional ___SYM(100,___S_jazz_2e_language_2e_runtime_2e_functional)
+#define ___SYM_jazz_2e_language_2e_runtime_2e_kernel ___SYM(101,___S_jazz_2e_language_2e_runtime_2e_kernel)
+#define ___SYM_jazz_2e_language_2e_runtime_2e_object ___SYM(102,___S_jazz_2e_language_2e_runtime_2e_object)
+#define ___SYM_jazz_3a_Allocate ___SYM(103,___S_jazz_3a_Allocate)
+#define ___SYM_jazz_3a_Cast ___SYM(104,___S_jazz_3a_Cast)
+#define ___SYM_jazz_3a_Category_2d_Declaration ___SYM(105,___S_jazz_3a_Category_2d_Declaration)
+#define ___SYM_jazz_3a_Class_2d_Declaration ___SYM(106,___S_jazz_3a_Class_2d_Declaration)
+#define ___SYM_jazz_3a_Definition_2d_Declaration ___SYM(107,___S_jazz_3a_Definition_2d_Declaration)
+#define ___SYM_jazz_3a_Field_2d_Declaration ___SYM(108,___S_jazz_3a_Field_2d_Declaration)
+#define ___SYM_jazz_3a_Generic_2d_Declaration ___SYM(109,___S_jazz_3a_Generic_2d_Declaration)
+#define ___SYM_jazz_3a_Hub_2d_Declaration ___SYM(110,___S_jazz_3a_Hub_2d_Declaration)
+#define ___SYM_jazz_3a_Interface_2d_Declaration ___SYM(111,___S_jazz_3a_Interface_2d_Declaration)
+#define ___SYM_jazz_3a_Jazz_2d_Dialect ___SYM(112,___S_jazz_3a_Jazz_2d_Dialect)
+#define ___SYM_jazz_3a_Jazz_2d_Walker ___SYM(113,___S_jazz_3a_Jazz_2d_Walker)
+#define ___SYM_jazz_3a_Method_2d_Declaration ___SYM(114,___S_jazz_3a_Method_2d_Declaration)
+#define ___SYM_jazz_3a_Node_2d_Declaration ___SYM(115,___S_jazz_3a_Node_2d_Declaration)
+#define ___SYM_jazz_3a_Property_2d_Declaration ___SYM(116,___S_jazz_3a_Property_2d_Declaration)
+#define ___SYM_jazz_3a_Slot_2d_Declaration ___SYM(117,___S_jazz_3a_Slot_2d_Declaration)
+#define ___SYM_jazz_3a_Specialize ___SYM(118,___S_jazz_3a_Specialize)
+#define ___SYM_jazz_3a_Specific_2d_Declaration ___SYM(119,___S_jazz_3a_Specific_2d_Declaration)
+#define ___SYM_jazz_3a_With_2d_Dynamic_2d_Self ___SYM(120,___S_jazz_3a_With_2d_Dynamic_2d_Self)
+#define ___SYM_jazz_3a_With_2d_Self ___SYM(121,___S_jazz_3a_With_2d_Self)
+#define ___SYM_metaclass ___SYM(122,___S_metaclass)
+#define ___SYM_metaclass_2d_explicit_3f_ ___SYM(123,___S_metaclass_2d_explicit_3f_)
+#define ___SYM_nextmethod ___SYM(124,___S_nextmethod)
+#define ___SYM_nodes ___SYM(125,___S_nodes)
+#define ___SYM_others ___SYM(126,___S_others)
+#define ___SYM_propagation ___SYM(127,___S_propagation)
+#define ___SYM_protected ___SYM(128,___S_protected)
+#define ___SYM_remote ___SYM(129,___S_remote)
+#define ___SYM_rest ___SYM(130,___S_rest)
+#define ___SYM_root ___SYM(131,___S_root)
+#define ___SYM_root_3f_ ___SYM(132,___S_root_3f_)
+#define ___SYM_self ___SYM(133,___S_self)
+#define ___SYM_setter ___SYM(134,___S_setter)
+#define ___SYM_setter_2d_generation ___SYM(135,___S_setter_2d_generation)
+#define ___SYM_setter_2d_name ___SYM(136,___S_setter_2d_name)
+#define ___SYM_signature ___SYM(137,___S_signature)
+#define ___SYM_specifier_2d_source ___SYM(138,___S_specifier_2d_source)
+#define ___SYM_synchronized ___SYM(139,___S_synchronized)
+#define ___SYM_value ___SYM(140,___S_value)
+#define ___SYM_values ___SYM(141,___S_values)
+
+___BEGIN_KEY
+___DEF_KEY(0,___K_expansion,"expansion")
+___DEF_KEY(1,___K_signature,"signature")
+___DEF_KEY(2,___K_specifier_2d_source,"specifier-source")
+___END_KEY
+
+#define ___KEY_expansion ___KEY(0,___K_expansion)
+#define ___KEY_signature ___KEY(1,___K_signature)
+#define ___KEY_specifier_2d_source ___KEY(2,___K_specifier_2d_source)
+
+___BEGIN_GLO
+___DEF_GLO(0,"bin:jazz.dialect.classes.jazz#")
+___DEF_GLO(1,"jazz.dialect.classes.jazz:Allocate")
+
+___DEF_GLO(2,"jazz.dialect.classes.jazz:Allocate!level")
+
+___DEF_GLO(3,"jazz.dialect.classes.jazz:Allocate:class!offset")
+
+___DEF_GLO(4,"jazz.dialect.classes.jazz:Allocate:class!slot")
+
+___DEF_GLO(5,"jazz.dialect.classes.jazz:Allocate:get-class")
+
+___DEF_GLO(6,"jazz.dialect.classes.jazz:Allocate:get-values")
+
+___DEF_GLO(7,"jazz.dialect.classes.jazz:Allocate:values!offset")
+
+___DEF_GLO(8,"jazz.dialect.classes.jazz:Allocate:values!slot")
+
+___DEF_GLO(9,"jazz.dialect.classes.jazz:Cast")
+___DEF_GLO(10,"jazz.dialect.classes.jazz:Cast!level")
+
+___DEF_GLO(11,"jazz.dialect.classes.jazz:Cast:expression!offset")
+
+___DEF_GLO(12,"jazz.dialect.classes.jazz:Cast:expression!slot")
+
+___DEF_GLO(13,"jazz.dialect.classes.jazz:Cast:get-expression")
+
+___DEF_GLO(14,"jazz.dialect.classes.jazz:Category-Declaration")
+
+___DEF_GLO(15,"jazz.dialect.classes.jazz:Category-Declaration!level")
+
+___DEF_GLO(16,"jazz.dialect.classes.jazz:Category-Declaration:get-implementor")
+
+___DEF_GLO(17,"jazz.dialect.classes.jazz:Category-Declaration:get-metaclass")
+
+___DEF_GLO(18,"jazz.dialect.classes.jazz:Category-Declaration:get-metaclass-explicit?")
+
+___DEF_GLO(19,"jazz.dialect.classes.jazz:Category-Declaration:implementor!offset")
+
+___DEF_GLO(20,"jazz.dialect.classes.jazz:Category-Declaration:implementor!slot")
+
+___DEF_GLO(21,"jazz.dialect.classes.jazz:Category-Declaration:metaclass!offset")
+
+___DEF_GLO(22,"jazz.dialect.classes.jazz:Category-Declaration:metaclass!slot")
+
+___DEF_GLO(23,"jazz.dialect.classes.jazz:Category-Declaration:metaclass-explicit?!offset")
+
+___DEF_GLO(24,"jazz.dialect.classes.jazz:Category-Declaration:metaclass-explicit?!slot")
+
+___DEF_GLO(25,"jazz.dialect.classes.jazz:Class-Declaration")
+
+___DEF_GLO(26,"jazz.dialect.classes.jazz:Class-Declaration!level")
+
+___DEF_GLO(27,"jazz.dialect.classes.jazz:Class-Declaration:ascendant!offset")
+
+___DEF_GLO(28,"jazz.dialect.classes.jazz:Class-Declaration:ascendant!slot")
+
+___DEF_GLO(29,"jazz.dialect.classes.jazz:Class-Declaration:ascendant-base!offset")
+
+___DEF_GLO(30,"jazz.dialect.classes.jazz:Class-Declaration:ascendant-base!slot")
+
+___DEF_GLO(31,"jazz.dialect.classes.jazz:Class-Declaration:ascendant-relation!offset")
+
+___DEF_GLO(32,"jazz.dialect.classes.jazz:Class-Declaration:ascendant-relation!slot")
+
+___DEF_GLO(33,"jazz.dialect.classes.jazz:Class-Declaration:get-ascendant")
+
+___DEF_GLO(34,"jazz.dialect.classes.jazz:Class-Declaration:get-ascendant-base")
+
+___DEF_GLO(35,"jazz.dialect.classes.jazz:Class-Declaration:get-ascendant-relation")
+
+___DEF_GLO(36,"jazz.dialect.classes.jazz:Class-Declaration:get-interfaces")
+
+___DEF_GLO(37,"jazz.dialect.classes.jazz:Class-Declaration:interfaces!offset")
+
+___DEF_GLO(38,"jazz.dialect.classes.jazz:Class-Declaration:interfaces!slot")
+
+___DEF_GLO(39,"jazz.dialect.classes.jazz:Definition-Declaration")
+
+___DEF_GLO(40,"jazz.dialect.classes.jazz:Definition-Declaration!level")
+
+___DEF_GLO(41,"jazz.dialect.classes.jazz:Definition-Declaration:expansion!offset")
+
+___DEF_GLO(42,"jazz.dialect.classes.jazz:Definition-Declaration:expansion!slot")
+
+___DEF_GLO(43,"jazz.dialect.classes.jazz:Definition-Declaration:get-expansion")
+
+___DEF_GLO(44,"jazz.dialect.classes.jazz:Definition-Declaration:get-signature")
+
+___DEF_GLO(45,"jazz.dialect.classes.jazz:Definition-Declaration:get-specifier-source")
+
+___DEF_GLO(46,"jazz.dialect.classes.jazz:Definition-Declaration:get-value")
+
+___DEF_GLO(47,"jazz.dialect.classes.jazz:Definition-Declaration:initialize")
+
+___DEF_GLO(48,"jazz.dialect.classes.jazz:Definition-Declaration:initialize!node")
+
+___DEF_GLO(49,"jazz.dialect.classes.jazz:Definition-Declaration:signature!offset")
+
+___DEF_GLO(50,"jazz.dialect.classes.jazz:Definition-Declaration:signature!slot")
+
+___DEF_GLO(51,"jazz.dialect.classes.jazz:Definition-Declaration:specifier-source!offset")
+
+___DEF_GLO(52,"jazz.dialect.classes.jazz:Definition-Declaration:specifier-source!slot")
+
+___DEF_GLO(53,"jazz.dialect.classes.jazz:Definition-Declaration:value!offset")
+
+___DEF_GLO(54,"jazz.dialect.classes.jazz:Definition-Declaration:value!slot")
+
+___DEF_GLO(55,"jazz.dialect.classes.jazz:Field-Declaration")
+
+___DEF_GLO(56,"jazz.dialect.classes.jazz:Field-Declaration!level")
+
+___DEF_GLO(57,"jazz.dialect.classes.jazz:Generic-Declaration")
+
+___DEF_GLO(58,"jazz.dialect.classes.jazz:Generic-Declaration!level")
+
+___DEF_GLO(59,"jazz.dialect.classes.jazz:Generic-Declaration:body!offset")
+
+___DEF_GLO(60,"jazz.dialect.classes.jazz:Generic-Declaration:body!slot")
+
+___DEF_GLO(61,"jazz.dialect.classes.jazz:Generic-Declaration:dispatch-types!offset")
+
+___DEF_GLO(62,"jazz.dialect.classes.jazz:Generic-Declaration:dispatch-types!slot")
+
+___DEF_GLO(63,"jazz.dialect.classes.jazz:Generic-Declaration:get-body")
+
+___DEF_GLO(64,"jazz.dialect.classes.jazz:Generic-Declaration:get-dispatch-types")
+
+___DEF_GLO(65,"jazz.dialect.classes.jazz:Generic-Declaration:get-signature")
+
+___DEF_GLO(66,"jazz.dialect.classes.jazz:Generic-Declaration:signature!offset")
+
+___DEF_GLO(67,"jazz.dialect.classes.jazz:Generic-Declaration:signature!slot")
+
+___DEF_GLO(68,"jazz.dialect.classes.jazz:Hub-Declaration")
+
+___DEF_GLO(69,"jazz.dialect.classes.jazz:Hub-Declaration!level")
+
+___DEF_GLO(70,"jazz.dialect.classes.jazz:Hub-Declaration:get-nodes")
+
+___DEF_GLO(71,"jazz.dialect.classes.jazz:Hub-Declaration:nodes!offset")
+
+___DEF_GLO(72,"jazz.dialect.classes.jazz:Hub-Declaration:nodes!slot")
+
+___DEF_GLO(73,"jazz.dialect.classes.jazz:Interface-Declaration")
+
+___DEF_GLO(74,"jazz.dialect.classes.jazz:Interface-Declaration!level")
+
+___DEF_GLO(75,"jazz.dialect.classes.jazz:Interface-Declaration:ascendants!offset")
+
+___DEF_GLO(76,"jazz.dialect.classes.jazz:Interface-Declaration:ascendants!slot")
+
+___DEF_GLO(77,"jazz.dialect.classes.jazz:Interface-Declaration:get-ascendants")
+
+___DEF_GLO(78,"jazz.dialect.classes.jazz:Jazz-Dialect")
+
+___DEF_GLO(79,"jazz.dialect.classes.jazz:Jazz-Dialect!level")
+
+___DEF_GLO(80,"jazz.dialect.classes.jazz:Jazz-Walker")
+
+___DEF_GLO(81,"jazz.dialect.classes.jazz:Jazz-Walker!level")
+
+___DEF_GLO(82,"jazz.dialect.classes.jazz:Method-Declaration")
+
+___DEF_GLO(83,"jazz.dialect.classes.jazz:Method-Declaration!level")
+
+___DEF_GLO(84,"jazz.dialect.classes.jazz:Method-Declaration:abstraction!offset")
+
+___DEF_GLO(85,"jazz.dialect.classes.jazz:Method-Declaration:abstraction!slot")
+
+___DEF_GLO(86,"jazz.dialect.classes.jazz:Method-Declaration:body!offset")
+
+___DEF_GLO(87,"jazz.dialect.classes.jazz:Method-Declaration:body!slot")
+
+___DEF_GLO(88,"jazz.dialect.classes.jazz:Method-Declaration:expansion!offset")
+
+___DEF_GLO(89,"jazz.dialect.classes.jazz:Method-Declaration:expansion!slot")
+
+___DEF_GLO(90,"jazz.dialect.classes.jazz:Method-Declaration:get-abstraction")
+
+___DEF_GLO(91,"jazz.dialect.classes.jazz:Method-Declaration:get-body")
+
+___DEF_GLO(92,"jazz.dialect.classes.jazz:Method-Declaration:get-expansion")
+
+___DEF_GLO(93,"jazz.dialect.classes.jazz:Method-Declaration:get-propagation")
+
+___DEF_GLO(94,"jazz.dialect.classes.jazz:Method-Declaration:get-remote")
+
+___DEF_GLO(95,"jazz.dialect.classes.jazz:Method-Declaration:get-root")
+
+___DEF_GLO(96,"jazz.dialect.classes.jazz:Method-Declaration:get-signature")
+
+___DEF_GLO(97,"jazz.dialect.classes.jazz:Method-Declaration:get-specifier-source")
+
+___DEF_GLO(98,"jazz.dialect.classes.jazz:Method-Declaration:get-synchronized")
+
+___DEF_GLO(99,"jazz.dialect.classes.jazz:Method-Declaration:propagation!offset")
+
+___DEF_GLO(100,"jazz.dialect.classes.jazz:Method-Declaration:propagation!slot")
+
+___DEF_GLO(101,"jazz.dialect.classes.jazz:Method-Declaration:remote!offset")
+
+___DEF_GLO(102,"jazz.dialect.classes.jazz:Method-Declaration:remote!slot")
+
+___DEF_GLO(103,"jazz.dialect.classes.jazz:Method-Declaration:root!offset")
+
+___DEF_GLO(104,"jazz.dialect.classes.jazz:Method-Declaration:root!slot")
+
+___DEF_GLO(105,"jazz.dialect.classes.jazz:Method-Declaration:signature!offset")
+
+___DEF_GLO(106,"jazz.dialect.classes.jazz:Method-Declaration:signature!slot")
+
+___DEF_GLO(107,"jazz.dialect.classes.jazz:Method-Declaration:specifier-source!offset")
+
+___DEF_GLO(108,"jazz.dialect.classes.jazz:Method-Declaration:specifier-source!slot")
+
+___DEF_GLO(109,"jazz.dialect.classes.jazz:Method-Declaration:synchronized!offset")
+
+___DEF_GLO(110,"jazz.dialect.classes.jazz:Method-Declaration:synchronized!slot")
+
+___DEF_GLO(111,"jazz.dialect.classes.jazz:Node-Declaration")
+
+___DEF_GLO(112,"jazz.dialect.classes.jazz:Node-Declaration!level")
+
+___DEF_GLO(113,"jazz.dialect.classes.jazz:Node-Declaration:get-hub-name")
+
+___DEF_GLO(114,"jazz.dialect.classes.jazz:Node-Declaration:get-signature")
+
+___DEF_GLO(115,"jazz.dialect.classes.jazz:Node-Declaration:hub-name!offset")
+
+___DEF_GLO(116,"jazz.dialect.classes.jazz:Node-Declaration:hub-name!slot")
+
+___DEF_GLO(117,"jazz.dialect.classes.jazz:Node-Declaration:signature!offset")
+
+___DEF_GLO(118,"jazz.dialect.classes.jazz:Node-Declaration:signature!slot")
+
+___DEF_GLO(119,"jazz.dialect.classes.jazz:Property-Declaration")
+
+___DEF_GLO(120,"jazz.dialect.classes.jazz:Property-Declaration!level")
+
+___DEF_GLO(121,"jazz.dialect.classes.jazz:Property-Declaration:get-getter")
+
+___DEF_GLO(122,"jazz.dialect.classes.jazz:Property-Declaration:get-setter")
+
+___DEF_GLO(123,"jazz.dialect.classes.jazz:Property-Declaration:getter!offset")
+
+___DEF_GLO(124,"jazz.dialect.classes.jazz:Property-Declaration:getter!slot")
+
+___DEF_GLO(125,"jazz.dialect.classes.jazz:Property-Declaration:setter!offset")
+
+___DEF_GLO(126,"jazz.dialect.classes.jazz:Property-Declaration:setter!slot")
+
+___DEF_GLO(127,"jazz.dialect.classes.jazz:Slot-Declaration")
+
+___DEF_GLO(128,"jazz.dialect.classes.jazz:Slot-Declaration!level")
+
+___DEF_GLO(129,"jazz.dialect.classes.jazz:Slot-Declaration:dynamic?!offset")
+
+___DEF_GLO(130,"jazz.dialect.classes.jazz:Slot-Declaration:dynamic?!slot")
+
+___DEF_GLO(131,"jazz.dialect.classes.jazz:Slot-Declaration:get-dynamic?")
+
+___DEF_GLO(132,"jazz.dialect.classes.jazz:Slot-Declaration:get-getter-generation")
+
+___DEF_GLO(133,"jazz.dialect.classes.jazz:Slot-Declaration:get-getter-name")
+
+___DEF_GLO(134,"jazz.dialect.classes.jazz:Slot-Declaration:get-initialize")
+
+___DEF_GLO(135,"jazz.dialect.classes.jazz:Slot-Declaration:get-setter-generation")
+
+___DEF_GLO(136,"jazz.dialect.classes.jazz:Slot-Declaration:get-setter-name")
+
+___DEF_GLO(137,"jazz.dialect.classes.jazz:Slot-Declaration:get-specifier-source")
+
+___DEF_GLO(138,"jazz.dialect.classes.jazz:Slot-Declaration:getter-generation!offset")
+
+___DEF_GLO(139,"jazz.dialect.classes.jazz:Slot-Declaration:getter-generation!slot")
+
+___DEF_GLO(140,"jazz.dialect.classes.jazz:Slot-Declaration:getter-name!offset")
+
+___DEF_GLO(141,"jazz.dialect.classes.jazz:Slot-Declaration:getter-name!slot")
+
+___DEF_GLO(142,"jazz.dialect.classes.jazz:Slot-Declaration:initialize!offset")
+
+___DEF_GLO(143,"jazz.dialect.classes.jazz:Slot-Declaration:initialize!slot")
+
+___DEF_GLO(144,"jazz.dialect.classes.jazz:Slot-Declaration:setter-generation!offset")
+
+___DEF_GLO(145,"jazz.dialect.classes.jazz:Slot-Declaration:setter-generation!slot")
+
+___DEF_GLO(146,"jazz.dialect.classes.jazz:Slot-Declaration:setter-name!offset")
+
+___DEF_GLO(147,"jazz.dialect.classes.jazz:Slot-Declaration:setter-name!slot")
+
+___DEF_GLO(148,"jazz.dialect.classes.jazz:Slot-Declaration:specifier-source!offset")
+
+___DEF_GLO(149,"jazz.dialect.classes.jazz:Slot-Declaration:specifier-source!slot")
+
+___DEF_GLO(150,"jazz.dialect.classes.jazz:Specialize")
+
+___DEF_GLO(151,"jazz.dialect.classes.jazz:Specialize!level")
+
+___DEF_GLO(152,"jazz.dialect.classes.jazz:Specific-Declaration")
+
+___DEF_GLO(153,"jazz.dialect.classes.jazz:Specific-Declaration!level")
+
+___DEF_GLO(154,"jazz.dialect.classes.jazz:Specific-Declaration:body!offset")
+
+___DEF_GLO(155,"jazz.dialect.classes.jazz:Specific-Declaration:body!slot")
+
+___DEF_GLO(156,"jazz.dialect.classes.jazz:Specific-Declaration:generic!offset")
+
+___DEF_GLO(157,"jazz.dialect.classes.jazz:Specific-Declaration:generic!slot")
+
+___DEF_GLO(158,"jazz.dialect.classes.jazz:Specific-Declaration:get-body")
+
+___DEF_GLO(159,"jazz.dialect.classes.jazz:Specific-Declaration:get-generic")
+
+___DEF_GLO(160,"jazz.dialect.classes.jazz:Specific-Declaration:get-root?")
+
+___DEF_GLO(161,"jazz.dialect.classes.jazz:Specific-Declaration:get-signature")
+
+___DEF_GLO(162,"jazz.dialect.classes.jazz:Specific-Declaration:root?!offset")
+
+___DEF_GLO(163,"jazz.dialect.classes.jazz:Specific-Declaration:root?!slot")
+
+___DEF_GLO(164,"jazz.dialect.classes.jazz:Specific-Declaration:signature!offset")
+
+___DEF_GLO(165,"jazz.dialect.classes.jazz:Specific-Declaration:signature!slot")
+
+___DEF_GLO(166,"jazz.dialect.classes.jazz:With-Dynamic-Self")
+
+___DEF_GLO(167,"jazz.dialect.classes.jazz:With-Dynamic-Self!level")
+
+___DEF_GLO(168,"jazz.dialect.classes.jazz:With-Dynamic-Self:body!offset")
+
+___DEF_GLO(169,"jazz.dialect.classes.jazz:With-Dynamic-Self:body!slot")
+
+___DEF_GLO(170,"jazz.dialect.classes.jazz:With-Dynamic-Self:code!offset")
+
+___DEF_GLO(171,"jazz.dialect.classes.jazz:With-Dynamic-Self:code!slot")
+
+___DEF_GLO(172,"jazz.dialect.classes.jazz:With-Dynamic-Self:get-body")
+
+___DEF_GLO(173,"jazz.dialect.classes.jazz:With-Dynamic-Self:get-code")
+
+___DEF_GLO(174,"jazz.dialect.classes.jazz:With-Self")
+
+___DEF_GLO(175,"jazz.dialect.classes.jazz:With-Self!level")
+
+___DEF_GLO(176,"jazz.dialect.classes.jazz:With-Self:body!offset")
+
+___DEF_GLO(177,"jazz.dialect.classes.jazz:With-Self:body!slot")
+
+___DEF_GLO(178,"jazz.dialect.classes.jazz:With-Self:get-body")
+
+___DEF_GLO(179,"apply")
+___DEF_GLO(180,"jazz.language.runtime.functional:box-list")
+
+___DEF_GLO(181,"jazz.language.runtime.functional:find-keyword")
+
+___DEF_GLO(182,"jazz.language.runtime.functional:unbox-list")
+
+___DEF_GLO(183,"jazz:Allocate")
+___DEF_GLO(184,"jazz:Cast")
+___DEF_GLO(185,"jazz:Category-Declaration")
+___DEF_GLO(186,"jazz:Class-Declaration")
+___DEF_GLO(187,"jazz:Definition-Declaration")
+___DEF_GLO(188,"jazz:Field-Declaration")
+___DEF_GLO(189,"jazz:Generic-Declaration")
+___DEF_GLO(190,"jazz:Hub-Declaration")
+___DEF_GLO(191,"jazz:Interface-Declaration")
+___DEF_GLO(192,"jazz:Jazz-Dialect")
+___DEF_GLO(193,"jazz:Jazz-Walker")
+___DEF_GLO(194,"jazz:Method-Declaration")
+___DEF_GLO(195,"jazz:Node-Declaration")
+___DEF_GLO(196,"jazz:Property-Declaration")
+___DEF_GLO(197,"jazz:Slot-Declaration")
+___DEF_GLO(198,"jazz:Specialize")
+___DEF_GLO(199,"jazz:Specific-Declaration")
+___DEF_GLO(200,"jazz:With-Dynamic-Self")
+___DEF_GLO(201,"jazz:With-Self")
+___DEF_GLO(202,"jazz:add-final-method")
+___DEF_GLO(203,"jazz:add-method-node")
+___DEF_GLO(204,"jazz:add-slot")
+___DEF_GLO(205,"jazz:load-unit")
+___DEF_GLO(206,"jazz:register-module")
+___DEF_GLO(207,"jazz:set-core-class-redefined")
+___END_GLO
+
+#define ___GLO_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_ ___GLO(0,___G_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+#define ___PRM_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_ ___PRM(0,___G_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate ___GLO(1,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate ___PRM(1,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_21_level ___GLO(2,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_21_level ___PRM(2,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_offset ___GLO(3,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_offset ___PRM(3,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_slot ___GLO(4,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_slot ___PRM(4,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class ___GLO(5,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class ___PRM(5,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values ___GLO(6,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values ___PRM(6,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_offset ___GLO(7,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_offset ___PRM(7,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_slot ___GLO(8,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_slot ___PRM(8,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast ___GLO(9,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast ___PRM(9,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_21_level ___GLO(10,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_21_level ___PRM(10,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_offset ___GLO(11,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_offset ___PRM(11,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_slot ___GLO(12,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_slot ___PRM(12,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression ___GLO(13,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression ___PRM(13,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration ___GLO(14,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration ___PRM(14,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_21_level ___GLO(15,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_21_level ___PRM(15,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor ___GLO(16,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor ___PRM(16,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass ___GLO(17,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass ___PRM(17,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_ ___GLO(18,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_ ___PRM(18,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_offset ___GLO(19,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_offset ___PRM(19,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_slot ___GLO(20,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_slot ___PRM(20,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_offset ___GLO(21,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_offset ___PRM(21,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_slot ___GLO(22,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_slot ___PRM(22,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_offset ___GLO(23,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_offset ___PRM(23,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_slot ___GLO(24,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_slot ___PRM(24,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration ___GLO(25,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration ___PRM(25,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_21_level ___GLO(26,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_21_level ___PRM(26,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_offset ___GLO(27,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_offset ___PRM(27,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_slot ___GLO(28,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_slot ___PRM(28,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_offset ___GLO(29,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_offset ___PRM(29,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_slot ___GLO(30,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_slot ___PRM(30,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_offset ___GLO(31,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_offset ___PRM(31,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_slot ___GLO(32,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_slot ___PRM(32,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant ___GLO(33,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant ___PRM(33,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base ___GLO(34,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base ___PRM(34,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation ___GLO(35,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation ___PRM(35,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces ___GLO(36,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces ___PRM(36,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_offset ___GLO(37,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_offset ___PRM(37,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_slot ___GLO(38,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_slot ___PRM(38,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration ___GLO(39,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration ___PRM(39,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_21_level ___GLO(40,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_21_level ___PRM(40,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_offset ___GLO(41,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_offset ___PRM(41,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_slot ___GLO(42,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_slot ___PRM(42,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion ___GLO(43,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion ___PRM(43,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature ___GLO(44,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature ___PRM(44,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source ___GLO(45,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source ___PRM(45,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value ___GLO(46,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value ___PRM(46,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize ___GLO(47,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize ___PRM(47,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize_21_node ___GLO(48,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize_21_node)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize_21_node ___PRM(48,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize_21_node)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_offset ___GLO(49,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_offset ___PRM(49,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_slot ___GLO(50,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_slot ___PRM(50,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_offset ___GLO(51,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_offset ___PRM(51,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_slot ___GLO(52,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_slot ___PRM(52,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_offset ___GLO(53,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_offset ___PRM(53,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_slot ___GLO(54,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_slot ___PRM(54,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration ___GLO(55,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration ___PRM(55,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration_21_level ___GLO(56,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration_21_level ___PRM(56,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration ___GLO(57,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration ___PRM(57,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_21_level ___GLO(58,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_21_level ___PRM(58,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_offset ___GLO(59,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_offset ___PRM(59,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_slot ___GLO(60,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_slot ___PRM(60,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_offset ___GLO(61,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_offset ___PRM(61,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_slot ___GLO(62,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_slot ___PRM(62,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body ___GLO(63,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body ___PRM(63,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types ___GLO(64,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types ___PRM(64,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature ___GLO(65,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature ___PRM(65,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_offset ___GLO(66,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_offset ___PRM(66,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_slot ___GLO(67,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_slot ___PRM(67,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration ___GLO(68,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration ___PRM(68,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_21_level ___GLO(69,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_21_level ___PRM(69,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes ___GLO(70,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes ___PRM(70,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_offset ___GLO(71,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_offset ___PRM(71,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_slot ___GLO(72,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_slot ___PRM(72,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration ___GLO(73,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration ___PRM(73,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_21_level ___GLO(74,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_21_level ___PRM(74,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_offset ___GLO(75,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_offset ___PRM(75,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_slot ___GLO(76,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_slot ___PRM(76,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants ___GLO(77,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants ___PRM(77,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect ___GLO(78,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect ___PRM(78,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect_21_level ___GLO(79,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect_21_level ___PRM(79,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker ___GLO(80,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker ___PRM(80,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker_21_level ___GLO(81,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker_21_level ___PRM(81,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration ___GLO(82,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration ___PRM(82,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_21_level ___GLO(83,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_21_level ___PRM(83,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_offset ___GLO(84,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_offset ___PRM(84,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_slot ___GLO(85,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_slot ___PRM(85,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_offset ___GLO(86,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_offset ___PRM(86,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_slot ___GLO(87,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_slot ___PRM(87,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_offset ___GLO(88,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_offset ___PRM(88,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_slot ___GLO(89,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_slot ___PRM(89,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction ___GLO(90,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction ___PRM(90,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body ___GLO(91,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body ___PRM(91,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion ___GLO(92,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion ___PRM(92,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation ___GLO(93,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation ___PRM(93,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote ___GLO(94,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote ___PRM(94,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root ___GLO(95,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root ___PRM(95,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature ___GLO(96,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature ___PRM(96,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source ___GLO(97,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source ___PRM(97,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized ___GLO(98,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized ___PRM(98,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_offset ___GLO(99,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_offset ___PRM(99,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_slot ___GLO(100,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_slot ___PRM(100,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_offset ___GLO(101,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_offset ___PRM(101,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_slot ___GLO(102,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_slot ___PRM(102,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_offset ___GLO(103,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_offset ___PRM(103,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_slot ___GLO(104,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_slot ___PRM(104,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_offset ___GLO(105,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_offset ___PRM(105,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_slot ___GLO(106,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_slot ___PRM(106,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_offset ___GLO(107,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_offset ___PRM(107,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_slot ___GLO(108,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_slot ___PRM(108,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_offset ___GLO(109,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_offset ___PRM(109,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_slot ___GLO(110,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_slot ___PRM(110,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration ___GLO(111,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration ___PRM(111,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_21_level ___GLO(112,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_21_level ___PRM(112,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name ___GLO(113,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name ___PRM(113,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature ___GLO(114,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature ___PRM(114,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_offset ___GLO(115,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_offset ___PRM(115,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_slot ___GLO(116,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_slot ___PRM(116,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_offset ___GLO(117,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_offset ___PRM(117,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_slot ___GLO(118,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_slot ___PRM(118,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration ___GLO(119,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration ___PRM(119,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_21_level ___GLO(120,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_21_level ___PRM(120,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter ___GLO(121,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter ___PRM(121,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter ___GLO(122,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter ___PRM(122,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_offset ___GLO(123,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_offset ___PRM(123,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_slot ___GLO(124,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_slot ___PRM(124,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_offset ___GLO(125,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_offset ___PRM(125,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_slot ___GLO(126,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_slot ___PRM(126,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration ___GLO(127,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration ___PRM(127,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_21_level ___GLO(128,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_21_level ___PRM(128,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_offset ___GLO(129,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_offset ___PRM(129,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_slot ___GLO(130,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_slot ___PRM(130,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_ ___GLO(131,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_ ___PRM(131,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation ___GLO(132,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation ___PRM(132,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name ___GLO(133,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name ___PRM(133,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize ___GLO(134,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize ___PRM(134,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation ___GLO(135,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation ___PRM(135,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name ___GLO(136,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name ___PRM(136,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source ___GLO(137,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source ___PRM(137,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_offset ___GLO(138,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_offset ___PRM(138,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_slot ___GLO(139,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_slot ___PRM(139,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_offset ___GLO(140,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_offset ___PRM(140,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_slot ___GLO(141,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_slot ___PRM(141,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_offset ___GLO(142,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_offset ___PRM(142,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_slot ___GLO(143,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_slot ___PRM(143,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_offset ___GLO(144,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_offset ___PRM(144,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_slot ___GLO(145,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_slot ___PRM(145,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_offset ___GLO(146,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_offset ___PRM(146,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_slot ___GLO(147,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_slot ___PRM(147,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_offset ___GLO(148,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_offset ___PRM(148,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_slot ___GLO(149,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_slot ___PRM(149,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize ___GLO(150,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize ___PRM(150,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize_21_level ___GLO(151,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize_21_level ___PRM(151,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration ___GLO(152,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration ___PRM(152,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_21_level ___GLO(153,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_21_level ___PRM(153,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_offset ___GLO(154,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_offset ___PRM(154,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_slot ___GLO(155,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_slot ___PRM(155,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_offset ___GLO(156,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_offset ___PRM(156,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_slot ___GLO(157,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_slot ___PRM(157,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body ___GLO(158,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body ___PRM(158,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic ___GLO(159,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic ___PRM(159,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_ ___GLO(160,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_ ___PRM(160,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature ___GLO(161,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature ___PRM(161,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_offset ___GLO(162,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_offset ___PRM(162,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_slot ___GLO(163,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_slot ___PRM(163,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_offset ___GLO(164,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_offset ___PRM(164,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_slot ___GLO(165,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_slot ___PRM(165,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self ___GLO(166,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self ___PRM(166,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_21_level ___GLO(167,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_21_level ___PRM(167,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_offset ___GLO(168,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_offset ___PRM(168,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_slot ___GLO(169,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_slot ___PRM(169,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_offset ___GLO(170,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_offset ___PRM(170,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_slot ___GLO(171,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_slot ___PRM(171,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body ___GLO(172,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body ___PRM(172,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code ___GLO(173,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code ___PRM(173,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self ___GLO(174,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self ___PRM(174,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_21_level ___GLO(175,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_21_level)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_21_level ___PRM(175,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_21_level)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_offset ___GLO(176,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_offset)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_offset ___PRM(176,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_offset)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_slot ___GLO(177,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_slot)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_slot ___PRM(177,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_slot)
+#define ___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body ___GLO(178,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body)
+#define ___PRM_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body ___PRM(178,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body)
+#define ___GLO_apply ___GLO(179,___G_apply)
+#define ___PRM_apply ___PRM(179,___G_apply)
+#define ___GLO_jazz_2e_language_2e_runtime_2e_functional_3a_box_2d_list ___GLO(180,___G_jazz_2e_language_2e_runtime_2e_functional_3a_box_2d_list)
+#define ___PRM_jazz_2e_language_2e_runtime_2e_functional_3a_box_2d_list ___PRM(180,___G_jazz_2e_language_2e_runtime_2e_functional_3a_box_2d_list)
+#define ___GLO_jazz_2e_language_2e_runtime_2e_functional_3a_find_2d_keyword ___GLO(181,___G_jazz_2e_language_2e_runtime_2e_functional_3a_find_2d_keyword)
+#define ___PRM_jazz_2e_language_2e_runtime_2e_functional_3a_find_2d_keyword ___PRM(181,___G_jazz_2e_language_2e_runtime_2e_functional_3a_find_2d_keyword)
+#define ___GLO_jazz_2e_language_2e_runtime_2e_functional_3a_unbox_2d_list ___GLO(182,___G_jazz_2e_language_2e_runtime_2e_functional_3a_unbox_2d_list)
+#define ___PRM_jazz_2e_language_2e_runtime_2e_functional_3a_unbox_2d_list ___PRM(182,___G_jazz_2e_language_2e_runtime_2e_functional_3a_unbox_2d_list)
+#define ___GLO_jazz_3a_Allocate ___GLO(183,___G_jazz_3a_Allocate)
+#define ___PRM_jazz_3a_Allocate ___PRM(183,___G_jazz_3a_Allocate)
+#define ___GLO_jazz_3a_Cast ___GLO(184,___G_jazz_3a_Cast)
+#define ___PRM_jazz_3a_Cast ___PRM(184,___G_jazz_3a_Cast)
+#define ___GLO_jazz_3a_Category_2d_Declaration ___GLO(185,___G_jazz_3a_Category_2d_Declaration)
+#define ___PRM_jazz_3a_Category_2d_Declaration ___PRM(185,___G_jazz_3a_Category_2d_Declaration)
+#define ___GLO_jazz_3a_Class_2d_Declaration ___GLO(186,___G_jazz_3a_Class_2d_Declaration)
+#define ___PRM_jazz_3a_Class_2d_Declaration ___PRM(186,___G_jazz_3a_Class_2d_Declaration)
+#define ___GLO_jazz_3a_Definition_2d_Declaration ___GLO(187,___G_jazz_3a_Definition_2d_Declaration)
+#define ___PRM_jazz_3a_Definition_2d_Declaration ___PRM(187,___G_jazz_3a_Definition_2d_Declaration)
+#define ___GLO_jazz_3a_Field_2d_Declaration ___GLO(188,___G_jazz_3a_Field_2d_Declaration)
+#define ___PRM_jazz_3a_Field_2d_Declaration ___PRM(188,___G_jazz_3a_Field_2d_Declaration)
+#define ___GLO_jazz_3a_Generic_2d_Declaration ___GLO(189,___G_jazz_3a_Generic_2d_Declaration)
+#define ___PRM_jazz_3a_Generic_2d_Declaration ___PRM(189,___G_jazz_3a_Generic_2d_Declaration)
+#define ___GLO_jazz_3a_Hub_2d_Declaration ___GLO(190,___G_jazz_3a_Hub_2d_Declaration)
+#define ___PRM_jazz_3a_Hub_2d_Declaration ___PRM(190,___G_jazz_3a_Hub_2d_Declaration)
+#define ___GLO_jazz_3a_Interface_2d_Declaration ___GLO(191,___G_jazz_3a_Interface_2d_Declaration)
+#define ___PRM_jazz_3a_Interface_2d_Declaration ___PRM(191,___G_jazz_3a_Interface_2d_Declaration)
+#define ___GLO_jazz_3a_Jazz_2d_Dialect ___GLO(192,___G_jazz_3a_Jazz_2d_Dialect)
+#define ___PRM_jazz_3a_Jazz_2d_Dialect ___PRM(192,___G_jazz_3a_Jazz_2d_Dialect)
+#define ___GLO_jazz_3a_Jazz_2d_Walker ___GLO(193,___G_jazz_3a_Jazz_2d_Walker)
+#define ___PRM_jazz_3a_Jazz_2d_Walker ___PRM(193,___G_jazz_3a_Jazz_2d_Walker)
+#define ___GLO_jazz_3a_Method_2d_Declaration ___GLO(194,___G_jazz_3a_Method_2d_Declaration)
+#define ___PRM_jazz_3a_Method_2d_Declaration ___PRM(194,___G_jazz_3a_Method_2d_Declaration)
+#define ___GLO_jazz_3a_Node_2d_Declaration ___GLO(195,___G_jazz_3a_Node_2d_Declaration)
+#define ___PRM_jazz_3a_Node_2d_Declaration ___PRM(195,___G_jazz_3a_Node_2d_Declaration)
+#define ___GLO_jazz_3a_Property_2d_Declaration ___GLO(196,___G_jazz_3a_Property_2d_Declaration)
+#define ___PRM_jazz_3a_Property_2d_Declaration ___PRM(196,___G_jazz_3a_Property_2d_Declaration)
+#define ___GLO_jazz_3a_Slot_2d_Declaration ___GLO(197,___G_jazz_3a_Slot_2d_Declaration)
+#define ___PRM_jazz_3a_Slot_2d_Declaration ___PRM(197,___G_jazz_3a_Slot_2d_Declaration)
+#define ___GLO_jazz_3a_Specialize ___GLO(198,___G_jazz_3a_Specialize)
+#define ___PRM_jazz_3a_Specialize ___PRM(198,___G_jazz_3a_Specialize)
+#define ___GLO_jazz_3a_Specific_2d_Declaration ___GLO(199,___G_jazz_3a_Specific_2d_Declaration)
+#define ___PRM_jazz_3a_Specific_2d_Declaration ___PRM(199,___G_jazz_3a_Specific_2d_Declaration)
+#define ___GLO_jazz_3a_With_2d_Dynamic_2d_Self ___GLO(200,___G_jazz_3a_With_2d_Dynamic_2d_Self)
+#define ___PRM_jazz_3a_With_2d_Dynamic_2d_Self ___PRM(200,___G_jazz_3a_With_2d_Dynamic_2d_Self)
+#define ___GLO_jazz_3a_With_2d_Self ___GLO(201,___G_jazz_3a_With_2d_Self)
+#define ___PRM_jazz_3a_With_2d_Self ___PRM(201,___G_jazz_3a_With_2d_Self)
+#define ___GLO_jazz_3a_add_2d_final_2d_method ___GLO(202,___G_jazz_3a_add_2d_final_2d_method)
+#define ___PRM_jazz_3a_add_2d_final_2d_method ___PRM(202,___G_jazz_3a_add_2d_final_2d_method)
+#define ___GLO_jazz_3a_add_2d_method_2d_node ___GLO(203,___G_jazz_3a_add_2d_method_2d_node)
+#define ___PRM_jazz_3a_add_2d_method_2d_node ___PRM(203,___G_jazz_3a_add_2d_method_2d_node)
+#define ___GLO_jazz_3a_add_2d_slot ___GLO(204,___G_jazz_3a_add_2d_slot)
+#define ___PRM_jazz_3a_add_2d_slot ___PRM(204,___G_jazz_3a_add_2d_slot)
+#define ___GLO_jazz_3a_load_2d_unit ___GLO(205,___G_jazz_3a_load_2d_unit)
+#define ___PRM_jazz_3a_load_2d_unit ___PRM(205,___G_jazz_3a_load_2d_unit)
+#define ___GLO_jazz_3a_register_2d_module ___GLO(206,___G_jazz_3a_register_2d_module)
+#define ___PRM_jazz_3a_register_2d_module ___PRM(206,___G_jazz_3a_register_2d_module)
+#define ___GLO_jazz_3a_set_2d_core_2d_class_2d_redefined ___GLO(207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+#define ___PRM_jazz_3a_set_2d_core_2d_class_2d_redefined ___PRM(207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+
+___BEGIN_CNS
+ ___DEF_CNS(___REF_CNS(1),___REF_CNS(2))
+,___DEF_CNS(___REF_SYM(0,___S_Allocate),___REF_SYM(79,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate))
+,___DEF_CNS(___REF_CNS(3),___REF_CNS(4))
+,___DEF_CNS(___REF_SYM(1,___S_Cast),___REF_SYM(80,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast))
+,___DEF_CNS(___REF_CNS(5),___REF_CNS(6))
+,___DEF_CNS(___REF_SYM(2,___S_Category_2d_Declaration),___REF_SYM(81,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration))
+,___DEF_CNS(___REF_CNS(7),___REF_CNS(8))
+,___DEF_CNS(___REF_SYM(3,___S_Class_2d_Declaration),___REF_SYM(82,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration))
+,___DEF_CNS(___REF_CNS(9),___REF_CNS(10))
+,___DEF_CNS(___REF_SYM(4,___S_Definition_2d_Declaration),___REF_SYM(83,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration))
+,___DEF_CNS(___REF_CNS(11),___REF_CNS(12))
+,___DEF_CNS(___REF_SYM(5,___S_Field_2d_Declaration),___REF_SYM(84,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration))
+,___DEF_CNS(___REF_CNS(13),___REF_CNS(14))
+,___DEF_CNS(___REF_SYM(6,___S_Generic_2d_Declaration),___REF_SYM(85,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration))
+,___DEF_CNS(___REF_CNS(15),___REF_CNS(16))
+,___DEF_CNS(___REF_SYM(7,___S_Hub_2d_Declaration),___REF_SYM(86,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration))
+,___DEF_CNS(___REF_CNS(17),___REF_CNS(18))
+,___DEF_CNS(___REF_SYM(8,___S_Interface_2d_Declaration),___REF_SYM(87,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration))
+,___DEF_CNS(___REF_CNS(19),___REF_CNS(20))
+,___DEF_CNS(___REF_SYM(9,___S_Jazz_2d_Dialect),___REF_SYM(88,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect))
+,___DEF_CNS(___REF_CNS(21),___REF_CNS(22))
+,___DEF_CNS(___REF_SYM(10,___S_Jazz_2d_Walker),___REF_SYM(89,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker))
+,___DEF_CNS(___REF_CNS(23),___REF_CNS(24))
+,___DEF_CNS(___REF_SYM(11,___S_Method_2d_Declaration),___REF_SYM(90,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration))
+,___DEF_CNS(___REF_CNS(25),___REF_CNS(26))
+,___DEF_CNS(___REF_SYM(12,___S_Node_2d_Declaration),___REF_SYM(91,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration))
+,___DEF_CNS(___REF_CNS(27),___REF_CNS(28))
+,___DEF_CNS(___REF_SYM(13,___S_Property_2d_Declaration),___REF_SYM(92,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration))
+,___DEF_CNS(___REF_CNS(29),___REF_CNS(30))
+,___DEF_CNS(___REF_SYM(14,___S_Slot_2d_Declaration),___REF_SYM(93,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration))
+,___DEF_CNS(___REF_CNS(31),___REF_CNS(32))
+,___DEF_CNS(___REF_SYM(15,___S_Specialize),___REF_SYM(94,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize))
+,___DEF_CNS(___REF_CNS(33),___REF_CNS(34))
+,___DEF_CNS(___REF_SYM(16,___S_Specific_2d_Declaration),___REF_SYM(95,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration))
+,___DEF_CNS(___REF_CNS(35),___REF_CNS(36))
+,___DEF_CNS(___REF_SYM(17,___S_With_2d_Dynamic_2d_Self),___REF_SYM(96,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self))
+,___DEF_CNS(___REF_CNS(37),___REF_NUL)
+,___DEF_CNS(___REF_SYM(18,___S_With_2d_Self),___REF_SYM(97,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self))
+,___DEF_CNS(___REF_SYM(98,___S_jazz_2e_dialect_2e_classes_2e_scheme),___REF_NUL)
+___END_CNS
+
+___DEF_SUB_VEC(___X0,2UL)
+               ___VEC1(___REF_SUB(1))
+               ___VEC1(___REF_SUB(248))
+               ___VEC0
+___DEF_SUB_VEC(___X1,123UL)
+               ___VEC1(___REF_SUB(2))
+               ___VEC1(___REF_SUB(4))
+               ___VEC1(___REF_SUB(6))
+               ___VEC1(___REF_SUB(8))
+               ___VEC1(___REF_SUB(10))
+               ___VEC1(___REF_SUB(12))
+               ___VEC1(___REF_SUB(14))
+               ___VEC1(___REF_SUB(16))
+               ___VEC1(___REF_SUB(18))
+               ___VEC1(___REF_SUB(20))
+               ___VEC1(___REF_SUB(22))
+               ___VEC1(___REF_SUB(24))
+               ___VEC1(___REF_SUB(26))
+               ___VEC1(___REF_SUB(28))
+               ___VEC1(___REF_SUB(30))
+               ___VEC1(___REF_SUB(32))
+               ___VEC1(___REF_SUB(34))
+               ___VEC1(___REF_SUB(36))
+               ___VEC1(___REF_SUB(38))
+               ___VEC1(___REF_SUB(40))
+               ___VEC1(___REF_SUB(42))
+               ___VEC1(___REF_SUB(44))
+               ___VEC1(___REF_SUB(46))
+               ___VEC1(___REF_SUB(48))
+               ___VEC1(___REF_SUB(50))
+               ___VEC1(___REF_SUB(52))
+               ___VEC1(___REF_SUB(54))
+               ___VEC1(___REF_SUB(56))
+               ___VEC1(___REF_SUB(58))
+               ___VEC1(___REF_SUB(60))
+               ___VEC1(___REF_SUB(62))
+               ___VEC1(___REF_SUB(64))
+               ___VEC1(___REF_SUB(66))
+               ___VEC1(___REF_SUB(68))
+               ___VEC1(___REF_SUB(70))
+               ___VEC1(___REF_SUB(72))
+               ___VEC1(___REF_SUB(74))
+               ___VEC1(___REF_SUB(76))
+               ___VEC1(___REF_SUB(78))
+               ___VEC1(___REF_SUB(80))
+               ___VEC1(___REF_SUB(82))
+               ___VEC1(___REF_SUB(84))
+               ___VEC1(___REF_SUB(86))
+               ___VEC1(___REF_SUB(88))
+               ___VEC1(___REF_SUB(90))
+               ___VEC1(___REF_SUB(92))
+               ___VEC1(___REF_SUB(94))
+               ___VEC1(___REF_SUB(96))
+               ___VEC1(___REF_SUB(98))
+               ___VEC1(___REF_SUB(100))
+               ___VEC1(___REF_SUB(102))
+               ___VEC1(___REF_SUB(104))
+               ___VEC1(___REF_SUB(106))
+               ___VEC1(___REF_SUB(108))
+               ___VEC1(___REF_SUB(110))
+               ___VEC1(___REF_SUB(112))
+               ___VEC1(___REF_SUB(114))
+               ___VEC1(___REF_SUB(116))
+               ___VEC1(___REF_SUB(118))
+               ___VEC1(___REF_SUB(120))
+               ___VEC1(___REF_SUB(122))
+               ___VEC1(___REF_SUB(124))
+               ___VEC1(___REF_SUB(126))
+               ___VEC1(___REF_SUB(128))
+               ___VEC1(___REF_SUB(130))
+               ___VEC1(___REF_SUB(132))
+               ___VEC1(___REF_SUB(134))
+               ___VEC1(___REF_SUB(136))
+               ___VEC1(___REF_SUB(138))
+               ___VEC1(___REF_SUB(140))
+               ___VEC1(___REF_SUB(142))
+               ___VEC1(___REF_SUB(144))
+               ___VEC1(___REF_SUB(146))
+               ___VEC1(___REF_SUB(148))
+               ___VEC1(___REF_SUB(150))
+               ___VEC1(___REF_SUB(152))
+               ___VEC1(___REF_SUB(154))
+               ___VEC1(___REF_SUB(156))
+               ___VEC1(___REF_SUB(158))
+               ___VEC1(___REF_SUB(160))
+               ___VEC1(___REF_SUB(162))
+               ___VEC1(___REF_SUB(164))
+               ___VEC1(___REF_SUB(166))
+               ___VEC1(___REF_SUB(168))
+               ___VEC1(___REF_SUB(170))
+               ___VEC1(___REF_SUB(172))
+               ___VEC1(___REF_SUB(174))
+               ___VEC1(___REF_SUB(176))
+               ___VEC1(___REF_SUB(178))
+               ___VEC1(___REF_SUB(180))
+               ___VEC1(___REF_SUB(182))
+               ___VEC1(___REF_SUB(184))
+               ___VEC1(___REF_SUB(186))
+               ___VEC1(___REF_SUB(188))
+               ___VEC1(___REF_SUB(190))
+               ___VEC1(___REF_SUB(192))
+               ___VEC1(___REF_SUB(194))
+               ___VEC1(___REF_SUB(196))
+               ___VEC1(___REF_SUB(198))
+               ___VEC1(___REF_SUB(200))
+               ___VEC1(___REF_SUB(202))
+               ___VEC1(___REF_SUB(204))
+               ___VEC1(___REF_SUB(206))
+               ___VEC1(___REF_SUB(208))
+               ___VEC1(___REF_SUB(210))
+               ___VEC1(___REF_SUB(212))
+               ___VEC1(___REF_SUB(214))
+               ___VEC1(___REF_SUB(216))
+               ___VEC1(___REF_SUB(218))
+               ___VEC1(___REF_SUB(220))
+               ___VEC1(___REF_SUB(222))
+               ___VEC1(___REF_SUB(224))
+               ___VEC1(___REF_SUB(226))
+               ___VEC1(___REF_SUB(228))
+               ___VEC1(___REF_SUB(230))
+               ___VEC1(___REF_SUB(232))
+               ___VEC1(___REF_SUB(234))
+               ___VEC1(___REF_SUB(236))
+               ___VEC1(___REF_SUB(238))
+               ___VEC1(___REF_SUB(240))
+               ___VEC1(___REF_SUB(242))
+               ___VEC1(___REF_SUB(244))
+               ___VEC1(___REF_SUB(246))
+               ___VEC0
+___DEF_SUB_VEC(___X2,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(3))
+               ___VEC0
+___DEF_SUB_VEC(___X3,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X4,2UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(5))
+               ___VEC0
+___DEF_SUB_VEC(___X5,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X6,2UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(7))
+               ___VEC0
+___DEF_SUB_VEC(___X7,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X8,2UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(9))
+               ___VEC0
+___DEF_SUB_VEC(___X9,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X10,2UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(11))
+               ___VEC0
+___DEF_SUB_VEC(___X11,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X12,2UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(13))
+               ___VEC0
+___DEF_SUB_VEC(___X13,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X14,2UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(15))
+               ___VEC0
+___DEF_SUB_VEC(___X15,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X16,2UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(17))
+               ___VEC0
+___DEF_SUB_VEC(___X17,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X18,2UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(19))
+               ___VEC0
+___DEF_SUB_VEC(___X19,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X20,2UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(21))
+               ___VEC0
+___DEF_SUB_VEC(___X21,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(37))
+               ___VEC0
+___DEF_SUB_VEC(___X22,2UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(23))
+               ___VEC0
+___DEF_SUB_VEC(___X23,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X24,2UL)
+               ___VEC1(___REF_FIX(11))
+               ___VEC1(___REF_SUB(25))
+               ___VEC0
+___DEF_SUB_VEC(___X25,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131128))
+               ___VEC0
+___DEF_SUB_VEC(___X26,2UL)
+               ___VEC1(___REF_FIX(12))
+               ___VEC1(___REF_SUB(27))
+               ___VEC0
+___DEF_SUB_VEC(___X27,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X28,2UL)
+               ___VEC1(___REF_FIX(13))
+               ___VEC1(___REF_SUB(29))
+               ___VEC0
+___DEF_SUB_VEC(___X29,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131129))
+               ___VEC0
+___DEF_SUB_VEC(___X30,2UL)
+               ___VEC1(___REF_FIX(14))
+               ___VEC1(___REF_SUB(31))
+               ___VEC0
+___DEF_SUB_VEC(___X31,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X32,2UL)
+               ___VEC1(___REF_FIX(15))
+               ___VEC1(___REF_SUB(33))
+               ___VEC0
+___DEF_SUB_VEC(___X33,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131130))
+               ___VEC0
+___DEF_SUB_VEC(___X34,2UL)
+               ___VEC1(___REF_FIX(16))
+               ___VEC1(___REF_SUB(35))
+               ___VEC0
+___DEF_SUB_VEC(___X35,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X36,2UL)
+               ___VEC1(___REF_FIX(17))
+               ___VEC1(___REF_SUB(37))
+               ___VEC0
+___DEF_SUB_VEC(___X37,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131131))
+               ___VEC0
+___DEF_SUB_VEC(___X38,2UL)
+               ___VEC1(___REF_FIX(18))
+               ___VEC1(___REF_SUB(39))
+               ___VEC0
+___DEF_SUB_VEC(___X39,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X40,2UL)
+               ___VEC1(___REF_FIX(19))
+               ___VEC1(___REF_SUB(41))
+               ___VEC0
+___DEF_SUB_VEC(___X41,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131134))
+               ___VEC0
+___DEF_SUB_VEC(___X42,2UL)
+               ___VEC1(___REF_FIX(20))
+               ___VEC1(___REF_SUB(43))
+               ___VEC0
+___DEF_SUB_VEC(___X43,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(75))
+               ___VEC0
+___DEF_SUB_VEC(___X44,2UL)
+               ___VEC1(___REF_FIX(21))
+               ___VEC1(___REF_SUB(45))
+               ___VEC0
+___DEF_SUB_VEC(___X45,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(83))
+               ___VEC0
+___DEF_SUB_VEC(___X46,2UL)
+               ___VEC1(___REF_FIX(22))
+               ___VEC1(___REF_SUB(47))
+               ___VEC0
+___DEF_SUB_VEC(___X47,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131158))
+               ___VEC0
+___DEF_SUB_VEC(___X48,2UL)
+               ___VEC1(___REF_FIX(23))
+               ___VEC1(___REF_SUB(49))
+               ___VEC0
+___DEF_SUB_VEC(___X49,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(83))
+               ___VEC0
+___DEF_SUB_VEC(___X50,2UL)
+               ___VEC1(___REF_FIX(24))
+               ___VEC1(___REF_SUB(51))
+               ___VEC0
+___DEF_SUB_VEC(___X51,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131159))
+               ___VEC0
+___DEF_SUB_VEC(___X52,2UL)
+               ___VEC1(___REF_FIX(25))
+               ___VEC1(___REF_SUB(53))
+               ___VEC0
+___DEF_SUB_VEC(___X53,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(83))
+               ___VEC0
+___DEF_SUB_VEC(___X54,2UL)
+               ___VEC1(___REF_FIX(26))
+               ___VEC1(___REF_SUB(55))
+               ___VEC0
+___DEF_SUB_VEC(___X55,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131160))
+               ___VEC0
+___DEF_SUB_VEC(___X56,2UL)
+               ___VEC1(___REF_FIX(27))
+               ___VEC1(___REF_SUB(57))
+               ___VEC0
+___DEF_SUB_VEC(___X57,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(83))
+               ___VEC0
+___DEF_SUB_VEC(___X58,2UL)
+               ___VEC1(___REF_FIX(28))
+               ___VEC1(___REF_SUB(59))
+               ___VEC0
+___DEF_SUB_VEC(___X59,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X60,2UL)
+               ___VEC1(___REF_FIX(29))
+               ___VEC1(___REF_SUB(61))
+               ___VEC0
+___DEF_SUB_VEC(___X61,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131171))
+               ___VEC0
+___DEF_SUB_VEC(___X62,2UL)
+               ___VEC1(___REF_FIX(30))
+               ___VEC1(___REF_SUB(63))
+               ___VEC0
+___DEF_SUB_VEC(___X63,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X64,2UL)
+               ___VEC1(___REF_FIX(31))
+               ___VEC1(___REF_SUB(65))
+               ___VEC0
+___DEF_SUB_VEC(___X65,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131172))
+               ___VEC0
+___DEF_SUB_VEC(___X66,2UL)
+               ___VEC1(___REF_FIX(32))
+               ___VEC1(___REF_SUB(67))
+               ___VEC0
+___DEF_SUB_VEC(___X67,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X68,2UL)
+               ___VEC1(___REF_FIX(33))
+               ___VEC1(___REF_SUB(69))
+               ___VEC0
+___DEF_SUB_VEC(___X69,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131173))
+               ___VEC0
+___DEF_SUB_VEC(___X70,2UL)
+               ___VEC1(___REF_FIX(34))
+               ___VEC1(___REF_SUB(71))
+               ___VEC0
+___DEF_SUB_VEC(___X71,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X72,2UL)
+               ___VEC1(___REF_FIX(35))
+               ___VEC1(___REF_SUB(73))
+               ___VEC0
+___DEF_SUB_VEC(___X73,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131174))
+               ___VEC0
+___DEF_SUB_VEC(___X74,2UL)
+               ___VEC1(___REF_FIX(36))
+               ___VEC1(___REF_SUB(75))
+               ___VEC0
+___DEF_SUB_VEC(___X75,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X76,2UL)
+               ___VEC1(___REF_FIX(37))
+               ___VEC1(___REF_SUB(77))
+               ___VEC0
+___DEF_SUB_VEC(___X77,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(110))
+               ___VEC0
+___DEF_SUB_VEC(___X78,2UL)
+               ___VEC1(___REF_FIX(38))
+               ___VEC1(___REF_SUB(79))
+               ___VEC0
+___DEF_SUB_VEC(___X79,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131185))
+               ___VEC0
+___DEF_SUB_VEC(___X80,2UL)
+               ___VEC1(___REF_FIX(39))
+               ___VEC1(___REF_SUB(81))
+               ___VEC0
+___DEF_SUB_VEC(___X81,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(110))
+               ___VEC0
+___DEF_SUB_VEC(___X82,2UL)
+               ___VEC1(___REF_FIX(40))
+               ___VEC1(___REF_SUB(83))
+               ___VEC0
+___DEF_SUB_VEC(___X83,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131186))
+               ___VEC0
+___DEF_SUB_VEC(___X84,2UL)
+               ___VEC1(___REF_FIX(41))
+               ___VEC1(___REF_SUB(85))
+               ___VEC0
+___DEF_SUB_VEC(___X85,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(110))
+               ___VEC0
+___DEF_SUB_VEC(___X86,2UL)
+               ___VEC1(___REF_FIX(42))
+               ___VEC1(___REF_SUB(87))
+               ___VEC0
+___DEF_SUB_VEC(___X87,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131187))
+               ___VEC0
+___DEF_SUB_VEC(___X88,2UL)
+               ___VEC1(___REF_FIX(43))
+               ___VEC1(___REF_SUB(89))
+               ___VEC0
+___DEF_SUB_VEC(___X89,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(110))
+               ___VEC0
+___DEF_SUB_VEC(___X90,2UL)
+               ___VEC1(___REF_FIX(44))
+               ___VEC1(___REF_SUB(91))
+               ___VEC0
+___DEF_SUB_VEC(___X91,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X92,2UL)
+               ___VEC1(___REF_FIX(45))
+               ___VEC1(___REF_SUB(93))
+               ___VEC0
+___DEF_SUB_VEC(___X93,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131198))
+               ___VEC0
+___DEF_SUB_VEC(___X94,2UL)
+               ___VEC1(___REF_FIX(46))
+               ___VEC1(___REF_SUB(95))
+               ___VEC0
+___DEF_SUB_VEC(___X95,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X96,2UL)
+               ___VEC1(___REF_FIX(47))
+               ___VEC1(___REF_SUB(97))
+               ___VEC0
+___DEF_SUB_VEC(___X97,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131199))
+               ___VEC0
+___DEF_SUB_VEC(___X98,2UL)
+               ___VEC1(___REF_FIX(48))
+               ___VEC1(___REF_SUB(99))
+               ___VEC0
+___DEF_SUB_VEC(___X99,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X100,2UL)
+               ___VEC1(___REF_FIX(49))
+               ___VEC1(___REF_SUB(101))
+               ___VEC0
+___DEF_SUB_VEC(___X101,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131200))
+               ___VEC0
+___DEF_SUB_VEC(___X102,2UL)
+               ___VEC1(___REF_FIX(50))
+               ___VEC1(___REF_SUB(103))
+               ___VEC0
+___DEF_SUB_VEC(___X103,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X104,2UL)
+               ___VEC1(___REF_FIX(51))
+               ___VEC1(___REF_SUB(105))
+               ___VEC0
+___DEF_SUB_VEC(___X105,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131201))
+               ___VEC0
+___DEF_SUB_VEC(___X106,2UL)
+               ___VEC1(___REF_FIX(52))
+               ___VEC1(___REF_SUB(107))
+               ___VEC0
+___DEF_SUB_VEC(___X107,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X108,2UL)
+               ___VEC1(___REF_FIX(53))
+               ___VEC1(___REF_SUB(109))
+               ___VEC0
+___DEF_SUB_VEC(___X109,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(137))
+               ___VEC0
+___DEF_SUB_VEC(___X110,2UL)
+               ___VEC1(___REF_FIX(54))
+               ___VEC1(___REF_SUB(111))
+               ___VEC0
+___DEF_SUB_VEC(___X111,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131212))
+               ___VEC0
+___DEF_SUB_VEC(___X112,2UL)
+               ___VEC1(___REF_FIX(55))
+               ___VEC1(___REF_SUB(113))
+               ___VEC0
+___DEF_SUB_VEC(___X113,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(137))
+               ___VEC0
+___DEF_SUB_VEC(___X114,2UL)
+               ___VEC1(___REF_FIX(56))
+               ___VEC1(___REF_SUB(115))
+               ___VEC0
+___DEF_SUB_VEC(___X115,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(148))
+               ___VEC0
+___DEF_SUB_VEC(___X116,2UL)
+               ___VEC1(___REF_FIX(57))
+               ___VEC1(___REF_SUB(117))
+               ___VEC0
+___DEF_SUB_VEC(___X117,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X118,2UL)
+               ___VEC1(___REF_FIX(58))
+               ___VEC1(___REF_SUB(119))
+               ___VEC0
+___DEF_SUB_VEC(___X119,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131231))
+               ___VEC0
+___DEF_SUB_VEC(___X120,2UL)
+               ___VEC1(___REF_FIX(59))
+               ___VEC1(___REF_SUB(121))
+               ___VEC0
+___DEF_SUB_VEC(___X121,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X122,2UL)
+               ___VEC1(___REF_FIX(60))
+               ___VEC1(___REF_SUB(123))
+               ___VEC0
+___DEF_SUB_VEC(___X123,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131232))
+               ___VEC0
+___DEF_SUB_VEC(___X124,2UL)
+               ___VEC1(___REF_FIX(61))
+               ___VEC1(___REF_SUB(125))
+               ___VEC0
+___DEF_SUB_VEC(___X125,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X126,2UL)
+               ___VEC1(___REF_FIX(62))
+               ___VEC1(___REF_SUB(127))
+               ___VEC0
+___DEF_SUB_VEC(___X127,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131233))
+               ___VEC0
+___DEF_SUB_VEC(___X128,2UL)
+               ___VEC1(___REF_FIX(63))
+               ___VEC1(___REF_SUB(129))
+               ___VEC0
+___DEF_SUB_VEC(___X129,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X130,2UL)
+               ___VEC1(___REF_FIX(64))
+               ___VEC1(___REF_SUB(131))
+               ___VEC0
+___DEF_SUB_VEC(___X131,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131234))
+               ___VEC0
+___DEF_SUB_VEC(___X132,2UL)
+               ___VEC1(___REF_FIX(65))
+               ___VEC1(___REF_SUB(133))
+               ___VEC0
+___DEF_SUB_VEC(___X133,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X134,2UL)
+               ___VEC1(___REF_FIX(66))
+               ___VEC1(___REF_SUB(135))
+               ___VEC0
+___DEF_SUB_VEC(___X135,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131235))
+               ___VEC0
+___DEF_SUB_VEC(___X136,2UL)
+               ___VEC1(___REF_FIX(67))
+               ___VEC1(___REF_SUB(137))
+               ___VEC0
+___DEF_SUB_VEC(___X137,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X138,2UL)
+               ___VEC1(___REF_FIX(68))
+               ___VEC1(___REF_SUB(139))
+               ___VEC0
+___DEF_SUB_VEC(___X139,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131236))
+               ___VEC0
+___DEF_SUB_VEC(___X140,2UL)
+               ___VEC1(___REF_FIX(69))
+               ___VEC1(___REF_SUB(141))
+               ___VEC0
+___DEF_SUB_VEC(___X141,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X142,2UL)
+               ___VEC1(___REF_FIX(70))
+               ___VEC1(___REF_SUB(143))
+               ___VEC0
+___DEF_SUB_VEC(___X143,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131237))
+               ___VEC0
+___DEF_SUB_VEC(___X144,2UL)
+               ___VEC1(___REF_FIX(71))
+               ___VEC1(___REF_SUB(145))
+               ___VEC0
+___DEF_SUB_VEC(___X145,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X146,2UL)
+               ___VEC1(___REF_FIX(72))
+               ___VEC1(___REF_SUB(147))
+               ___VEC0
+___DEF_SUB_VEC(___X147,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(173))
+               ___VEC0
+___DEF_SUB_VEC(___X148,2UL)
+               ___VEC1(___REF_FIX(73))
+               ___VEC1(___REF_SUB(149))
+               ___VEC0
+___DEF_SUB_VEC(___X149,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131248))
+               ___VEC0
+___DEF_SUB_VEC(___X150,2UL)
+               ___VEC1(___REF_FIX(74))
+               ___VEC1(___REF_SUB(151))
+               ___VEC0
+___DEF_SUB_VEC(___X151,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(173))
+               ___VEC0
+___DEF_SUB_VEC(___X152,2UL)
+               ___VEC1(___REF_FIX(75))
+               ___VEC1(___REF_SUB(153))
+               ___VEC0
+___DEF_SUB_VEC(___X153,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131249))
+               ___VEC0
+___DEF_SUB_VEC(___X154,2UL)
+               ___VEC1(___REF_FIX(76))
+               ___VEC1(___REF_SUB(155))
+               ___VEC0
+___DEF_SUB_VEC(___X155,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(173))
+               ___VEC0
+___DEF_SUB_VEC(___X156,2UL)
+               ___VEC1(___REF_FIX(77))
+               ___VEC1(___REF_SUB(157))
+               ___VEC0
+___DEF_SUB_VEC(___X157,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X158,2UL)
+               ___VEC1(___REF_FIX(78))
+               ___VEC1(___REF_SUB(159))
+               ___VEC0
+___DEF_SUB_VEC(___X159,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131260))
+               ___VEC0
+___DEF_SUB_VEC(___X160,2UL)
+               ___VEC1(___REF_FIX(79))
+               ___VEC1(___REF_SUB(161))
+               ___VEC0
+___DEF_SUB_VEC(___X161,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X162,2UL)
+               ___VEC1(___REF_FIX(80))
+               ___VEC1(___REF_SUB(163))
+               ___VEC0
+___DEF_SUB_VEC(___X163,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131261))
+               ___VEC0
+___DEF_SUB_VEC(___X164,2UL)
+               ___VEC1(___REF_FIX(81))
+               ___VEC1(___REF_SUB(165))
+               ___VEC0
+___DEF_SUB_VEC(___X165,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X166,2UL)
+               ___VEC1(___REF_FIX(82))
+               ___VEC1(___REF_SUB(167))
+               ___VEC0
+___DEF_SUB_VEC(___X167,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131262))
+               ___VEC0
+___DEF_SUB_VEC(___X168,2UL)
+               ___VEC1(___REF_FIX(83))
+               ___VEC1(___REF_SUB(169))
+               ___VEC0
+___DEF_SUB_VEC(___X169,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X170,2UL)
+               ___VEC1(___REF_FIX(84))
+               ___VEC1(___REF_SUB(171))
+               ___VEC0
+___DEF_SUB_VEC(___X171,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131263))
+               ___VEC0
+___DEF_SUB_VEC(___X172,2UL)
+               ___VEC1(___REF_FIX(85))
+               ___VEC1(___REF_SUB(173))
+               ___VEC0
+___DEF_SUB_VEC(___X173,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X174,2UL)
+               ___VEC1(___REF_FIX(86))
+               ___VEC1(___REF_SUB(175))
+               ___VEC0
+___DEF_SUB_VEC(___X175,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131264))
+               ___VEC0
+___DEF_SUB_VEC(___X176,2UL)
+               ___VEC1(___REF_FIX(87))
+               ___VEC1(___REF_SUB(177))
+               ___VEC0
+___DEF_SUB_VEC(___X177,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X178,2UL)
+               ___VEC1(___REF_FIX(88))
+               ___VEC1(___REF_SUB(179))
+               ___VEC0
+___DEF_SUB_VEC(___X179,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131265))
+               ___VEC0
+___DEF_SUB_VEC(___X180,2UL)
+               ___VEC1(___REF_FIX(89))
+               ___VEC1(___REF_SUB(181))
+               ___VEC0
+___DEF_SUB_VEC(___X181,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X182,2UL)
+               ___VEC1(___REF_FIX(90))
+               ___VEC1(___REF_SUB(183))
+               ___VEC0
+___DEF_SUB_VEC(___X183,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131266))
+               ___VEC0
+___DEF_SUB_VEC(___X184,2UL)
+               ___VEC1(___REF_FIX(91))
+               ___VEC1(___REF_SUB(185))
+               ___VEC0
+___DEF_SUB_VEC(___X185,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X186,2UL)
+               ___VEC1(___REF_FIX(92))
+               ___VEC1(___REF_SUB(187))
+               ___VEC0
+___DEF_SUB_VEC(___X187,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131267))
+               ___VEC0
+___DEF_SUB_VEC(___X188,2UL)
+               ___VEC1(___REF_FIX(93))
+               ___VEC1(___REF_SUB(189))
+               ___VEC0
+___DEF_SUB_VEC(___X189,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X190,2UL)
+               ___VEC1(___REF_FIX(94))
+               ___VEC1(___REF_SUB(191))
+               ___VEC0
+___DEF_SUB_VEC(___X191,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131268))
+               ___VEC0
+___DEF_SUB_VEC(___X192,2UL)
+               ___VEC1(___REF_FIX(95))
+               ___VEC1(___REF_SUB(193))
+               ___VEC0
+___DEF_SUB_VEC(___X193,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X194,2UL)
+               ___VEC1(___REF_FIX(96))
+               ___VEC1(___REF_SUB(195))
+               ___VEC0
+___DEF_SUB_VEC(___X195,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(204))
+               ___VEC0
+___DEF_SUB_VEC(___X196,2UL)
+               ___VEC1(___REF_FIX(97))
+               ___VEC1(___REF_SUB(197))
+               ___VEC0
+___DEF_SUB_VEC(___X197,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131279))
+               ___VEC0
+___DEF_SUB_VEC(___X198,2UL)
+               ___VEC1(___REF_FIX(98))
+               ___VEC1(___REF_SUB(199))
+               ___VEC0
+___DEF_SUB_VEC(___X199,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(204))
+               ___VEC0
+___DEF_SUB_VEC(___X200,2UL)
+               ___VEC1(___REF_FIX(99))
+               ___VEC1(___REF_SUB(201))
+               ___VEC0
+___DEF_SUB_VEC(___X201,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(215))
+               ___VEC0
+___DEF_SUB_VEC(___X202,2UL)
+               ___VEC1(___REF_FIX(100))
+               ___VEC1(___REF_SUB(203))
+               ___VEC0
+___DEF_SUB_VEC(___X203,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131290))
+               ___VEC0
+___DEF_SUB_VEC(___X204,2UL)
+               ___VEC1(___REF_FIX(101))
+               ___VEC1(___REF_SUB(205))
+               ___VEC0
+___DEF_SUB_VEC(___X205,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(215))
+               ___VEC0
+___DEF_SUB_VEC(___X206,2UL)
+               ___VEC1(___REF_FIX(102))
+               ___VEC1(___REF_SUB(207))
+               ___VEC0
+___DEF_SUB_VEC(___X207,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131291))
+               ___VEC0
+___DEF_SUB_VEC(___X208,2UL)
+               ___VEC1(___REF_FIX(103))
+               ___VEC1(___REF_SUB(209))
+               ___VEC0
+___DEF_SUB_VEC(___X209,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(215))
+               ___VEC0
+___DEF_SUB_VEC(___X210,2UL)
+               ___VEC1(___REF_FIX(104))
+               ___VEC1(___REF_SUB(211))
+               ___VEC0
+___DEF_SUB_VEC(___X211,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(227))
+               ___VEC0
+___DEF_SUB_VEC(___X212,2UL)
+               ___VEC1(___REF_FIX(105))
+               ___VEC1(___REF_SUB(213))
+               ___VEC0
+___DEF_SUB_VEC(___X213,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131302))
+               ___VEC0
+___DEF_SUB_VEC(___X214,2UL)
+               ___VEC1(___REF_FIX(106))
+               ___VEC1(___REF_SUB(215))
+               ___VEC0
+___DEF_SUB_VEC(___X215,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(227))
+               ___VEC0
+___DEF_SUB_VEC(___X216,2UL)
+               ___VEC1(___REF_FIX(107))
+               ___VEC1(___REF_SUB(217))
+               ___VEC0
+___DEF_SUB_VEC(___X217,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(238))
+               ___VEC0
+___DEF_SUB_VEC(___X218,2UL)
+               ___VEC1(___REF_FIX(108))
+               ___VEC1(___REF_SUB(219))
+               ___VEC0
+___DEF_SUB_VEC(___X219,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131313))
+               ___VEC0
+___DEF_SUB_VEC(___X220,2UL)
+               ___VEC1(___REF_FIX(109))
+               ___VEC1(___REF_SUB(221))
+               ___VEC0
+___DEF_SUB_VEC(___X221,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(238))
+               ___VEC0
+___DEF_SUB_VEC(___X222,2UL)
+               ___VEC1(___REF_FIX(110))
+               ___VEC1(___REF_SUB(223))
+               ___VEC0
+___DEF_SUB_VEC(___X223,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131314))
+               ___VEC0
+___DEF_SUB_VEC(___X224,2UL)
+               ___VEC1(___REF_FIX(111))
+               ___VEC1(___REF_SUB(225))
+               ___VEC0
+___DEF_SUB_VEC(___X225,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(238))
+               ___VEC0
+___DEF_SUB_VEC(___X226,2UL)
+               ___VEC1(___REF_FIX(112))
+               ___VEC1(___REF_SUB(227))
+               ___VEC0
+___DEF_SUB_VEC(___X227,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(250))
+               ___VEC0
+___DEF_SUB_VEC(___X228,2UL)
+               ___VEC1(___REF_FIX(113))
+               ___VEC1(___REF_SUB(229))
+               ___VEC0
+___DEF_SUB_VEC(___X229,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131325))
+               ___VEC0
+___DEF_SUB_VEC(___X230,2UL)
+               ___VEC1(___REF_FIX(114))
+               ___VEC1(___REF_SUB(231))
+               ___VEC0
+___DEF_SUB_VEC(___X231,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(250))
+               ___VEC0
+___DEF_SUB_VEC(___X232,2UL)
+               ___VEC1(___REF_FIX(115))
+               ___VEC1(___REF_SUB(233))
+               ___VEC0
+___DEF_SUB_VEC(___X233,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(261))
+               ___VEC0
+___DEF_SUB_VEC(___X234,2UL)
+               ___VEC1(___REF_FIX(116))
+               ___VEC1(___REF_SUB(235))
+               ___VEC0
+___DEF_SUB_VEC(___X235,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131336))
+               ___VEC0
+___DEF_SUB_VEC(___X236,2UL)
+               ___VEC1(___REF_FIX(117))
+               ___VEC1(___REF_SUB(237))
+               ___VEC0
+___DEF_SUB_VEC(___X237,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(261))
+               ___VEC0
+___DEF_SUB_VEC(___X238,2UL)
+               ___VEC1(___REF_FIX(118))
+               ___VEC1(___REF_SUB(239))
+               ___VEC0
+___DEF_SUB_VEC(___X239,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131337))
+               ___VEC0
+___DEF_SUB_VEC(___X240,2UL)
+               ___VEC1(___REF_FIX(119))
+               ___VEC1(___REF_SUB(241))
+               ___VEC0
+___DEF_SUB_VEC(___X241,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(261))
+               ___VEC0
+___DEF_SUB_VEC(___X242,2UL)
+               ___VEC1(___REF_FIX(120))
+               ___VEC1(___REF_SUB(243))
+               ___VEC0
+___DEF_SUB_VEC(___X243,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(273))
+               ___VEC0
+___DEF_SUB_VEC(___X244,2UL)
+               ___VEC1(___REF_FIX(121))
+               ___VEC1(___REF_SUB(245))
+               ___VEC0
+___DEF_SUB_VEC(___X245,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(281))
+               ___VEC0
+___DEF_SUB_VEC(___X246,2UL)
+               ___VEC1(___REF_FIX(122))
+               ___VEC1(___REF_SUB(247))
+               ___VEC0
+___DEF_SUB_VEC(___X247,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(281))
+               ___VEC0
+___DEF_SUB_VEC(___X248,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X249,2UL)
+               ___VEC1(___REF_SUB(250))
+               ___VEC1(___REF_SUB(253))
+               ___VEC0
+___DEF_SUB_VEC(___X250,1UL)
+               ___VEC1(___REF_SUB(251))
+               ___VEC0
+___DEF_SUB_VEC(___X251,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(252))
+               ___VEC0
+___DEF_SUB_VEC(___X252,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X253,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X254,2UL)
+               ___VEC1(___REF_SUB(255))
+               ___VEC1(___REF_SUB(258))
+               ___VEC0
+___DEF_SUB_VEC(___X255,1UL)
+               ___VEC1(___REF_SUB(256))
+               ___VEC0
+___DEF_SUB_VEC(___X256,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(257))
+               ___VEC0
+___DEF_SUB_VEC(___X257,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X258,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X259,2UL)
+               ___VEC1(___REF_SUB(260))
+               ___VEC1(___REF_SUB(263))
+               ___VEC0
+___DEF_SUB_VEC(___X260,1UL)
+               ___VEC1(___REF_SUB(261))
+               ___VEC0
+___DEF_SUB_VEC(___X261,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(262))
+               ___VEC0
+___DEF_SUB_VEC(___X262,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X263,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X264,2UL)
+               ___VEC1(___REF_SUB(265))
+               ___VEC1(___REF_SUB(268))
+               ___VEC0
+___DEF_SUB_VEC(___X265,1UL)
+               ___VEC1(___REF_SUB(266))
+               ___VEC0
+___DEF_SUB_VEC(___X266,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(267))
+               ___VEC0
+___DEF_SUB_VEC(___X267,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(53))
+               ___VEC0
+___DEF_SUB_VEC(___X268,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X269,2UL)
+               ___VEC1(___REF_SUB(270))
+               ___VEC1(___REF_SUB(295))
+               ___VEC0
+___DEF_SUB_VEC(___X270,12UL)
+               ___VEC1(___REF_SUB(271))
+               ___VEC1(___REF_SUB(273))
+               ___VEC1(___REF_SUB(275))
+               ___VEC1(___REF_SUB(277))
+               ___VEC1(___REF_SUB(279))
+               ___VEC1(___REF_SUB(281))
+               ___VEC1(___REF_SUB(283))
+               ___VEC1(___REF_SUB(285))
+               ___VEC1(___REF_SUB(287))
+               ___VEC1(___REF_SUB(289))
+               ___VEC1(___REF_SUB(291))
+               ___VEC1(___REF_SUB(293))
+               ___VEC0
+___DEF_SUB_VEC(___X271,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(272))
+               ___VEC0
+___DEF_SUB_VEC(___X272,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(131134))
+               ___VEC0
+___DEF_SUB_VEC(___X273,7UL)
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_SUB(274))
+               ___VEC1(___REF_FIX(393216))
+               ___VEC1(___REF_FIX(360450))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X274,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X275,5UL)
+               ___VEC1(___REF_FIX(2))
+               ___VEC1(___REF_SUB(276))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X276,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X277,6UL)
+               ___VEC1(___REF_FIX(3))
+               ___VEC1(___REF_SUB(278))
+               ___VEC1(___REF_FIX(163846))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X278,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X279,7UL)
+               ___VEC1(___REF_FIX(4))
+               ___VEC1(___REF_SUB(280))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163846))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X280,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X281,8UL)
+               ___VEC1(___REF_FIX(5))
+               ___VEC1(___REF_SUB(282))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163846))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X282,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X283,9UL)
+               ___VEC1(___REF_FIX(6))
+               ___VEC1(___REF_SUB(284))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163846))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X284,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X285,10UL)
+               ___VEC1(___REF_FIX(7))
+               ___VEC1(___REF_SUB(286))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163846))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X286,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(393280))
+               ___VEC0
+___DEF_SUB_VEC(___X287,10UL)
+               ___VEC1(___REF_FIX(8))
+               ___VEC1(___REF_SUB(288))
+               ___VEC1(___REF_FIX(294926))
+               ___VEC1(___REF_FIX(262156))
+               ___VEC1(___REF_FIX(229386))
+               ___VEC1(___REF_FIX(196616))
+               ___VEC1(___REF_FIX(163846))
+               ___VEC1(___REF_FIX(131072))
+               ___VEC1(___REF_FIX(98306))
+               ___VEC1(___REF_FIX(65540))
+               ___VEC0
+___DEF_SUB_VEC(___X288,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(393283))
+               ___VEC0
+___DEF_SUB_VEC(___X289,2UL)
+               ___VEC1(___REF_FIX(9))
+               ___VEC1(___REF_SUB(290))
+               ___VEC0
+___DEF_SUB_VEC(___X290,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X291,2UL)
+               ___VEC1(___REF_FIX(10))
+               ___VEC1(___REF_SUB(292))
+               ___VEC0
+___DEF_SUB_VEC(___X292,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X293,2UL)
+               ___VEC1(___REF_FIX(11))
+               ___VEC1(___REF_SUB(294))
+               ___VEC0
+___DEF_SUB_VEC(___X294,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(262207))
+               ___VEC0
+___DEF_SUB_VEC(___X295,8UL)
+               ___VEC1(___REF_SYM(124,___S_nextmethod))
+               ___VEC1(___REF_SYM(130,___S_rest))
+               ___VEC1(___REF_SYM(133,___S_self))
+               ___VEC1(___REF_SYM(26,___S_box_5e_0))
+               ___VEC1(___REF_SYM(31,___S_expansion))
+               ___VEC1(___REF_SYM(137,___S_signature))
+               ___VEC1(___REF_SYM(138,___S_specifier_2d_source))
+               ___VEC1(___REF_SYM(126,___S_others))
+               ___VEC0
+___DEF_SUB_VEC(___X296,2UL)
+               ___VEC1(___REF_SUB(297))
+               ___VEC1(___REF_SUB(300))
+               ___VEC0
+___DEF_SUB_VEC(___X297,1UL)
+               ___VEC1(___REF_SUB(298))
+               ___VEC0
+___DEF_SUB_VEC(___X298,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(299))
+               ___VEC0
+___DEF_SUB_VEC(___X299,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(83))
+               ___VEC0
+___DEF_SUB_VEC(___X300,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X301,2UL)
+               ___VEC1(___REF_SUB(302))
+               ___VEC1(___REF_SUB(305))
+               ___VEC0
+___DEF_SUB_VEC(___X302,1UL)
+               ___VEC1(___REF_SUB(303))
+               ___VEC0
+___DEF_SUB_VEC(___X303,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(304))
+               ___VEC0
+___DEF_SUB_VEC(___X304,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(83))
+               ___VEC0
+___DEF_SUB_VEC(___X305,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X306,2UL)
+               ___VEC1(___REF_SUB(307))
+               ___VEC1(___REF_SUB(310))
+               ___VEC0
+___DEF_SUB_VEC(___X307,1UL)
+               ___VEC1(___REF_SUB(308))
+               ___VEC0
+___DEF_SUB_VEC(___X308,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(309))
+               ___VEC0
+___DEF_SUB_VEC(___X309,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(83))
+               ___VEC0
+___DEF_SUB_VEC(___X310,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X311,2UL)
+               ___VEC1(___REF_SUB(312))
+               ___VEC1(___REF_SUB(315))
+               ___VEC0
+___DEF_SUB_VEC(___X312,1UL)
+               ___VEC1(___REF_SUB(313))
+               ___VEC0
+___DEF_SUB_VEC(___X313,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(314))
+               ___VEC0
+___DEF_SUB_VEC(___X314,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X315,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X316,2UL)
+               ___VEC1(___REF_SUB(317))
+               ___VEC1(___REF_SUB(320))
+               ___VEC0
+___DEF_SUB_VEC(___X317,1UL)
+               ___VEC1(___REF_SUB(318))
+               ___VEC0
+___DEF_SUB_VEC(___X318,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(319))
+               ___VEC0
+___DEF_SUB_VEC(___X319,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X320,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X321,2UL)
+               ___VEC1(___REF_SUB(322))
+               ___VEC1(___REF_SUB(325))
+               ___VEC0
+___DEF_SUB_VEC(___X322,1UL)
+               ___VEC1(___REF_SUB(323))
+               ___VEC0
+___DEF_SUB_VEC(___X323,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(324))
+               ___VEC0
+___DEF_SUB_VEC(___X324,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X325,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X326,2UL)
+               ___VEC1(___REF_SUB(327))
+               ___VEC1(___REF_SUB(330))
+               ___VEC0
+___DEF_SUB_VEC(___X327,1UL)
+               ___VEC1(___REF_SUB(328))
+               ___VEC0
+___DEF_SUB_VEC(___X328,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(329))
+               ___VEC0
+___DEF_SUB_VEC(___X329,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(96))
+               ___VEC0
+___DEF_SUB_VEC(___X330,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X331,2UL)
+               ___VEC1(___REF_SUB(332))
+               ___VEC1(___REF_SUB(335))
+               ___VEC0
+___DEF_SUB_VEC(___X332,1UL)
+               ___VEC1(___REF_SUB(333))
+               ___VEC0
+___DEF_SUB_VEC(___X333,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(334))
+               ___VEC0
+___DEF_SUB_VEC(___X334,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(110))
+               ___VEC0
+___DEF_SUB_VEC(___X335,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X336,2UL)
+               ___VEC1(___REF_SUB(337))
+               ___VEC1(___REF_SUB(340))
+               ___VEC0
+___DEF_SUB_VEC(___X337,1UL)
+               ___VEC1(___REF_SUB(338))
+               ___VEC0
+___DEF_SUB_VEC(___X338,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(339))
+               ___VEC0
+___DEF_SUB_VEC(___X339,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(110))
+               ___VEC0
+___DEF_SUB_VEC(___X340,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X341,2UL)
+               ___VEC1(___REF_SUB(342))
+               ___VEC1(___REF_SUB(345))
+               ___VEC0
+___DEF_SUB_VEC(___X342,1UL)
+               ___VEC1(___REF_SUB(343))
+               ___VEC0
+___DEF_SUB_VEC(___X343,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(344))
+               ___VEC0
+___DEF_SUB_VEC(___X344,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(110))
+               ___VEC0
+___DEF_SUB_VEC(___X345,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X346,2UL)
+               ___VEC1(___REF_SUB(347))
+               ___VEC1(___REF_SUB(350))
+               ___VEC0
+___DEF_SUB_VEC(___X347,1UL)
+               ___VEC1(___REF_SUB(348))
+               ___VEC0
+___DEF_SUB_VEC(___X348,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(349))
+               ___VEC0
+___DEF_SUB_VEC(___X349,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X350,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X351,2UL)
+               ___VEC1(___REF_SUB(352))
+               ___VEC1(___REF_SUB(355))
+               ___VEC0
+___DEF_SUB_VEC(___X352,1UL)
+               ___VEC1(___REF_SUB(353))
+               ___VEC0
+___DEF_SUB_VEC(___X353,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(354))
+               ___VEC0
+___DEF_SUB_VEC(___X354,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X355,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X356,2UL)
+               ___VEC1(___REF_SUB(357))
+               ___VEC1(___REF_SUB(360))
+               ___VEC0
+___DEF_SUB_VEC(___X357,1UL)
+               ___VEC1(___REF_SUB(358))
+               ___VEC0
+___DEF_SUB_VEC(___X358,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(359))
+               ___VEC0
+___DEF_SUB_VEC(___X359,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X360,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X361,2UL)
+               ___VEC1(___REF_SUB(362))
+               ___VEC1(___REF_SUB(365))
+               ___VEC0
+___DEF_SUB_VEC(___X362,1UL)
+               ___VEC1(___REF_SUB(363))
+               ___VEC0
+___DEF_SUB_VEC(___X363,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(364))
+               ___VEC0
+___DEF_SUB_VEC(___X364,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(123))
+               ___VEC0
+___DEF_SUB_VEC(___X365,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X366,2UL)
+               ___VEC1(___REF_SUB(367))
+               ___VEC1(___REF_SUB(370))
+               ___VEC0
+___DEF_SUB_VEC(___X367,1UL)
+               ___VEC1(___REF_SUB(368))
+               ___VEC0
+___DEF_SUB_VEC(___X368,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(369))
+               ___VEC0
+___DEF_SUB_VEC(___X369,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(137))
+               ___VEC0
+___DEF_SUB_VEC(___X370,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X371,2UL)
+               ___VEC1(___REF_SUB(372))
+               ___VEC1(___REF_SUB(375))
+               ___VEC0
+___DEF_SUB_VEC(___X372,1UL)
+               ___VEC1(___REF_SUB(373))
+               ___VEC0
+___DEF_SUB_VEC(___X373,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(374))
+               ___VEC0
+___DEF_SUB_VEC(___X374,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X375,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X376,2UL)
+               ___VEC1(___REF_SUB(377))
+               ___VEC1(___REF_SUB(380))
+               ___VEC0
+___DEF_SUB_VEC(___X377,1UL)
+               ___VEC1(___REF_SUB(378))
+               ___VEC0
+___DEF_SUB_VEC(___X378,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(379))
+               ___VEC0
+___DEF_SUB_VEC(___X379,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X380,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X381,2UL)
+               ___VEC1(___REF_SUB(382))
+               ___VEC1(___REF_SUB(385))
+               ___VEC0
+___DEF_SUB_VEC(___X382,1UL)
+               ___VEC1(___REF_SUB(383))
+               ___VEC0
+___DEF_SUB_VEC(___X383,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(384))
+               ___VEC0
+___DEF_SUB_VEC(___X384,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X385,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X386,2UL)
+               ___VEC1(___REF_SUB(387))
+               ___VEC1(___REF_SUB(390))
+               ___VEC0
+___DEF_SUB_VEC(___X387,1UL)
+               ___VEC1(___REF_SUB(388))
+               ___VEC0
+___DEF_SUB_VEC(___X388,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(389))
+               ___VEC0
+___DEF_SUB_VEC(___X389,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X390,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X391,2UL)
+               ___VEC1(___REF_SUB(392))
+               ___VEC1(___REF_SUB(395))
+               ___VEC0
+___DEF_SUB_VEC(___X392,1UL)
+               ___VEC1(___REF_SUB(393))
+               ___VEC0
+___DEF_SUB_VEC(___X393,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(394))
+               ___VEC0
+___DEF_SUB_VEC(___X394,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X395,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X396,2UL)
+               ___VEC1(___REF_SUB(397))
+               ___VEC1(___REF_SUB(400))
+               ___VEC0
+___DEF_SUB_VEC(___X397,1UL)
+               ___VEC1(___REF_SUB(398))
+               ___VEC0
+___DEF_SUB_VEC(___X398,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(399))
+               ___VEC0
+___DEF_SUB_VEC(___X399,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X400,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X401,2UL)
+               ___VEC1(___REF_SUB(402))
+               ___VEC1(___REF_SUB(405))
+               ___VEC0
+___DEF_SUB_VEC(___X402,1UL)
+               ___VEC1(___REF_SUB(403))
+               ___VEC0
+___DEF_SUB_VEC(___X403,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(404))
+               ___VEC0
+___DEF_SUB_VEC(___X404,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(156))
+               ___VEC0
+___DEF_SUB_VEC(___X405,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X406,2UL)
+               ___VEC1(___REF_SUB(407))
+               ___VEC1(___REF_SUB(410))
+               ___VEC0
+___DEF_SUB_VEC(___X407,1UL)
+               ___VEC1(___REF_SUB(408))
+               ___VEC0
+___DEF_SUB_VEC(___X408,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(409))
+               ___VEC0
+___DEF_SUB_VEC(___X409,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(173))
+               ___VEC0
+___DEF_SUB_VEC(___X410,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X411,2UL)
+               ___VEC1(___REF_SUB(412))
+               ___VEC1(___REF_SUB(415))
+               ___VEC0
+___DEF_SUB_VEC(___X412,1UL)
+               ___VEC1(___REF_SUB(413))
+               ___VEC0
+___DEF_SUB_VEC(___X413,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(414))
+               ___VEC0
+___DEF_SUB_VEC(___X414,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(173))
+               ___VEC0
+___DEF_SUB_VEC(___X415,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X416,2UL)
+               ___VEC1(___REF_SUB(417))
+               ___VEC1(___REF_SUB(420))
+               ___VEC0
+___DEF_SUB_VEC(___X417,1UL)
+               ___VEC1(___REF_SUB(418))
+               ___VEC0
+___DEF_SUB_VEC(___X418,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(419))
+               ___VEC0
+___DEF_SUB_VEC(___X419,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X420,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X421,2UL)
+               ___VEC1(___REF_SUB(422))
+               ___VEC1(___REF_SUB(425))
+               ___VEC0
+___DEF_SUB_VEC(___X422,1UL)
+               ___VEC1(___REF_SUB(423))
+               ___VEC0
+___DEF_SUB_VEC(___X423,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(424))
+               ___VEC0
+___DEF_SUB_VEC(___X424,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X425,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X426,2UL)
+               ___VEC1(___REF_SUB(427))
+               ___VEC1(___REF_SUB(430))
+               ___VEC0
+___DEF_SUB_VEC(___X427,1UL)
+               ___VEC1(___REF_SUB(428))
+               ___VEC0
+___DEF_SUB_VEC(___X428,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(429))
+               ___VEC0
+___DEF_SUB_VEC(___X429,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X430,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X431,2UL)
+               ___VEC1(___REF_SUB(432))
+               ___VEC1(___REF_SUB(435))
+               ___VEC0
+___DEF_SUB_VEC(___X432,1UL)
+               ___VEC1(___REF_SUB(433))
+               ___VEC0
+___DEF_SUB_VEC(___X433,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(434))
+               ___VEC0
+___DEF_SUB_VEC(___X434,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X435,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X436,2UL)
+               ___VEC1(___REF_SUB(437))
+               ___VEC1(___REF_SUB(440))
+               ___VEC0
+___DEF_SUB_VEC(___X437,1UL)
+               ___VEC1(___REF_SUB(438))
+               ___VEC0
+___DEF_SUB_VEC(___X438,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(439))
+               ___VEC0
+___DEF_SUB_VEC(___X439,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X440,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X441,2UL)
+               ___VEC1(___REF_SUB(442))
+               ___VEC1(___REF_SUB(445))
+               ___VEC0
+___DEF_SUB_VEC(___X442,1UL)
+               ___VEC1(___REF_SUB(443))
+               ___VEC0
+___DEF_SUB_VEC(___X443,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(444))
+               ___VEC0
+___DEF_SUB_VEC(___X444,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X445,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X446,2UL)
+               ___VEC1(___REF_SUB(447))
+               ___VEC1(___REF_SUB(450))
+               ___VEC0
+___DEF_SUB_VEC(___X447,1UL)
+               ___VEC1(___REF_SUB(448))
+               ___VEC0
+___DEF_SUB_VEC(___X448,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(449))
+               ___VEC0
+___DEF_SUB_VEC(___X449,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X450,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X451,2UL)
+               ___VEC1(___REF_SUB(452))
+               ___VEC1(___REF_SUB(455))
+               ___VEC0
+___DEF_SUB_VEC(___X452,1UL)
+               ___VEC1(___REF_SUB(453))
+               ___VEC0
+___DEF_SUB_VEC(___X453,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(454))
+               ___VEC0
+___DEF_SUB_VEC(___X454,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X455,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X456,2UL)
+               ___VEC1(___REF_SUB(457))
+               ___VEC1(___REF_SUB(460))
+               ___VEC0
+___DEF_SUB_VEC(___X457,1UL)
+               ___VEC1(___REF_SUB(458))
+               ___VEC0
+___DEF_SUB_VEC(___X458,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(459))
+               ___VEC0
+___DEF_SUB_VEC(___X459,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(185))
+               ___VEC0
+___DEF_SUB_VEC(___X460,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X461,2UL)
+               ___VEC1(___REF_SUB(462))
+               ___VEC1(___REF_SUB(465))
+               ___VEC0
+___DEF_SUB_VEC(___X462,1UL)
+               ___VEC1(___REF_SUB(463))
+               ___VEC0
+___DEF_SUB_VEC(___X463,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(464))
+               ___VEC0
+___DEF_SUB_VEC(___X464,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(204))
+               ___VEC0
+___DEF_SUB_VEC(___X465,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X466,2UL)
+               ___VEC1(___REF_SUB(467))
+               ___VEC1(___REF_SUB(470))
+               ___VEC0
+___DEF_SUB_VEC(___X467,1UL)
+               ___VEC1(___REF_SUB(468))
+               ___VEC0
+___DEF_SUB_VEC(___X468,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(469))
+               ___VEC0
+___DEF_SUB_VEC(___X469,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(215))
+               ___VEC0
+___DEF_SUB_VEC(___X470,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X471,2UL)
+               ___VEC1(___REF_SUB(472))
+               ___VEC1(___REF_SUB(475))
+               ___VEC0
+___DEF_SUB_VEC(___X472,1UL)
+               ___VEC1(___REF_SUB(473))
+               ___VEC0
+___DEF_SUB_VEC(___X473,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(474))
+               ___VEC0
+___DEF_SUB_VEC(___X474,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(215))
+               ___VEC0
+___DEF_SUB_VEC(___X475,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X476,2UL)
+               ___VEC1(___REF_SUB(477))
+               ___VEC1(___REF_SUB(480))
+               ___VEC0
+___DEF_SUB_VEC(___X477,1UL)
+               ___VEC1(___REF_SUB(478))
+               ___VEC0
+___DEF_SUB_VEC(___X478,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(479))
+               ___VEC0
+___DEF_SUB_VEC(___X479,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(227))
+               ___VEC0
+___DEF_SUB_VEC(___X480,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X481,2UL)
+               ___VEC1(___REF_SUB(482))
+               ___VEC1(___REF_SUB(485))
+               ___VEC0
+___DEF_SUB_VEC(___X482,1UL)
+               ___VEC1(___REF_SUB(483))
+               ___VEC0
+___DEF_SUB_VEC(___X483,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(484))
+               ___VEC0
+___DEF_SUB_VEC(___X484,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(238))
+               ___VEC0
+___DEF_SUB_VEC(___X485,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X486,2UL)
+               ___VEC1(___REF_SUB(487))
+               ___VEC1(___REF_SUB(490))
+               ___VEC0
+___DEF_SUB_VEC(___X487,1UL)
+               ___VEC1(___REF_SUB(488))
+               ___VEC0
+___DEF_SUB_VEC(___X488,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(489))
+               ___VEC0
+___DEF_SUB_VEC(___X489,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(238))
+               ___VEC0
+___DEF_SUB_VEC(___X490,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X491,2UL)
+               ___VEC1(___REF_SUB(492))
+               ___VEC1(___REF_SUB(495))
+               ___VEC0
+___DEF_SUB_VEC(___X492,1UL)
+               ___VEC1(___REF_SUB(493))
+               ___VEC0
+___DEF_SUB_VEC(___X493,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(494))
+               ___VEC0
+___DEF_SUB_VEC(___X494,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(250))
+               ___VEC0
+___DEF_SUB_VEC(___X495,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X496,2UL)
+               ___VEC1(___REF_SUB(497))
+               ___VEC1(___REF_SUB(500))
+               ___VEC0
+___DEF_SUB_VEC(___X497,1UL)
+               ___VEC1(___REF_SUB(498))
+               ___VEC0
+___DEF_SUB_VEC(___X498,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(499))
+               ___VEC0
+___DEF_SUB_VEC(___X499,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(261))
+               ___VEC0
+___DEF_SUB_VEC(___X500,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X501,2UL)
+               ___VEC1(___REF_SUB(502))
+               ___VEC1(___REF_SUB(505))
+               ___VEC0
+___DEF_SUB_VEC(___X502,1UL)
+               ___VEC1(___REF_SUB(503))
+               ___VEC0
+___DEF_SUB_VEC(___X503,2UL)
+               ___VEC1(___REF_FIX(0))
+               ___VEC1(___REF_SUB(504))
+               ___VEC0
+___DEF_SUB_VEC(___X504,2UL)
+               ___VEC1(___REF_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_FIX(261))
+               ___VEC0
+___DEF_SUB_VEC(___X505,0UL)
+               ___VEC0
+___DEF_SUB_VEC(___X506,5UL)
+               ___VEC1(___REF_SYM(24,___S_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz))
+               ___VEC1(___REF_PRC(1))
+               ___VEC1(___REF_FIX(1))
+               ___VEC1(___REF_NUL)
+               ___VEC1(___REF_FAL)
+               ___VEC0
+
+___BEGIN_SUB
+ ___DEF_SUB(___X0)
+,___DEF_SUB(___X1)
+,___DEF_SUB(___X2)
+,___DEF_SUB(___X3)
+,___DEF_SUB(___X4)
+,___DEF_SUB(___X5)
+,___DEF_SUB(___X6)
+,___DEF_SUB(___X7)
+,___DEF_SUB(___X8)
+,___DEF_SUB(___X9)
+,___DEF_SUB(___X10)
+,___DEF_SUB(___X11)
+,___DEF_SUB(___X12)
+,___DEF_SUB(___X13)
+,___DEF_SUB(___X14)
+,___DEF_SUB(___X15)
+,___DEF_SUB(___X16)
+,___DEF_SUB(___X17)
+,___DEF_SUB(___X18)
+,___DEF_SUB(___X19)
+,___DEF_SUB(___X20)
+,___DEF_SUB(___X21)
+,___DEF_SUB(___X22)
+,___DEF_SUB(___X23)
+,___DEF_SUB(___X24)
+,___DEF_SUB(___X25)
+,___DEF_SUB(___X26)
+,___DEF_SUB(___X27)
+,___DEF_SUB(___X28)
+,___DEF_SUB(___X29)
+,___DEF_SUB(___X30)
+,___DEF_SUB(___X31)
+,___DEF_SUB(___X32)
+,___DEF_SUB(___X33)
+,___DEF_SUB(___X34)
+,___DEF_SUB(___X35)
+,___DEF_SUB(___X36)
+,___DEF_SUB(___X37)
+,___DEF_SUB(___X38)
+,___DEF_SUB(___X39)
+,___DEF_SUB(___X40)
+,___DEF_SUB(___X41)
+,___DEF_SUB(___X42)
+,___DEF_SUB(___X43)
+,___DEF_SUB(___X44)
+,___DEF_SUB(___X45)
+,___DEF_SUB(___X46)
+,___DEF_SUB(___X47)
+,___DEF_SUB(___X48)
+,___DEF_SUB(___X49)
+,___DEF_SUB(___X50)
+,___DEF_SUB(___X51)
+,___DEF_SUB(___X52)
+,___DEF_SUB(___X53)
+,___DEF_SUB(___X54)
+,___DEF_SUB(___X55)
+,___DEF_SUB(___X56)
+,___DEF_SUB(___X57)
+,___DEF_SUB(___X58)
+,___DEF_SUB(___X59)
+,___DEF_SUB(___X60)
+,___DEF_SUB(___X61)
+,___DEF_SUB(___X62)
+,___DEF_SUB(___X63)
+,___DEF_SUB(___X64)
+,___DEF_SUB(___X65)
+,___DEF_SUB(___X66)
+,___DEF_SUB(___X67)
+,___DEF_SUB(___X68)
+,___DEF_SUB(___X69)
+,___DEF_SUB(___X70)
+,___DEF_SUB(___X71)
+,___DEF_SUB(___X72)
+,___DEF_SUB(___X73)
+,___DEF_SUB(___X74)
+,___DEF_SUB(___X75)
+,___DEF_SUB(___X76)
+,___DEF_SUB(___X77)
+,___DEF_SUB(___X78)
+,___DEF_SUB(___X79)
+,___DEF_SUB(___X80)
+,___DEF_SUB(___X81)
+,___DEF_SUB(___X82)
+,___DEF_SUB(___X83)
+,___DEF_SUB(___X84)
+,___DEF_SUB(___X85)
+,___DEF_SUB(___X86)
+,___DEF_SUB(___X87)
+,___DEF_SUB(___X88)
+,___DEF_SUB(___X89)
+,___DEF_SUB(___X90)
+,___DEF_SUB(___X91)
+,___DEF_SUB(___X92)
+,___DEF_SUB(___X93)
+,___DEF_SUB(___X94)
+,___DEF_SUB(___X95)
+,___DEF_SUB(___X96)
+,___DEF_SUB(___X97)
+,___DEF_SUB(___X98)
+,___DEF_SUB(___X99)
+,___DEF_SUB(___X100)
+,___DEF_SUB(___X101)
+,___DEF_SUB(___X102)
+,___DEF_SUB(___X103)
+,___DEF_SUB(___X104)
+,___DEF_SUB(___X105)
+,___DEF_SUB(___X106)
+,___DEF_SUB(___X107)
+,___DEF_SUB(___X108)
+,___DEF_SUB(___X109)
+,___DEF_SUB(___X110)
+,___DEF_SUB(___X111)
+,___DEF_SUB(___X112)
+,___DEF_SUB(___X113)
+,___DEF_SUB(___X114)
+,___DEF_SUB(___X115)
+,___DEF_SUB(___X116)
+,___DEF_SUB(___X117)
+,___DEF_SUB(___X118)
+,___DEF_SUB(___X119)
+,___DEF_SUB(___X120)
+,___DEF_SUB(___X121)
+,___DEF_SUB(___X122)
+,___DEF_SUB(___X123)
+,___DEF_SUB(___X124)
+,___DEF_SUB(___X125)
+,___DEF_SUB(___X126)
+,___DEF_SUB(___X127)
+,___DEF_SUB(___X128)
+,___DEF_SUB(___X129)
+,___DEF_SUB(___X130)
+,___DEF_SUB(___X131)
+,___DEF_SUB(___X132)
+,___DEF_SUB(___X133)
+,___DEF_SUB(___X134)
+,___DEF_SUB(___X135)
+,___DEF_SUB(___X136)
+,___DEF_SUB(___X137)
+,___DEF_SUB(___X138)
+,___DEF_SUB(___X139)
+,___DEF_SUB(___X140)
+,___DEF_SUB(___X141)
+,___DEF_SUB(___X142)
+,___DEF_SUB(___X143)
+,___DEF_SUB(___X144)
+,___DEF_SUB(___X145)
+,___DEF_SUB(___X146)
+,___DEF_SUB(___X147)
+,___DEF_SUB(___X148)
+,___DEF_SUB(___X149)
+,___DEF_SUB(___X150)
+,___DEF_SUB(___X151)
+,___DEF_SUB(___X152)
+,___DEF_SUB(___X153)
+,___DEF_SUB(___X154)
+,___DEF_SUB(___X155)
+,___DEF_SUB(___X156)
+,___DEF_SUB(___X157)
+,___DEF_SUB(___X158)
+,___DEF_SUB(___X159)
+,___DEF_SUB(___X160)
+,___DEF_SUB(___X161)
+,___DEF_SUB(___X162)
+,___DEF_SUB(___X163)
+,___DEF_SUB(___X164)
+,___DEF_SUB(___X165)
+,___DEF_SUB(___X166)
+,___DEF_SUB(___X167)
+,___DEF_SUB(___X168)
+,___DEF_SUB(___X169)
+,___DEF_SUB(___X170)
+,___DEF_SUB(___X171)
+,___DEF_SUB(___X172)
+,___DEF_SUB(___X173)
+,___DEF_SUB(___X174)
+,___DEF_SUB(___X175)
+,___DEF_SUB(___X176)
+,___DEF_SUB(___X177)
+,___DEF_SUB(___X178)
+,___DEF_SUB(___X179)
+,___DEF_SUB(___X180)
+,___DEF_SUB(___X181)
+,___DEF_SUB(___X182)
+,___DEF_SUB(___X183)
+,___DEF_SUB(___X184)
+,___DEF_SUB(___X185)
+,___DEF_SUB(___X186)
+,___DEF_SUB(___X187)
+,___DEF_SUB(___X188)
+,___DEF_SUB(___X189)
+,___DEF_SUB(___X190)
+,___DEF_SUB(___X191)
+,___DEF_SUB(___X192)
+,___DEF_SUB(___X193)
+,___DEF_SUB(___X194)
+,___DEF_SUB(___X195)
+,___DEF_SUB(___X196)
+,___DEF_SUB(___X197)
+,___DEF_SUB(___X198)
+,___DEF_SUB(___X199)
+,___DEF_SUB(___X200)
+,___DEF_SUB(___X201)
+,___DEF_SUB(___X202)
+,___DEF_SUB(___X203)
+,___DEF_SUB(___X204)
+,___DEF_SUB(___X205)
+,___DEF_SUB(___X206)
+,___DEF_SUB(___X207)
+,___DEF_SUB(___X208)
+,___DEF_SUB(___X209)
+,___DEF_SUB(___X210)
+,___DEF_SUB(___X211)
+,___DEF_SUB(___X212)
+,___DEF_SUB(___X213)
+,___DEF_SUB(___X214)
+,___DEF_SUB(___X215)
+,___DEF_SUB(___X216)
+,___DEF_SUB(___X217)
+,___DEF_SUB(___X218)
+,___DEF_SUB(___X219)
+,___DEF_SUB(___X220)
+,___DEF_SUB(___X221)
+,___DEF_SUB(___X222)
+,___DEF_SUB(___X223)
+,___DEF_SUB(___X224)
+,___DEF_SUB(___X225)
+,___DEF_SUB(___X226)
+,___DEF_SUB(___X227)
+,___DEF_SUB(___X228)
+,___DEF_SUB(___X229)
+,___DEF_SUB(___X230)
+,___DEF_SUB(___X231)
+,___DEF_SUB(___X232)
+,___DEF_SUB(___X233)
+,___DEF_SUB(___X234)
+,___DEF_SUB(___X235)
+,___DEF_SUB(___X236)
+,___DEF_SUB(___X237)
+,___DEF_SUB(___X238)
+,___DEF_SUB(___X239)
+,___DEF_SUB(___X240)
+,___DEF_SUB(___X241)
+,___DEF_SUB(___X242)
+,___DEF_SUB(___X243)
+,___DEF_SUB(___X244)
+,___DEF_SUB(___X245)
+,___DEF_SUB(___X246)
+,___DEF_SUB(___X247)
+,___DEF_SUB(___X248)
+,___DEF_SUB(___X249)
+,___DEF_SUB(___X250)
+,___DEF_SUB(___X251)
+,___DEF_SUB(___X252)
+,___DEF_SUB(___X253)
+,___DEF_SUB(___X254)
+,___DEF_SUB(___X255)
+,___DEF_SUB(___X256)
+,___DEF_SUB(___X257)
+,___DEF_SUB(___X258)
+,___DEF_SUB(___X259)
+,___DEF_SUB(___X260)
+,___DEF_SUB(___X261)
+,___DEF_SUB(___X262)
+,___DEF_SUB(___X263)
+,___DEF_SUB(___X264)
+,___DEF_SUB(___X265)
+,___DEF_SUB(___X266)
+,___DEF_SUB(___X267)
+,___DEF_SUB(___X268)
+,___DEF_SUB(___X269)
+,___DEF_SUB(___X270)
+,___DEF_SUB(___X271)
+,___DEF_SUB(___X272)
+,___DEF_SUB(___X273)
+,___DEF_SUB(___X274)
+,___DEF_SUB(___X275)
+,___DEF_SUB(___X276)
+,___DEF_SUB(___X277)
+,___DEF_SUB(___X278)
+,___DEF_SUB(___X279)
+,___DEF_SUB(___X280)
+,___DEF_SUB(___X281)
+,___DEF_SUB(___X282)
+,___DEF_SUB(___X283)
+,___DEF_SUB(___X284)
+,___DEF_SUB(___X285)
+,___DEF_SUB(___X286)
+,___DEF_SUB(___X287)
+,___DEF_SUB(___X288)
+,___DEF_SUB(___X289)
+,___DEF_SUB(___X290)
+,___DEF_SUB(___X291)
+,___DEF_SUB(___X292)
+,___DEF_SUB(___X293)
+,___DEF_SUB(___X294)
+,___DEF_SUB(___X295)
+,___DEF_SUB(___X296)
+,___DEF_SUB(___X297)
+,___DEF_SUB(___X298)
+,___DEF_SUB(___X299)
+,___DEF_SUB(___X300)
+,___DEF_SUB(___X301)
+,___DEF_SUB(___X302)
+,___DEF_SUB(___X303)
+,___DEF_SUB(___X304)
+,___DEF_SUB(___X305)
+,___DEF_SUB(___X306)
+,___DEF_SUB(___X307)
+,___DEF_SUB(___X308)
+,___DEF_SUB(___X309)
+,___DEF_SUB(___X310)
+,___DEF_SUB(___X311)
+,___DEF_SUB(___X312)
+,___DEF_SUB(___X313)
+,___DEF_SUB(___X314)
+,___DEF_SUB(___X315)
+,___DEF_SUB(___X316)
+,___DEF_SUB(___X317)
+,___DEF_SUB(___X318)
+,___DEF_SUB(___X319)
+,___DEF_SUB(___X320)
+,___DEF_SUB(___X321)
+,___DEF_SUB(___X322)
+,___DEF_SUB(___X323)
+,___DEF_SUB(___X324)
+,___DEF_SUB(___X325)
+,___DEF_SUB(___X326)
+,___DEF_SUB(___X327)
+,___DEF_SUB(___X328)
+,___DEF_SUB(___X329)
+,___DEF_SUB(___X330)
+,___DEF_SUB(___X331)
+,___DEF_SUB(___X332)
+,___DEF_SUB(___X333)
+,___DEF_SUB(___X334)
+,___DEF_SUB(___X335)
+,___DEF_SUB(___X336)
+,___DEF_SUB(___X337)
+,___DEF_SUB(___X338)
+,___DEF_SUB(___X339)
+,___DEF_SUB(___X340)
+,___DEF_SUB(___X341)
+,___DEF_SUB(___X342)
+,___DEF_SUB(___X343)
+,___DEF_SUB(___X344)
+,___DEF_SUB(___X345)
+,___DEF_SUB(___X346)
+,___DEF_SUB(___X347)
+,___DEF_SUB(___X348)
+,___DEF_SUB(___X349)
+,___DEF_SUB(___X350)
+,___DEF_SUB(___X351)
+,___DEF_SUB(___X352)
+,___DEF_SUB(___X353)
+,___DEF_SUB(___X354)
+,___DEF_SUB(___X355)
+,___DEF_SUB(___X356)
+,___DEF_SUB(___X357)
+,___DEF_SUB(___X358)
+,___DEF_SUB(___X359)
+,___DEF_SUB(___X360)
+,___DEF_SUB(___X361)
+,___DEF_SUB(___X362)
+,___DEF_SUB(___X363)
+,___DEF_SUB(___X364)
+,___DEF_SUB(___X365)
+,___DEF_SUB(___X366)
+,___DEF_SUB(___X367)
+,___DEF_SUB(___X368)
+,___DEF_SUB(___X369)
+,___DEF_SUB(___X370)
+,___DEF_SUB(___X371)
+,___DEF_SUB(___X372)
+,___DEF_SUB(___X373)
+,___DEF_SUB(___X374)
+,___DEF_SUB(___X375)
+,___DEF_SUB(___X376)
+,___DEF_SUB(___X377)
+,___DEF_SUB(___X378)
+,___DEF_SUB(___X379)
+,___DEF_SUB(___X380)
+,___DEF_SUB(___X381)
+,___DEF_SUB(___X382)
+,___DEF_SUB(___X383)
+,___DEF_SUB(___X384)
+,___DEF_SUB(___X385)
+,___DEF_SUB(___X386)
+,___DEF_SUB(___X387)
+,___DEF_SUB(___X388)
+,___DEF_SUB(___X389)
+,___DEF_SUB(___X390)
+,___DEF_SUB(___X391)
+,___DEF_SUB(___X392)
+,___DEF_SUB(___X393)
+,___DEF_SUB(___X394)
+,___DEF_SUB(___X395)
+,___DEF_SUB(___X396)
+,___DEF_SUB(___X397)
+,___DEF_SUB(___X398)
+,___DEF_SUB(___X399)
+,___DEF_SUB(___X400)
+,___DEF_SUB(___X401)
+,___DEF_SUB(___X402)
+,___DEF_SUB(___X403)
+,___DEF_SUB(___X404)
+,___DEF_SUB(___X405)
+,___DEF_SUB(___X406)
+,___DEF_SUB(___X407)
+,___DEF_SUB(___X408)
+,___DEF_SUB(___X409)
+,___DEF_SUB(___X410)
+,___DEF_SUB(___X411)
+,___DEF_SUB(___X412)
+,___DEF_SUB(___X413)
+,___DEF_SUB(___X414)
+,___DEF_SUB(___X415)
+,___DEF_SUB(___X416)
+,___DEF_SUB(___X417)
+,___DEF_SUB(___X418)
+,___DEF_SUB(___X419)
+,___DEF_SUB(___X420)
+,___DEF_SUB(___X421)
+,___DEF_SUB(___X422)
+,___DEF_SUB(___X423)
+,___DEF_SUB(___X424)
+,___DEF_SUB(___X425)
+,___DEF_SUB(___X426)
+,___DEF_SUB(___X427)
+,___DEF_SUB(___X428)
+,___DEF_SUB(___X429)
+,___DEF_SUB(___X430)
+,___DEF_SUB(___X431)
+,___DEF_SUB(___X432)
+,___DEF_SUB(___X433)
+,___DEF_SUB(___X434)
+,___DEF_SUB(___X435)
+,___DEF_SUB(___X436)
+,___DEF_SUB(___X437)
+,___DEF_SUB(___X438)
+,___DEF_SUB(___X439)
+,___DEF_SUB(___X440)
+,___DEF_SUB(___X441)
+,___DEF_SUB(___X442)
+,___DEF_SUB(___X443)
+,___DEF_SUB(___X444)
+,___DEF_SUB(___X445)
+,___DEF_SUB(___X446)
+,___DEF_SUB(___X447)
+,___DEF_SUB(___X448)
+,___DEF_SUB(___X449)
+,___DEF_SUB(___X450)
+,___DEF_SUB(___X451)
+,___DEF_SUB(___X452)
+,___DEF_SUB(___X453)
+,___DEF_SUB(___X454)
+,___DEF_SUB(___X455)
+,___DEF_SUB(___X456)
+,___DEF_SUB(___X457)
+,___DEF_SUB(___X458)
+,___DEF_SUB(___X459)
+,___DEF_SUB(___X460)
+,___DEF_SUB(___X461)
+,___DEF_SUB(___X462)
+,___DEF_SUB(___X463)
+,___DEF_SUB(___X464)
+,___DEF_SUB(___X465)
+,___DEF_SUB(___X466)
+,___DEF_SUB(___X467)
+,___DEF_SUB(___X468)
+,___DEF_SUB(___X469)
+,___DEF_SUB(___X470)
+,___DEF_SUB(___X471)
+,___DEF_SUB(___X472)
+,___DEF_SUB(___X473)
+,___DEF_SUB(___X474)
+,___DEF_SUB(___X475)
+,___DEF_SUB(___X476)
+,___DEF_SUB(___X477)
+,___DEF_SUB(___X478)
+,___DEF_SUB(___X479)
+,___DEF_SUB(___X480)
+,___DEF_SUB(___X481)
+,___DEF_SUB(___X482)
+,___DEF_SUB(___X483)
+,___DEF_SUB(___X484)
+,___DEF_SUB(___X485)
+,___DEF_SUB(___X486)
+,___DEF_SUB(___X487)
+,___DEF_SUB(___X488)
+,___DEF_SUB(___X489)
+,___DEF_SUB(___X490)
+,___DEF_SUB(___X491)
+,___DEF_SUB(___X492)
+,___DEF_SUB(___X493)
+,___DEF_SUB(___X494)
+,___DEF_SUB(___X495)
+,___DEF_SUB(___X496)
+,___DEF_SUB(___X497)
+,___DEF_SUB(___X498)
+,___DEF_SUB(___X499)
+,___DEF_SUB(___X500)
+,___DEF_SUB(___X501)
+,___DEF_SUB(___X502)
+,___DEF_SUB(___X503)
+,___DEF_SUB(___X504)
+,___DEF_SUB(___X505)
+,___DEF_SUB(___X506)
+___END_SUB
+
+
+
+#undef ___MD_ALL
+#define ___MD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___MR_ALL
+#define ___MR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___MW_ALL
+#define ___MW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_M_COD
+___BEGIN_M_HLBL
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L1_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L2_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L3_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L4_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L5_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L6_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L7_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L8_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L9_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L10_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L11_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L12_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L13_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L14_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L15_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L16_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L17_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L18_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L19_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L20_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L21_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L22_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L23_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L24_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L25_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L26_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L27_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L28_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L29_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L30_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L31_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L32_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L33_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L34_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L35_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L36_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L37_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L38_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L39_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L40_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L41_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L42_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L43_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L44_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L45_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L46_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L47_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L48_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L49_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L50_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L51_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L52_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L53_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L54_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L55_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L56_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L57_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L58_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L59_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L60_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L61_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L62_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L63_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L64_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L65_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L66_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L67_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L68_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L69_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L70_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L71_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L72_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L73_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L74_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L75_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L76_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L77_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L78_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L79_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L80_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L81_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L82_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L83_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L84_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L85_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L86_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L87_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L88_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L89_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L90_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L91_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L92_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L93_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L94_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L95_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L96_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L97_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L98_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L99_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L100_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L101_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L102_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L103_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L104_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L105_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L106_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L107_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L108_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L109_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L110_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L111_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L112_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L113_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L114_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L115_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L116_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L117_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L118_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L119_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L120_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L121_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL(___L122_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L1_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L2_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L3_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L4_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L5_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L6_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L7_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L8_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L9_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L10_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL(___L11_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class)
+___DEF_M_HLBL_INTRO
+___DEF_M_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values)
+___END_M_HLBL
+
+___BEGIN_M_SW
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_
+#undef ___PH_LBL0
+#define ___PH_LBL0 1
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L1_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L2_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L3_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L4_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L5_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L6_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L7_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L8_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L9_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L10_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L11_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L12_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L13_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L14_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L15_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L16_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L17_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L18_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L19_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L20_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L21_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L22_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L23_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L24_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L25_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L26_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L27_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L28_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L29_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L30_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L31_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L32_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L33_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L34_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L35_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L36_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L37_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L38_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L39_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L40_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L41_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L42_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L43_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L44_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L45_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L46_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L47_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L48_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L49_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L50_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L51_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L52_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L53_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L54_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L55_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L56_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L57_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L58_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L59_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L60_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L61_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L62_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L63_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L64_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L65_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L66_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L67_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L68_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L69_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L70_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L71_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L72_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L73_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L74_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L75_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L76_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L77_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L78_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L79_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L80_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L81_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L82_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L83_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L84_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L85_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L86_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L87_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L88_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L89_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L90_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L91_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L92_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L93_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L94_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L95_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L96_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L97_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L98_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L99_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L100_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L101_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L102_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L103_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L104_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L105_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L106_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L107_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L108_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L109_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L110_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L111_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L112_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L113_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L114_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L115_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L116_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L117_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L118_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L119_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L120_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L121_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___DEF_P_HLBL(___L122_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(0,0,0,0)
+___DEF_GLBL(___L_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___R0)
+   ___SET_R1(___SYM_foundation_2e_dialect)
+   ___ADJFP(4)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),205,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(2,___L2_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_R1(___SYM_jazz_2e_dialect)
+   ___SET_R0(___LBL(3))
+   ___JUMPGLOSAFE(___SET_NARGS(1),205,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(3,___L3_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_R1(___SYM_jazz_2e_dialect_2e_classes_2e_scheme)
+   ___SET_R0(___LBL(4))
+   ___JUMPGLOSAFE(___SET_NARGS(1),205,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(4,___L4_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_R1(___SYM_jazz_2e_language_2e_runtime_2e_kernel)
+   ___SET_R0(___LBL(5))
+   ___JUMPGLOSAFE(___SET_NARGS(1),205,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(5,___L5_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_R1(___SYM_jazz_2e_language_2e_runtime_2e_format)
+   ___SET_R0(___LBL(6))
+   ___JUMPGLOSAFE(___SET_NARGS(1),205,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(6,___L6_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_R1(___SYM_jazz_2e_language_2e_runtime_2e_functional)
+   ___SET_R0(___LBL(7))
+   ___JUMPGLOSAFE(___SET_NARGS(1),205,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(7,___L7_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_R1(___SYM_jazz_2e_language_2e_runtime_2e_object)
+   ___SET_R0(___LBL(8))
+   ___JUMPGLOSAFE(___SET_NARGS(1),205,___G_jazz_3a_load_2d_unit)
+___DEF_SLBL(8,___L8_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___SYM_jazz_2e_dialect_2e_classes_2e_jazz)
+   ___SET_R3(___CNS(0))
+   ___SET_R2(___CNS(38))
+   ___SET_R1(___SYM_protected)
+   ___SET_R0(___LBL(9))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),206,___G_jazz_3a_register_2d_module)
+___DEF_SLBL(9,___L9_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(39,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration,___GLO_jazz_3a_Definition_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(40,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Definition_2d_Declaration)
+   ___SET_R1(___SYM_Definition_2d_Declaration)
+   ___SET_R0(___LBL(10))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(10,___L10_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_expansion)
+   ___SET_R0(___LBL(11))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(11,___L11_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(42,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_slot,___FIX(2L)))
+   ___SET_GLO(41,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_offset,___R1)
+   ___SET_GLO(43,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion,___PRC(125))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion)
+   ___SET_R2(___SYM_get_2d_expansion)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R0(___LBL(12))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(12,___L12_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_signature)
+   ___SET_R0(___LBL(13))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(13,___L13_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(50,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_slot,___FIX(2L)))
+   ___SET_GLO(49,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_offset,___R1)
+   ___SET_GLO(44,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature,___PRC(127))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___SYM_get_2d_signature)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R0(___LBL(14))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(14,___L14_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_specifier_2d_source)
+   ___SET_R0(___LBL(15))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(15,___L15_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(52,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_slot,___FIX(2L)))
+   ___SET_GLO(51,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_offset,___R1)
+   ___SET_GLO(45,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source,___PRC(129))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___SET_R2(___SYM_get_2d_specifier_2d_source)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R0(___LBL(16))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(16,___L16_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_value)
+   ___SET_R0(___LBL(17))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(17,___L17_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(54,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_slot,___FIX(2L)))
+   ___SET_GLO(53,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_offset,___R1)
+   ___SET_GLO(46,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value,___PRC(131))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value)
+   ___SET_R2(___SYM_get_2d_value)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R0(___LBL(18))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(18,___L18_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(47,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___PRC(133))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___SET_R2(___SYM_initialize)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration)
+   ___SET_R0(___LBL(19))
+   ___JUMPGLOSAFE(___SET_NARGS(3),203,___G_jazz_3a_add_2d_method_2d_node)
+___DEF_SLBL(19,___L19_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(48,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize_21_node,___R1)
+   ___SET_GLO(150,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize,___GLO_jazz_3a_Specialize)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize,___FIX(11L)))
+   ___SET_GLO(151,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Specialize)
+   ___SET_R1(___SYM_Specialize)
+   ___SET_R0(___LBL(20))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(20,___L20_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(57,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration,___GLO_jazz_3a_Generic_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(58,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Generic_2d_Declaration)
+   ___SET_R1(___SYM_Generic_2d_Declaration)
+   ___SET_R0(___LBL(21))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(21,___L21_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_dispatch_2d_types)
+   ___SET_R0(___LBL(22))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(22,___L22_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(62,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_slot,___FIX(2L)))
+   ___SET_GLO(61,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_offset,___R1)
+   ___SET_GLO(64,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types,___PRC(146))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types)
+   ___SET_R2(___SYM_get_2d_dispatch_2d_types)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+   ___SET_R0(___LBL(23))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(23,___L23_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_signature)
+   ___SET_R0(___LBL(24))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(24,___L24_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(67,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_slot,___FIX(2L)))
+   ___SET_GLO(66,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_offset,___R1)
+   ___SET_GLO(65,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature,___PRC(148))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___SYM_get_2d_signature)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+   ___SET_R0(___LBL(25))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(25,___L25_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_body)
+   ___SET_R0(___LBL(26))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(26,___L26_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(60,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_slot,___FIX(2L)))
+   ___SET_GLO(59,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_offset,___R1)
+   ___SET_GLO(63,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body,___PRC(150))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body)
+   ___SET_R2(___SYM_get_2d_body)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration)
+   ___SET_R0(___LBL(27))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(27,___L27_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(152,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration,___GLO_jazz_3a_Specific_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(153,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Specific_2d_Declaration)
+   ___SET_R1(___SYM_Specific_2d_Declaration)
+   ___SET_R0(___LBL(28))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(28,___L28_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_generic)
+   ___SET_R0(___LBL(29))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(29,___L29_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(157,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_slot,___FIX(2L)))
+   ___SET_GLO(156,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_offset,___R1)
+   ___SET_GLO(159,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic,___PRC(152))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic)
+   ___SET_R2(___SYM_get_2d_generic)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+   ___SET_R0(___LBL(30))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(30,___L30_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_signature)
+   ___SET_R0(___LBL(31))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(31,___L31_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(165,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_slot,___FIX(2L)))
+   ___SET_GLO(164,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_offset,___R1)
+   ___SET_GLO(161,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature,___PRC(154))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___SYM_get_2d_signature)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+   ___SET_R0(___LBL(32))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(32,___L32_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_body)
+   ___SET_R0(___LBL(33))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(33,___L33_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(155,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_slot,___FIX(2L)))
+   ___SET_GLO(154,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_offset,___R1)
+   ___SET_GLO(158,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body,___PRC(156))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body)
+   ___SET_R2(___SYM_get_2d_body)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+   ___SET_R0(___LBL(34))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(34,___L34_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_root_3f_)
+   ___SET_R0(___LBL(35))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(35,___L35_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(163,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_slot,___FIX(2L)))
+   ___SET_GLO(162,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_offset,___R1)
+   ___SET_GLO(160,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_,___PRC(158))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_)
+   ___SET_R2(___SYM_get_2d_root_3f_)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration)
+   ___SET_R0(___LBL(36))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(36,___L36_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(14,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration,___GLO_jazz_3a_Category_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(15,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Category_2d_Declaration)
+   ___SET_R1(___SYM_Category_2d_Declaration)
+   ___SET_R0(___LBL(37))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(37,___L37_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_implementor)
+   ___SET_R0(___LBL(38))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(38,___L38_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(20,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_slot,___FIX(2L)))
+   ___SET_GLO(19,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_offset,___R1)
+   ___SET_GLO(16,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor,___PRC(160))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor)
+   ___SET_R2(___SYM_get_2d_implementor)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+   ___SET_R0(___LBL(39))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(39,___L39_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_metaclass)
+   ___SET_R0(___LBL(40))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(40,___L40_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(22,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_slot,___FIX(2L)))
+   ___SET_GLO(21,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_offset,___R1)
+   ___SET_GLO(17,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass,___PRC(162))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass)
+   ___SET_R2(___SYM_get_2d_metaclass)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+   ___SET_R0(___LBL(41))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(41,___L41_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_metaclass_2d_explicit_3f_)
+   ___SET_R0(___LBL(42))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(42,___L42_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(24,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_slot,___FIX(2L)))
+   ___SET_GLO(23,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_offset,___R1)
+   ___SET_GLO(18,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_,___PRC(164))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_)
+   ___SET_R2(___SYM_get_2d_metaclass_2d_explicit_3f_)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration)
+   ___SET_R0(___LBL(43))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(43,___L43_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(25,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration,___GLO_jazz_3a_Class_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(26,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Class_2d_Declaration)
+   ___SET_R1(___SYM_Class_2d_Declaration)
+   ___SET_R0(___LBL(44))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(44,___L44_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_ascendant)
+   ___SET_R0(___LBL(45))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(45,___L45_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(28,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_slot,___FIX(2L)))
+   ___SET_GLO(27,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_offset,___R1)
+   ___SET_GLO(33,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant,___PRC(166))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant)
+   ___SET_R2(___SYM_get_2d_ascendant)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+   ___SET_R0(___LBL(46))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(46,___L46_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_ascendant_2d_relation)
+   ___SET_R0(___LBL(47))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(47,___L47_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(32,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_slot,___FIX(2L)))
+   ___SET_GLO(31,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_offset,___R1)
+   ___SET_GLO(35,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation,___PRC(168))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation)
+   ___SET_R2(___SYM_get_2d_ascendant_2d_relation)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+   ___SET_R0(___LBL(48))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(48,___L48_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_ascendant_2d_base)
+   ___SET_R0(___LBL(49))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(49,___L49_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(30,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_slot,___FIX(2L)))
+   ___SET_GLO(29,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_offset,___R1)
+   ___SET_GLO(34,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base,___PRC(170))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base)
+   ___SET_R2(___SYM_get_2d_ascendant_2d_base)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+   ___SET_R0(___LBL(50))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(50,___L50_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_interfaces)
+   ___SET_R0(___LBL(51))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(51,___L51_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(38,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_slot,___FIX(2L)))
+   ___SET_GLO(37,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_offset,___R1)
+   ___SET_GLO(36,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces,___PRC(172))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces)
+   ___SET_R2(___SYM_get_2d_interfaces)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration)
+   ___SET_R0(___LBL(52))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(52,___L52_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(73,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration,___GLO_jazz_3a_Interface_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(74,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Interface_2d_Declaration)
+   ___SET_R1(___SYM_Interface_2d_Declaration)
+   ___SET_R0(___LBL(53))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(53,___L53_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_ascendants)
+   ___SET_R0(___LBL(54))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(54,___L54_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(76,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_slot,___FIX(2L)))
+   ___SET_GLO(75,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_offset,___R1)
+   ___SET_GLO(77,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants,___PRC(174))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants)
+   ___SET_R2(___SYM_get_2d_ascendants)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration)
+   ___SET_R0(___LBL(55))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(55,___L55_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(55,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration,___GLO_jazz_3a_Field_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(56,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Field_2d_Declaration)
+   ___SET_R1(___SYM_Field_2d_Declaration)
+   ___SET_R0(___LBL(56))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(56,___L56_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(127,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration,___GLO_jazz_3a_Slot_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(128,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Slot_2d_Declaration)
+   ___SET_R1(___SYM_Slot_2d_Declaration)
+   ___SET_R0(___LBL(57))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(57,___L57_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_specifier_2d_source)
+   ___SET_R0(___LBL(58))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(58,___L58_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(149,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_slot,___FIX(2L)))
+   ___SET_GLO(148,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_offset,___R1)
+   ___SET_GLO(137,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source,___PRC(176))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___SET_R2(___SYM_get_2d_specifier_2d_source)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R0(___LBL(59))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(59,___L59_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_initialize)
+   ___SET_R0(___LBL(60))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(60,___L60_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(143,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_slot,___FIX(2L)))
+   ___SET_GLO(142,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_offset,___R1)
+   ___SET_GLO(134,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize,___PRC(178))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize)
+   ___SET_R2(___SYM_get_2d_initialize)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R0(___LBL(61))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(61,___L61_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_getter_2d_name)
+   ___SET_R0(___LBL(62))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(62,___L62_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(141,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_slot,___FIX(2L)))
+   ___SET_GLO(140,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_offset,___R1)
+   ___SET_GLO(133,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name,___PRC(180))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name)
+   ___SET_R2(___SYM_get_2d_getter_2d_name)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R0(___LBL(63))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(63,___L63_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_setter_2d_name)
+   ___SET_R0(___LBL(64))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(64,___L64_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(147,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_slot,___FIX(2L)))
+   ___SET_GLO(146,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_offset,___R1)
+   ___SET_GLO(136,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name,___PRC(182))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name)
+   ___SET_R2(___SYM_get_2d_setter_2d_name)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R0(___LBL(65))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(65,___L65_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_getter_2d_generation)
+   ___SET_R0(___LBL(66))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(66,___L66_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(139,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_slot,___FIX(2L)))
+   ___SET_GLO(138,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_offset,___R1)
+   ___SET_GLO(132,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation,___PRC(184))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation)
+   ___SET_R2(___SYM_get_2d_getter_2d_generation)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R0(___LBL(67))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(67,___L67_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_setter_2d_generation)
+   ___SET_R0(___LBL(68))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(68,___L68_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(145,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_slot,___FIX(2L)))
+   ___SET_GLO(144,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_offset,___R1)
+   ___SET_GLO(135,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation,___PRC(186))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation)
+   ___SET_R2(___SYM_get_2d_setter_2d_generation)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R0(___LBL(69))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(69,___L69_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_dynamic_3f_)
+   ___SET_R0(___LBL(70))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(70,___L70_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(130,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_slot,___FIX(2L)))
+   ___SET_GLO(129,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_offset,___R1)
+   ___SET_GLO(131,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_,___PRC(188))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_)
+   ___SET_R2(___SYM_get_2d_dynamic_3f_)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration)
+   ___SET_R0(___LBL(71))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(71,___L71_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(119,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration,___GLO_jazz_3a_Property_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(120,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Property_2d_Declaration)
+   ___SET_R1(___SYM_Property_2d_Declaration)
+   ___SET_R0(___LBL(72))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(72,___L72_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_getter)
+   ___SET_R0(___LBL(73))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(73,___L73_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(124,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_slot,___FIX(2L)))
+   ___SET_GLO(123,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_offset,___R1)
+   ___SET_GLO(121,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter,___PRC(190))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter)
+   ___SET_R2(___SYM_get_2d_getter)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+   ___SET_R0(___LBL(74))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(74,___L74_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_setter)
+   ___SET_R0(___LBL(75))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(75,___L75_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(126,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_slot,___FIX(2L)))
+   ___SET_GLO(125,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_offset,___R1)
+   ___SET_GLO(122,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter,___PRC(192))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter)
+   ___SET_R2(___SYM_get_2d_setter)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration)
+   ___SET_R0(___LBL(76))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(76,___L76_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(82,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration,___GLO_jazz_3a_Method_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(83,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Method_2d_Declaration)
+   ___SET_R1(___SYM_Method_2d_Declaration)
+   ___SET_R0(___LBL(77))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(77,___L77_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_root)
+   ___SET_R0(___LBL(78))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(78,___L78_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(104,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_slot,___FIX(2L)))
+   ___SET_GLO(103,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_offset,___R1)
+   ___SET_GLO(95,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root,___PRC(194))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root)
+   ___SET_R2(___SYM_get_2d_root)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(79))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(79,___L79_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_propagation)
+   ___SET_R0(___LBL(80))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(80,___L80_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(100,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_slot,___FIX(2L)))
+   ___SET_GLO(99,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_offset,___R1)
+   ___SET_GLO(93,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation,___PRC(196))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation)
+   ___SET_R2(___SYM_get_2d_propagation)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(81))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(81,___L81_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_abstraction)
+   ___SET_R0(___LBL(82))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(82,___L82_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(85,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_slot,___FIX(2L)))
+   ___SET_GLO(84,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_offset,___R1)
+   ___SET_GLO(90,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction,___PRC(198))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction)
+   ___SET_R2(___SYM_get_2d_abstraction)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(83))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(83,___L83_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_expansion)
+   ___SET_R0(___LBL(84))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(84,___L84_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(89,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_slot,___FIX(2L)))
+   ___SET_GLO(88,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_offset,___R1)
+   ___SET_GLO(92,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion,___PRC(200))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion)
+   ___SET_R2(___SYM_get_2d_expansion)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(85))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(85,___L85_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_remote)
+   ___SET_R0(___LBL(86))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(86,___L86_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(102,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_slot,___FIX(2L)))
+   ___SET_GLO(101,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_offset,___R1)
+   ___SET_GLO(94,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote,___PRC(202))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote)
+   ___SET_R2(___SYM_get_2d_remote)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(87))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(87,___L87_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_synchronized)
+   ___SET_R0(___LBL(88))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(88,___L88_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(110,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_slot,___FIX(2L)))
+   ___SET_GLO(109,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_offset,___R1)
+   ___SET_GLO(98,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized,___PRC(204))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized)
+   ___SET_R2(___SYM_get_2d_synchronized)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(89))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(89,___L89_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_signature)
+   ___SET_R0(___LBL(90))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(90,___L90_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(106,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_slot,___FIX(2L)))
+   ___SET_GLO(105,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_offset,___R1)
+   ___SET_GLO(96,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature,___PRC(206))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___SYM_get_2d_signature)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(91))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(91,___L91_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_specifier_2d_source)
+   ___SET_R0(___LBL(92))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(92,___L92_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(108,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_slot,___FIX(2L)))
+   ___SET_GLO(107,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_offset,___R1)
+   ___SET_GLO(97,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source,___PRC(208))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___SET_R2(___SYM_get_2d_specifier_2d_source)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(93))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(93,___L93_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_body)
+   ___SET_R0(___LBL(94))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(94,___L94_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(87,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_slot,___FIX(2L)))
+   ___SET_GLO(86,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_offset,___R1)
+   ___SET_GLO(91,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body,___PRC(210))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body)
+   ___SET_R2(___SYM_get_2d_body)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration)
+   ___SET_R0(___LBL(95))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(95,___L95_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(68,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration,___GLO_jazz_3a_Hub_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(69,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Hub_2d_Declaration)
+   ___SET_R1(___SYM_Hub_2d_Declaration)
+   ___SET_R0(___LBL(96))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(96,___L96_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_nodes)
+   ___SET_R0(___LBL(97))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(97,___L97_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(72,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_slot,___FIX(2L)))
+   ___SET_GLO(71,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_offset,___R1)
+   ___SET_GLO(70,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes,___PRC(212))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes)
+   ___SET_R2(___SYM_get_2d_nodes)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration)
+   ___SET_R0(___LBL(98))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(98,___L98_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(111,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration,___GLO_jazz_3a_Node_2d_Declaration)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration,___FIX(11L)))
+   ___SET_GLO(112,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Node_2d_Declaration)
+   ___SET_R1(___SYM_Node_2d_Declaration)
+   ___SET_R0(___LBL(99))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(99,___L99_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_hub_2d_name)
+   ___SET_R0(___LBL(100))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(100,___L100_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(116,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_slot,___FIX(2L)))
+   ___SET_GLO(115,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_offset,___R1)
+   ___SET_GLO(113,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name,___PRC(214))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name)
+   ___SET_R2(___SYM_get_2d_hub_2d_name)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+   ___SET_R0(___LBL(101))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(101,___L101_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_signature)
+   ___SET_R0(___LBL(102))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(102,___L102_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(118,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_slot,___FIX(2L)))
+   ___SET_GLO(117,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_offset,___R1)
+   ___SET_GLO(114,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature,___PRC(216))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___SYM_get_2d_signature)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration)
+   ___SET_R0(___LBL(103))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(103,___L103_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(174,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self,___GLO_jazz_3a_With_2d_Self)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self,___FIX(11L)))
+   ___SET_GLO(175,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_With_2d_Self)
+   ___SET_R1(___SYM_With_2d_Self)
+   ___SET_R0(___LBL(104))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(104,___L104_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_body)
+   ___SET_R0(___LBL(105))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(105,___L105_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(177,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_slot,___FIX(2L)))
+   ___SET_GLO(176,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_offset,___R1)
+   ___SET_GLO(178,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body,___PRC(218))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body)
+   ___SET_R2(___SYM_get_2d_body)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self)
+   ___SET_R0(___LBL(106))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(106,___L106_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(166,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self,___GLO_jazz_3a_With_2d_Dynamic_2d_Self)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self,___FIX(11L)))
+   ___SET_GLO(167,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_With_2d_Dynamic_2d_Self)
+   ___SET_R1(___SYM_With_2d_Dynamic_2d_Self)
+   ___SET_R0(___LBL(107))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(107,___L107_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_code)
+   ___SET_R0(___LBL(108))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(108,___L108_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(171,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_slot,___FIX(2L)))
+   ___SET_GLO(170,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_offset,___R1)
+   ___SET_GLO(173,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code,___PRC(220))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code)
+   ___SET_R2(___SYM_get_2d_code)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+   ___SET_R0(___LBL(109))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(109,___L109_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_body)
+   ___SET_R0(___LBL(110))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(110,___L110_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(169,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_slot,___FIX(2L)))
+   ___SET_GLO(168,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_offset,___R1)
+   ___SET_GLO(172,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body,___PRC(222))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body)
+   ___SET_R2(___SYM_get_2d_body)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self)
+   ___SET_R0(___LBL(111))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(111,___L111_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(9,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast,___GLO_jazz_3a_Cast)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast,___FIX(11L)))
+   ___SET_GLO(10,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Cast)
+   ___SET_R1(___SYM_Cast)
+   ___SET_R0(___LBL(112))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(112,___L112_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_expression)
+   ___SET_R0(___LBL(113))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(113,___L113_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(12,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_slot,___FIX(2L)))
+   ___SET_GLO(11,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_offset,___R1)
+   ___SET_GLO(13,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression,___PRC(224))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression)
+   ___SET_R2(___SYM_get_2d_expression)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast)
+   ___SET_R0(___LBL(114))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(114,___L114_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(1,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate,___GLO_jazz_3a_Allocate)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate,___FIX(11L)))
+   ___SET_GLO(2,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Allocate)
+   ___SET_R1(___SYM_Allocate)
+   ___SET_R0(___LBL(115))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(115,___L115_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_class)
+   ___SET_R0(___LBL(116))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(116,___L116_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(4,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_slot,___FIX(2L)))
+   ___SET_GLO(3,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_offset,___R1)
+   ___SET_GLO(5,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class,___PRC(226))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class)
+   ___SET_R2(___SYM_get_2d_class)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+   ___SET_R0(___LBL(117))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(117,___L117_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_STK(1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+   ___SET_R3(___TRU)
+   ___SET_R2(___FAL)
+   ___SET_R1(___SYM_values)
+   ___SET_R0(___LBL(118))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),204,___G_jazz_3a_add_2d_slot)
+___DEF_SLBL(118,___L118_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(8,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_slot,___R1)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_slot,___FIX(2L)))
+   ___SET_GLO(7,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_offset,___R1)
+   ___SET_GLO(6,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values,___PRC(228))
+   ___SET_R3(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values)
+   ___SET_R2(___SYM_get_2d_values)
+   ___SET_R1(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate)
+   ___SET_R0(___LBL(119))
+   ___JUMPGLOSAFE(___SET_NARGS(3),202,___G_jazz_3a_add_2d_final_2d_method)
+___DEF_SLBL(119,___L119_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(78,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect,___GLO_jazz_3a_Jazz_2d_Dialect)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect,___FIX(11L)))
+   ___SET_GLO(79,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Jazz_2d_Dialect)
+   ___SET_R1(___SYM_Jazz_2d_Dialect)
+   ___SET_R0(___LBL(120))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(120,___L120_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___SET_GLO(80,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker,___GLO_jazz_3a_Jazz_2d_Walker)
+   ___SET_R1(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker,___FIX(11L)))
+   ___SET_GLO(81,___G_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker_21_level,___R1)
+   ___SET_R2(___SYM_jazz_3a_Jazz_2d_Walker)
+   ___SET_R1(___SYM_Jazz_2d_Walker)
+   ___SET_R0(___LBL(121))
+   ___JUMPGLOSAFE(___SET_NARGS(2),207,___G_jazz_3a_set_2d_core_2d_class_2d_redefined)
+___DEF_SLBL(121,___L121_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___POLL(122)
+___DEF_SLBL(122,___L122_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_)
+   ___ADJFP(-4)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion
+#undef ___PH_LBL0
+#define ___PH_LBL0 125
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature
+#undef ___PH_LBL0
+#define ___PH_LBL0 127
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source
+#undef ___PH_LBL0
+#define ___PH_LBL0 129
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value
+#undef ___PH_LBL0
+#define ___PH_LBL0 131
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_value_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize
+#undef ___PH_LBL0
+#define ___PH_LBL0 133
+#undef ___PD_ALL
+#define ___PD_ALL ___D_FP ___D_R0 ___D_R1 ___D_R2 ___D_R3 ___D_R4
+#undef ___PR_ALL
+#define ___PR_ALL ___R_FP ___R_R0 ___R_R1 ___R_R2 ___R_R3 ___R_R4
+#undef ___PW_ALL
+#define ___PW_ALL ___W_FP ___W_R0 ___W_R1 ___W_R2 ___W_R3 ___W_R4
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L1_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L2_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L3_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L4_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L5_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L6_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L7_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L8_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L9_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L10_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___DEF_P_HLBL(___L11_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___IF_NARGS_EQ(1,___SET_R2(___NUL))
+   ___GET_REST(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___SET_R3(___VECTORREF(___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize_21_node,___FIX(4L)))
+   ___SET_STK(1,___R0)
+   ___SET_STK(2,___R1)
+   ___SET_STK(3,___R2)
+   ___SET_STK(4,___R3)
+   ___SET_R1(___R2)
+   ___ADJFP(8)
+   ___POLL(1)
+___DEF_SLBL(1,___L1_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___SET_R0(___LBL(2))
+   ___JUMPGLOSAFE(___SET_NARGS(1),180,___G_jazz_2e_language_2e_runtime_2e_functional_3a_box_2d_list)
+___DEF_SLBL(2,___L2_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___SET_STK(-3,___R1)
+   ___SET_STK(1,___KEY_expansion)
+   ___SET_R2(___LBL(11))
+   ___SET_R3(___FAL)
+   ___SET_R0(___LBL(3))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),181,___G_jazz_2e_language_2e_runtime_2e_functional_3a_find_2d_keyword)
+___DEF_SLBL(3,___L3_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___SET_STK(-2,___R1)
+   ___SET_STK(5,___KEY_signature)
+   ___SET_R2(___LBL(10))
+   ___SET_R1(___STK(-3))
+   ___SET_R3(___FAL)
+   ___SET_R0(___LBL(4))
+   ___ADJFP(5)
+   ___JUMPGLOSAFE(___SET_NARGS(4),181,___G_jazz_2e_language_2e_runtime_2e_functional_3a_find_2d_keyword)
+___DEF_SLBL(4,___L4_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___SET_STK(-5,___R1)
+   ___SET_STK(1,___KEY_specifier_2d_source)
+   ___SET_R2(___LBL(9))
+   ___SET_R1(___STK(-7))
+   ___SET_R3(___FAL)
+   ___SET_R0(___LBL(5))
+   ___ADJFP(1)
+   ___JUMPGLOSAFE(___SET_NARGS(4),181,___G_jazz_2e_language_2e_runtime_2e_functional_3a_find_2d_keyword)
+___DEF_SLBL(5,___L5_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___SET_STK(-4,___R1)
+   ___SET_R1(___STK(-7))
+   ___SET_R0(___LBL(6))
+   ___JUMPGLOSAFE(___SET_NARGS(1),182,___G_jazz_2e_language_2e_runtime_2e_functional_3a_unbox_2d_list)
+___DEF_SLBL(6,___L6_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___SET_STK(-3,___R1)
+   ___SET_R3(___R1)
+   ___SET_R2(___STK(-10))
+   ___SET_R1(___STK(-8))
+   ___SET_R0(___LBL(7))
+   ___JUMPPRM(___SET_NARGS(3),___PRM_apply)
+___DEF_SLBL(7,___L7_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___VECTORSET(___STK(-10),___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_expansion_21_offset,___STK(-6))
+   ___VECTORSET(___STK(-10),___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_signature_21_offset,___STK(-5))
+   ___VECTORSET(___STK(-10),___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_specifier_2d_source_21_offset,___STK(-4)) ___SET_R1(___STK(-10))
+   ___POLL(8)
+___DEF_SLBL(8,___L8_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___ADJFP(-12)
+   ___JUMPPRM(___NOTHING,___STK(1))
+___DEF_SLBL(9,___L9_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(9,0,0,0)
+   ___SET_R1(___FAL)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(10,___L10_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(10,0,0,0)
+   ___SET_R1(___FAL)
+   ___JUMPPRM(___NOTHING,___R0)
+___DEF_SLBL(11,___L11_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize)
+   ___IF_NARGS_EQ(0,___NOTHING)
+   ___WRONG_NARGS(11,0,0,0)
+   ___SET_R1(___FAL)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types
+#undef ___PH_LBL0
+#define ___PH_LBL0 146
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_dispatch_2d_types_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature
+#undef ___PH_LBL0
+#define ___PH_LBL0 148
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_signature_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body
+#undef ___PH_LBL0
+#define ___PH_LBL0 150
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_body_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic
+#undef ___PH_LBL0
+#define ___PH_LBL0 152
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_generic_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature
+#undef ___PH_LBL0
+#define ___PH_LBL0 154
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_signature_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body
+#undef ___PH_LBL0
+#define ___PH_LBL0 156
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_body_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_
+#undef ___PH_LBL0
+#define ___PH_LBL0 158
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_root_3f__21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor
+#undef ___PH_LBL0
+#define ___PH_LBL0 160
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_implementor_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass
+#undef ___PH_LBL0
+#define ___PH_LBL0 162
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_
+#undef ___PH_LBL0
+#define ___PH_LBL0 164
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_metaclass_2d_explicit_3f__21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant
+#undef ___PH_LBL0
+#define ___PH_LBL0 166
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation
+#undef ___PH_LBL0
+#define ___PH_LBL0 168
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_relation_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base
+#undef ___PH_LBL0
+#define ___PH_LBL0 170
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_ascendant_2d_base_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces
+#undef ___PH_LBL0
+#define ___PH_LBL0 172
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_interfaces_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants
+#undef ___PH_LBL0
+#define ___PH_LBL0 174
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_ascendants_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source
+#undef ___PH_LBL0
+#define ___PH_LBL0 176
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_specifier_2d_source_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize
+#undef ___PH_LBL0
+#define ___PH_LBL0 178
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_initialize_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name
+#undef ___PH_LBL0
+#define ___PH_LBL0 180
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_name_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name
+#undef ___PH_LBL0
+#define ___PH_LBL0 182
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_name_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation
+#undef ___PH_LBL0
+#define ___PH_LBL0 184
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_getter_2d_generation_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation
+#undef ___PH_LBL0
+#define ___PH_LBL0 186
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_setter_2d_generation_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_
+#undef ___PH_LBL0
+#define ___PH_LBL0 188
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_dynamic_3f__21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter
+#undef ___PH_LBL0
+#define ___PH_LBL0 190
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_getter_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter
+#undef ___PH_LBL0
+#define ___PH_LBL0 192
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_setter_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root
+#undef ___PH_LBL0
+#define ___PH_LBL0 194
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_root_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation
+#undef ___PH_LBL0
+#define ___PH_LBL0 196
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_propagation_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction
+#undef ___PH_LBL0
+#define ___PH_LBL0 198
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_abstraction_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion
+#undef ___PH_LBL0
+#define ___PH_LBL0 200
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_expansion_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote
+#undef ___PH_LBL0
+#define ___PH_LBL0 202
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_remote_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized
+#undef ___PH_LBL0
+#define ___PH_LBL0 204
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_synchronized_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature
+#undef ___PH_LBL0
+#define ___PH_LBL0 206
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_signature_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source
+#undef ___PH_LBL0
+#define ___PH_LBL0 208
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_specifier_2d_source_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body
+#undef ___PH_LBL0
+#define ___PH_LBL0 210
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_body_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes
+#undef ___PH_LBL0
+#define ___PH_LBL0 212
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_nodes_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name
+#undef ___PH_LBL0
+#define ___PH_LBL0 214
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_hub_2d_name_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature
+#undef ___PH_LBL0
+#define ___PH_LBL0 216
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_signature_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body
+#undef ___PH_LBL0
+#define ___PH_LBL0 218
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_body_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code
+#undef ___PH_LBL0
+#define ___PH_LBL0 220
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_code_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body
+#undef ___PH_LBL0
+#define ___PH_LBL0 222
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_body_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression
+#undef ___PH_LBL0
+#define ___PH_LBL0 224
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_expression_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class
+#undef ___PH_LBL0
+#define ___PH_LBL0 226
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_class_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+#undef ___PH_PROC
+#define ___PH_PROC ___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values
+#undef ___PH_LBL0
+#define ___PH_LBL0 228
+#undef ___PD_ALL
+#define ___PD_ALL ___D_R0 ___D_R1 ___D_R2
+#undef ___PR_ALL
+#define ___PR_ALL ___R_R0 ___R_R1 ___R_R2
+#undef ___PW_ALL
+#define ___PW_ALL ___W_R1 ___W_R2
+___BEGIN_P_COD
+___BEGIN_P_HLBL
+___DEF_P_HLBL_INTRO
+___DEF_P_HLBL(___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values)
+___END_P_HLBL
+___BEGIN_P_SW
+___DEF_SLBL(0,___L0_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values)
+   ___IF_NARGS_EQ(1,___NOTHING)
+   ___WRONG_NARGS(0,1,0,0)
+___DEF_GLBL(___L_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values)
+   ___SET_R2(___VECTORREF(___R1,___GLO_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_values_21_offset))
+   ___SET_R1(___R2)
+   ___JUMPPRM(___NOTHING,___R0)
+___END_P_SW
+___END_P_COD
+
+___END_M_SW
+___END_M_COD
+
+___BEGIN_LBL
+ ___DEF_LBL_INTRO(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,"bin:jazz.dialect.classes.jazz#",
+___REF_SUB(0),123,0)
+,___DEF_LBL_PROC(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,0,-1)
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETN,1,0,0x1L))
+,___DEF_LBL_RET(___H_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,___IFD(___RETI,4,0,0x3f1L))
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion,0,___REF_SUB(249),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_expansion,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature,0,___REF_SUB(254),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_signature,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source,0,___REF_SUB(259),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_specifier_2d_source,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value,0,___REF_SUB(264),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_get_2d_value,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,0,___REF_SUB(269),12,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,2,-1)
+,___DEF_LBL_RET(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___IFD(___RETI,8,0,0x3f0fL))
+,___DEF_LBL_RET(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___IFD(___RETN,5,0,0xfL))
+,___DEF_LBL_RET(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___IFD(___RETN,5,0,0x1fL))
+,___DEF_LBL_RET(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___IFD(___RETN,9,0,0x3fL))
+,___DEF_LBL_RET(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___IFD(___RETN,9,0,0x7fL))
+,___DEF_LBL_RET(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___IFD(___RETN,9,0,0xffL))
+,___DEF_LBL_RET(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___IFD(___RETN,9,0,0x1ffL))
+,___DEF_LBL_RET(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,___OFD(___RETI,12,0,0x3f1ffL))
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,0,-1)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,0,-1)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration_3a_initialize,0,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types,0,___REF_SUB(296),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_dispatch_2d_types,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature,0,___REF_SUB(301),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_signature,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body,0,___REF_SUB(306),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration_3a_get_2d_body,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic,0,___REF_SUB(311),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_generic,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature,0,___REF_SUB(316),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_signature,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body,0,___REF_SUB(321),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_body,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_,0,___REF_SUB(326),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration_3a_get_2d_root_3f_,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor,0,___REF_SUB(331),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_implementor,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass,0,___REF_SUB(336),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_,0,___REF_SUB(341),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration_3a_get_2d_metaclass_2d_explicit_3f_,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant,0,___REF_SUB(346),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation,0,___REF_SUB(351),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_relation,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base,0,___REF_SUB(356),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_ascendant_2d_base,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces,0,___REF_SUB(361),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration_3a_get_2d_interfaces,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants,0,___REF_SUB(366),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration_3a_get_2d_ascendants,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source,0,___REF_SUB(371),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_specifier_2d_source,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize,0,___REF_SUB(376),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_initialize,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name,0,___REF_SUB(381),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_name,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name,0,___REF_SUB(386),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_name,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation,0,___REF_SUB(391),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_getter_2d_generation,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation,0,___REF_SUB(396),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_setter_2d_generation,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_,0,___REF_SUB(401),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration_3a_get_2d_dynamic_3f_,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter,0,___REF_SUB(406),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_getter,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter,0,___REF_SUB(411),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration_3a_get_2d_setter,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root,0,___REF_SUB(416),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_root,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation,0,___REF_SUB(421),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_propagation,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction,0,___REF_SUB(426),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_abstraction,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion,0,___REF_SUB(431),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_expansion,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote,0,___REF_SUB(436),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_remote,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized,0,___REF_SUB(441),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_synchronized,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature,0,___REF_SUB(446),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_signature,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source,0,___REF_SUB(451),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_specifier_2d_source,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body,0,___REF_SUB(456),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration_3a_get_2d_body,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes,0,___REF_SUB(461),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration_3a_get_2d_nodes,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name,0,___REF_SUB(466),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_hub_2d_name,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature,0,___REF_SUB(471),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration_3a_get_2d_signature,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body,0,___REF_SUB(476),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self_3a_get_2d_body,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code,0,___REF_SUB(481),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_code,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body,0,___REF_SUB(486),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self_3a_get_2d_body,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression,0,___REF_SUB(491),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast_3a_get_2d_expression,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class,0,___REF_SUB(496),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_class,1,-1)
+,___DEF_LBL_INTRO(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values,0,___REF_SUB(501),1,0)
+,___DEF_LBL_PROC(___H_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate_3a_get_2d_values,1,-1)
+___END_LBL
+
+___BEGIN_OFD
+ ___DEF_OFD(___RETI,12,0)
+               ___GCMAP1(0x3f1ffL)
+___END_OFD
+
+___BEGIN_MOD_PRM
+___DEF_MOD_PRM(0,___G_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,1)
+___END_MOD_PRM
+
+___BEGIN_MOD_C_INIT
+___END_MOD_C_INIT
+
+___BEGIN_MOD_GLO
+___DEF_MOD_GLO(0,___G_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz_23_,1)
+___END_MOD_GLO
+
+___BEGIN_MOD_SYM_KEY
+___DEF_MOD_SYM(0,___S_Allocate,"Allocate")
+___DEF_MOD_SYM(1,___S_Cast,"Cast")
+___DEF_MOD_SYM(2,___S_Category_2d_Declaration,"Category-Declaration")
+___DEF_MOD_SYM(3,___S_Class_2d_Declaration,"Class-Declaration")
+___DEF_MOD_SYM(4,___S_Definition_2d_Declaration,"Definition-Declaration")
+___DEF_MOD_SYM(5,___S_Field_2d_Declaration,"Field-Declaration")
+___DEF_MOD_SYM(6,___S_Generic_2d_Declaration,"Generic-Declaration")
+___DEF_MOD_SYM(7,___S_Hub_2d_Declaration,"Hub-Declaration")
+___DEF_MOD_SYM(8,___S_Interface_2d_Declaration,"Interface-Declaration")
+___DEF_MOD_SYM(9,___S_Jazz_2d_Dialect,"Jazz-Dialect")
+___DEF_MOD_SYM(10,___S_Jazz_2d_Walker,"Jazz-Walker")
+___DEF_MOD_SYM(11,___S_Method_2d_Declaration,"Method-Declaration")
+___DEF_MOD_SYM(12,___S_Node_2d_Declaration,"Node-Declaration")
+___DEF_MOD_SYM(13,___S_Property_2d_Declaration,"Property-Declaration")
+___DEF_MOD_SYM(14,___S_Slot_2d_Declaration,"Slot-Declaration")
+___DEF_MOD_SYM(15,___S_Specialize,"Specialize")
+___DEF_MOD_SYM(16,___S_Specific_2d_Declaration,"Specific-Declaration")
+___DEF_MOD_SYM(17,___S_With_2d_Dynamic_2d_Self,"With-Dynamic-Self")
+___DEF_MOD_SYM(18,___S_With_2d_Self,"With-Self")
+___DEF_MOD_SYM(19,___S_abstraction,"abstraction")
+___DEF_MOD_SYM(20,___S_ascendant,"ascendant")
+___DEF_MOD_SYM(21,___S_ascendant_2d_base,"ascendant-base")
+___DEF_MOD_SYM(22,___S_ascendant_2d_relation,"ascendant-relation")
+___DEF_MOD_SYM(23,___S_ascendants,"ascendants")
+___DEF_MOD_SYM(24,___S_bin_3a_jazz_2e_dialect_2e_classes_2e_jazz,"bin:jazz.dialect.classes.jazz")
+
+___DEF_MOD_SYM(25,___S_body,"body")
+___DEF_MOD_SYM(26,___S_box_5e_0,"box^0")
+___DEF_MOD_SYM(27,___S_class,"class")
+___DEF_MOD_SYM(28,___S_code,"code")
+___DEF_MOD_SYM(29,___S_dispatch_2d_types,"dispatch-types")
+___DEF_MOD_SYM(30,___S_dynamic_3f_,"dynamic?")
+___DEF_MOD_SYM(31,___S_expansion,"expansion")
+___DEF_MOD_SYM(32,___S_expression,"expression")
+___DEF_MOD_SYM(33,___S_foundation_2e_dialect,"foundation.dialect")
+___DEF_MOD_SYM(34,___S_generic,"generic")
+___DEF_MOD_SYM(35,___S_get_2d_abstraction,"get-abstraction")
+___DEF_MOD_SYM(36,___S_get_2d_ascendant,"get-ascendant")
+___DEF_MOD_SYM(37,___S_get_2d_ascendant_2d_base,"get-ascendant-base")
+___DEF_MOD_SYM(38,___S_get_2d_ascendant_2d_relation,"get-ascendant-relation")
+___DEF_MOD_SYM(39,___S_get_2d_ascendants,"get-ascendants")
+___DEF_MOD_SYM(40,___S_get_2d_body,"get-body")
+___DEF_MOD_SYM(41,___S_get_2d_class,"get-class")
+___DEF_MOD_SYM(42,___S_get_2d_code,"get-code")
+___DEF_MOD_SYM(43,___S_get_2d_dispatch_2d_types,"get-dispatch-types")
+___DEF_MOD_SYM(44,___S_get_2d_dynamic_3f_,"get-dynamic?")
+___DEF_MOD_SYM(45,___S_get_2d_expansion,"get-expansion")
+___DEF_MOD_SYM(46,___S_get_2d_expression,"get-expression")
+___DEF_MOD_SYM(47,___S_get_2d_generic,"get-generic")
+___DEF_MOD_SYM(48,___S_get_2d_getter,"get-getter")
+___DEF_MOD_SYM(49,___S_get_2d_getter_2d_generation,"get-getter-generation")
+___DEF_MOD_SYM(50,___S_get_2d_getter_2d_name,"get-getter-name")
+___DEF_MOD_SYM(51,___S_get_2d_hub_2d_name,"get-hub-name")
+___DEF_MOD_SYM(52,___S_get_2d_implementor,"get-implementor")
+___DEF_MOD_SYM(53,___S_get_2d_initialize,"get-initialize")
+___DEF_MOD_SYM(54,___S_get_2d_interfaces,"get-interfaces")
+___DEF_MOD_SYM(55,___S_get_2d_metaclass,"get-metaclass")
+___DEF_MOD_SYM(56,___S_get_2d_metaclass_2d_explicit_3f_,"get-metaclass-explicit?")
+___DEF_MOD_SYM(57,___S_get_2d_nodes,"get-nodes")
+___DEF_MOD_SYM(58,___S_get_2d_propagation,"get-propagation")
+___DEF_MOD_SYM(59,___S_get_2d_remote,"get-remote")
+___DEF_MOD_SYM(60,___S_get_2d_root,"get-root")
+___DEF_MOD_SYM(61,___S_get_2d_root_3f_,"get-root?")
+___DEF_MOD_SYM(62,___S_get_2d_setter,"get-setter")
+___DEF_MOD_SYM(63,___S_get_2d_setter_2d_generation,"get-setter-generation")
+___DEF_MOD_SYM(64,___S_get_2d_setter_2d_name,"get-setter-name")
+___DEF_MOD_SYM(65,___S_get_2d_signature,"get-signature")
+___DEF_MOD_SYM(66,___S_get_2d_specifier_2d_source,"get-specifier-source")
+___DEF_MOD_SYM(67,___S_get_2d_synchronized,"get-synchronized")
+___DEF_MOD_SYM(68,___S_get_2d_value,"get-value")
+___DEF_MOD_SYM(69,___S_get_2d_values,"get-values")
+___DEF_MOD_SYM(70,___S_getter,"getter")
+___DEF_MOD_SYM(71,___S_getter_2d_generation,"getter-generation")
+___DEF_MOD_SYM(72,___S_getter_2d_name,"getter-name")
+___DEF_MOD_SYM(73,___S_hub_2d_name,"hub-name")
+___DEF_MOD_SYM(74,___S_implementor,"implementor")
+___DEF_MOD_SYM(75,___S_initialize,"initialize")
+___DEF_MOD_SYM(76,___S_interfaces,"interfaces")
+___DEF_MOD_SYM(77,___S_jazz_2e_dialect,"jazz.dialect")
+___DEF_MOD_SYM(78,___S_jazz_2e_dialect_2e_classes_2e_jazz,"jazz.dialect.classes.jazz")
+___DEF_MOD_SYM(79,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Allocate,"jazz.dialect.classes.jazz:Allocate")
+
+___DEF_MOD_SYM(80,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Cast,"jazz.dialect.classes.jazz:Cast")
+
+___DEF_MOD_SYM(81,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Category_2d_Declaration,"jazz.dialect.classes.jazz:Category-Declaration")
+
+___DEF_MOD_SYM(82,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Class_2d_Declaration,"jazz.dialect.classes.jazz:Class-Declaration")
+
+___DEF_MOD_SYM(83,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Definition_2d_Declaration,"jazz.dialect.classes.jazz:Definition-Declaration")
+
+___DEF_MOD_SYM(84,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Field_2d_Declaration,"jazz.dialect.classes.jazz:Field-Declaration")
+
+___DEF_MOD_SYM(85,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Generic_2d_Declaration,"jazz.dialect.classes.jazz:Generic-Declaration")
+
+___DEF_MOD_SYM(86,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Hub_2d_Declaration,"jazz.dialect.classes.jazz:Hub-Declaration")
+
+___DEF_MOD_SYM(87,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Interface_2d_Declaration,"jazz.dialect.classes.jazz:Interface-Declaration")
+
+___DEF_MOD_SYM(88,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Dialect,"jazz.dialect.classes.jazz:Jazz-Dialect")
+
+___DEF_MOD_SYM(89,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Jazz_2d_Walker,"jazz.dialect.classes.jazz:Jazz-Walker")
+
+___DEF_MOD_SYM(90,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Method_2d_Declaration,"jazz.dialect.classes.jazz:Method-Declaration")
+
+___DEF_MOD_SYM(91,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Node_2d_Declaration,"jazz.dialect.classes.jazz:Node-Declaration")
+
+___DEF_MOD_SYM(92,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Property_2d_Declaration,"jazz.dialect.classes.jazz:Property-Declaration")
+
+___DEF_MOD_SYM(93,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Slot_2d_Declaration,"jazz.dialect.classes.jazz:Slot-Declaration")
+
+___DEF_MOD_SYM(94,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specialize,"jazz.dialect.classes.jazz:Specialize")
+
+___DEF_MOD_SYM(95,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_Specific_2d_Declaration,"jazz.dialect.classes.jazz:Specific-Declaration")
+
+___DEF_MOD_SYM(96,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Dynamic_2d_Self,"jazz.dialect.classes.jazz:With-Dynamic-Self")
+
+___DEF_MOD_SYM(97,___S_jazz_2e_dialect_2e_classes_2e_jazz_3a_With_2d_Self,"jazz.dialect.classes.jazz:With-Self")
+
+___DEF_MOD_SYM(98,___S_jazz_2e_dialect_2e_classes_2e_scheme,"jazz.dialect.classes.scheme")
+___DEF_MOD_SYM(99,___S_jazz_2e_language_2e_runtime_2e_format,"jazz.language.runtime.format")
+___DEF_MOD_SYM(100,___S_jazz_2e_language_2e_runtime_2e_functional,"jazz.language.runtime.functional")
+
+___DEF_MOD_SYM(101,___S_jazz_2e_language_2e_runtime_2e_kernel,"jazz.language.runtime.kernel")
+___DEF_MOD_SYM(102,___S_jazz_2e_language_2e_runtime_2e_object,"jazz.language.runtime.object")
+___DEF_MOD_SYM(103,___S_jazz_3a_Allocate,"jazz:Allocate")
+___DEF_MOD_SYM(104,___S_jazz_3a_Cast,"jazz:Cast")
+___DEF_MOD_SYM(105,___S_jazz_3a_Category_2d_Declaration,"jazz:Category-Declaration")
+___DEF_MOD_SYM(106,___S_jazz_3a_Class_2d_Declaration,"jazz:Class-Declaration")
+___DEF_MOD_SYM(107,___S_jazz_3a_Definition_2d_Declaration,"jazz:Definition-Declaration")
+___DEF_MOD_SYM(108,___S_jazz_3a_Field_2d_Declaration,"jazz:Field-Declaration")
+___DEF_MOD_SYM(109,___S_jazz_3a_Generic_2d_Declaration,"jazz:Generic-Declaration")
+___DEF_MOD_SYM(110,___S_jazz_3a_Hub_2d_Declaration,"jazz:Hub-Declaration")
+___DEF_MOD_SYM(111,___S_jazz_3a_Interface_2d_Declaration,"jazz:Interface-Declaration")
+___DEF_MOD_SYM(112,___S_jazz_3a_Jazz_2d_Dialect,"jazz:Jazz-Dialect")
+___DEF_MOD_SYM(113,___S_jazz_3a_Jazz_2d_Walker,"jazz:Jazz-Walker")
+___DEF_MOD_SYM(114,___S_jazz_3a_Method_2d_Declaration,"jazz:Method-Declaration")
+___DEF_MOD_SYM(115,___S_jazz_3a_Node_2d_Declaration,"jazz:Node-Declaration")
+___DEF_MOD_SYM(116,___S_jazz_3a_Property_2d_Declaration,"jazz:Property-Declaration")
+___DEF_MOD_SYM(117,___S_jazz_3a_Slot_2d_Declaration,"jazz:Slot-Declaration")
+___DEF_MOD_SYM(118,___S_jazz_3a_Specialize,"jazz:Specialize")
+___DEF_MOD_SYM(119,___S_jazz_3a_Specific_2d_Declaration,"jazz:Specific-Declaration")
+___DEF_MOD_SYM(120,___S_jazz_3a_With_2d_Dynamic_2d_Self,"jazz:With-Dynamic-Self")
+___DEF_MOD_SYM(121,___S_jazz_3a_With_2d_Self,"jazz:With-Self")
+___DEF_MOD_SYM(122,___S_metaclass,"metaclass")
+___DEF_MOD_SYM(123,___S_metaclass_2d_explicit_3f_,"metaclass-explicit?")
+___DEF_MOD_SYM(124,___S_nextmethod,"nextmethod")
+___DEF_MOD_SYM(125,___S_nodes,"nodes")
+___DEF_MOD_SYM(126,___S_others,"others")
+___DEF_MOD_SYM(127,___S_propagation,"propagation")
+___DEF_MOD_SYM(128,___S_protected,"protected")
+___DEF_MOD_SYM(129,___S_remote,"remote")
+___DEF_MOD_SYM(130,___S_rest,"rest")
+___DEF_MOD_SYM(131,___S_root,"root")
+___DEF_MOD_SYM(132,___S_root_3f_,"root?")
+___DEF_MOD_SYM(133,___S_self,"self")
+___DEF_MOD_SYM(134,___S_setter,"setter")
+___DEF_MOD_SYM(135,___S_setter_2d_generation,"setter-generation")
+___DEF_MOD_SYM(136,___S_setter_2d_name,"setter-name")
+___DEF_MOD_SYM(137,___S_signature,"signature")
+___DEF_MOD_SYM(138,___S_specifier_2d_source,"specifier-source")
+___DEF_MOD_SYM(139,___S_synchronized,"synchronized")
+___DEF_MOD_SYM(140,___S_value,"value")
+___DEF_MOD_SYM(141,___S_values,"values")
+___DEF_MOD_KEY(0,___K_expansion,"expansion")
+___DEF_MOD_KEY(1,___K_signature,"signature")
+___DEF_MOD_KEY(2,___K_specifier_2d_source,"specifier-source")
+___END_MOD_SYM_KEY
+
+#endif

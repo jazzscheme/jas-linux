@@ -1,0 +1,7 @@
+(manifest jazz.language.syntax.typecase
+
+  (version 208070)
+  (digest "c1b116f6ceb0bc0ae63b1bd1235c279202dcd742")
+  (references (foundation.language.runtime desourcify source-code sourcify-deep-if)
+              (jazz.language.runtime.kernel with-uniqueness)
+              (scheme.language.runtime cadr car cddr cdr eq? map null? pair?)))

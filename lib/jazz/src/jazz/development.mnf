@@ -1,0 +1,14 @@
+(manifest jazz.development
+
+  (version 208070)
+  (digest "4584d31eb96058ab1829e4508234c4a2be5074a9")
+  (references (jazz.component.Component Component)
+              (jazz.language.runtime.format format)
+              (jazz.language.runtime.functional List-Factory (List-Factory get-output) (List-Factory put) category-name collect identity null/pair? property-field? read-property)
+              (jazz.language.runtime.hubs get-children get-name get-output get-parent put)
+              (jazz.language.runtime.kernel class-of is? new object->serial unspecified)
+              (jazz.language.syntax.macros when)
+              (jazz.markup print-node)
+              (jazz.markup.model.Markup-Element Markup-Element)
+              (jazz.markup.model.Markup-Node Markup-Node)
+              (scheme.language.runtime append apply car cdr cons for-each list not)))
