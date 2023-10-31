@@ -1,0 +1,24 @@
+(package jas-all
+  
+  (title "Jas All")
+  (description "Jas Environment")
+  (authors "Guillaume Cartier")
+  (stage alpha)
+  (root "src")
+  (products (jas-all (product jas-all.product)
+                     (update jas-all.product)
+                     (dependencies jazz.associative
+                                   jazz.debuggee
+                                   jazz.event
+                                   jazz.io
+                                   jazz.network
+                                   jazz.platform
+                                   jazz.process
+                                   jazz.settings
+                                   jazz.syntax
+                                   jazz.time
+                                   jazz.version
+                                   jazz.zlib
+                                   srfi-19
+                                   jas
+                                   jas-server))))
